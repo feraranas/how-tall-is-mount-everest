@@ -1,48 +1,37 @@
 /* ROOT ELEMENT & GLOBAL VARIABLES */
 :root {
      --page-height: 50000px;
-     --full-height: calc(50000px + 100vh);
      font-size: 10px;
 }
-
 body {
-     margin: 0;
-     padding: 0;
-     width: 100vw;
-     background-color: #AFE7FE;
+    margin: 0;
+    padding: 0;
+    background-color: #AFE7FE;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
 }
-
 *, *:before, *:after {
      box-sizing: border-box;
 }
-
-/* MAIN SCROLL WRAPPER */
-.scroll-wrapper {
-     height: var(--full-height);
-     width: 100vw;
-     overflow-x: hidden;
-     overflow-y: scroll;
-     scroll-behavior: smooth;
-     
+/* MAIN CONTAINER -> THIS HOLDS THE GRAPHICS -> IT IS ABSOLUTED */
+.main-container {
+    width: 100vw;
+    height: var(--page-height);
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 /* METRONOMO */
 .metronomo {
-     position: absolute;
-     top: 0px;
-     background-color: white;
-     width: 500px;
-     height: 200px;
-     visibility: hidden;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    visibility: hidden;
 } 
-/* THIS HOLDS THE GRAPHICS -> IT IS ABSOLUTED */
-.container-graphics {
-     position: absolute;
-     top: 100vh;
-     left: 0;
-     width: 100vw;
-     height: var(--page-height);
-     overflow-x: hidden;
-}
 /* CONTAINER GRAPHICS -> FIRST CHILD */
 .clouds {
 }
@@ -57,7 +46,7 @@ body {
 .background-offroad {
      position: absolute;
      pointer-events: none;
-     top: 49100px;
+     top: calc(var(--page-height) - 900px);
      left: -150px;
      width: 3000px;
      height: 900px;
@@ -65,18 +54,18 @@ body {
      background-size: 100% 100%;
      z-index: 0;
  }
-.floor {
-     position: absolute;
-     pointer-events: none;
-     top: 49630px;
-     left: -150px;
-     width: 2500px;
-     height: 370px;
-     background-image: url(/images/floor.png);
-     background-size: 100% 100%;
-     z-index: 100;
-     background-position: 50%;
- }
+ .floor {
+    position: absolute;
+    pointer-events: none;
+    top: calc(var(--page-height) - 500px);
+    left: -150px;
+    width: 3500px;
+    height: 500px;
+    background-image: url(/images/floor.png);
+    background-size: 100% 100%;
+    z-index: 100;
+    background-position: 50%;
+}
 .man-1 {
      position: absolute;
      pointer-events: none;
@@ -140,8 +129,6 @@ body {
      position: absolute;
      left: calc(50% - 25px);
      transform: translateX(-50%);
-     display: block;
-     font-size: 50px;
      z-index: 101;
  }
  .title > h1 {
@@ -162,7 +149,7 @@ body {
                     -8px -8px 0 firebrick, 
                     1px 6px 10px dimgrey;
  }
-.title > h1 > span:nth-child(2) {
+.title > h1 > .mex {
      color: #006341;
      text-shadow:   -1px -1px 0 green, 
                     -2px -2px 0 green, 
@@ -174,7 +161,7 @@ body {
                     -8px -8px 0 green, 
                     1px 6px 10px dimgrey;
 }
-.title > h1 > span:nth-child(3) {
+.title > h1 > .ico {
      color: #FFFFFF;
      text-shadow:   -1px -1px 0 #AAAAAA, 
                     -2px -2px 0 #AAAAAA, 
@@ -186,7 +173,7 @@ body {
                     -8px -8px 0 #AAAAAA, 
                     1px 6px 10px dimgrey;
 }
-.title > h1 > span:nth-child(4) {
+.title > h1 > .lindo {
      color: #C8102E;
      text-shadow:   -1px -1px 0 #AE5752, 
                     -2px -2px 0 #AE5752, 
@@ -212,8 +199,21 @@ body {
 
 
 
+ /////////// /////////// /////////// /////////// ///////////
+ /////////// /////////// MEDIA QUERIES /////////// /////////
+ /////////// /////////// /////////// /////////// ///////////
+ // For screens laptops, monitors
+ @media (max-height: 860px) {
+    .hide {
+        display: none;
+    }
+    
+ } 
 
+ // For iphone 14
+ @media-screen and (max-width: 600px) {
 
+ }
 
 
 
