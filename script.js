@@ -1,9 +1,9 @@
 /* ///////////////////////////////////////////////// */
 /* ///////////// GLOBAL VARIABLES  ///////////////// */
 /* ///////////////////////////////////////////////// */
-let flag = false          /* FOR TITLE HEIGHT RESPONSIVENESS */
-const totalHeight = 50000 /* FULL HEIGHT */
-const mapHeight = 10000   /* FOR METRONOMO NORMALIZATION */
+let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
+const totalHeight = 50000; /* FULL HEIGHT */
+const mapHeight = 10000; /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
@@ -11,23 +11,25 @@ const mapHeight = 10000   /* FOR METRONOMO NORMALIZATION */
 
 // removes <br> tags from title when height < 920px
 function removeBr() {
-  let title = document.querySelector('#title')
-  let titleDiv = document.querySelector('.title')
-  let brElements = document.querySelectorAll('#title br')
-  brElements.forEach(function(brElement) { brElement.remove(); });
-  title.style.fontSize = 'calc(2rem + 2vw)'
-  titleDiv.style.width = '80%'
+  let title = document.querySelector("#title");
+  let titleDiv = document.querySelector(".title");
+  let brElements = document.querySelectorAll("#title br");
+  brElements.forEach(function (brElement) {
+    brElement.remove();
+  });
+  title.style.fontSize = "calc(2rem + 2vw)";
+  titleDiv.style.width = "80%";
 }
 // adds <br> tags for title when height >= 920px
 function addBr() {
-  let title = document.querySelector('#title')
-  let titleDiv = document.querySelector('.title')
-  let t1Element = document.querySelector('#t1');
-  let t2Element = document.querySelector('#t2');
-  let t3Element = document.querySelector('#t3');
-  let brElement = document.createElement('br');
-  title.style.fontSize = 'calc(6rem + 2vw)';
-  titleDiv.style.width = '35%'
+  let title = document.querySelector("#title");
+  let titleDiv = document.querySelector(".title");
+  let t1Element = document.querySelector("#t1");
+  let t2Element = document.querySelector("#t2");
+  let t3Element = document.querySelector("#t3");
+  let brElement = document.createElement("br");
+  title.style.fontSize = "calc(6rem + 2vw)";
+  titleDiv.style.width = "35%";
   t1Element.appendChild(brElement);
   t2Element.appendChild(brElement);
   t3Element.appendChild(brElement);
@@ -38,64 +40,67 @@ function addBr() {
 /* ///////////////////////////////////////////////// */
 
 // Retrieve the metronomo element
-const metronomo = document.querySelector('.metronomo-grid');
-const metronomoText = metronomo.querySelector('.metronomo');
+const metronomo = document.querySelector(".metronomo-grid");
+const metronomoText = metronomo.querySelector(".metronomo");
 
 /* ///////////////////////////////////////////////// */
 /* //////////////// EVENT LISTENERS //////////////// */
 /* ///////////////////////////////////////////////// */
 
 // UPDATE THE METRONOMO ON SCROLL EVENT
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   const scrollPosition = window.pageYOffset;
   const windowHeight = window.innerHeight;
   const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const normalizedHeight =
-      Math.abs(((scrollPosition / pageHeight) * 10000) - mapHeight);
+  const normalizedHeight = Math.abs(
+    (scrollPosition / pageHeight) * 10000 - mapHeight
+  );
 
   if (scrollPosition <= totalHeight - (window.innerHeight + 100)) {
-    metronomo.style.visibility = 'visible'
-    metronomo.classList.add('active')
+    metronomo.style.visibility = "visible";
+    metronomo.classList.add("active");
   } else {
-    metronomo.style.visibility = 'hidden'
-    metronomo.classList.remove('active')
+    metronomo.style.visibility = "hidden";
+    metronomo.classList.remove("active");
   }
   metronomo.style.top = `${scrollPosition}px`;
 
-  let meters =
-      (Math.round(`${normalizedHeight}`) + 2200).toString().padStart(5, '0');
+  let meters = (Math.round(`${normalizedHeight}`) + 2200)
+    .toString()
+    .padStart(5, "0");
   if (isNaN(meters)) {
-    meters = 0
-    meters.toString().padStart(5, '0');
+    meters = 0;
+    meters.toString().padStart(5, "0");
   }
   metronomoText.textContent = `${meters}m`;
 });
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
-window.onload =
-    function() {
-  console.log(window.innerHeight)
+window.onload = function () {
+  console.log(window.innerHeight);
   if (window.innerHeight <= 620) {
-    removeBr()
-    flag = true
+    removeBr();
+    flag = true;
   }
   if (window.innerHeight > 620 && flag === true) {
-    addBr()
+    addBr();
   }
 
-  setTimeout(() => { window.scrollTo(0, document.body.scrollHeight); }, 0)
-}
+  setTimeout(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, 0);
+};
 
-    /* TITLE RESPONSIVENESS */
-    window.onresize = function() {
-  console.log(window.innerHeight)
+/* TITLE RESPONSIVENESS */
+window.onresize = function () {
+  console.log(window.innerHeight);
 
   if (window.innerHeight <= 620) {
-    removeBr()
-    flag = true
+    removeBr();
+    flag = true;
   }
   if (window.innerHeight > 620 && flag === true) {
-    addBr()
-    flag = false
+    addBr();
+    flag = false;
   }
-}
+};
