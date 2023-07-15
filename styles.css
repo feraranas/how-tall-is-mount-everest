@@ -1,0 +1,350 @@
+@import url('https://fonts.cdnfonts.com/css/source-code-pro');
+
+/* ROOT ELEMENT & GLOBAL VARIABLES */
+:root {
+     --page-height: 50000px;
+     font-size: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #AFE7FE;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    background-image: url(./images/grid.png);
+    background-size: 150px 150px;
+}
+*, *:before, *:after {
+     box-sizing: border-box;
+}
+/* MAIN CONTAINER -> THIS HOLDS THE GRAPHICS -> IT IS ABSOLUTED */
+.main-container {
+    width: 100vw;
+    height: var(--page-height);
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* METRONOMO */
+.metronomo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    border-radius: 5px 5px 15px 15px;
+    border: 1px solid black;
+    left: 0;
+    transform: translateX(-30%);
+    opacity: 0;
+    z-index: 0;
+}
+.un{
+    grid-column: 1;
+    border-right: 2px solid black;
+}
+.de{
+    grid-column: 2;
+    border-right: 2px solid black;
+}
+.ce{
+    grid-column: 3;
+    border-right: 2px solid black;
+}
+.mi{
+    grid-column: 4;
+    border-right: 2px solid black;
+}
+.dm{
+    grid-column: 5;
+    border-right: 2px solid black;
+}
+.me{
+    grid-column: 6;
+    background-color: #C0DBE7;
+    border-radius: 0px 0px 15px 0px;
+}
+.metronomo {
+    position: absolute;
+    top: 0px;
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-size: 4.8rem;
+    display: grid;
+    align-content: center;
+    font-family: "Source Code Pro", monospace;
+    text-align: end;
+    padding-left: 22px;
+    letter-spacing: 36px;
+    z-index: 1;
+}
+.active {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/* CONTAINER GRAPHICS -> FIRST CHILD */
+.clouds {
+}
+/* CONTAINER GRAPHICS -> SECOND CHILD */
+.container-inner {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+}
+.background-offroad {
+     position: absolute;
+     pointer-events: none;
+     top: calc(var(--page-height) - 900px);
+     left: -150px;
+     width: 3000px;
+     height: 900px;
+     background-image: url(/images/background-offroad.png);
+     background-size: 100% 100%;
+     z-index: 0;
+ }
+ .floor {
+    position: absolute;
+    pointer-events: none;
+    top: calc(var(--page-height) - 400px);
+    left: -150px;
+    width: 3100px;
+    height: 400px;
+    background-image: url(/images/floor.png);
+    background-size: 3100px 400px;
+    z-index: 100;
+    background-position: 50%;
+}
+.man-1 {
+    position: absolute;
+    pointer-events: none;
+    top: calc(var(--page-height) - 400px);
+    width: calc(100% + 550px);
+    height: 400px;
+    background-image: url(/images/menMountaineerSVG2.svg);
+    background-size: 100% 400px;
+    z-index: 102;
+}
+ .woman-1 {
+    position: absolute;
+    pointer-events: none;
+    top: calc(var(--page-height) - 500px);
+    left: 30px;
+    width: 300px;
+    height: 490px;
+    background-image: url(/images/womenMountaineerSVG4.svg);
+    background-size: 100% 600px;
+    z-index: 102;
+}
+ .rock-boulder {
+     position: absolute;
+     pointer-events: none;
+     top: 49370px;
+     right: -100PX;
+     width: 500px;
+     height: 400PX;
+     background-image: url(/images/rock-cleaned.svg);
+     background-size: 100% 400px;
+     z-index: 99;
+ }
+ .rock-boulder-2 {
+     position: absolute;
+     pointer-events: none;
+     top: 49200px;
+     left: 0;
+     width: 500px;
+     height: 450px;
+     transform: scaleX(-1);
+     background-image: url(/images/rock-cleaned.svg);
+     background-size: 100% 100%;
+     z-index: 98;
+ }
+ .torre-latino {
+     position: absolute;
+     pointer-events: none;
+     top: 47640px;
+     left: 0;
+     transform: scaleX(-1);
+     width: 855px;
+     height: 2360px; /* ?m real life*/
+     background-image: url(/images/torre_latino.svg);
+     background-size: 100% 100%;
+     z-index: 97;
+ }
+ /* TITLE -> MONTAÑAS DE MÉXICO LINDO */
+ .title {
+    top: calc(50000px - 100vh);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+}
+ .title > h1 {
+     text-align: center;
+     font-family: 'Oswald', Helvetica, sans-serif;
+     font-size: calc(3rem + 2vw);
+     transform: skewY(0deg);
+     letter-spacing: 4px;
+     word-spacing: -8px;
+     color: tomato;
+     text-shadow:   -1px -1px 0 firebrick, 
+                    -2px -2px 0 firebrick,
+                    -3px -3px 0 firebrick, 
+                    -4px -4px 0 firebrick, 
+                    -5px -5px 0 firebrick, 
+                    -6px -6px 0 firebrick, 
+                    -7px -7px 0 firebrick, 
+                    -8px -8px 0 firebrick, 
+                    1px 6px 10px dimgrey;
+ }
+.title > h1 > .mex {
+     color: #006341;
+     text-shadow:   -1px -1px 0 green, 
+                    -2px -2px 0 green, 
+                    -3px -3px 0 green, 
+                    -4px -4px 0 green, 
+                    -5px -5px 0 green, 
+                    -6px -6px 0 green, 
+                    -7px -7px 0 green, 
+                    -8px -8px 0 green, 
+                    1px 6px 10px dimgrey;
+}
+.title > h1 > .ico {
+     color: #FFFFFF;
+     text-shadow:   -1px -1px 0 #AAAAAA, 
+                    -2px -2px 0 #AAAAAA, 
+                    -3px -3px 0 #AAAAAA, 
+                    -4px -4px 0 #AAAAAA, 
+                    -5px -5px 0 #AAAAAA, 
+                    -6px -6px 0 #AAAAAA, 
+                    -7px -7px 0 #AAAAAA, 
+                    -8px -8px 0 #AAAAAA, 
+                    1px 6px 10px dimgrey;
+}
+.title > h1 > .lindo {
+     color: #C8102E;
+     text-shadow:   -1px -1px 0 #AE5752, 
+                    -2px -2px 0 #AE5752, 
+                    -3px -3px 0 #AE5752, 
+                    -4px -4px 0 #AE5752, 
+                    -5px -5px 0 #AE5752, 
+                    -6px -6px 0 #AE5752, 
+                    -7px -7px 0 #AE5752, 
+                    -8px -8px 0 #AE5752, 
+                    1px 6px 10px dimgrey;
+}
+/* TEXTO -> DESLÍZATE HACIA ARRIBA */
+.title > .scroll-up-text {
+    font-size: calc(1rem + 2vw);
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    transform: skewY(-7deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: white;
+    text-shadow: -1px -1px 0 #f9f9f9, -2px -2px 0 #50a8c3, -3px -3px 0 #8ec242, -4px -4px 0 firebrick, -5px -5px 0 firebrick, -6px -6px 0 firebrick, -7px -7px 0 firebrick, -8px -8px 0 firebrick, 1px 6px 10px dimgrey;
+}
+ /////////// /////////// /////////// /////////// ///////////
+ /////////// ///////////  MOUNTAINS  /////////// ///////////
+ /////////// /////////// /////////// /////////// ///////////
+ .mount-everest {
+
+ }
+
+
+ /////////// /////////// /////////// /////////// ///////////
+ /////////// /////////// MEDIA QUERIES /////////// /////////
+ /////////// /////////// /////////// /////////// ///////////
+ // For screens laptops, monitors
+ @media (max-height: 860px) {
+    .hide {
+        display: none;
+    }
+    
+ } 
+
+ // For iphone 14
+ @media-screen and (max-width: 600px) {
+
+ }
+
+
+
+ /////////// /////////// /////////// /////////// ///////////
+ /////////// TALVEZ AGREGUE LO DE ABAJO /////////// ////////
+ /////////// /////////// /////////// /////////// ///////////
+ /* .fer{
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: calc(20%);
+     width: 300px;
+     height: 490px;
+     background-image: url(/images/fer.svg);
+     background-size: 100% 100%;
+     z-index: 102;
+ }
+ .gera{
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: calc(20%);
+     width: 300px;
+     height: 490px;
+     background-image: url(/images/gera.svg);
+     background-size: 100% 100%;
+     z-index: 102;
+ }
+ .manu{
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: calc(20%);
+     width: 300px;
+     height: 490px;
+     background-image: url(/images/manu.svg);
+     background-size: 100% 100%;
+     z-index: 102;
+ }
+ .yatz {
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: -105px;
+     width: 300px;
+     height: 150px;
+     background-image: url(/images/yatz.svg);
+     background-size: 100% 150px;
+     z-index: 102;
+ }
+ .arturo {
+     position: absolute;
+     pointer-events: none;
+     top: 49488px;
+     right: 0;
+     width: 300px;
+     height: 180px;
+     background-image: url(/images/arturo.svg);
+     background-size: 100% 180px;
+     z-index: 102;
+ }
+ .nacho {
+     position: absolute;
+     pointer-events: none;
+     top: 49108px;
+     left: -20px;
+     transform: scaleX(-1);
+     width: 300px;
+     height: 300px;
+     background-image: url(/images/nacho.svg);
+     background-size: 100% 300px;
+     z-index: 102;
+ } */

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>MOUNTAINS</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- CONTAINER FOR GRAPHICS -->
+    <div class="main-container">
+      
+      <!-- //////////////////////////////////////////////////////////////// -->
+      <!-- METRONOMO FOR HEIGHT -->
+      <div class="metronomo-grid">
+        <div class="un"></div>
+        <div class="de"></div>
+        <div class="ce"></div>
+        <div class="mi"></div>
+        <div class="dm"></div>
+        <div class="me"></div>
+        <div class="metronomo" style="transition: 0.1s transform ease;"></div>
+      </div>
+
+      <!-- //////////////////////////////////////////////////////////////// -->
+      <!-- GRAPHICS OF CLOUDS -->
+      <div class="clouds"></div>
+
+      <!-- //////////////////////////////////////////////////////////////// -->
+      <!-- DIVERSE GRAPHICS CONTAINER -->
+      <div class="container-inner">
+        <!-- BACKGROUND OFFROAD SVG-->
+        <div class="background-offroad"></div>
+        <!-- FLOOR SVG -->
+        <div class="floor"></div>
+        <!-- MAN SVG -->
+        <div class="man-1"></div>
+        <!-- WOMAN SVG -->
+        <div class="woman-1"></div>
+        <!-- ROCK BOULDER's SVG-->
+        <div class="rock-boulder"></div>
+        <div class="rock-boulder-2"></div>
+        <!-- TITLE -->
+        <div class='title'>
+          <h1 id="title">
+            <span id="t1">MONTAÑAS DE </span><br><span class="mex">MÉX</span><span class="ico">ICO </span><span id="t2" class="lindo">LINDO </span><br><span id="t3">Y DEL </span><br><span>MUNDO</span>
+          </h1>
+          <!-- SCROLL UP TEXT -->
+          <div class="scroll-up-text">Deslizate hacia arriba</div>  
+        </div>
+        
+        <!-- MOUNTAINS SVG CONTAINER-->
+        <div class="mountains">
+          <!-- MOUNT EVEREST SVG-->
+          <div class="mount-everest"></div>
+          <!-- K2 SVG-->
+          <div class="k2"></div>
+        </div>
+        <!-- END SCREEN -->
+        <div class="end-screen">
+        </div>
+      </div>
+    </div> <!-- END CONTAINER FOR GRAPHICS -->
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+
+</html>
+
+
+<!--
+     var scrollContainer = document.querySelector('.scroll-container');
+     scrollContainer.addEventListener('scroll', function () {
+          console.log(scrollContainer.scrollLeft)
+          var scrollPercentage = scrollContainer.scrollLeft / (scrollContainer.scrollWidth - scrollContainer.clientWidth);
+          var maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+          // Calculate the distance to scroll horizontally based on the scroll position
+          var scrollDistance = Math.round(maxScroll * scrollPercentage);
+
+          // Scroll horizontally to the calculated distance
+          scrollContainer.scrollLeft = scrollDistance;
+     });
+-->
+
+<!-- 
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>MOUNTAINS</title>
+  </head>
+  <body>
+     MAIN SCROLL WRAPER
+    <div class="scroll-wrapper">
+      <p>where am i</p>
+       //////////////////////////////////////////////////////////////////////
+       MAIN CONTAINER
+      <div class="main-container">
+        
+      TRIGGERS & AREAS POSITIONED ABSOLUTE 
+        <div></div>
+        <div></div>
+        <div></div>
+
+ CONTAINER GRAPHICS
+        <div class="container-graphics">
+
+     CLOUDS
+          <div></div>
+
+          CONTAINER INNER
+          <div></div>
+
+        </div>
+
+      </div> END MAIN CONTAINER
+    </div> END MAIN SCROLL WRAPER
+
+ //////////////////////////////////////////////////////////////////////
+  JAVASCRIPT
+    <script>
+    
+      /* SCROLL TO THE BOTTOM OF THE PAGE ON LOAD */
+       window.onload = function () {
+          console.log(document.body.scrollHeight)
+          window.scrollTo(0, document.body.scrollHeight);
+       };
+       
+       /*
+       window.onscroll = function () {
+         var meter = document.querySelector('.meter');
+         var scrollHeight = document.documentElement.scrollHeight;
+         var viewportHeight = window.innerHeight;
+         var scrollPosition = scrollHeight - (window.pageYOffset || document.documentElement.scrollTop);
+         var scaleFactor = scrollPosition / (scrollHeight - viewportHeight);
+         var newHeight = viewportHeight * scaleFactor;
+     
+         meter.style.height = newHeight + 'px';
+       };
+       */
+       
+     </script>
+
+  </body>
+
+</html>
+-->
+
+<!--
+     var scrollContainer = document.querySelector('.scroll-container');
+     scrollContainer.addEventListener('scroll', function () {
+          console.log(scrollContainer.scrollLeft)
+          var scrollPercentage = scrollContainer.scrollLeft / (scrollContainer.scrollWidth - scrollContainer.clientWidth);
+          var maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+          // Calculate the distance to scroll horizontally based on the scroll position
+          var scrollDistance = Math.round(maxScroll * scrollPercentage);
+
+          // Scroll horizontally to the calculated distance
+          scrollContainer.scrollLeft = scrollDistance;
+     });
+-->
+
+<!--
+/* ROOT ELEMENT & GLOBAL VARIABLES */
+:root {
+     --page-height: 100000px;
+     --full-height: calc(100000px + 100vh);
+     font-size: 10px;
+}
+body {
+     margin: 0;
+     padding: 0;
+     width: 100vw;
+     background-color: #AFE7FE;
+}
+*, *:before, *:after {
+     box-sizing: inherit;
+}
+.scroll-wrapper {
+     width: 100%;
+     height: var(--page-height);
+     overflow-x: hidden;
+     overflow-y: scroll;
+     scroll-behavior: smooth;
+     overscroll-behavior: none;
+}
+.main-container {
+     width: 100vw;
+     overflow-x: hidden;
+}
+-->
