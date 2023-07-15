@@ -1,11 +1,14 @@
 /* ///////////////////////////////////////////////// */
 /* ///////////// GLOBAL VARIABLES  ///////////////// */
 /* ///////////////////////////////////////////////// */
-let flag = false
+let flag = false /* FOR TITLE HEIGHT RESPONSIVENESS */
+const totalHeight = 50000  /* FULL HEIGHT */
+const mapHeight = 10000 /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
 /* ///////////////////////////////////////////////// */
+
 // removes <br> tags from title when height < 920px
 function removeBr() {
   let title = document.querySelector('#title')
@@ -35,31 +38,49 @@ function addBr() {
 /* ///////////////////////////////////////////////// */
 /* ////////////GET NECESSARY ELEMENTS////////////// */
 /* ///////////////////////////////////////////////// */
+
 // Retrieve the metronomo element
-const metronomo = document.querySelector('.metronomo');
+const metronomo = document.querySelector('.metronomo-grid');
+const metronomoText = metronomo.querySelector('.metronomo');
 
-const mapHeight = 10000;
 
-// Add a scroll event listener to update the metronomo position
+/* ///////////////////////////////////////////////// */
+/* //////////////// EVENT LISTENERS //////////////// */
+/* ///////////////////////////////////////////////// */
+
+// UPDATE THE METRONOMO ON SCROLL EVENT
 window.addEventListener('scroll', () => {
      const scrollPosition = window.pageYOffset;
      const windowHeight = window.innerHeight;
      const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
      const normalizedHeight = Math.abs(((scrollPosition / pageHeight) * 10000) - mapHeight);
-
-     if (scrollPosition <= 48800) { metronomo.style.visibility = 'visible'; } 
-     else { metronomo.style.visibility = 'hidden'}
+     
+     if (scrollPosition <= totalHeight - (window.innerHeight + 100)) { 
+      metronomo.style.visibility = 'visible'
+      metronomo.classList.add('active')
+    } 
+     else { 
+      metronomo.style.visibility = 'hidden'
+      metronomo.classList.remove('active')
+    }
      metronomo.style.top = `${scrollPosition}px`;
-     metronomo.textContent = `${normalizedHeight}px`;
-   });
+     
+     let meters = (Math.round(`${normalizedHeight}`) + 2200).toString().padStart(5, '0');
+     if (isNaN(meters)) {
+      meters = 0
+      meters.toString().padStart(5, '0');
+     }
+     metronomoText.textContent = `${meters}m`;
+});
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
 window.onload = function () {
-  if (window.innerHeight <= 920) {
+  console.log(window.innerHeight)
+  if (window.innerHeight <= 620) {
     removeBr()
     flag = true
   }
-  if (window.innerHeight > 920 && flag === true) {
+  if (window.innerHeight > 620 && flag === true) {
     addBr()
   } 
   
@@ -68,14 +89,15 @@ window.onload = function () {
   }, 0)
 }
 
+/* TITLE RESPONSIVENESS */
 window.onresize = function () {
   console.log(window.innerHeight)
   
-  if (window.innerHeight <= 920) {
+  if (window.innerHeight <= 620) {
     removeBr()
     flag = true
   }
-  if (window.innerHeight > 920 && flag === true) {
+  if (window.innerHeight > 620 && flag === true) {
     addBr()
     flag = false
   } 
