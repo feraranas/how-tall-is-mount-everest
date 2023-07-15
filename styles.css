@@ -1,0 +1,289 @@
+/* ROOT ELEMENT & GLOBAL VARIABLES */
+:root {
+     --page-height: 50000px;
+     --full-height: calc(50000px + 100vh);
+     font-size: 10px;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     width: 100vw;
+     background-color: #AFE7FE;
+}
+
+*, *:before, *:after {
+     box-sizing: border-box;
+}
+
+/* MAIN SCROLL WRAPPER */
+.scroll-wrapper {
+     height: var(--full-height);
+     width: 100vw;
+     overflow-x: hidden;
+     overflow-y: scroll;
+     scroll-behavior: smooth;
+     
+}
+/* METRONOMO */
+.metronomo {
+     position: absolute;
+     top: 0px;
+     background-color: white;
+     width: 500px;
+     height: 200px;
+     visibility: hidden;
+} 
+/* THIS HOLDS THE GRAPHICS -> IT IS ABSOLUTED */
+.container-graphics {
+     position: absolute;
+     top: 100vh;
+     left: 0;
+     width: 100vw;
+     height: var(--page-height);
+     overflow-x: hidden;
+}
+/* CONTAINER GRAPHICS -> FIRST CHILD */
+.clouds {
+}
+/* CONTAINER GRAPHICS -> SECOND CHILD */
+.container-inner {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+}
+.background-offroad {
+     position: absolute;
+     pointer-events: none;
+     top: 49100px;
+     left: -150px;
+     width: 3000px;
+     height: 900px;
+     background-image: url(/images/background-offroad.png);
+     background-size: 100% 100%;
+     z-index: 0;
+ }
+.floor {
+     position: absolute;
+     pointer-events: none;
+     top: 49630px;
+     left: -150px;
+     width: 2500px;
+     height: 370px;
+     background-image: url(/images/floor.png);
+     background-size: 100% 100%;
+     z-index: 100;
+     background-position: 50%;
+ }
+.man-1 {
+     position: absolute;
+     pointer-events: none;
+     top: 49600px;
+     width: calc(100% + 300px);
+     height: 400px;
+     background-image: url(/images/menMountaineerSVG2.svg);
+     background-size: 100% 400px;
+     z-index: 100;
+     z-index: 102;
+ }
+ .woman-1 {
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: calc(20%);
+     width: 300px;
+     height: 490px;
+     background-image: url(/images/womenMountaineerSVG4.svg);
+     background-size: 100% 600px;
+     z-index: 102;
+ }
+ .rock-boulder {
+     position: absolute;
+     pointer-events: none;
+     top: 49370px;
+     right: -100PX;
+     width: 500px;
+     height: 400PX;
+     background-image: url(/images/rock-cleaned.svg);
+     background-size: 100% 400px;
+     z-index: 99;
+ }
+ .rock-boulder-2 {
+     position: absolute;
+     pointer-events: none;
+     top: 49200px;
+     left: 0;
+     width: 500px;
+     height: 450px;
+     transform: scaleX(-1);
+     background-image: url(/images/rock-cleaned.svg);
+     background-size: 100% 100%;
+     z-index: 98;
+ }
+ .torre-latino {
+     position: absolute;
+     pointer-events: none;
+     top: 47640px;
+     left: 0;
+     transform: scaleX(-1);
+     width: 855px;
+     height: 2360px; /* ?m real life*/
+     background-image: url(/images/torre_latino.svg);
+     background-size: 100% 100%;
+     z-index: 97;
+ }
+ /* TITLE -> MONTAÑAS DE MÉXICO LINDO */
+ .title {
+     top: calc(50000px - 98vh);
+     position: absolute;
+     left: calc(50% - 25px);
+     transform: translateX(-50%);
+     display: block;
+     font-size: 50px;
+     z-index: 101;
+ }
+ .title > h1 {
+     text-align: center;
+     font-family: 'Oswald', Helvetica, sans-serif;
+     font-size: calc(6rem + 2vw);
+     transform: skewY(0deg);
+     letter-spacing: 4px;
+     word-spacing: -8px;
+     color: tomato;
+     text-shadow:   -1px -1px 0 firebrick, 
+                    -2px -2px 0 firebrick,
+                    -3px -3px 0 firebrick, 
+                    -4px -4px 0 firebrick, 
+                    -5px -5px 0 firebrick, 
+                    -6px -6px 0 firebrick, 
+                    -7px -7px 0 firebrick, 
+                    -8px -8px 0 firebrick, 
+                    1px 6px 10px dimgrey;
+ }
+.title > h1 > span:nth-child(2) {
+     color: #006341;
+     text-shadow:   -1px -1px 0 green, 
+                    -2px -2px 0 green, 
+                    -3px -3px 0 green, 
+                    -4px -4px 0 green, 
+                    -5px -5px 0 green, 
+                    -6px -6px 0 green, 
+                    -7px -7px 0 green, 
+                    -8px -8px 0 green, 
+                    1px 6px 10px dimgrey;
+}
+.title > h1 > span:nth-child(3) {
+     color: #FFFFFF;
+     text-shadow:   -1px -1px 0 #AAAAAA, 
+                    -2px -2px 0 #AAAAAA, 
+                    -3px -3px 0 #AAAAAA, 
+                    -4px -4px 0 #AAAAAA, 
+                    -5px -5px 0 #AAAAAA, 
+                    -6px -6px 0 #AAAAAA, 
+                    -7px -7px 0 #AAAAAA, 
+                    -8px -8px 0 #AAAAAA, 
+                    1px 6px 10px dimgrey;
+}
+.title > h1 > span:nth-child(4) {
+     color: #C8102E;
+     text-shadow:   -1px -1px 0 #AE5752, 
+                    -2px -2px 0 #AE5752, 
+                    -3px -3px 0 #AE5752, 
+                    -4px -4px 0 #AE5752, 
+                    -5px -5px 0 #AE5752, 
+                    -6px -6px 0 #AE5752, 
+                    -7px -7px 0 #AE5752, 
+                    -8px -8px 0 #AE5752, 
+                    1px 6px 10px dimgrey;
+}
+/* TEXTO -> DESLÍZATE HACIA ARRIBA */
+.title > .scroll-up-text {
+     font-size: calc(2rem + 2vw);
+     text-align: center;
+     font-family: 'Oswald', Helvetica, sans-serif;
+     transform: skewY(-7deg);
+     letter-spacing: 4px;
+     word-spacing: -8px;
+     color: white;
+     text-shadow: -1px -1px 0 #f9f9f9, -2px -2px 0 #50a8c3, -3px -3px 0 #8ec242, -4px -4px 0 firebrick, -5px -5px 0 firebrick, -6px -6px 0 firebrick, -7px -7px 0 firebrick, -8px -8px 0 firebrick, 1px 6px 10px dimgrey;
+ }
+
+
+
+
+
+
+
+
+ /////////// /////////// /////////// /////////// ///////////
+ /////////// TALVEZ AGREGUE LO DE ABAJO /////////// ////////
+ /////////// /////////// /////////// /////////// ///////////
+ /* .fer{
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: calc(20%);
+     width: 300px;
+     height: 490px;
+     background-image: url(/images/fer.svg);
+     background-size: 100% 100%;
+     z-index: 102;
+ }
+ .gera{
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: calc(20%);
+     width: 300px;
+     height: 490px;
+     background-image: url(/images/gera.svg);
+     background-size: 100% 100%;
+     z-index: 102;
+ }
+ .manu{
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: calc(20%);
+     width: 300px;
+     height: 490px;
+     background-image: url(/images/manu.svg);
+     background-size: 100% 100%;
+     z-index: 102;
+ }
+ .yatz {
+     position: absolute;
+     pointer-events: none;
+     top: 49500px;
+     left: -105px;
+     width: 300px;
+     height: 150px;
+     background-image: url(/images/yatz.svg);
+     background-size: 100% 150px;
+     z-index: 102;
+ }
+ .arturo {
+     position: absolute;
+     pointer-events: none;
+     top: 49488px;
+     right: 0;
+     width: 300px;
+     height: 180px;
+     background-image: url(/images/arturo.svg);
+     background-size: 100% 180px;
+     z-index: 102;
+ }
+ .nacho {
+     position: absolute;
+     pointer-events: none;
+     top: 49108px;
+     left: -20px;
+     transform: scaleX(-1);
+     width: 300px;
+     height: 300px;
+     background-image: url(/images/nacho.svg);
+     background-size: 100% 300px;
+     z-index: 102;
+ } */
