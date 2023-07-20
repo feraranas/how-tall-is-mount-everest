@@ -32,7 +32,7 @@ body {
 .metronomo-grid {
     /* display: grid;
     grid-template-columns: repeat(6, 1fr); */
-    
+
     position: fixed;
     top: 0;
     transform: translateX(-50%) translateY(0px);
@@ -111,7 +111,7 @@ body {
     width: 100vw;
     height: 1807px;
     background-image: url(./images/mountains/k2.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
  }
  .kangchenjunga {
     position: absolute;
@@ -119,7 +119,7 @@ body {
     width: 100vw;
     height: 1807px;
     background-image: url(./images/mountains/kangchenjunga.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
  }
  .lhotse {
     position: absolute;
@@ -127,7 +127,7 @@ body {
     width: 100vw;
     height: 1807px;
     background-image: url(./images/mountains/lhotse.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
  }
  .makalu {
     position: absolute;
@@ -135,7 +135,7 @@ body {
     width: 100vw;
     height: 1807px;
     background-image: url(./images/mountains/makalu.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
  }
 /* CONTAINER GRAPHICS -> SECOND CHILD */
 .container-inner {
@@ -244,52 +244,52 @@ body {
      letter-spacing: 4px;
      word-spacing: -8px;
      color: tomato;
-     text-shadow:   -1px -1px 0 firebrick, 
+     text-shadow:   -1px -1px 0 firebrick,
                     -2px -2px 0 firebrick,
-                    -3px -3px 0 firebrick, 
-                    -4px -4px 0 firebrick, 
-                    -5px -5px 0 firebrick, 
-                    -6px -6px 0 firebrick, 
-                    -7px -7px 0 firebrick, 
-                    -8px -8px 0 firebrick, 
+                    -3px -3px 0 firebrick,
+                    -4px -4px 0 firebrick,
+                    -5px -5px 0 firebrick,
+                    -6px -6px 0 firebrick,
+                    -7px -7px 0 firebrick,
+                    -8px -8px 0 firebrick,
                     1px 6px 10px dimgrey;
     animation: rotate-title 3s ease-in-out infinite alternate;
 
  }
 .title > h1 > .mex {
      color: #006341;
-     text-shadow:   -1px -1px 0 green, 
-                    -2px -2px 0 green, 
-                    -3px -3px 0 green, 
-                    -4px -4px 0 green, 
-                    -5px -5px 0 green, 
-                    -6px -6px 0 green, 
-                    -7px -7px 0 green, 
-                    -8px -8px 0 green, 
+     text-shadow:   -1px -1px 0 green,
+                    -2px -2px 0 green,
+                    -3px -3px 0 green,
+                    -4px -4px 0 green,
+                    -5px -5px 0 green,
+                    -6px -6px 0 green,
+                    -7px -7px 0 green,
+                    -8px -8px 0 green,
                     1px 6px 10px dimgrey;
 }
 .title > h1 > .ico {
      color: #FFFFFF;
-     text-shadow:   -1px -1px 0 #AAAAAA, 
-                    -2px -2px 0 #AAAAAA, 
-                    -3px -3px 0 #AAAAAA, 
-                    -4px -4px 0 #AAAAAA, 
-                    -5px -5px 0 #AAAAAA, 
-                    -6px -6px 0 #AAAAAA, 
-                    -7px -7px 0 #AAAAAA, 
-                    -8px -8px 0 #AAAAAA, 
+     text-shadow:   -1px -1px 0 #AAAAAA,
+                    -2px -2px 0 #AAAAAA,
+                    -3px -3px 0 #AAAAAA,
+                    -4px -4px 0 #AAAAAA,
+                    -5px -5px 0 #AAAAAA,
+                    -6px -6px 0 #AAAAAA,
+                    -7px -7px 0 #AAAAAA,
+                    -8px -8px 0 #AAAAAA,
                     1px 6px 10px dimgrey;
 }
 .title > h1 > .lindo {
      color: #C8102E;
-     text-shadow:   -1px -1px 0 #AE5752, 
-                    -2px -2px 0 #AE5752, 
-                    -3px -3px 0 #AE5752, 
-                    -4px -4px 0 #AE5752, 
-                    -5px -5px 0 #AE5752, 
-                    -6px -6px 0 #AE5752, 
-                    -7px -7px 0 #AE5752, 
-                    -8px -8px 0 #AE5752, 
+     text-shadow:   -1px -1px 0 #AE5752,
+                    -2px -2px 0 #AE5752,
+                    -3px -3px 0 #AE5752,
+                    -4px -4px 0 #AE5752,
+                    -5px -5px 0 #AE5752,
+                    -6px -6px 0 #AE5752,
+                    -7px -7px 0 #AE5752,
+                    -8px -8px 0 #AE5752,
                     1px 6px 10px dimgrey;
 }
 /* TEXTO -> DESLÍZATE HACIA ARRIBA */
@@ -338,50 +338,50 @@ body {
     letter-spacing: 4px;
     word-spacing: -8px;
     color: tomato;
-    text-shadow:   -1px -1px 0 firebrick, 
+    text-shadow:   -1px -1px 0 firebrick,
                    -2px -2px 0 firebrick,
-                   -3px -3px 0 firebrick, 
-                   -4px -4px 0 firebrick, 
-                   -5px -5px 0 firebrick, 
-                   -6px -6px 0 firebrick, 
-                   -7px -7px 0 firebrick, 
-                   -8px -8px 0 firebrick, 
+                   -3px -3px 0 firebrick,
+                   -4px -4px 0 firebrick,
+                   -5px -5px 0 firebrick,
+                   -6px -6px 0 firebrick,
+                   -7px -7px 0 firebrick,
+                   -8px -8px 0 firebrick,
                    1px 6px 10px dimgrey;
  }
 .end-title > h1 > .mex {
      color: #006341;
-     text-shadow:   -1px -1px 0 green, 
-                    -2px -2px 0 green, 
-                    -3px -3px 0 green, 
-                    -4px -4px 0 green, 
-                    -5px -5px 0 green, 
-                    -6px -6px 0 green, 
-                    -7px -7px 0 green, 
-                    -8px -8px 0 green, 
+     text-shadow:   -1px -1px 0 green,
+                    -2px -2px 0 green,
+                    -3px -3px 0 green,
+                    -4px -4px 0 green,
+                    -5px -5px 0 green,
+                    -6px -6px 0 green,
+                    -7px -7px 0 green,
+                    -8px -8px 0 green,
                     1px 6px 10px dimgrey;
 }
 .end-title > h1 > .ico {
      color: #FFFFFF;
-     text-shadow:   -1px -1px 0 #AAAAAA, 
-                    -2px -2px 0 #AAAAAA, 
-                    -3px -3px 0 #AAAAAA, 
-                    -4px -4px 0 #AAAAAA, 
-                    -5px -5px 0 #AAAAAA, 
-                    -6px -6px 0 #AAAAAA, 
-                    -7px -7px 0 #AAAAAA, 
-                    -8px -8px 0 #AAAAAA, 
+     text-shadow:   -1px -1px 0 #AAAAAA,
+                    -2px -2px 0 #AAAAAA,
+                    -3px -3px 0 #AAAAAA,
+                    -4px -4px 0 #AAAAAA,
+                    -5px -5px 0 #AAAAAA,
+                    -6px -6px 0 #AAAAAA,
+                    -7px -7px 0 #AAAAAA,
+                    -8px -8px 0 #AAAAAA,
                     1px 6px 10px dimgrey;
 }
 .end-title > h1 > .lindo {
      color: #C8102E;
-     text-shadow:   -1px -1px 0 #AE5752, 
-                    -2px -2px 0 #AE5752, 
-                    -3px -3px 0 #AE5752, 
-                    -4px -4px 0 #AE5752, 
-                    -5px -5px 0 #AE5752, 
-                    -6px -6px 0 #AE5752, 
-                    -7px -7px 0 #AE5752, 
-                    -8px -8px 0 #AE5752, 
+     text-shadow:   -1px -1px 0 #AE5752,
+                    -2px -2px 0 #AE5752,
+                    -3px -3px 0 #AE5752,
+                    -4px -4px 0 #AE5752,
+                    -5px -5px 0 #AE5752,
+                    -6px -6px 0 #AE5752,
+                    -7px -7px 0 #AE5752,
+                    -8px -8px 0 #AE5752,
                     1px 6px 10px dimgrey;
 }
 /* TEXTO -> DESLÍZATE HACIA ARRIBA */
@@ -428,8 +428,8 @@ body {
     .hide {
         display: none;
     }
-    
- } 
+
+ }
 
   /* For iphone 14 */
  @media-screen and (max-width: 600px) {
