@@ -3,7 +3,7 @@
 /* ///////////////////////////////////////////////// */
 let flag = false /* FOR TITLE HEIGHT RESPONSIVENESS */
 const totalHeight = 50000  /* FULL HEIGHT */
-const mapHeight = 10000 /* FOR METRONOMO NORMALIZATION */
+const mapHeight = 8000 /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
@@ -39,9 +39,12 @@ function addBr() {
 /* ////////////GET NECESSARY ELEMENTS////////////// */
 /* ///////////////////////////////////////////////// */
 
-// Retrieve the metronomo element
+// Get the metronomo element
 const metronomo = document.querySelector('.metronomo-grid');
 const metronomoText = metronomo.querySelector('.metronomo');
+
+// Get end screen
+const endScreen = document.querySelector('.end-title')
 
 
 /* ///////////////////////////////////////////////// */
@@ -49,29 +52,58 @@ const metronomoText = metronomo.querySelector('.metronomo');
 /* ///////////////////////////////////////////////// */
 
 // UPDATE THE METRONOMO ON SCROLL EVENT
-window.addEventListener('scroll', () => {
-     const scrollPosition = window.pageYOffset;
-     const windowHeight = window.innerHeight;
-     const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-     const normalizedHeight = Math.abs(((scrollPosition / pageHeight) * 10000) - mapHeight);
-     
-     if (scrollPosition <= totalHeight - (window.innerHeight + 100)) { 
-      metronomo.style.visibility = 'visible'
-      metronomo.classList.add('active')
-    } 
-     else { 
-      metronomo.style.visibility = 'hidden'
-      metronomo.classList.remove('active')
+// Calculate pageHeight once outside the scroll event
+const windowHeight = window.innerHeight;
+const pageHeight = document.documentElement.scrollHeight - windowHeight;
+
+// Throttle function to reduce scroll event calls
+function throttle(callback, delay) {
+  let isThrottled = false;
+  return function () {
+    if (!isThrottled) {
+      callback.apply(this, arguments);
+      isThrottled = true;
+      setTimeout(() => {
+        isThrottled = false;
+      }, delay);
     }
-     metronomo.style.top = `${scrollPosition}px`;
-     
-     let meters = (Math.round(`${normalizedHeight}`) + 2200).toString().padStart(5, '0');
-     if (isNaN(meters)) {
-      meters = 0
-      meters.toString().padStart(5, '0');
-     }
-     metronomoText.textContent = `${meters}m`;
-});
+  };
+}
+
+// Function to update the metronomo on scroll event
+function updateMetronomo() {
+  const scrollPosition = window.pageYOffset;
+  const normalizedHeight = Math.abs(((scrollPosition / pageHeight) * 8000) - mapHeight); 
+
+  // if (scrollPosition > totalHeight - (windowHeight + 100)) {
+  //   /* DISAPPEAR METRO */
+  //   metronomo.classList.remove('active');
+  // } else if (scrollPosition >= 0 && scrollPosition <= 350) {
+  //   /* DISAPPEAR METRO */
+  //   metronomo.classList.remove('active');
+  //   /* APPEAR END SCREEN */
+  //   endScreen.classList.add('active-end-screen');
+  // } else {
+  //   /* APPEAR METRO */
+  //   if (!metronomo.classList.contains('active')) {
+  //     metronomo.classList.add('active');
+  //   }
+  //   /* DISAPPEAR END SCREEN */
+  //   endScreen.classList.remove('active-end-screen');
+  // }
+
+  // metronomo.style.top = `${scrollPosition}px`;
+
+  let meters = (Math.round(`${normalizedHeight}`) + 1200).toString().padStart(5, '0');
+  if (isNaN(meters)) {
+    meters = '00000';
+  }
+  metronomoText.textContent = `${meters}m`;
+}
+
+// Add the throttled event listener
+window.addEventListener('scroll', throttle(updateMetronomo, 100));
+
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
 window.onload = function () {
