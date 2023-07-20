@@ -1,9 +1,9 @@
 /* ///////////////////////////////////////////////// */
 /* ///////////// GLOBAL VARIABLES  ///////////////// */
 /* ///////////////////////////////////////////////// */
-let flag = false /* FOR TITLE HEIGHT RESPONSIVENESS */
-const totalHeight = 50000  /* FULL HEIGHT */
-const mapHeight = 8000 /* FOR METRONOMO NORMALIZATION */
+let flag = false          /* FOR TITLE HEIGHT RESPONSIVENESS */
+const totalHeight = 50000 /* FULL HEIGHT */
+const mapHeight = 8000    /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
@@ -14,9 +14,7 @@ function removeBr() {
   let title = document.querySelector('#title')
   let titleDiv = document.querySelector('.title')
   let brElements = document.querySelectorAll('#title br')
-  brElements.forEach(function(brElement) {
-    brElement.remove();
-  });
+  brElements.forEach(function(brElement) { brElement.remove(); });
   title.style.fontSize = 'calc(2rem + 2vw)'
   titleDiv.style.width = '80%'
 }
@@ -46,7 +44,6 @@ const metronomoText = metronomo.querySelector('.metronomo');
 // Get end screen
 const endScreen = document.querySelector('.end-title')
 
-
 /* ///////////////////////////////////////////////// */
 /* //////////////// EVENT LISTENERS //////////////// */
 /* ///////////////////////////////////////////////// */
@@ -59,13 +56,11 @@ const pageHeight = document.documentElement.scrollHeight - windowHeight;
 // Throttle function to reduce scroll event calls
 function throttle(callback, delay) {
   let isThrottled = false;
-  return function () {
+  return function() {
     if (!isThrottled) {
       callback.apply(this, arguments);
       isThrottled = true;
-      setTimeout(() => {
-        isThrottled = false;
-      }, delay);
+      setTimeout(() => { isThrottled = false; }, delay);
     }
   };
 }
@@ -73,7 +68,8 @@ function throttle(callback, delay) {
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
-  const normalizedHeight = Math.abs(((scrollPosition / pageHeight) * 8000) - mapHeight); 
+  const normalizedHeight =
+      Math.abs(((scrollPosition / pageHeight) * 8000) - mapHeight);
 
   // if (scrollPosition > totalHeight - (windowHeight + 100)) {
   //   /* DISAPPEAR METRO */
@@ -94,7 +90,8 @@ function updateMetronomo() {
 
   // metronomo.style.top = `${scrollPosition}px`;
 
-  let meters = (Math.round(`${normalizedHeight}`) + 1200).toString().padStart(5, '0');
+  let meters =
+      (Math.round(`${normalizedHeight}`) + 1200).toString().padStart(5, '0');
   if (isNaN(meters)) {
     meters = '00000';
   }
@@ -104,9 +101,9 @@ function updateMetronomo() {
 // Add the throttled event listener
 window.addEventListener('scroll', throttle(updateMetronomo, 100));
 
-
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
-window.onload = function () {
+window.onload =
+    function() {
   console.log(window.innerHeight)
   if (window.innerHeight <= 620) {
     removeBr()
@@ -114,17 +111,15 @@ window.onload = function () {
   }
   if (window.innerHeight > 620 && flag === true) {
     addBr()
-  } 
-  
-  setTimeout(() => {
-    window.scrollTo(0, document.body.scrollHeight);
-  }, 0)
+  }
+
+  setTimeout(() => { window.scrollTo(0, document.body.scrollHeight); }, 0)
 }
 
-/* TITLE RESPONSIVENESS */
-window.onresize = function () {
+    /* TITLE RESPONSIVENESS */
+    window.onresize = function() {
   console.log(window.innerHeight)
-  
+
   if (window.innerHeight <= 620) {
     removeBr()
     flag = true
@@ -132,6 +127,5 @@ window.onresize = function () {
   if (window.innerHeight > 620 && flag === true) {
     addBr()
     flag = false
-  } 
+  }
 }
-
