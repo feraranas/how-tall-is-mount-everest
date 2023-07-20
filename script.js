@@ -40,7 +40,7 @@ function addBr() {
 /* ///////////////////////////////////////////////// */
 
 // Get the metronomo element
-const metronomo = document.querySelector('.metronomo-grid');
+const metronomo = document.querySelector('.metronomo-wrapper');
 const metronomoText = metronomo.querySelector('.metronomo');
 
 // Get end screen
