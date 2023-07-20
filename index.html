@@ -3,10 +3,11 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <title>MOUNTAINS</title>
+    <script src="https://kit.fontawesome.com/8c1f754ca0.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <!-- CONTAINER FOR GRAPHICS -->
+    <!-- MAIN CONTAINER -->
     <div class="main-container">
       
       <!-- //////////////////////////////////////////////////////////////// -->
@@ -18,47 +19,66 @@
         <div class="mi"></div>
         <div class="dm"></div>
         <div class="me"></div>
-        <div class="metronomo" style="transition: 0.1s transform ease;"></div>
+        <div class="metronomo"></div>
       </div>
 
       <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- GRAPHICS OF CLOUDS -->
-      <div class="clouds"></div>
+      <!-- MOUNTAINS -->
+      <!-- MOUNT EVEREST SVG-->
+      <div class="mount-everest"></div>
+      <!-- K2 SVG-->
+      <div class="k2"></div>
+      <!-- KANGCHENJUNGA SVG -->
+      <div class="kangchenjunga"></div>
+      <!-- LHOTSE SVG -->
+      <div class="lhotse"></div>
+      <!-- MAKALU -->
+      <div class="makalu"></div>
 
       <!-- //////////////////////////////////////////////////////////////// -->
       <!-- DIVERSE GRAPHICS CONTAINER -->
       <div class="container-inner">
-        <!-- BACKGROUND OFFROAD SVG-->
+
+        <!-- //////////////////////////////////////////////////////////////// -->
+        <!-- GRAPHICS OF CLOUDS -->
+        <div class="clouds"></div>
+
+        <!-- //////////////////////////////////////////////////////////////// -->
+        <!-- INITIAL SCREEN ELEMENTS -->
+        <!-- 1. BACKGROUND OFFROAD SVG-->
         <div class="background-offroad"></div>
-        <!-- FLOOR SVG -->
+        <!-- 2. FLOOR SVG -->
         <div class="floor"></div>
-        <!-- MAN SVG -->
+        <!-- 3. MAN SVG -->
         <div class="man-1"></div>
-        <!-- WOMAN SVG -->
+        <!-- 4. WOMAN SVG -->
         <div class="woman-1"></div>
-        <!-- ROCK BOULDER's SVG-->
+        <!-- 5. ROCK BOULDER's SVG-->
         <div class="rock-boulder"></div>
         <div class="rock-boulder-2"></div>
-        <!-- TITLE -->
+        <!-- 6. TITLE -->
         <div class='title'>
           <h1 id="title">
             <span id="t1">MONTAÑAS DE </span><br><span class="mex">MÉX</span><span class="ico">ICO </span><span id="t2" class="lindo">LINDO </span><br><span id="t3">Y DEL </span><br><span>MUNDO</span>
           </h1>
           <!-- SCROLL UP TEXT -->
-          <div class="scroll-up-text">Deslizate hacia arriba</div>  
-        </div>
-        
-        <!-- MOUNTAINS SVG CONTAINER-->
-        <div class="mountains">
-          <!-- MOUNT EVEREST SVG-->
-          <div class="mount-everest"></div>
-          <!-- K2 SVG-->
-          <div class="k2"></div>
-        </div>
-        <!-- END SCREEN -->
-        <div class="end-screen">
+          <div class="scroll-up-text">
+            Deslizate hacia arriba
+            <i class="fa-solid fa-turn-up"></i>
+          </div>  
         </div>
       </div>
+
+      <!-- //////////////////////////////////////////////////////////////// -->
+      <!-- END SCREEN ELEMENTS -->
+      <div class="end-title slide-in">
+        <h1 id="end-title">
+          <span id="t1">MONTAÑAS DE </span><br><span class="mex">MÉX</span><span class="ico">ICO </span><span id="t2" class="lindo">LINDO </span><br><span id="t3">Y DEL </span><br><span>MUNDO</span>
+        </h1>
+        <!-- END TEXT -->
+        <div class="end-text">Creado por Fernando Arana</div>  
+      </div>
+
     </div> <!-- END CONTAINER FOR GRAPHICS -->
 
     <!-- JAVASCRIPT -->
