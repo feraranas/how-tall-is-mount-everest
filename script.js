@@ -1,9 +1,9 @@
 /* ///////////////////////////////////////////////// */
 /* ///////////// GLOBAL VARIABLES  ///////////////// */
 /* ///////////////////////////////////////////////// */
-let flag = false /* FOR TITLE HEIGHT RESPONSIVENESS */
-const totalHeight = 50000  /* FULL HEIGHT */
-const mapHeight = 8000 /* FOR METRONOMO NORMALIZATION */
+let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
+const totalHeight = 50000; /* FULL HEIGHT */
+const mapHeight = 8000; /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
@@ -11,25 +11,25 @@ const mapHeight = 8000 /* FOR METRONOMO NORMALIZATION */
 
 // removes <br> tags from title when height < 920px
 function removeBr() {
-  let title = document.querySelector('#title')
-  let titleDiv = document.querySelector('.title')
-  let brElements = document.querySelectorAll('#title br')
-  brElements.forEach(function(brElement) {
+  let title = document.querySelector("#title");
+  let titleDiv = document.querySelector(".title");
+  let brElements = document.querySelectorAll("#title br");
+  brElements.forEach(function (brElement) {
     brElement.remove();
   });
-  title.style.fontSize = 'calc(2rem + 2vw)'
-  titleDiv.style.width = '80%'
+  title.style.fontSize = "calc(2rem + 2vw)";
+  titleDiv.style.width = "80%";
 }
 // adds <br> tags for title when height >= 920px
 function addBr() {
-  let title = document.querySelector('#title')
-  let titleDiv = document.querySelector('.title')
-  let t1Element = document.querySelector('#t1');
-  let t2Element = document.querySelector('#t2');
-  let t3Element = document.querySelector('#t3');
-  let brElement = document.createElement('br');
-  title.style.fontSize = 'calc(6rem + 2vw)';
-  titleDiv.style.width = '35%'
+  let title = document.querySelector("#title");
+  let titleDiv = document.querySelector(".title");
+  let t1Element = document.querySelector("#t1");
+  let t2Element = document.querySelector("#t2");
+  let t3Element = document.querySelector("#t3");
+  let brElement = document.createElement("br");
+  title.style.fontSize = "calc(6rem + 2vw)";
+  titleDiv.style.width = "35%";
   t1Element.appendChild(brElement);
   t2Element.appendChild(brElement);
   t3Element.appendChild(brElement);
@@ -40,12 +40,11 @@ function addBr() {
 /* ///////////////////////////////////////////////// */
 
 // Get the metronomo element
-const metronomo = document.querySelector('.metronomo-wrapper');
-const metronomoText = metronomo.querySelector('.metronomo');
+const metronomo = document.querySelector(".metronomo-wrapper");
+const metronomoText = metronomo.querySelector(".metronomo");
 
 // Get end screen
-const endScreen = document.querySelector('.end-title')
-
+const endScreen = document.querySelector(".end-title");
 
 /* ///////////////////////////////////////////////// */
 /* //////////////// EVENT LISTENERS //////////////// */
@@ -87,9 +86,21 @@ function throttle(callback, delay) {
 //     var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
 //     //increment
 //     increment += randoFiver;
-//     //add in a new raindrop with various randomizations to certain CSS properties
-//     drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-//     backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+//     //add in a new raindrop with various randomizations to certain CSS
+//     properties drops += '<div class="drop" style="left: ' + increment + '%;
+//     bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay:
+//     0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div
+//     class="stem" style="animation-delay: 0.' + randoHundo + 's;
+//     animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat"
+//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
+//     randoHundo + 's;"></div></div>'; backDrops += '<div class="drop"
+//     style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver -
+//     1 + 100) + '%; animation-delay: 0.' + randoHundo + 's;
+//     animation-duration: 0.5' + randoHundo + 's;"><div class="stem"
+//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
+//     randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' +
+//     randoHundo + 's; animation-duration: 0.5' + randoHundo +
+//     's;"></div></div>';
 //   }
 
 //   $('.rain.front-row').append(drops);
@@ -119,63 +130,65 @@ function throttle(callback, delay) {
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
-  const normalizedHeight = Math.abs(((scrollPosition / pageHeight) * 8000) - mapHeight); 
+  const normalizedHeight = Math.abs(
+    (scrollPosition / pageHeight) * 8000 - mapHeight
+  );
 
   if (scrollPosition > totalHeight - (windowHeight + 100)) {
     /* DISAPPEAR METRO */
-    metronomo.classList.remove('active');
+    metronomo.classList.remove("active");
   } else if (scrollPosition >= 0 && scrollPosition <= 350) {
     /* DISAPPEAR METRO */
-    metronomo.classList.remove('active');
+    metronomo.classList.remove("active");
     /* APPEAR END SCREEN */
-    endScreen.classList.add('active-end-screen');
+    endScreen.classList.add("active-end-screen");
   } else {
     /* APPEAR METRO */
-    if (!metronomo.classList.contains('active')) {
-      metronomo.classList.add('active');
+    if (!metronomo.classList.contains("active")) {
+      metronomo.classList.add("active");
     }
     /* DISAPPEAR END SCREEN */
-    endScreen.classList.remove('active-end-screen');
+    endScreen.classList.remove("active-end-screen");
   }
 
-  let meters = (Math.round(`${normalizedHeight}`) + 1200).toString().padStart(5, '0');
+  let meters = (Math.round(`${normalizedHeight}`) + 1200)
+    .toString()
+    .padStart(5, "0");
   if (isNaN(meters)) {
-    meters = '00000';
+    meters = "00000";
   }
   metronomoText.textContent = `${meters}m`;
 }
 
 // Add the throttled event listener
-window.addEventListener('scroll', throttle(updateMetronomo, 100));
-
+window.addEventListener('scroll', throttle(updateMetronomo, 50));
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
 window.onload = function () {
-  console.log(window.innerHeight)
+  console.log(window.innerHeight);
   if (window.innerHeight <= 620) {
-    removeBr()
-    flag = true
+    removeBr();
+    flag = true;
   }
   if (window.innerHeight > 620 && flag === true) {
-    addBr()
-  } 
-  
+    addBr();
+  }
+
   setTimeout(() => {
     window.scrollTo(0, document.body.scrollHeight);
-  }, 0)
-}
+  }, 0);
+};
 
 /* TITLE RESPONSIVENESS */
 window.onresize = function () {
-  console.log(window.innerHeight)
-  
+  console.log(window.innerHeight);
+
   if (window.innerHeight <= 620) {
-    removeBr()
-    flag = true
+    removeBr();
+    flag = true;
   }
   if (window.innerHeight > 620 && flag === true) {
-    addBr()
-    flag = false
-  } 
-}
-
+    addBr();
+    flag = false;
+  }
+};

@@ -141,14 +141,14 @@ body {
     -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
     animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
   }
-  
+
   /* ---------- Moving Fog ---------- */
   /*
     'size: cover' || 'size: 100%'; results remain the same
     'attachment: scroll' can be added or removed; results remain the same
     'attachment: fixed' causing unexpected results in Chrome
     'repeat-x' || 'no-repeat'; results remain the same
-  */ 
+  */
   #foglayer_01 .image01, #foglayer_01 .image02 {
     background: url(/images/clouds/cloudsv2.png) center center/cover no-repeat transparent;
   }
@@ -156,7 +156,7 @@ body {
   #foglayer_03 .image01, #foglayer_03 .image02{
     background: url(/images/clouds/cloudsv2.png) center center/cover no-repeat transparent;
   }
-  
+
   /* ---------- Keyframe Layer 1 ---------- */
   @-webkit-keyframes foglayer_01_opacity {
     0% { opacity: .1; }
@@ -265,7 +265,7 @@ body {
     0% { left: 0; }
     100% { left: -100%; }
   }
-  
+
   @media only screen
     and (min-width: 280px)
     and (max-width: 767px) {
@@ -287,18 +287,18 @@ body {
     height: 100%;
     z-index: 2;
   }
-  
+
   .rain.back-row {
     display: none;
     z-index: 1;
     bottom: 60px;
     opacity: 0.5;
   }
-  
+
   .body-2.back-row-toggle .rain.back-row {
     display: block;
   }
-  
+
   .drop {
     position: absolute;
     bottom: 100%;
@@ -307,7 +307,7 @@ body {
     pointer-events: none;
     animation: drop 0.5s linear infinite;
   }
-  
+
   @keyframes drop {
     0% {
       transform: translateY(0vh);
@@ -319,7 +319,7 @@ body {
       transform: translateY(90vh);
     }
   }
-  
+
   .stem {
     width: 1px;
     height: 60%;
@@ -327,7 +327,7 @@ body {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
     animation: stem 0.5s linear infinite;
   }
-  
+
   @keyframes stem {
     0% {
       opacity: 1;
@@ -342,7 +342,7 @@ body {
       opacity: 0;
     }
   }
-  
+
   .splat {
     width: 15px;
     height: 10px;
@@ -353,11 +353,11 @@ body {
     animation: splat 0.5s linear infinite;
     display: none;
   }
-  
+
   .body-2.splat-toggle .splat {
     display: block;
   }
-  
+
   @keyframes splat {
     0% {
       opacity: 1;
@@ -376,14 +376,14 @@ body {
       transform: scale(1.5);
     }
   }
-  
+
   .toggles {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
   }
-  
+
   .toggle {
     position: absolute;
     left: 20px;
@@ -401,37 +401,37 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  
+
   .toggle:hover {
     background-color: rgba(255, 255, 255, 0.25);
   }
-  
+
   .toggle:active {
     background-color: rgba(255, 255, 255, 0.3);
   }
-  
+
   .toggle.active {
     background-color: rgba(255, 255, 255, 0.4);
   }
-  
+
   .splat-toggle {
     top: 20px;
   }
-  
+
   .back-row-toggle {
     top: 90px;
     line-height: 12px;
     padding-top: 14px;
   }
-  
+
   .single-toggle {
     top: 160px;
   }
-  
+
   .body-2.single-toggle .drop {
     display: none;
   }
-  
+
   .body-2.single-toggle .drop:nth-child(10) {
     display: block;
   }
@@ -465,7 +465,7 @@ body {
  }
  .k2 {
     background-image: url(./images/mountains/2-K2.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -479,7 +479,7 @@ body {
  }
  .kangchenjunga {
     background-image: url(./images/mountains/3-KANCHENJUNGA.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -493,7 +493,7 @@ body {
  }
  .lhotse {
     background-image: url(./images/mountains/4-LHOTSE.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -507,7 +507,7 @@ body {
   }
  .makalu {
     background-image: url(./images/mountains/5-MAKALU.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -520,7 +520,7 @@ body {
   }
  .acaconcagua {
     background-image: url(./images/mountains/6-ACACONCAGUA.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -534,7 +534,7 @@ body {
   }
  .ojos-del-salado {
     background-image: url(./images/mountains/7-OJOS-DEL-SALADO.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -548,11 +548,11 @@ body {
   }
  .monte-pissis {
     background-image: url(./images/mountains/8-MONTE-PISSIS.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
- 
+
   /* MOUNTAINS -- 9 HUASCARAN */
   .mountain-9 {
     position: absolute;
@@ -562,7 +562,7 @@ body {
   }
  .huascaran {
     background-image: url(./images/mountains/9-HUASCARAN.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -576,7 +576,7 @@ body {
   }
  .cerro-bonete {
     background-image: url(./images/mountains/10-CERRO-BONETE.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -590,7 +590,7 @@ body {
   }
  .tres-cruces {
     background-image: url(./images/mountains/11-TRES-CRUCES.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -603,7 +603,7 @@ body {
   }
  .mount-denali {
     background-image: url(./images/mountains/12-MOUNT-DENALI.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -616,7 +616,7 @@ body {
   }
  .kilimanjaro {
     background-image: url(./images/mountains/13-KILIMANJARO.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -629,7 +629,7 @@ body {
   }
  .pico-orizaba {
     background-image: url(./images/mountains/14-PICO-ORIZABA.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -642,7 +642,7 @@ body {
   }
  .mount-elbrus {
     background-image: url(./images/mountains/15-MOUNT-ELBRUS.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -655,7 +655,7 @@ body {
   }
  .popocatepetl {
     background-image: url(./images/mountains/16-POPOCATEPETL.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -668,7 +668,7 @@ body {
   }
  .mount-fraker {
     background-image: url(./images/mountains/17-MOUNT-FRAKER.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -681,7 +681,7 @@ body {
   }
  .iztlaccihuatl {
     background-image: url(./images/mountains/18-IZTLACCIHUATL.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -694,10 +694,88 @@ body {
   }
  .dykh-tau {
     background-image: url(./images/mountains/19-DYKH-TAU.svg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 20 NEVADO DE TOLUCA */
+  .mountain-20 {
+    position: absolute;
+    top: calc(35200px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .nevado-toluca {
+    background-image: url(./images/mountains/20-NEVADO-TOLUCA.svg);
     background-size: 100% 100%;  
     width: 100%;
     height: 100%;
  }
+  /* MOUNTAINS -- 21 TEYOTL */
+  .mountain-21 {
+    position: absolute;
+    top: calc(37000px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .teyotl {
+    background-image: url(./images/mountains/21-TEYOTL.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 22 VOLCAN MALINTZIN */
+  .mountain-22 {
+    position: absolute;
+    top: calc(38800px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .volcan-malintzin {
+    background-image: url(./images/mountains/22-VOLCAN-MALINTZIN.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 23 COFRE DE PEROTE */
+  .mountain-23 {
+    position: absolute;
+    top: calc(40600px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .cofre-perote {
+    background-image: url(./images/mountains/23-COFRE-DE-PEROTE.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 24 CERRO NEGRO OAXACA */
+  .mountain-24 {
+    position: absolute;
+    top: calc(42400px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .cerro-negro-oax {
+    background-image: url(./images/mountains/24-CERRO-NEGRO-OAX.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 25 NEVADO DE COLIMA */
+  .mountain-25 {
+    position: absolute;
+    top: calc(44200px);
+    width: 100vw;
+    height: 1807px;
+  }
+  .nevado-colima {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url(./images/mountains/25-NEVADO-DE-COLIMA.svg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+  }
 
 
 
@@ -815,52 +893,52 @@ body {
      letter-spacing: 4px;
      word-spacing: -8px;
      color: tomato;
-     text-shadow:   -1px -1px 0 firebrick, 
+     text-shadow:   -1px -1px 0 firebrick,
                     -2px -2px 0 firebrick,
-                    -3px -3px 0 firebrick, 
-                    -4px -4px 0 firebrick, 
-                    -5px -5px 0 firebrick, 
-                    -6px -6px 0 firebrick, 
-                    -7px -7px 0 firebrick, 
-                    -8px -8px 0 firebrick, 
+                    -3px -3px 0 firebrick,
+                    -4px -4px 0 firebrick,
+                    -5px -5px 0 firebrick,
+                    -6px -6px 0 firebrick,
+                    -7px -7px 0 firebrick,
+                    -8px -8px 0 firebrick,
                     1px 6px 10px dimgrey;
     animation: rotate-title 3s ease-in-out infinite alternate;
 
  }
 .title > h1 > .mex {
      color: #006341;
-     text-shadow:   -1px -1px 0 green, 
-                    -2px -2px 0 green, 
-                    -3px -3px 0 green, 
-                    -4px -4px 0 green, 
-                    -5px -5px 0 green, 
-                    -6px -6px 0 green, 
-                    -7px -7px 0 green, 
-                    -8px -8px 0 green, 
+     text-shadow:   -1px -1px 0 green,
+                    -2px -2px 0 green,
+                    -3px -3px 0 green,
+                    -4px -4px 0 green,
+                    -5px -5px 0 green,
+                    -6px -6px 0 green,
+                    -7px -7px 0 green,
+                    -8px -8px 0 green,
                     1px 6px 10px dimgrey;
 }
 .title > h1 > .ico {
      color: #FFFFFF;
-     text-shadow:   -1px -1px 0 #AAAAAA, 
-                    -2px -2px 0 #AAAAAA, 
-                    -3px -3px 0 #AAAAAA, 
-                    -4px -4px 0 #AAAAAA, 
-                    -5px -5px 0 #AAAAAA, 
-                    -6px -6px 0 #AAAAAA, 
-                    -7px -7px 0 #AAAAAA, 
-                    -8px -8px 0 #AAAAAA, 
+     text-shadow:   -1px -1px 0 #AAAAAA,
+                    -2px -2px 0 #AAAAAA,
+                    -3px -3px 0 #AAAAAA,
+                    -4px -4px 0 #AAAAAA,
+                    -5px -5px 0 #AAAAAA,
+                    -6px -6px 0 #AAAAAA,
+                    -7px -7px 0 #AAAAAA,
+                    -8px -8px 0 #AAAAAA,
                     1px 6px 10px dimgrey;
 }
 .title > h1 > .lindo {
      color: #C8102E;
-     text-shadow:   -1px -1px 0 #AE5752, 
-                    -2px -2px 0 #AE5752, 
-                    -3px -3px 0 #AE5752, 
-                    -4px -4px 0 #AE5752, 
-                    -5px -5px 0 #AE5752, 
-                    -6px -6px 0 #AE5752, 
-                    -7px -7px 0 #AE5752, 
-                    -8px -8px 0 #AE5752, 
+     text-shadow:   -1px -1px 0 #AE5752,
+                    -2px -2px 0 #AE5752,
+                    -3px -3px 0 #AE5752,
+                    -4px -4px 0 #AE5752,
+                    -5px -5px 0 #AE5752,
+                    -6px -6px 0 #AE5752,
+                    -7px -7px 0 #AE5752,
+                    -8px -8px 0 #AE5752,
                     1px 6px 10px dimgrey;
 }
 /* TEXTO -> DESLÍZATE HACIA ARRIBA */
@@ -913,50 +991,50 @@ body {
     letter-spacing: 4px;
     word-spacing: -8px;
     color: tomato;
-    text-shadow:   -1px -1px 0 firebrick, 
+    text-shadow:   -1px -1px 0 firebrick,
                    -2px -2px 0 firebrick,
-                   -3px -3px 0 firebrick, 
-                   -4px -4px 0 firebrick, 
-                   -5px -5px 0 firebrick, 
-                   -6px -6px 0 firebrick, 
-                   -7px -7px 0 firebrick, 
-                   -8px -8px 0 firebrick, 
+                   -3px -3px 0 firebrick,
+                   -4px -4px 0 firebrick,
+                   -5px -5px 0 firebrick,
+                   -6px -6px 0 firebrick,
+                   -7px -7px 0 firebrick,
+                   -8px -8px 0 firebrick,
                    1px 6px 10px dimgrey;
  }
 .end-title > h1 > .mex {
      color: #006341;
-     text-shadow:   -1px -1px 0 green, 
-                    -2px -2px 0 green, 
-                    -3px -3px 0 green, 
-                    -4px -4px 0 green, 
-                    -5px -5px 0 green, 
-                    -6px -6px 0 green, 
-                    -7px -7px 0 green, 
-                    -8px -8px 0 green, 
+     text-shadow:   -1px -1px 0 green,
+                    -2px -2px 0 green,
+                    -3px -3px 0 green,
+                    -4px -4px 0 green,
+                    -5px -5px 0 green,
+                    -6px -6px 0 green,
+                    -7px -7px 0 green,
+                    -8px -8px 0 green,
                     1px 6px 10px dimgrey;
 }
 .end-title > h1 > .ico {
      color: #FFFFFF;
-     text-shadow:   -1px -1px 0 #AAAAAA, 
-                    -2px -2px 0 #AAAAAA, 
-                    -3px -3px 0 #AAAAAA, 
-                    -4px -4px 0 #AAAAAA, 
-                    -5px -5px 0 #AAAAAA, 
-                    -6px -6px 0 #AAAAAA, 
-                    -7px -7px 0 #AAAAAA, 
-                    -8px -8px 0 #AAAAAA, 
+     text-shadow:   -1px -1px 0 #AAAAAA,
+                    -2px -2px 0 #AAAAAA,
+                    -3px -3px 0 #AAAAAA,
+                    -4px -4px 0 #AAAAAA,
+                    -5px -5px 0 #AAAAAA,
+                    -6px -6px 0 #AAAAAA,
+                    -7px -7px 0 #AAAAAA,
+                    -8px -8px 0 #AAAAAA,
                     1px 6px 10px dimgrey;
 }
 .end-title > h1 > .lindo {
      color: #C8102E;
-     text-shadow:   -1px -1px 0 #AE5752, 
-                    -2px -2px 0 #AE5752, 
-                    -3px -3px 0 #AE5752, 
-                    -4px -4px 0 #AE5752, 
-                    -5px -5px 0 #AE5752, 
-                    -6px -6px 0 #AE5752, 
-                    -7px -7px 0 #AE5752, 
-                    -8px -8px 0 #AE5752, 
+     text-shadow:   -1px -1px 0 #AE5752,
+                    -2px -2px 0 #AE5752,
+                    -3px -3px 0 #AE5752,
+                    -4px -4px 0 #AE5752,
+                    -5px -5px 0 #AE5752,
+                    -6px -6px 0 #AE5752,
+                    -7px -7px 0 #AE5752,
+                    -8px -8px 0 #AE5752,
                     1px 6px 10px dimgrey;
 }
 /* TEXTO -> DESLÍZATE HACIA ARRIBA */
@@ -1003,8 +1081,8 @@ body {
     .hide {
         display: none;
     }
-    
- } 
+
+ }
 
   /* For iphone 14 */
  @media-screen and (max-width: 600px) {
