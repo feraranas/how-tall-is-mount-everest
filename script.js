@@ -40,7 +40,7 @@ function addBr() {
 /* ///////////////////////////////////////////////// */
 
 // Get the metronomo element
-const metronomo = document.querySelector('.metronomo-grid');
+const metronomo = document.querySelector('.metronomo-wrapper');
 const metronomoText = metronomo.querySelector('.metronomo');
 
 // Get end screen
@@ -70,29 +70,73 @@ function throttle(callback, delay) {
   };
 }
 
+// // RAIN
+// var makeItRain = function() {
+//   //clear out everything
+//   $('.rain').empty();
+
+//   var increment = 0;
+//   var drops = "";
+//   var backDrops = "";
+
+//   while (increment < 100) {
+//     //couple random numbers to use for various randomizations
+//     //random number between 98 and 1
+//     var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+//     //random number between 5 and 2
+//     var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+//     //increment
+//     increment += randoFiver;
+//     //add in a new raindrop with various randomizations to certain CSS properties
+//     drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+//     backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+//   }
+
+//   $('.rain.front-row').append(drops);
+//   $('.rain.back-row').append(backDrops);
+// }
+
+// $('.splat-toggle.toggle').on('click', function() {
+//   $('body').toggleClass('splat-toggle');
+//   $('.splat-toggle.toggle').toggleClass('active');
+//   makeItRain();
+// });
+
+// $('.back-row-toggle.toggle').on('click', function() {
+//   $('body').toggleClass('back-row-toggle');
+//   $('.back-row-toggle.toggle').toggleClass('active');
+//   makeItRain();
+// });
+
+// $('.single-toggle.toggle').on('click', function() {
+//   $('body').toggleClass('single-toggle');
+//   $('.single-toggle.toggle').toggleClass('active');
+//   makeItRain();
+// });
+
+// makeItRain();
+
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
   const normalizedHeight = Math.abs(((scrollPosition / pageHeight) * 8000) - mapHeight); 
 
-  // if (scrollPosition > totalHeight - (windowHeight + 100)) {
-  //   /* DISAPPEAR METRO */
-  //   metronomo.classList.remove('active');
-  // } else if (scrollPosition >= 0 && scrollPosition <= 350) {
-  //   /* DISAPPEAR METRO */
-  //   metronomo.classList.remove('active');
-  //   /* APPEAR END SCREEN */
-  //   endScreen.classList.add('active-end-screen');
-  // } else {
-  //   /* APPEAR METRO */
-  //   if (!metronomo.classList.contains('active')) {
-  //     metronomo.classList.add('active');
-  //   }
-  //   /* DISAPPEAR END SCREEN */
-  //   endScreen.classList.remove('active-end-screen');
-  // }
-
-  // metronomo.style.top = `${scrollPosition}px`;
+  if (scrollPosition > totalHeight - (windowHeight + 100)) {
+    /* DISAPPEAR METRO */
+    metronomo.classList.remove('active');
+  } else if (scrollPosition >= 0 && scrollPosition <= 350) {
+    /* DISAPPEAR METRO */
+    metronomo.classList.remove('active');
+    /* APPEAR END SCREEN */
+    endScreen.classList.add('active-end-screen');
+  } else {
+    /* APPEAR METRO */
+    if (!metronomo.classList.contains('active')) {
+      metronomo.classList.add('active');
+    }
+    /* DISAPPEAR END SCREEN */
+    endScreen.classList.remove('active-end-screen');
+  }
 
   let meters = (Math.round(`${normalizedHeight}`) + 1200).toString().padStart(5, '0');
   if (isNaN(meters)) {
