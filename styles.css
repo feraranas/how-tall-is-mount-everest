@@ -565,7 +565,7 @@ body {
     width: 100%;
     height: 100%;
  }
- 
+
   /* MOUNTAINS -- 9 HUASCARAN */
   /* //////////////////////////////////////////////////////// */
   .mountain-9 {
@@ -825,7 +825,7 @@ body {
   }
  .iztlaccihuatl {
     background-image: url(./images/mountains/18-IZTLACCIHUATL.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -929,7 +929,7 @@ body {
   }
  .nevado-toluca {
     background-image: url(./images/mountains/20-NEVADO-TOLUCA.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -982,7 +982,7 @@ body {
   }
  .teyotl {
     background-image: url(./images/mountains/21-TEYOTL.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -1035,7 +1035,7 @@ body {
   }
  .volcan-malintzin {
     background-image: url(./images/mountains/22-VOLCAN-MALINTZIN.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -1088,7 +1088,7 @@ body {
   }
  .cofre-perote {
     background-image: url(./images/mountains/23-COFRE-DE-PEROTE.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -1142,7 +1142,7 @@ body {
   }
  .cerro-negro-oax {
     background-image: url(./images/mountains/24-CERRO-NEGRO-OAX.svg);
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
  }
@@ -1196,15 +1196,15 @@ body {
 
 .nevado-colima {
     pointer-events: none;
-    background-image: linear-gradient(to bottom, 
-                          rgba(255, 255, 255, 0) 0%, 
-                          rgba(255, 255, 255, 0) 15%, 
-                          rgba(255, 255, 255, 0) 30%, 
-                          rgba(255, 255, 255, 0) 45%, 
-                          rgba(175, 231, 254, 0) 60%, 
-                          rgba(255, 255, 255, 1) 75%, 
-                          rgba(255, 255, 255, 1) 90%, 
-                          rgba(175, 231, 254, 0) 100%), 
+    background-image: linear-gradient(to bottom,
+                          rgba(255, 255, 255, 0) 0%,
+                          rgba(255, 255, 255, 0) 15%,
+                          rgba(255, 255, 255, 0) 30%,
+                          rgba(255, 255, 255, 0) 45%,
+                          rgba(175, 231, 254, 0) 60%,
+                          rgba(255, 255, 255, 1) 75%,
+                          rgba(255, 255, 255, 1) 90%,
+                          rgba(175, 231, 254, 0) 100%),
                           url(./images/mountains/25-NEVADO-DE-COLIMA.svg);
     opacity: 0.85;
     background-size: 100% 100%;
@@ -1213,7 +1213,7 @@ body {
     width: 100%;
     height: 100%;
 }
-  
+
 
 
 
