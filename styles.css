@@ -698,6 +698,84 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* MOUNTAINS -- 20 NEVADO DE TOLUCA */
+  .mountain-20 {
+    position: absolute;
+    top: calc(35200px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .nevado-toluca {
+    background-image: url(./images/mountains/20-NEVADO-TOLUCA.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 21 TEYOTL */
+  .mountain-21 {
+    position: absolute;
+    top: calc(37000px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .teyotl {
+    background-image: url(./images/mountains/21-TEYOTL.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 22 VOLCAN MALINTZIN */
+  .mountain-22 {
+    position: absolute;
+    top: calc(38800px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .volcan-malintzin {
+    background-image: url(./images/mountains/22-VOLCAN-MALINTZIN.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 23 COFRE DE PEROTE */
+  .mountain-23 {
+    position: absolute;
+    top: calc(40600px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .cofre-perote {
+    background-image: url(./images/mountains/23-COFRE-DE-PEROTE.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 24 CERRO NEGRO OAXACA */
+  .mountain-24 {
+    position: absolute;
+    top: calc(42400px);
+    width: 100vw;
+    height: 1807px;
+  }
+ .cerro-negro-oax {
+    background-image: url(./images/mountains/24-CERRO-NEGRO-OAX.svg);
+    background-size: 100% 100%;  
+    width: 100%;
+    height: 100%;
+ }
+  /* MOUNTAINS -- 25 NEVADO DE COLIMA */
+  .mountain-25 {
+    position: absolute;
+    top: calc(44200px);
+    width: 100vw;
+    height: 1807px;
+  }
+  .nevado-colima {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url(./images/mountains/25-NEVADO-DE-COLIMA.svg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+  }
 
 
 

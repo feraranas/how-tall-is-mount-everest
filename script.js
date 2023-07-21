@@ -161,7 +161,7 @@ function updateMetronomo() {
 }
 
 // Add the throttled event listener
-window.addEventListener("scroll", throttle(updateMetronomo, 100));
+window.addEventListener('scroll', throttle(updateMetronomo, 50));
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
 window.onload = function () {
