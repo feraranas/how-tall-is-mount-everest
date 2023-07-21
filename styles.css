@@ -442,7 +442,10 @@ body {
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
 /* MOUNTAINS  */
+
+/* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 1 MOUNT-EVEREST */
+/* //////////////////////////////////////////////////////// */
 .mountain-1 {
     position: absolute;
     top: calc(1200px);
@@ -455,8 +458,9 @@ body {
     width: 100%;
     height: 100%;
  }
-
- /* MOUNTAINS -- 2 K2 */
+  /* //////////////////////////////////////////////////////// */
+  /* MOUNTAINS -- 2 K2 */
+  /* //////////////////////////////////////////////////////// */
  .mountain-2 {
     position: absolute;
     top: calc(3000px);
@@ -470,7 +474,9 @@ body {
     height: 100%;
  }
 
+ /* //////////////////////////////////////////////////////// */
  /* MOUNTAINS -- 3 KANGCHENJUNGA */
+ /* //////////////////////////////////////////////////////// */
  .mountain-3 {
     position: absolute;
     top: calc(4800px);
@@ -483,8 +489,9 @@ body {
     width: 100%;
     height: 100%;
  }
-
- /* MOUNTAINS -- 4 LHOTSE */
+  /* //////////////////////////////////////////////////////// */
+  /* MOUNTAINS -- 4 LHOTSE */
+  /* //////////////////////////////////////////////////////// */
  .mountain-4 {
     position: absolute;
     top: calc(6600px);
@@ -497,8 +504,9 @@ body {
     width: 100%;
     height: 100%;
  }
-
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 5 MAKALU */
+  /* //////////////////////////////////////////////////////// */
   .mountain-5 {
     position: absolute;
     top: calc(8400px);
@@ -511,7 +519,9 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 6 ACACONCAGUA */
+  /* //////////////////////////////////////////////////////// */
   .mountain-6 {
     position: absolute;
     top: calc(10200px);
@@ -525,7 +535,9 @@ body {
     height: 100%;
  }
 
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 7 OJOS DEL SALADO */
+  /* //////////////////////////////////////////////////////// */
   .mountain-7 {
     position: absolute;
     top: calc(12000px);
@@ -538,8 +550,9 @@ body {
     width: 100%;
     height: 100%;
  }
-
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 8 MONTE PISSIS */
+  /* //////////////////////////////////////////////////////// */
   .mountain-8 {
     position: absolute;
     top: calc(13800px);
@@ -553,7 +566,9 @@ body {
     height: 100%;
  }
  
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 9 HUASCARAN */
+  /* //////////////////////////////////////////////////////// */
   .mountain-9 {
     position: absolute;
     top: calc(15600px);
@@ -566,8 +581,9 @@ body {
     width: 100%;
     height: 100%;
  }
-
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 10 CERRO BONETE */
+  /* //////////////////////////////////////////////////////// */
   .mountain-10 {
     position: absolute;
     top: calc(17200px);
@@ -580,8 +596,9 @@ body {
     width: 100%;
     height: 100%;
  }
-
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 11 TRES CRUCES */
+  /* //////////////////////////////////////////////////////// */
   .mountain-11 {
     position: absolute;
     top: calc(19000px);
@@ -594,7 +611,9 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 12 MOUNT DENALI */
+  /* //////////////////////////////////////////////////////// */
   .mountain-12 {
     position: absolute;
     top: calc(20800px);
@@ -607,7 +626,9 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 13 KILIMANJARO */
+  /* //////////////////////////////////////////////////////// */
   .mountain-13 {
     position: absolute;
     top: calc(22600px);
@@ -620,7 +641,9 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 14 PICO ORIZABA */
+  /* //////////////////////////////////////////////////////// */
   .mountain-14 {
     position: absolute;
     top: calc(24400px);
@@ -633,12 +656,52 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 15 MOUNT ELBRUS */
+  /* //////////////////////////////////////////////////////// */
   .mountain-15 {
     position: absolute;
     top: calc(26200px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-15-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-15-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-15-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .mount-elbrus {
     background-image: url(./images/mountains/15-MOUNT-ELBRUS.svg);
@@ -646,12 +709,52 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 16 POPOCATEPETL */
+  /* //////////////////////////////////////////////////////// */
   .mountain-16 {
     position: absolute;
     top: calc(28000px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-16-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-16-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-16-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .popocatepetl {
     background-image: url(./images/mountains/16-POPOCATEPETL.svg);
@@ -659,12 +762,52 @@ body {
     width: 100%;
     height: 100%;
  }
+ /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 17 MOUNT FRAKER */
+  /* //////////////////////////////////////////////////////// */
   .mountain-17 {
     position: absolute;
     top: calc(29800px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-17-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-17-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-17-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .mount-fraker {
     background-image: url(./images/mountains/17-MOUNT-FRAKER.svg);
@@ -672,25 +815,107 @@ body {
     width: 100%;
     height: 100%;
  }
+ /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 18 IZTLACCIHUATL */
+  /* //////////////////////////////////////////////////////// */
   .mountain-18 {
     position: absolute;
     top: calc(31600px);
-    width: 100vw;
-    height: 1807px;
-  }
- .iztlaccihuatl {
-    background-image: url(./images/mountains/18-IZTLACCIHUATL.svg);
-    background-size: 100% 100%;  
     width: 100%;
-    height: 100%;
- }
+    height: 2048px;
+}
+.mountain-18-title {
+  position: absolute;
+  top: 700px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: white;
+  width: 20%;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+.mountain-18-info {
+  position: absolute;
+  top: 700px;
+  transform: translateX(-50%);
+  left: 70%;
+  background-color: white;
+  color: black;
+  width: 10%;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.mountain-18-info:hover {
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
+}
+.iztlaccihuatl {
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 45%, rgba(175, 231, 254, 0) 60%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 90%, rgba(175, 231, 254, 0) 100%), url(./images/mountains/18-IZTLACCIHUATL.svg);
+  opacity: 0.85;
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 19 DYKH TAU */
+  /* //////////////////////////////////////////////////////// */
   .mountain-19 {
     position: absolute;
     top: calc(33400px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-19-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+  .mountain-19-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-19-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .dykh-tau {
     background-image: url(./images/mountains/19-DYKH-TAU.svg);
@@ -698,12 +923,52 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 20 NEVADO DE TOLUCA */
+  /* //////////////////////////////////////////////////////// */
   .mountain-20 {
     position: absolute;
     top: calc(35200px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-20-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-20-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-20-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .nevado-toluca {
     background-image: url(./images/mountains/20-NEVADO-TOLUCA.svg);
@@ -711,12 +976,52 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 21 TEYOTL */
+  /* //////////////////////////////////////////////////////// */
   .mountain-21 {
     position: absolute;
     top: calc(37000px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-21-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-21-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-21-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .teyotl {
     background-image: url(./images/mountains/21-TEYOTL.svg);
@@ -724,12 +1029,52 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 22 VOLCAN MALINTZIN */
+  /* //////////////////////////////////////////////////////// */
   .mountain-22 {
     position: absolute;
     top: calc(38800px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-22-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-22-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-22-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .volcan-malintzin {
     background-image: url(./images/mountains/22-VOLCAN-MALINTZIN.svg);
@@ -737,12 +1082,52 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 23 COFRE DE PEROTE */
+  /* //////////////////////////////////////////////////////// */
   .mountain-23 {
     position: absolute;
     top: calc(40600px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-23-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-23-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-23-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .cofre-perote {
     background-image: url(./images/mountains/23-COFRE-DE-PEROTE.svg);
@@ -750,12 +1135,53 @@ body {
     width: 100%;
     height: 100%;
  }
+
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 24 CERRO NEGRO OAXACA */
+  /* //////////////////////////////////////////////////////// */
   .mountain-24 {
     position: absolute;
     top: calc(42400px);
     width: 100vw;
     height: 1807px;
+  }
+  .mountain-24-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-24-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-24-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
   }
  .cerro-negro-oax {
     background-image: url(./images/mountains/24-CERRO-NEGRO-OAX.svg);
@@ -763,19 +1189,74 @@ body {
     width: 100%;
     height: 100%;
  }
+  /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 25 NEVADO DE COLIMA */
+  /* //////////////////////////////////////////////////////// */
   .mountain-25 {
     position: absolute;
     top: calc(44200px);
-    width: 100vw;
-    height: 1807px;
+    width: 100%;
+    height: 2048px;
   }
-  .nevado-colima {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url(./images/mountains/25-NEVADO-DE-COLIMA.svg);
+  .mountain-25-title {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+  .mountain-25-info {
+    position: absolute;
+    top: 700px;
+    transform: translateX(-50%);
+    left: 70%;
+    background-color: white;
+    color: black;
+    width: 10%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .mountain-25-info:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.8);
+  }
+
+.nevado-colima {
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, 
+                          rgba(255, 255, 255, 0) 0%, 
+                          rgba(255, 255, 255, 0) 15%, 
+                          rgba(255, 255, 255, 0) 30%, 
+                          rgba(255, 255, 255, 0) 45%, 
+                          rgba(175, 231, 254, 0) 60%, 
+                          rgba(255, 255, 255, 1) 75%, 
+                          rgba(255, 255, 255, 1) 90%, 
+                          rgba(175, 231, 254, 0) 100%), 
+                          url(./images/mountains/25-NEVADO-DE-COLIMA.svg);
+    opacity: 0.85;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
     height: 100%;
-  }
+}
+  
 
 
 
