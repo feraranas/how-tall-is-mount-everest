@@ -151,7 +151,7 @@ function updateMetronomo() {
     endScreen.classList.remove("active-end-screen");
   }
 
-  let meters = (Math.round(`${normalizedHeight}`) + 1200)
+  let meters = (Math.round(`${normalizedHeight}`) + 2500)
     .toString()
     .padStart(5, "0");
   if (isNaN(meters)) {
