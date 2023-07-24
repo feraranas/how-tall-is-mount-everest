@@ -802,7 +802,7 @@ body {
 }
 .iztlaccihuatl {
   background-image: url(./images/mountains/18-IZTLACCIHUATL.svg);
-  background-size: 100% 100%;  
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
 }
@@ -906,7 +906,7 @@ body {
 }
 .nevado-toluca {
   background-image: url(./images/mountains/20-NEVADO-TOLUCA.svg);
-  background-size: 100% 100%;  
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
 }
@@ -959,7 +959,7 @@ body {
 }
 .teyotl {
   background-image: url(./images/mountains/21-TEYOTL.svg);
-  background-size: 100% 100%;  
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
 }
@@ -1011,7 +1011,7 @@ body {
 }
 .volcan-malintzin {
   background-image: url(./images/mountains/22-VOLCAN-MALINTZIN.svg);
-  background-size: 100% 100%;  
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
 }
@@ -1063,7 +1063,7 @@ body {
 }
 .cofre-perote {
   background-image: url(./images/mountains/23-COFRE-DE-PEROTE.svg);
-  background-size: 100% 100%;  
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
 }
@@ -1117,7 +1117,7 @@ body {
 }
 .cerro-negro-oax {
   background-image: url(./images/mountains/24-CERRO-NEGRO-OAX.svg);
-  background-size: 100% 100%;  
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
 }
@@ -1181,7 +1181,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-  
+
 .nevado-colima::after {
   content: '';
   position: absolute;
