@@ -1,9 +1,9 @@
 /* ///////////////////////////////////////////////// */
 /* ///////////// GLOBAL VARIABLES  ///////////////// */
 /* ///////////////////////////////////////////////// */
-let flag = false;          /* FOR TITLE HEIGHT RESPONSIVENESS */
+let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
 const totalHeight = 50000; /* FULL HEIGHT */
-const mapHeight = 8000;    /* FOR METRONOMO NORMALIZATION */
+const mapHeight = 8000; /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* ////////////GET NECESSARY ELEMENTS////////////// */
@@ -22,15 +22,15 @@ const mountain25 = document.querySelector(".nevado-colima-info");
 
 // Appears tab for mountain data
 function handleEnter() {
-  setTimeout(() => mountain25.classList.add('trigger-enter-active'), 100);
-  getInfoTab.style.borderRadius = "0px 0px 5px 5px"
-  getInfoTab.style.width = "90%"
+  setTimeout(() => mountain25.classList.add("trigger-enter-active"), 100);
+  getInfoTab.style.borderRadius = "0px 0px 5px 5px";
+  getInfoTab.style.width = "90%";
 }
 // Disappears tab for mountain data
 function handleLeave() {
-  mountain25.classList.remove('trigger-enter-active');
-  getInfoTab.style.borderRadius = "0px 0px 0px 0px"
-  getInfoTab.style.width = "50px"
+  mountain25.classList.remove("trigger-enter-active");
+  getInfoTab.style.borderRadius = "0px 0px 0px 0px";
+  getInfoTab.style.width = "50px";
 }
 
 /* ///////////////////////////////////////////////// */
@@ -42,7 +42,9 @@ function removeBr() {
   let title = document.querySelector("#title");
   let titleDiv = document.querySelector(".title");
   let brElements = document.querySelectorAll("#title br");
-  brElements.forEach(function(brElement) { brElement.remove(); });
+  brElements.forEach(function (brElement) {
+    brElement.remove();
+  });
   title.style.fontSize = "calc(2rem + 2vw)";
   titleDiv.style.width = "80%";
 }
@@ -61,13 +63,17 @@ function addBr() {
   t3Element.appendChild(brElement);
 }
 // Function to handle showing info
-function showInfo() { mountain25.classList.add('show-info'); }
+function showInfo() {
+  mountain25.classList.add("show-info");
+}
 // Function to handle hiding info
-function hideInfo() { mountain25.classList.remove('show-info'); }
+function hideInfo() {
+  mountain25.classList.remove("show-info");
+}
 // Helper function for debounce
 function debounce(func, delay) {
   let timer;
-  return function() {
+  return function () {
     clearTimeout(timer);
     timer = setTimeout(func, delay);
   };
@@ -75,11 +81,13 @@ function debounce(func, delay) {
 // Throttle function to reduce scroll event calls
 function throttle(callback, delay) {
   let isThrottled = false;
-  return function() {
+  return function () {
     if (!isThrottled) {
       callback.apply(this, arguments);
       isThrottled = true;
-      setTimeout(() => { isThrottled = false; }, delay);
+      setTimeout(() => {
+        isThrottled = false;
+      }, delay);
     }
   };
 }
@@ -94,16 +102,15 @@ const debouncedShow = debounce(showInfo, 100);
 const debouncedHide = debounce(hideInfo, 100);
 
 // Attach the debounced event listeners to the common parent element
-const parentElement = document.querySelector(
-    ".mountain-25-data"); // Replace with the common parent element
-parentElement.addEventListener('mouseenter', debouncedShow);
-parentElement.addEventListener('mouseleave', debouncedHide);
+const parentElement = document.querySelector(".mountain-25-data"); // Replace with the common parent element
+parentElement.addEventListener("mouseenter", debouncedShow);
+parentElement.addEventListener("mouseleave", debouncedHide);
 
 // UPDATE THE METRONOMO ON SCROLL EVENT
 // Calculate pageHeight once outside the scroll event
 const windowHeight = window.innerHeight;
 const pageHeight = document.documentElement.scrollHeight - windowHeight;
-console.log(pageHeight)
+console.log(pageHeight);
 
 // // RAIN
 // var makeItRain = function() {
@@ -176,8 +183,9 @@ console.log(pageHeight)
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
-  const normalizedHeight =
-      Math.abs((scrollPosition / pageHeight) * 8000 - mapHeight);
+  const normalizedHeight = Math.abs(
+    (scrollPosition / pageHeight) * 8000 - mapHeight
+  );
 
   if (scrollPosition > totalHeight - (windowHeight + 100)) {
     /* DISAPPEAR METRO */
@@ -196,8 +204,9 @@ function updateMetronomo() {
     endScreen.classList.remove("active-end-screen");
   }
 
-  let meters =
-      (Math.round(`${normalizedHeight}`) + 2500).toString().padStart(5, "0");
+  let meters = (Math.round(`${normalizedHeight}`) + 2500)
+    .toString()
+    .padStart(5, "0");
   if (isNaN(meters)) {
     meters = "00000";
   }
@@ -205,10 +214,10 @@ function updateMetronomo() {
 }
 
 // Add the throttled event listener to scroll Events
-window.addEventListener('scroll', throttle(updateMetronomo, 25));
+window.addEventListener("scroll", throttle(updateMetronomo, 25));
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
-window.onload = function() {
+window.onload = function () {
   console.log(window.innerHeight);
   if (window.innerHeight <= 620) {
     removeBr();
@@ -218,11 +227,13 @@ window.onload = function() {
     addBr();
   }
 
-  setTimeout(() => { window.scrollTo(0, document.body.scrollHeight); }, 0);
+  setTimeout(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, 0);
 };
 
 /* TITLE RESPONSIVENESS */
-window.onresize = function() {
+window.onresize = function () {
   console.log(window.innerHeight);
 
   if (window.innerHeight <= 620) {
