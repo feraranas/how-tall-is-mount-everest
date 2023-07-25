@@ -5,6 +5,35 @@ let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
 const totalHeight = 50000; /* FULL HEIGHT */
 const mapHeight = 8000; /* FOR METRONOMO NORMALIZATION */
 
+
+/* ///////////////////////////////////////////////// */
+/* ////////////GET NECESSARY ELEMENTS////////////// */
+/* ///////////////////////////////////////////////// */
+
+// Get the metronomo element
+const metronomo = document.querySelector(".metronomo-wrapper");
+const metronomoText = metronomo.querySelector(".metronomo");
+
+// Get end screen
+const endScreen = document.querySelector(".end-title");
+
+// Get tab & arrow to appear the mountain data
+const getInfoTab = document.querySelector(".fa-info");
+const mountain25 = document.querySelector(".nevado-colima-info");
+
+// Appears tab for mountain data
+function handleEnter() {
+  setTimeout(() => mountain25.classList.add('trigger-enter-active'), 100);
+  getInfoTab.style.borderRadius = "0px 0px 5px 5px"
+  getInfoTab.style.width = "90%"
+}
+// Disappears tab for mountain data
+function handleLeave() {
+  mountain25.classList.remove('trigger-enter-active');
+  getInfoTab.style.borderRadius = "0px 0px 0px 0px"
+  getInfoTab.style.width = "50px"
+}
+
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
 /* ///////////////////////////////////////////////// */
@@ -34,47 +63,24 @@ function addBr() {
   t2Element.appendChild(brElement);
   t3Element.appendChild(brElement);
 }
-
-/* ///////////////////////////////////////////////// */
-/* ////////////GET NECESSARY ELEMENTS////////////// */
-/* ///////////////////////////////////////////////// */
-
-// Get the metronomo element
-const metronomo = document.querySelector(".metronomo-wrapper");
-const metronomoText = metronomo.querySelector(".metronomo");
-
-// Get end screen
-const endScreen = document.querySelector(".end-title");
-
-// Get tab & arrow to appear the mountain data
-const getInfoTab = document.querySelector(".fa-info");
-const getInfoArrow = document.querySelector(".tab-arrow");
-const mountain25 = document.querySelector(".nevado-colima-info");
-
-/* ///////////////////////////////////////////////// */
-/* //////////////// EVENT LISTENERS //////////////// */
-/* ///////////////////////////////////////////////// */
-
-// Appear mountain data on mouse enter event & disappear on mouseleave
-getInfoArrow.addEventListener('mouseenter', () => {
-  mountain25.style.opacity = 1;
-})
-getInfoTab.addEventListener('mouseenter', () => {
-  mountain25.style.opacity = 1;
-})
-getInfoArrow.addEventListener('mouseleave', () => {
-  mountain25.style.opacity = 0;
-})
-getInfoTab.addEventListener('mouseleave', () => {
-  mountain25.style.opacity = 0;
-})
-
-// UPDATE THE METRONOMO ON SCROLL EVENT
-// Calculate pageHeight once outside the scroll event
-const windowHeight = window.innerHeight;
-const pageHeight = document.documentElement.scrollHeight - windowHeight;
-console.log(pageHeight)
-
+// Function to handle showing info
+function showInfo() {
+  mountain25.classList.add('show-info');
+  
+}
+// Function to handle hiding info
+function hideInfo() {
+  mountain25.classList.remove('show-info');
+  
+}
+// Helper function for debounce
+function debounce(func, delay) {
+  let timer;
+  return function() {
+    clearTimeout(timer);
+    timer = setTimeout(func, delay);
+  };
+}
 // Throttle function to reduce scroll event calls
 function throttle(callback, delay) {
   let isThrottled = false;
@@ -88,6 +94,27 @@ function throttle(callback, delay) {
     }
   };
 }
+
+/* ///////////////////////////////////////////////// */
+/* //////////////// EVENT LISTENERS //////////////// */
+/* ///////////////////////////////////////////////// */
+
+// Appear mountain data on mouse enter event & disappear on mouseleave
+// Debounced event listeners for better performance
+const debouncedShow = debounce(showInfo, 100);
+const debouncedHide = debounce(hideInfo, 100);
+
+// Attach the debounced event listeners to the common parent element
+const parentElement = document.querySelector(".mountain-25-data"); // Replace with the common parent element
+parentElement.addEventListener('mouseenter', debouncedShow);
+parentElement.addEventListener('mouseleave', debouncedHide);
+
+// UPDATE THE METRONOMO ON SCROLL EVENT
+// Calculate pageHeight once outside the scroll event
+const windowHeight = window.innerHeight;
+const pageHeight = document.documentElement.scrollHeight - windowHeight;
+console.log(pageHeight)
+
 
 // // RAIN
 // var makeItRain = function() {
