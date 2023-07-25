@@ -1664,7 +1664,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: calc(1rem + 1.5vmin);
   z-index: 1;
-  
+
 }
 .fa-info{
   background: rgba(150,150,150,1);
@@ -1696,7 +1696,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-  
+
 .nevado-colima::after {
   content: '';
   position: absolute;
@@ -2374,7 +2374,7 @@ left: 55%;
   50% {
        transform: rotateY(40deg);
   }
-}  
+}
 
 @keyframes turn {
   0%, 100% {
