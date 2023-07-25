@@ -19,7 +19,6 @@ const endScreen = document.querySelector(".end-title");
 
 // Get tab & arrow to appear the mountain data
 const getInfoTab = document.querySelector(".fa-info");
-const mountain25 = document.querySelector(".nevado-colima-info");
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
@@ -51,15 +50,14 @@ function addBr() {
   t3Element.appendChild(brElement);
 }
 // Function to handle showing info
-function showInfo() {
-  console.log('working')
-  setTimeout(() => mountain25.classList.add('show-info'), 100);
-  // getInfoTab.classList.add('no-info-symbol');
+function showInfo(e) {
+  const m = document.querySelector(`[data-key="${e.srcElement.dataset.mountainKey}"]`);
+  setTimeout(() => m.classList.add('show-info'), 100);
 }
 // Function to handle hiding info
-function hideInfo() {
-  mountain25.classList.remove('show-info');
-  // setTimeout(() => getInfoTab.classList.remove('no-info-symbol'), 100);
+function hideInfo(e) {
+  const m = document.querySelector(`[data-key="${e.srcElement.dataset.mountainKey}"]`);
+  m.classList.remove('show-info');
 }
 // Helper function for debounce
 function debounce(func, delay) {
@@ -89,13 +87,19 @@ function throttle(callback, delay) {
 
 // Appear mountain data on mouse enter event & disappear on mouseleave
 // Debounced event listeners for better performance
-const debouncedShow = debounce(showInfo, 100);
-const debouncedHide = debounce(hideInfo, 100);
+function debouncedShow(e) {
+  return debounce(showInfo(e), 100);
+}
+function debouncedHide(e) { 
+  return debounce(hideInfo(e), 100);
+}
 
 // Attach the debounced event listeners to the common parent element
-const parentElement = document.querySelector(".mountain-25-data"); // Replace with the common parent element
-parentElement.addEventListener('mouseenter', debouncedShow);
-parentElement.addEventListener('mouseleave', debouncedHide);
+const parentElement = Array.from(document.querySelectorAll(".fa-info"));
+parentElement.forEach((item) => {
+  item.addEventListener('mouseenter', debouncedShow);
+  item.addEventListener('mouseleave', debouncedHide);
+})
 
 // UPDATE THE METRONOMO ON SCROLL EVENT
 // Calculate pageHeight once outside the scroll event
