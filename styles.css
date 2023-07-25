@@ -2157,7 +2157,7 @@ body {
       transform: translateY(50%) rotate(45deg);
       position: absolute;
       bottom: 0;
-      transition: 0.5s all;
+      transition: 0.1s all;
     }
     .fa-info {
       background: rgba(150,150,150,1);
@@ -2167,12 +2167,10 @@ body {
       top: auto;
       padding-top: 9px;
       text-align: center;
-      /* border-radius: 0px 0px 5px 5px; */
-      /* width: 100%; */
       border-radius: 0px 0px 0px 0px;
       justify-self: center;
       width: 50px;
-      transition: 0.5s all;
+      transition: opacity 0.2s, width 0.2s;
     }
     .nevado-colima-info {
       align-items: self-start;
@@ -2183,6 +2181,9 @@ body {
       transition: 0.2s all;
       background-color: white;
       opacity: 0;
+    }
+    .show-info {
+      opacity: 1;
     }
     .nevado-colima {
       height: 800px;
