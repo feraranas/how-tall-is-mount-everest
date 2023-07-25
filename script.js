@@ -21,19 +21,6 @@ const endScreen = document.querySelector(".end-title");
 const getInfoTab = document.querySelector(".fa-info");
 const mountain25 = document.querySelector(".nevado-colima-info");
 
-// Appears tab for mountain data
-function handleEnter() {
-  setTimeout(() => mountain25.classList.add('trigger-enter-active'), 100);
-  getInfoTab.style.borderRadius = "0px 0px 5px 5px"
-  getInfoTab.style.width = "90%"
-}
-// Disappears tab for mountain data
-function handleLeave() {
-  mountain25.classList.remove('trigger-enter-active');
-  getInfoTab.style.borderRadius = "0px 0px 0px 0px"
-  getInfoTab.style.width = "50px"
-}
-
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
 /* ///////////////////////////////////////////////// */
@@ -65,13 +52,14 @@ function addBr() {
 }
 // Function to handle showing info
 function showInfo() {
-  mountain25.classList.add('show-info');
-  
+  console.log('working')
+  setTimeout(() => mountain25.classList.add('show-info'), 100);
+  // getInfoTab.classList.add('no-info-symbol');
 }
 // Function to handle hiding info
 function hideInfo() {
   mountain25.classList.remove('show-info');
-  
+  // setTimeout(() => getInfoTab.classList.remove('no-info-symbol'), 100);
 }
 // Helper function for debounce
 function debounce(func, delay) {

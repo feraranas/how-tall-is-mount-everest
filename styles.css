@@ -1629,7 +1629,7 @@ body {
   height: auto;
   font-family: 'Playfair Display', serif;
   font-size: calc(2.5rem + 2vmin);
-  background: #0000001a;
+  background: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1653,36 +1653,64 @@ body {
 .mountain-25-data {
   position: relative;
   width: 500px;
-  top: calc(47305px);
-  margin-left: 25px;
-  padding: 10px 20px 10px 20px;
+  top: calc(46925px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px 0px 20px;
+  background-color: transparent;
   border-radius: 5px 5px 0px 0px;
   display: grid;
   text-align: start;
-  align-items: center;
-  background-color: white;
   font-family: 'Playfair Display', serif;
+  align-items: self-start;
   font-size: calc(1rem + 1.5vmin);
   z-index: 1;
-  
 }
 .fa-info{
-  background: rgba(150,150,150,1);
+  font-size: 14px;
+  height: 22px;
+  width: 28px;
+  bottom: 0;
+  color: white;
+  padding-top: 5px;
+  background: rgba(25,25,25,1);
   z-index: 1;
   position: absolute;
-  top: 0;
-  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  border-radius: 5px 5px 0px 0px;
-  width: 100%;
+  border-radius: 0px 0px 0px 0px;
 }
 .tab-arrow {
-  width: 40px;
-  height: 40px;
-  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 13px;
+  height: 13px;
   justify-self: center;
-  background: rgba(150,150,150,1);
-  transform: translateY(-65%) rotate(45deg);
+  background: rgba(25,25,25,1);
+  transform: translateY(50%) rotate(45deg);
+}
+.bottom-row {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 22px;
+  background: rgba(25,25,25,1);
+}
+.nevado-colima-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  align-items: self-start;
+  height: auto;
+  padding: 0px 20px 25px 20px;
+  transition: 0.2s all;
+  background-color: white;
+  transition: 1s opacity ease;
+  opacity: 0;
+}
+.show-info {
+  opacity: 1;
 }
 .nevado-colima {
   top: calc(47352px);
@@ -2013,8 +2041,132 @@ body {
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
 /* MEDIA QUERIES -> For screens laptops, monitors */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Macbook Pro 1440x900 */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .mountain-25 {
+    font-size: calc(1.5rem + 2vmin);
+    top: calc(47225px);
+  }
+  .mountain-25-data {
+    position: absolute;
+    width: 480px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(46950px);
+    font-size: calc(1rem + 1.5vmin);
+    z-index: 1;
+  }
+  .tab-arrow {
+    width: 16.5px;
+    height: 16.5px;
+    display: block;
+    justify-self: center;
+    transform: translateY(50%) rotate(45deg);
+    position: absolute;
+    bottom: 0;
+    transition: 0.1s all;
+  }
+  .fa-info {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    padding-top: 4px;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+    justify-self: center;
+    width: 35px;
+    transition: opacity 0.2s, width 0.2s;
+  }
+  .nevado-colima-info {
+    position: relative;
+    align-items: self-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding: 0px 20px 25px 20px;
+    transition: 0.2s all;
+    background-color: white;
+    transition: 1s opacity ease;
+  }
+  .show-tab-complete {
+    width: 91%;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px -2.5px 0px rgba(0,0,0,0.5);
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Ipad 768x1024 */
+@media screen and (max-width: 768px)  {
+  .mountain-25 {
+    font-size: calc(1.5rem + 2vmin);
+    top: calc(47225px);
+  }
+  .mountain-25-data {
+    position: absolute;
+    width: 480px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(46975px);
+    align-items: self-start;
+    background-color: transparent;
+    text-align: start;
+    font-family: 'Playfair Display', serif;
+    font-size: calc(1rem + 1.5vmin);
+    padding: 10px 20px 0px 20px;
+    z-index: 1;
+  }
+  .tab-arrow {
+    width: 14.5px;
+    height: 14.5px;
+    display: block;
+    justify-self: center;
+    transform: translateY(50%) rotate(45deg);
+    position: absolute;
+    bottom: 0;
+    transition: 0.1s all;
+  }
+  .fa-info {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    padding-top: 4px;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+    justify-self: center;
+    width: 35px;
+    transition: opacity 0.2s, width 0.2s;
+  }
+  .nevado-colima-info {
+    position: relative;
+    align-items: self-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding: 0px 20px 25px 20px;
+    transition: 0.2s all;
+    background-color: white;
+    transition: 1s opacity ease;
+  }
+  .show-info {
+    opacity: 1;
+  }
+  .show-tab-complete {
+    width: 91%;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px -2.5px 0px rgba(0,0,0,0.5);
+  }
+} 
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Iphone 14 Pro 390x844 & 14 Plus 428x926 */
-@media screen and (max-width: 428px) and (max-height: 926px)  {
+@media screen and (min-width: 0px) and (min-height: 0px) and (max-width: 428px) and (max-height: 926px)  {
   .background-offroad {
     bottom: 0;
     left: -150px;
@@ -2136,43 +2288,43 @@ body {
     }
     .mountain-25-data {
       position: absolute;
-      width: 95%;
-      margin-left: 10px;
-      margin-right: 10px;
+      width: 400px;
+      margin: auto;
+      left: 50%;
+      transform: translateX(-50%);
       top: calc(47050px);
-      display: grid;
       align-items: self-start;
       background-color: transparent;
       text-align: start;
       font-family: 'Playfair Display', serif;
       font-size: calc(1rem + 1.5vmin);
+      padding: 10px 20px 0px 20px;
       z-index: 1;
     }
     .tab-arrow {
-      width: 20px;
-      height: 20px;
+      width: 12px;
+      height: 12px;
       display: block;
       justify-self: center;
-      background: rgba(150,150,150,1);
       transform: translateY(50%) rotate(45deg);
       position: absolute;
       bottom: 0;
       transition: 0.1s all;
     }
     .fa-info {
-      background: rgba(150,150,150,1);
       z-index: 1;
       position: absolute;
       bottom: 0;
       top: auto;
-      padding-top: 9px;
+      padding-top: 4px;
       text-align: center;
       border-radius: 0px 0px 0px 0px;
       justify-self: center;
-      width: 50px;
+      width: 35px;
       transition: opacity 0.2s, width 0.2s;
     }
     .nevado-colima-info {
+      position: relative;
       align-items: self-start;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -2180,10 +2332,15 @@ body {
       padding: 0px 20px 25px 20px;
       transition: 0.2s all;
       background-color: white;
-      opacity: 0;
+      transition: 1s opacity ease;
     }
     .show-info {
       opacity: 1;
+    }
+    .show-tab-complete {
+      width: 360px;
+      border-radius: 0px 0px 5px 5px;
+      box-shadow: 0px -2.5px 0px rgba(0,0,0,0.5);
     }
     .nevado-colima {
       height: 800px;
@@ -2193,47 +2350,6 @@ body {
   }
 }
 
-/* Ipad 1440x900
-@media screen and (max-width: 768px) and (max-height: 1024px)  {
-} */
-
-/* Macbook Pro 1440x900
-@media screen and (max-width: 1440px) and (max-height: 900px) {
-  .mountain-25-data {
-    position: relative;
-    width: 500px;
-    top: calc(47305px);
-    margin-left: 25px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px 5px 0px 0px;
-    display: grid;
-    text-align: start;
-    align-items: center;
-    background-color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: calc(1rem + 1.5vmin);
-    z-index: 1;
-  }
-  .tab-arrow {
-    width: 40px;
-    height: 40px;
-    display: block;
-    justify-self: center;
-    background: rgba(150,150,150,1);
-    transform: translateY(-65%) rotate(45deg);
-  }
-  .fa-info {
-    background: rgba(150,150,150,1);
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    height: 35px;
-    text-align: center;
-    border-radius: 5px 5px 0px 0px;
-    width: 100%;
-  }
-} */
-
 
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -2241,165 +2357,3 @@ body {
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
-.butterflies-container {
-  position: relative;
-  top: calc(47352px);
-  height: 500px;
-  width: 500px;
-  max-width: 600px;
-  overflow-y: hidden;
-  z-index: 2;
-}
-.mariposa {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  width: 200px;
-  height: 200px;
-  opacity: 0;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-  animation: fly 4s infinite linear;
-  animation-delay: .125s;
-  transform: scale(0.6);
-}
-
-/* stagger flight */
-.mariposa:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-/* stagger turn */
-.mariposa:nth-child(2) .mariposa-turn {
-  animation-delay: 0.75s;
-}
-
-/* stagger size and rotation */
-.mariposa:nth-child(2) .mariposa-turn .mariposa-flutter {
-  transform: scale(0.4) rotateX(65deg);
-}
-
-/* stagger flight */
-.mariposa:nth-child(3) {
-  animation-delay: 0.75s;
-}
-
-/* stagger turn */
-.mariposa:nth-child(3) .mariposa-turn {
-  animation-delay: 1.25s;
-}
-
-/* stagger size and rotation */
-.mariposa:nth-child(3) .mariposa-turn .mariposa-flutter {
-  transform: scale(0.6) rotateX(45deg);
-}
-
-/* establishes perspective, animates rotation and horizontal movement */
-.mariposa .mariposa-turn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 150px;
-  perspective: 1000px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transform-origin: 50% 80%; /* turn from a natural center */
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation: turn 3s infinite cubic-bezier(.31,.09,.77,1.5);
-  transform-style: preserve-3d;
-  filter: drop-shadow(50px 30px 10px rgba(0,0,0,0.5));
-}
-
-.mariposa-flutter {
-width: 2rem;
-height: 8rem;
-position: relative;
-top: 0;
-margin: 0 auto;
-background: url("https://assets.codepen.io/2273448/butterfly-body.png");
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-transform-style: preserve-3d;
-transform: rotateX(25deg) rotateY(5deg);
-}
-
-.mariposa-flutter::before, .mariposa-flutter::after {
-position: absolute;
-top: 5%;
-margin: auto;
-content: "";
-height: 100%;
-width: 250%;
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-transform-style: preserve-3d;
-animation-delay: 0;
-}
-
-.mariposa-flutter::before {
-background-image: url("https://assets.codepen.io/2273448/butterfly-wing.png");
-transform-origin: 0% 50%;
-animation: flutter-r 0.3s infinite ease-out;
-left: 55%;
-}
-.mariposa-flutter::after {
-  background-image: url("https://assets.codepen.io/2273448/butterfly-wing-l.png");
-  transform-origin: 100% 50%;
-  animation: flutter-l 0.3s infinite ease-out;
-  right: 55%;
-}
-@keyframes flutter-r {
-  0%, 100% {
-       transform: rotateY(0deg);
-  }
-  50% {
-       transform: rotateY(-40deg);
-  }
-}
-@keyframes flutter-l {
-  0%, 100% {
-       transform: rotateY(0deg);
-  }
-  50% {
-       transform: rotateY(40deg);
-  }
-}  
-
-@keyframes turn {
-  0%, 100% {
-       transform: translateX(-20%) rotateZ(30deg);
-  }
-  25% {
-       transform: translateX(50%) rotateZ(-30deg);
-  }
-  50% {
-       transform: translateX(-80%) rotateZ(30deg);
-  }
-  75% {
-       transform: translateX(30%) rotateZ(-30deg);
-  }
-}
-@keyframes fly {
-  0% {
-       opacity: 0;
-       transform: translateY(500px);
-  }
-  3%, 99% {
-       opacity: 1;
-  }
-  100% {
-       opacity: 0;
-       transform: translateY(0px);
-  }
-}
