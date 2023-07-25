@@ -46,14 +46,34 @@ const metronomoText = metronomo.querySelector(".metronomo");
 // Get end screen
 const endScreen = document.querySelector(".end-title");
 
+// Get tab & arrow to appear the mountain data
+const getInfoTab = document.querySelector(".fa-info");
+const getInfoArrow = document.querySelector(".tab-arrow");
+const mountain25 = document.querySelector(".nevado-colima-info");
+
 /* ///////////////////////////////////////////////// */
 /* //////////////// EVENT LISTENERS //////////////// */
 /* ///////////////////////////////////////////////// */
+
+// Appear mountain data on mouse enter event & disappear on mouseleave
+getInfoArrow.addEventListener('mouseenter', () => {
+  mountain25.style.opacity = 1;
+})
+getInfoTab.addEventListener('mouseenter', () => {
+  mountain25.style.opacity = 1;
+})
+getInfoArrow.addEventListener('mouseleave', () => {
+  mountain25.style.opacity = 0;
+})
+getInfoTab.addEventListener('mouseleave', () => {
+  mountain25.style.opacity = 0;
+})
 
 // UPDATE THE METRONOMO ON SCROLL EVENT
 // Calculate pageHeight once outside the scroll event
 const windowHeight = window.innerHeight;
 const pageHeight = document.documentElement.scrollHeight - windowHeight;
+console.log(pageHeight)
 
 // Throttle function to reduce scroll event calls
 function throttle(callback, delay) {
@@ -127,6 +147,16 @@ function throttle(callback, delay) {
 
 // makeItRain();
 
+// Function to update the appearance of mountain data
+// function appearMountainData() {
+//   const scrollPosition = window.pageYOffset;
+//   if (scrollPosition >= 47000 && scrollPosition <= 48000) {
+//     mountain25Data.classList.add("active-mountain-data");
+//   } else {
+//     mountain25Data.classList.remove("active-mountain-data");
+//   }
+// }
+
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
@@ -160,8 +190,8 @@ function updateMetronomo() {
   metronomoText.textContent = `${meters}m`;
 }
 
-// Add the throttled event listener
-window.addEventListener('scroll', throttle(updateMetronomo, 50));
+// Add the throttled event listener to scroll Events
+window.addEventListener('scroll', throttle(updateMetronomo, 25));
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
 window.onload = function () {
