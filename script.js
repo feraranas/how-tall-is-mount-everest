@@ -1,9 +1,9 @@
 /* ///////////////////////////////////////////////// */
 /* ///////////// GLOBAL VARIABLES  ///////////////// */
 /* ///////////////////////////////////////////////// */
-let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
+let flag = false;          /* FOR TITLE HEIGHT RESPONSIVENESS */
 const totalHeight = 50000; /* FULL HEIGHT */
-const mapHeight = 8000; /* FOR METRONOMO NORMALIZATION */
+const mapHeight = 8000;    /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
@@ -14,9 +14,7 @@ function removeBr() {
   let title = document.querySelector("#title");
   let titleDiv = document.querySelector(".title");
   let brElements = document.querySelectorAll("#title br");
-  brElements.forEach(function (brElement) {
-    brElement.remove();
-  });
+  brElements.forEach(function(brElement) { brElement.remove(); });
   title.style.fontSize = "calc(2rem + 2vw)";
   titleDiv.style.width = "80%";
 }
@@ -56,18 +54,14 @@ const mountain25 = document.querySelector(".nevado-colima-info");
 /* ///////////////////////////////////////////////// */
 
 // Appear mountain data on mouse enter event & disappear on mouseleave
-getInfoArrow.addEventListener('mouseenter', () => {
-  mountain25.style.opacity = 1;
-})
-getInfoTab.addEventListener('mouseenter', () => {
-  mountain25.style.opacity = 1;
-})
-getInfoArrow.addEventListener('mouseleave', () => {
-  mountain25.style.opacity = 0;
-})
-getInfoTab.addEventListener('mouseleave', () => {
-  mountain25.style.opacity = 0;
-})
+getInfoArrow.addEventListener('mouseenter',
+                              () => { mountain25.style.opacity = 1; })
+getInfoTab.addEventListener('mouseenter',
+                            () => { mountain25.style.opacity = 1; })
+getInfoArrow.addEventListener('mouseleave',
+                              () => { mountain25.style.opacity = 0; })
+getInfoTab.addEventListener('mouseleave',
+                            () => { mountain25.style.opacity = 0; })
 
 // UPDATE THE METRONOMO ON SCROLL EVENT
 // Calculate pageHeight once outside the scroll event
@@ -78,13 +72,11 @@ console.log(pageHeight)
 // Throttle function to reduce scroll event calls
 function throttle(callback, delay) {
   let isThrottled = false;
-  return function () {
+  return function() {
     if (!isThrottled) {
       callback.apply(this, arguments);
       isThrottled = true;
-      setTimeout(() => {
-        isThrottled = false;
-      }, delay);
+      setTimeout(() => { isThrottled = false; }, delay);
     }
   };
 }
@@ -160,9 +152,8 @@ function throttle(callback, delay) {
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
-  const normalizedHeight = Math.abs(
-    (scrollPosition / pageHeight) * 8000 - mapHeight
-  );
+  const normalizedHeight =
+      Math.abs((scrollPosition / pageHeight) * 8000 - mapHeight);
 
   if (scrollPosition > totalHeight - (windowHeight + 100)) {
     /* DISAPPEAR METRO */
@@ -181,9 +172,8 @@ function updateMetronomo() {
     endScreen.classList.remove("active-end-screen");
   }
 
-  let meters = (Math.round(`${normalizedHeight}`) + 2500)
-    .toString()
-    .padStart(5, "0");
+  let meters =
+      (Math.round(`${normalizedHeight}`) + 2500).toString().padStart(5, "0");
   if (isNaN(meters)) {
     meters = "00000";
   }
@@ -194,7 +184,7 @@ function updateMetronomo() {
 window.addEventListener('scroll', throttle(updateMetronomo, 25));
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
-window.onload = function () {
+window.onload = function() {
   console.log(window.innerHeight);
   if (window.innerHeight <= 620) {
     removeBr();
@@ -204,13 +194,11 @@ window.onload = function () {
     addBr();
   }
 
-  setTimeout(() => {
-    window.scrollTo(0, document.body.scrollHeight);
-  }, 0);
+  setTimeout(() => { window.scrollTo(0, document.body.scrollHeight); }, 0);
 };
 
 /* TITLE RESPONSIVENESS */
-window.onresize = function () {
+window.onresize = function() {
   console.log(window.innerHeight);
 
   if (window.innerHeight <= 620) {
