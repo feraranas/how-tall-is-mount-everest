@@ -2136,11 +2136,11 @@ body {
     }
     .mountain-25-data {
       position: absolute;
-      width: 95%;
-      margin-left: 10px;
-      margin-right: 10px;
+      width: 400px;
+      margin: auto;
+      left: 50%;
+      transform: translateX(-50%);
       top: calc(47050px);
-      display: grid;
       align-items: self-start;
       background-color: transparent;
       text-align: start;
@@ -2173,6 +2173,7 @@ body {
       transition: opacity 0.2s, width 0.2s;
     }
     .nevado-colima-info {
+      position: relative;
       align-items: self-start;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -2182,8 +2183,20 @@ body {
       background-color: white;
       opacity: 0;
     }
+    .bottom-row{
+      position: absolute;
+      bottom: 0;
+      height: 35px;
+      width: 100%;
+      background: rgba(150,150,150,1);
+    }
     .show-info {
       opacity: 1;
+    }
+    .show-tab-complete {
+      width: 360px;
+      border-radius: 0px 0px 5px 5px;
+      box-shadow: 0px -2.5px 0px rgba(0,0,0,0.5);
     }
     .nevado-colima {
       height: 800px;
@@ -2193,9 +2206,70 @@ body {
   }
 }
 
-/* Ipad 1440x900
+/* Ipad 1440x900 */
 @media screen and (max-width: 768px) and (max-height: 1024px)  {
-} */
+  .mountain-25 {
+    font-size: calc(1.5rem + 2vmin);
+    top: calc(47260px);
+  }
+  .mountain-25-data {
+    position: absolute;
+    width: 400px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(47050px);
+    align-items: self-start;
+    background-color: transparent;
+    text-align: start;
+    font-family: 'Playfair Display', serif;
+    font-size: calc(1rem + 1.5vmin);
+    padding: 10px 20px 0px 20px;
+    z-index: 1;
+  }
+  .tab-arrow {
+    width: 20px;
+    height: 20px;
+    display: block;
+    justify-self: center;
+    background: rgba(150,150,150,1);
+    transform: translateY(50%) rotate(45deg);
+    position: absolute;
+    bottom: 0;
+    transition: 0.1s all;
+  }
+  .fa-info {
+    background: rgba(150,150,150,1);
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    padding-top: 9px;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+    justify-self: center;
+    width: 50px;
+    transition: opacity 0.2s, width 0.2s;
+  }
+  .nevado-colima-info {
+    align-items: self-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding: 0px 20px 25px 20px;
+    transition: 0.2s all;
+    background-color: white;
+    opacity: 0;
+  }
+  .show-info {
+    opacity: 1;
+  }
+  .show-tab-complete {
+    width: 91%;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px -2.5px 0px rgba(0,0,0,0.5);
+  }
+} 
 
 /* Macbook Pro 1440x900
 @media screen and (max-width: 1440px) and (max-height: 900px) {

@@ -65,13 +65,13 @@ function addBr() {
 }
 // Function to handle showing info
 function showInfo() {
-  mountain25.classList.add('show-info');
-  
+  setTimeout(() => mountain25.classList.add('show-info'), 100);
+  // getInfoTab.classList.add('show-tab-complete');
 }
 // Function to handle hiding info
 function hideInfo() {
   mountain25.classList.remove('show-info');
-  
+  // setTimeout(() => getInfoTab.classList.remove('show-tab-complete'), 100);
 }
 // Helper function for debounce
 function debounce(func, delay) {
