@@ -946,7 +946,7 @@ body {
 }
 .background-offroad {
   position: absolute;
-  pointer-events: none; 
+  pointer-events: none;
   bottom: 0;
   left: -150px;
   width: 200%;
@@ -1332,7 +1332,7 @@ body {
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px -2.5px 0px rgba(0,0,0,0.5);
   }
-} 
+}
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Iphone 14 Pro 390x844 & 14 Plus 428x926 */
