@@ -848,13 +848,17 @@ body {
 /* MOUNTAINS -- 23 COFRE DE PEROTE [4282m] */
 /* //////////////////////////////////////////////////////// */
 .mountain.cofre-perote-title {
-  top: calc(39000px);
+  top: calc(38206px);
+  left: 10%;
 }
 .mountain-data.cofre-perote-data {
-  top: calc(39199px);
+  top: calc(37763px);
+  left: 60%;
 }
 .mountain-svg.cofre-perote-svg {
-  top: calc(39499px);
+  width: 115%;
+  height: 1400px;
+  top: calc(38349px);
   background-image: url(./images/mountains/23-COFRE-DE-PEROTE.svg);
 }
 .mountain-svg.cofre-perote-svg::after {
@@ -879,7 +883,7 @@ body {
   top: calc(41720px);
 }
 .mountain-data.cerro-nube-oax-data {
-  top: calc(41499px);
+  top: calc(41060px);
 }
 .mountain-svg.cerro-nube-oax-svg {
   top: calc(41855px);
@@ -904,13 +908,13 @@ body {
 /* MOUNTAINS -- 25 NEVADO DE COLIMA [2720m] */
 /* //////////////////////////////////////////////////////// */
 .mountain.nevado-colima-title {
-  top: calc(47120px)
+  top: calc(47850px)
 }
 .mountain-data.nevado-colima-data {
-  top: calc(46685px);
+  top: calc(46975px);
 }
 .mountain-svg.nevado-colima-svg {
-  top: calc(47252px);
+  top: calc(47980px);
   background-image: url(./images/mountains/25-NEVADO-DE-COLIMA.svg);
 }
 .mountain-svg.nevado-colima-svg::after {
@@ -928,7 +932,6 @@ body {
                                     rgba(175, 231, 254, 1) 85%,
                                     rgba(175, 231, 254, 1) 100%);
 }
-
 
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
