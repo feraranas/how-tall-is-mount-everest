@@ -3,7 +3,7 @@
 /* ///////////////////////////////////////////////// */
 let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
 const totalHeight = 50000; /* FULL HEIGHT */
-const mapHeight = 8000; /* FOR METRONOMO NORMALIZATION */
+const mapHeight = 6800; /* FOR METRONOMO NORMALIZATION */
 
 
 /* ///////////////////////////////////////////////// */
@@ -110,7 +110,7 @@ const pageHeight = document.documentElement.scrollHeight - windowHeight;
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
   const normalizedHeight = Math.abs(
-    (scrollPosition / pageHeight) * 8000 - mapHeight
+    (scrollPosition / pageHeight) * 6800 - mapHeight
   );
 
   if (scrollPosition > totalHeight - (windowHeight + 100)) {
