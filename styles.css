@@ -256,12 +256,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgb(218 244 255 / 60%) 85%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 2 K2 */
@@ -292,12 +287,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%,transparent 50%, rgb(255 255 255) 70%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 3 KANGCHENJUNGA */
@@ -327,12 +317,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%,transparent 25%, rgb(255 255 255) 70%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 4 LHOTSE */
@@ -362,12 +347,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 5 MAKALU */
@@ -398,12 +378,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%,transparent 70%, rgb(255 255 255) 90%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 6 ACACONCAGUA */
@@ -429,12 +404,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%,transparent 75%, rgb(255 255 255) 89%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 7 OJOS DEL SALADO */
@@ -466,12 +436,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgb(248 248 248) 89%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 8 MONTE PISSIS */
@@ -504,12 +469,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
 }
 /* MOUNTAINS -- 9 HUASCARAN */
 /* //////////////////////////////////////////////////////// */
@@ -540,12 +500,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 10 CERRO BONETE */
@@ -572,12 +527,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 11 TRES CRUCES */
@@ -610,12 +560,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 12 MOUNT DENALI */
@@ -641,12 +586,7 @@ body {
   width: 100%;
   opacity: 1;
   height: 100%;
-  background-image: linear-gradient(to bottom,
-                                    transparent 0%,
-                                    transparent 25%,
-                                    transparent 50%,
-                                    rgba(175, 231, 254, 1) 85%,
-                                    rgba(175, 231, 254, 1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%,rgba(0, 191, 255, 1) 75%, rgba(0, 191, 255, 1) 89%, rgba(0, 191, 255, 1) 100%);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 13 KILIMANJARO */
