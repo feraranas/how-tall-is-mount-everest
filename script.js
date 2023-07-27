@@ -3,7 +3,7 @@
 /* ///////////////////////////////////////////////// */
 let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
 const totalHeight = 50000; /* FULL HEIGHT */
-const mapHeight = 8000; /* FOR METRONOMO NORMALIZATION */
+const mapHeight = 6800; /* FOR METRONOMO NORMALIZATION */
 
 
 /* ///////////////////////////////////////////////// */
@@ -19,7 +19,6 @@ const endScreen = document.querySelector(".end-title");
 
 // Get tab & arrow to appear the mountain data
 const getInfoTab = document.querySelector(".fa-info");
-const mountain25 = document.querySelector(".nevado-colima-info");
 
 /* ///////////////////////////////////////////////// */
 /* /////////////AUXILIARY FUNCTIONS///////////////// */
@@ -51,15 +50,14 @@ function addBr() {
   t3Element.appendChild(brElement);
 }
 // Function to handle showing info
-function showInfo() {
-  console.log('working')
-  setTimeout(() => mountain25.classList.add('show-info'), 100);
-  // getInfoTab.classList.add('no-info-symbol');
+function showInfo(e) {
+  const m = document.querySelector(`[data-key="${e.srcElement.dataset.mountainKey}"]`);
+  setTimeout(() => m.classList.add('show-info'), 100);
 }
 // Function to handle hiding info
-function hideInfo() {
-  mountain25.classList.remove('show-info');
-  // setTimeout(() => getInfoTab.classList.remove('no-info-symbol'), 100);
+function hideInfo(e) {
+  const m = document.querySelector(`[data-key="${e.srcElement.dataset.mountainKey}"]`);
+  m.classList.remove('show-info');
 }
 // Helper function for debounce
 function debounce(func, delay) {
@@ -89,94 +87,30 @@ function throttle(callback, delay) {
 
 // Appear mountain data on mouse enter event & disappear on mouseleave
 // Debounced event listeners for better performance
-const debouncedShow = debounce(showInfo, 100);
-const debouncedHide = debounce(hideInfo, 100);
+function debouncedShow(e) {
+  return debounce(showInfo(e), 100);
+}
+function debouncedHide(e) { 
+  return debounce(hideInfo(e), 100);
+}
 
 // Attach the debounced event listeners to the common parent element
-const parentElement = document.querySelector(".mountain-25-data"); // Replace with the common parent element
-parentElement.addEventListener('mouseenter', debouncedShow);
-parentElement.addEventListener('mouseleave', debouncedHide);
+const parentElement = Array.from(document.querySelectorAll(".fa-info"));
+parentElement.forEach((item) => {
+  item.addEventListener('mouseenter', debouncedShow);
+  item.addEventListener('mouseleave', debouncedHide);
+})
 
 // UPDATE THE METRONOMO ON SCROLL EVENT
 // Calculate pageHeight once outside the scroll event
 const windowHeight = window.innerHeight;
 const pageHeight = document.documentElement.scrollHeight - windowHeight;
-console.log(pageHeight)
-
-
-// // RAIN
-// var makeItRain = function() {
-//   //clear out everything
-//   $('.rain').empty();
-
-//   var increment = 0;
-//   var drops = "";
-//   var backDrops = "";
-
-//   while (increment < 100) {
-//     //couple random numbers to use for various randomizations
-//     //random number between 98 and 1
-//     var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
-//     //random number between 5 and 2
-//     var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
-//     //increment
-//     increment += randoFiver;
-//     //add in a new raindrop with various randomizations to certain CSS
-//     properties drops += '<div class="drop" style="left: ' + increment + '%;
-//     bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay:
-//     0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div
-//     class="stem" style="animation-delay: 0.' + randoHundo + 's;
-//     animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat"
-//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
-//     randoHundo + 's;"></div></div>'; backDrops += '<div class="drop"
-//     style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver -
-//     1 + 100) + '%; animation-delay: 0.' + randoHundo + 's;
-//     animation-duration: 0.5' + randoHundo + 's;"><div class="stem"
-//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
-//     randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' +
-//     randoHundo + 's; animation-duration: 0.5' + randoHundo +
-//     's;"></div></div>';
-//   }
-
-//   $('.rain.front-row').append(drops);
-//   $('.rain.back-row').append(backDrops);
-// }
-
-// $('.splat-toggle.toggle').on('click', function() {
-//   $('body').toggleClass('splat-toggle');
-//   $('.splat-toggle.toggle').toggleClass('active');
-//   makeItRain();
-// });
-
-// $('.back-row-toggle.toggle').on('click', function() {
-//   $('body').toggleClass('back-row-toggle');
-//   $('.back-row-toggle.toggle').toggleClass('active');
-//   makeItRain();
-// });
-
-// $('.single-toggle.toggle').on('click', function() {
-//   $('body').toggleClass('single-toggle');
-//   $('.single-toggle.toggle').toggleClass('active');
-//   makeItRain();
-// });
-
-// makeItRain();
-
-// Function to update the appearance of mountain data
-// function appearMountainData() {
-//   const scrollPosition = window.pageYOffset;
-//   if (scrollPosition >= 47000 && scrollPosition <= 48000) {
-//     mountain25Data.classList.add("active-mountain-data");
-//   } else {
-//     mountain25Data.classList.remove("active-mountain-data");
-//   }
-// }
 
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
   const normalizedHeight = Math.abs(
-    (scrollPosition / pageHeight) * 8000 - mapHeight
+    (scrollPosition / pageHeight) * 6800 - mapHeight
   );
 
   if (scrollPosition > totalHeight - (windowHeight + 100)) {
@@ -237,3 +171,63 @@ window.onresize = function () {
     flag = false;
   }
 };
+
+
+
+// // RAIN
+// var makeItRain = function() {
+//   //clear out everything
+//   $('.rain').empty();
+
+//   var increment = 0;
+//   var drops = "";
+//   var backDrops = "";
+
+//   while (increment < 100) {
+//     //couple random numbers to use for various randomizations
+//     //random number between 98 and 1
+//     var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+//     //random number between 5 and 2
+//     var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+//     //increment
+//     increment += randoFiver;
+//     //add in a new raindrop with various randomizations to certain CSS
+//     properties drops += '<div class="drop" style="left: ' + increment + '%;
+//     bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay:
+//     0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div
+//     class="stem" style="animation-delay: 0.' + randoHundo + 's;
+//     animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat"
+//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
+//     randoHundo + 's;"></div></div>'; backDrops += '<div class="drop"
+//     style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver -
+//     1 + 100) + '%; animation-delay: 0.' + randoHundo + 's;
+//     animation-duration: 0.5' + randoHundo + 's;"><div class="stem"
+//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
+//     randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' +
+//     randoHundo + 's; animation-duration: 0.5' + randoHundo +
+//     's;"></div></div>';
+//   }
+
+//   $('.rain.front-row').append(drops);
+//   $('.rain.back-row').append(backDrops);
+// }
+
+// $('.splat-toggle.toggle').on('click', function() {
+//   $('body').toggleClass('splat-toggle');
+//   $('.splat-toggle.toggle').toggleClass('active');
+//   makeItRain();
+// });
+
+// $('.back-row-toggle.toggle').on('click', function() {
+//   $('body').toggleClass('back-row-toggle');
+//   $('.back-row-toggle.toggle').toggleClass('active');
+//   makeItRain();
+// });
+
+// $('.single-toggle.toggle').on('click', function() {
+//   $('body').toggleClass('single-toggle');
+//   $('.single-toggle.toggle').toggleClass('active');
+//   makeItRain();
+// });
+
+// makeItRain();
