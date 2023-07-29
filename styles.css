@@ -43,7 +43,6 @@ body {
   overscroll-behavior-x: none;
   position: relative;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   background-image: url(./images/grid.svg);
   background-repeat: repeat;
   background-size: 175px 175px;
@@ -737,7 +736,7 @@ body {
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 17 MOUNT FRAKER */
 /* //////////////////////////////////////////////////////// */
-.mountain.mount-fraker-title{
+/* .mountain.mount-fraker-title{
   z-index: 115;
   top: calc(29060px);
   opacity: 0;
@@ -750,7 +749,7 @@ body {
 .mountain-svg.mount-fraker-svg {
   z-index: 115;
   top: calc(28980px);
-  /* background-image: url(./images/mountains/17-MOUNT-FRAKER.svg); */
+  background-image: url(./images/mountains/11-TRES-CRUCES.svg);
 }
 .mountain-svg.mount-fraker-svg::after {
   content: '';
@@ -766,7 +765,7 @@ body {
                                     transparent 50%,
                                     rgba(175, 231, 254, 1) 85%,
                                     rgba(175, 231, 254, 1) 100%);
-}
+} */
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 18 IZTLACCIHUATL */
 /* //////////////////////////////////////////////////////// */
@@ -929,7 +928,7 @@ body {
   background-position: right center;
   background-image: url(./images/mountains/22-VOLCAN-MALINTZIN.svg);
 }
-.mountain-svg.volcan-malintzin-svg::after {
+/* .mountain-svg.volcan-malintzin-svg::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -943,7 +942,7 @@ body {
                                     transparent 50%,
                                     rgba(175, 231, 254, 1) 85%,
                                     rgba(175, 231, 254, 1) 100%);
-}
+} */
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 23 COFRE DE PEROTE [4282m] */
 /* //////////////////////////////////////////////////////// */
@@ -1641,7 +1640,7 @@ body {
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 17 MOUNT FRAKER */
   /* //////////////////////////////////////////////////////// */
-  .mountain.mount-fraker-title{
+  /* .mountain.mount-fraker-title{
     z-index: 115;
     opacity: 1;
     top: calc(28818px);
@@ -1667,7 +1666,7 @@ body {
     opacity: 1;
     height: 100%;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgba(175, 231, 254, 1) 65%, rgba(175, 231, 254, 1) 100%);
-  }
+  } */
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 18 IZTLACCIHUATL */
@@ -2144,7 +2143,7 @@ body {
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 17 MOUNT FRAKER */
   /* //////////////////////////////////////////////////////// */
-  .mountain.mount-fraker-title{
+  /* .mountain.mount-fraker-title{
     z-index: 115;
     opacity: 1;
     top: calc(28818px);
@@ -2170,7 +2169,7 @@ body {
     opacity: 1;
     height: 100%;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgba(175, 231, 254, 1) 65%, rgba(175, 231, 254, 1) 100%);
-  }
+  } */
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 18 IZTLACCIHUATL */
@@ -2647,7 +2646,7 @@ body {
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 17 MOUNT FRAKER */
   /* //////////////////////////////////////////////////////// */
-  .mountain.mount-fraker-title{
+  /* .mountain.mount-fraker-title{
     z-index: 115;
     opacity: 1;
     top: calc(28818px);
@@ -2673,7 +2672,7 @@ body {
     opacity: 1;
     height: 100%;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgba(175, 231, 254, 1) 65%, rgba(175, 231, 254, 1) 100%);
-  }
+  } */
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 18 IZTLACCIHUATL */
@@ -3150,7 +3149,7 @@ body {
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 17 MOUNT FRAKER */
   /* //////////////////////////////////////////////////////// */
-  .mountain.mount-fraker-title{
+  /* .mountain.mount-fraker-title{
     z-index: 115;
     opacity: 1;
     top: calc(28818px);
@@ -3176,7 +3175,7 @@ body {
     opacity: 1;
     height: 100%;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgba(175, 231, 254, 1) 65%, rgba(175, 231, 254, 1) 100%);
-  }
+  } */
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 18 IZTLACCIHUATL */
@@ -3696,7 +3695,7 @@ body {
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 17 MOUNT FRAKER */
   /* //////////////////////////////////////////////////////// */
-  .mountain.mount-fraker-title{
+  /* .mountain.mount-fraker-title{
     z-index: 115;
     opacity: 1;
     top: calc(28818px);
@@ -3722,7 +3721,7 @@ body {
     opacity: 1;
     height: 100%;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgba(175, 231, 254, 1) 65%, rgba(175, 231, 254, 1) 100%);
-  }
+  } */
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 18 IZTLACCIHUATL */
@@ -3893,50 +3892,53 @@ body {
 @media screen and (min-width: 0px) and (max-width: 390px) {
   body {
       background-image: linear-gradient(to bottom,
-                                    rgba(255, 255, 255, 1) 0px,
+                                    rgba(255, 255, 255, 1) 0px, /* FULL WHITE */
                                     rgba(255, 255, 255, 1) 1000px,
-                                    rgba(255, 255, 255, 1) 2000px,
+                                    rgba(255, 255, 255, 1) 2000px, 
                                     rgba(255, 255, 255, 1) 3000px,
-                                    rgba(255, 255, 255, 1) 4000px,
-                                    rgba(255, 255, 255, 1) 5000px,
-                                    rgba(255, 255, 255, 1) 6000px,
-                                    rgba(255, 255, 255, 1) 7000px,
-                                    rgba(255, 255, 255, 1) 8000px,
-                                    rgba(255, 255, 255, 1) 9000px,
-                                    rgba(255, 255, 255, 1) 10000px,
-                                    rgba(255, 255, 255, 1) 11000px,
-                                    rgba(255, 255, 255, 1) 12000px,
-                                    rgba(255, 255, 255, 1) 13000px,
-                                    rgba(255, 255, 255, 1) 14000px,
-                                    rgba(255, 255, 255, 1) 15000px,
-                                    rgba(255, 255, 255, 1) 16000px,
-                                    rgba(255, 255, 255, 1) 17000px,
-                                    rgba(255, 255, 255, 1) 18000px,
-                                    rgba(255, 255, 255, 1) 19000px,
-                                    rgba(255, 255, 255, 1) 20000px,
-                                    rgba(255, 255, 255, 1) 21000px,
-                                    rgba(175, 231, 254, 1) 22000px,
-                                    rgba(175, 231, 254, 1) 23000px,
-                                    rgba(175, 231, 254, 1) 24000px,
-                                    rgba(175, 231, 254, 1) 25000px,
-                                    rgba(175, 231, 254, 1) 26000px,
-                                    rgba(175, 231, 254, 1) 27000px,
-                                    rgba(175, 231, 254, 1) 27500px,
-                                    rgb(74, 4, 4, 1) 28100px,
+                                    rgba(255, 255, 255, 1) 4000px, 
+                                    rgb(250, 249, 246) 5000px, /* OFF WHITE */
+                                    rgb(250, 249, 246) 6000px,
+                                    rgb(250, 249, 246) 7000px,
+                                    rgb(250, 249, 246) 8000px,
+                                    rgb(250, 249, 246) 9000px, 
+                                    rgb(249, 246, 238) 10000px, /* BONE WHITE */
+                                    rgb(249, 246, 238) 11000px,
+                                    rgb(249, 246, 238) 12000px,
+                                    rgb(249, 246, 238) 13000px,
+                                    rgb(249, 246, 238) 14000px,
+                                    rgb(249, 246, 238) 15000px,
+                                    rgb(249, 246, 238) 16000px, 
+                                    rgb(249, 246, 238) 17000px, 
+                                    rgb(249, 246, 238) 18000px,
+                                    rgb(249, 246, 238) 19000px,
+                                    rgb(249, 246, 238) 20000px,
+                                    rgb(0, 0, 0) 21000px, /* Black */
+                                    rgb(0, 0, 0) 22000px,
+                                    rgb(0, 0, 0) 23000px,
+                                    rgb(0, 0, 0) 24000px,
+                                    rgb(27, 18, 18) 25000px, /* Licorice */
+                                    rgb(27, 18, 18) 26000px, /* Licorice */
+                                    rgb(48, 25, 52) 27000px, /* PURPLISH */
+                                    rgb(48, 25, 52) 27500px, /* PURPLISH */
+                                    rgb(74, 4, 4, 1) 28100px, /* STARTING THE NIGHT */
                                     rgb(74, 4, 4, 1) 28200px, /* STARTING THE NIGHT */
-                                    rgb(123, 24, 24, 1) 28400px, /* POPOCATEPETL LAVA */
-                                    rgb(123, 24, 24, 1) 28600px, /* POPOCATEPETL LAVA */
-                                    rgba(175, 231, 254, 1) 29000px,
-                                    rgba(175, 231, 254, 1) 30000px,
-                                    rgba(175, 231, 254, 1) 31000px,
-                                    rgba(175, 231, 254, 1) 32000px,
-                                    rgba(175, 231, 254, 1) 33000px,
-                                    rgba(175, 231, 254, 1) 34000px,
-                                    rgba(175, 231, 254, 1) 35000px,
-                                    rgba(175, 231, 254, 1) 36000px,
-                                    rgba(175, 231, 254, 1) 37000px,
-                                    rgba(175, 231, 254, 1) 38000px,
-                                    rgba(175, 231, 254, 1) 39000px,
+                                    rgb(123, 24, 24, 1) 28300px, /* POPOCATEPETL LAVA */
+                                    rgb(123, 24, 24, 1) 28450px,
+                                    rgb(123, 24, 24, 1) 28650px,
+                                    rgb(54, 69, 79) 28700px, /* Charcoal */
+                                    rgb(54, 69, 79) 28800px,
+                                    rgb(54, 69, 79) 29000px,
+                                    rgb(54, 69, 79) 30000px,
+                                    rgb(54, 69, 79) 31000px,
+                                    rgb(54, 69, 79) 31500px, 
+                                    rgb(137, 207, 240) 33000px, /* Baby blue */
+                                    rgb(137, 207, 240) 36000px,
+                                    rgb(137, 207, 240) 36500px,
+                                    rgb(137, 207, 240) 37000px,
+                                    rgb(137, 207, 240) 37500px,
+                                    rgb(137, 207, 240) 38000px,
+                                    rgba(175, 231, 254, 1) 39000px, /* Sky Blue */
                                     rgba(175, 231, 254, 1) 40000px,
                                     rgba(175, 231, 254, 1) 41000px,
                                     rgba(175, 231, 254, 1) 42000px,
@@ -3948,7 +3950,6 @@ body {
                                     rgba(175, 231, 254, 1) 48000px,
                                     rgba(175, 231, 254, 1) 49000px,
                                     rgba(175, 231, 254, 1) 50000px);
-      }
   }
   .mountain {
     font-size: calc(2rem);
@@ -4148,14 +4149,13 @@ body {
     z-index: 108;
   }
   .mountain-svg.monte-pissis-svg::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    opacity: 1;
-    height: 100%;
-    background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 30%, rgb(255 255 255) 45%, rgb(255 255 255) 85%, rgb(255 255 255) 100%);
+    background-image: linear-gradient(to bottom, 
+                                      transparent 0%, 
+                                      transparent 25%,
+                                      transparent 30%, 
+                                      rgb(249, 246, 238) 45%, 
+                                      rgb(249, 246, 238) 85%, 
+                                      rgb(249, 246, 238) 100%);
   }
   
   /* //////////////////////////////////////////////////////// */
@@ -4224,6 +4224,14 @@ body {
     height: 634px;
     z-index: 111;
   }
+  .mountain-svg.tres-cruces-svg::after {
+    background-image: linear-gradient(to bottom, 
+                                      transparent 0%, 
+                                      transparent 25%, 
+                                      transparent 50%, 
+                                      rgb(249, 246, 238) 85%, 
+                                      rgb(249, 246, 238) 100%);
+  }
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 12 MOUNT DENALI */
@@ -4241,6 +4249,15 @@ body {
     width: 471px;
     height: 634px;
     z-index: 112;
+    opacity: 0.93;
+  }
+  .mountain-svg.mount-denali-svg::after {
+    background-image: linear-gradient(to bottom,
+    transparent 0%, transparent 25%,
+    transparent 50%,
+    rgb(20, 11, 11) 75%,
+    rgb(20, 11, 11) 89%,
+    rgb(20, 11, 11) 100%);
   }
   
   /* //////////////////////////////////////////////////////// */
@@ -4259,6 +4276,15 @@ body {
     width: 471px;
     height: 634px;
     z-index: 113;
+    opacity: 0.95;
+  }
+  .mountain-svg.kilimanjaro-svg::after {
+    background-image: linear-gradient(to bottom,
+                                      transparent 0%,
+                                      transparent 25%,
+                                      transparent 50%,
+                                      rgb(27, 18, 18) 85%,
+                                      rgb(27, 18, 18) 100%);
   }
   
   /* //////////////////////////////////////////////////////// */
@@ -4280,6 +4306,15 @@ body {
     width: 600px;
     height: 634px;
     z-index: 115;
+    opacity: 0.95;
+  }
+  .mountain-svg.pico-orizaba-svg::after {
+    background-image: linear-gradient(to bottom,
+                                      transparent 0%,
+                                      transparent 25%,
+                                      transparent 50%,
+                                      rgb(48, 25, 52) 85%,
+                                      rgb(48, 25, 52) 100%);
   }
   
   /* //////////////////////////////////////////////////////// */
@@ -4303,6 +4338,14 @@ body {
     width: 600px;
     height: 500px;
   }
+  .mountain-svg.mount-elbrus-svg::after {
+    background-image: linear-gradient(to bottom,
+                                      transparent 0%,
+                                      transparent 25%,
+                                      transparent 50%,
+                                      rgb(48, 25, 52) 85%,
+                                      rgb(48, 25, 52) 100%);
+  }
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 16 POPOCATEPETL */
@@ -4318,13 +4361,29 @@ body {
     top: calc(28100px);
     width: 471px;
     height: 634px;
+    opacity: 0.92;
   }
-  .
+  .mountain-svg.popocatepetl-svg::after {
+    background-image: linear-gradient(to top, 
+                      transparent 0%,
+                      transparent 25%,
+                      transparent 71%,
+                      rgb(173, 54, 54, 1) 78%, /* starting friendly lava color */
+                      rgb(123, 24, 24, 1) 85%, /* starting friendly lava color */
+                      rgb(74, 4, 4, 1) 100%), /* finishing with nightly lava color */
+                      linear-gradient(to bottom,
+                      transparent 0%,
+                      transparent 25%,
+                      transparent 71%,
+                      rgb(54, 69, 79) 92%,
+                      rgb(54, 69, 79) 95%,
+                      rgb(54, 69, 79) 100%);
+  }
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 17 MOUNT FRAKER */
   /* //////////////////////////////////////////////////////// */
-  .mountain.mount-fraker-title{
+  /* .mountain.mount-fraker-title{
     z-index: 115;
     opacity: 1;
     top: calc(28946px);
@@ -4337,6 +4396,7 @@ body {
   }
   .mountain-svg.mount-fraker-svg {
     top: calc(28893px);
+    opacity: 0.93;
     width: 471px;
     height: 634px;
     background-image: url(./images/mountains/17-MOUNT-FRAKER.svg);
@@ -4347,10 +4407,20 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    opacity: 1;
+    opacity: 0.99;
     height: 100%;
-    background-image: linear-gradient(to bottom, transparent 0%, transparent 25%, transparent 50%, rgba(175, 231, 254, 1) 65%, rgba(175, 231, 254, 1) 100%);
-  }
+    background-image: linear-gradient(to bottom,
+                                      transparent 0%,
+                                      transparent 25%,
+                                      transparent 50%,
+                                      rgba(25, 25, 112, 1) 70%,
+                                      rgba(25, 25, 112, 1) 75%,
+                                      rgba(25, 25, 112, 1) 85%,
+                                      rgba(25, 25, 112, 0.3) 90%,
+                                      rgba(25, 25, 112, 0) 95%,
+                                      rgba(25, 25, 112, 0) 97%,
+                                      rgba(25, 25, 112, 0) 100%);
+  } */
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 18 IZTLACCIHUATL */
@@ -4373,8 +4443,23 @@ body {
     height: 634px;
     left: 60%;
     top: calc(29450px);
+    opacity: 0.92;
   }
-  
+  .mountain-svg.iztlaccihuatl-svg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 100%;
+    background-image: linear-gradient(to bottom,
+                                      transparent 0%,
+                                      transparent 25%,
+                                      transparent 50%,
+                                      rgba(25, 25, 112, 0.9) 85%,
+                                      rgba(25, 25, 112, 0.9) 100%);
+  }
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 19 DYKH TAU */
   /* //////////////////////////////////////////////////////// */
@@ -4395,6 +4480,25 @@ body {
     left: 30%;
     width: 571px;
     height: 634px;
+    opacity: 0.935;
+  }
+  .mountain-svg.dykh-tau-svg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 634px;
+    background-image: linear-gradient(to bottom,
+                                      transparent 0%,
+                                      transparent 25%,
+                                      transparent 50%,
+                                      rgba(25, 25, 112, 0.9) 90%,
+                                      rgba(25, 25, 112, 0.92) 90%,
+                                      rgba(25, 25, 112, 0.93) 90%,
+                                      rgba(25, 25, 112, 1) 100%,
+                                      rgba(25, 25, 112, 0.2) 100%);
   }
   
   /* //////////////////////////////////////////////////////// */
@@ -4500,7 +4604,6 @@ body {
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 25 NEVADO DE COLIMA [2720m] */
   /* //////////////////////////////////////////////////////// */
-  /* Mountain Nevado de Colima */
   .mountain.nevado-colima-title {
     top: calc(47660px);
     font-size: 1.8rem;
