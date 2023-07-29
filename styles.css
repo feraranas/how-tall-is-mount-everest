@@ -33,9 +33,8 @@ body {
 }
 
 /* ////////////////////////////////////////////////////////////////////////
-//////////////////////////MAIN CONTAINER///////////////////////////////////
+///////////////////////// MAIN CONTAINER //////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
-/* MAIN CONTAINER -> THIS HOLDS THE GRAPHICS -> IT IS ABSOLUTED */
 .main-container {
   width: 100vw;
   height: var(--page-height);
@@ -43,15 +42,37 @@ body {
   overscroll-behavior-x: none;
   position: relative;
   overflow-x: hidden;
-  background-image: url(./images/grid.svg);
-  background-repeat: repeat;
-  background-size: 175px 175px;
   margin: 0;
   padding: 0;
 }
+.main-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url(./images/gridBlack.svg);
+  background-repeat: repeat;
+  background-size: 175px 175px;
+  opacity: 0.5;
+}
+.main-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-image: url(./images/grid.svg);
+  background-repeat: repeat;
+  background-size: 175px 175px;
+  opacity: 0.5;
+}
+
 
 /* ////////////////////////////////////////////////////////////////////////
-//////////////////////////////METRONOMO////////////////////////////////////
+///////////////////////////// METRONOMO ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
 /* METRONOMO */
 .metronomo-wrapper {
@@ -124,7 +145,41 @@ body {
 
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-///////////////////////////////MOUNTAINS///////////////////////////////////
+////////////////////////////// ANIMATIONS /////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////// */
+/* STARS */
+.stars, .twinkleMask {
+  position: absolute;
+  top: 22597px;
+  display: block;
+}
+.stars {
+  background: #000 url(./images/stars/stars.jpg) repeat top center;
+  z-index: 0;
+}
+.twinkleMask {
+  background: transparent url(./images/stars/twinkleMask.png) repeat top center;
+  z-index: 2;
+  height: 200%;
+  animation: twinkleFrames 300s linear infinite;
+}
+@keyframes twinkleFrames {
+  from {
+       background-position: 0 0;
+ }
+  to {
+       background-position: 10000px 5000px;
+ }
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+////////////////////////////// MOUNTAINS //////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
@@ -694,7 +749,7 @@ body {
 }
 .mountain-svg.cerro-nube-oax-svg {
   top: calc(40491px);
-  background-image: url(./images/mountains/24-CERRO-NUBE-OAX.svg);
+  background-image: url(./images/mountains/24-CERRO-NEGRO-OAX.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 25 NEVADO DE COLIMA [2720m] */
@@ -712,16 +767,8 @@ body {
 }
 
 /* ////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
+//////////////////////////// INITIAL SCREEN ///////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
-/* CONTAINER GRAPHICS -> SECOND CHILD */
-.container-inner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
 .background-offroad {
   position: absolute;
   pointer-events: none; 
@@ -800,7 +847,7 @@ body {
  }
 
  /* ////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
+///////////////////////////// INITIAL TITLE ////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
  /* TITLE -> MONTAÑAS DE MÉXICO LINDO */
  .title {
@@ -3501,8 +3548,9 @@ body {
                                     rgb(74, 4, 4, 1) 28200px, /* STARTING THE NIGHT */
                                     rgb(123, 24, 24, 1) 28300px, /* POPOCATEPETL LAVA */
                                     rgb(123, 24, 24, 1) 28450px,
-                                    rgb(123, 24, 24, 1) 28650px,
-                                    rgb(54, 69, 79) 28700px, /* Charcoal */
+                                    rgb(123, 24, 24, 1) 28550px,
+                                    rgb(54, 69, 79) 28600px, /* Charcoal */
+                                    rgb(54, 69, 79) 28700px,
                                     rgb(54, 69, 79) 28800px,
                                     rgb(54, 69, 79) 29000px,
                                     rgb(54, 69, 79) 30000px,
@@ -3566,9 +3614,10 @@ body {
     z-index: 101;
   }
   .mountain-svg.mount-everest-svg {
-    top: calc(3268px);
-    height: 650px;
-    width: 115%;
+    top: calc(3336px);
+    height: 804px;
+    left: 56%;
+    width: 600px;
     z-index: 101;
   }
 
@@ -3587,9 +3636,9 @@ body {
   }
   .mountain-svg.k2-svg {
     top: calc(4996px);
-    left: 0;
+    left: 5%;
     width: 600px;
-    height: 634px;
+    height: 821px;
     z-index: 102;
   }
   
@@ -3597,25 +3646,24 @@ body {
   /* MOUNTAINS -- 3 KANGCHENJUNGA */
   /* //////////////////////////////////////////////////////// */
   .mountain.kangchenjunga-title{
-    top: calc(5150px);
-    left: 70%;
-    font-size: 1.8rem;
+    top: calc(5166px);
+    z-index: 106;
+    left: 68%;
     z-index: 103;
   }
   .mountain-data.kangchenjunga-data {
-    top: calc(4805px);
+    top: calc(4835px);
     z-index: 106;
-    left: 70%;
+    left: 67%;
     z-index: 103;
   }
   .mountain-svg.kangchenjunga-svg {
-    top: calc(5105px);
+    top: calc(5233px);
     left: 50%;
-    width: 400px;
+    width: 401px;
     height: 634px;
     z-index: 103;
-  }
-  
+  }  
   
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 4 LHOTSE */
@@ -3635,7 +3683,7 @@ body {
     left: 0%;
     transform: translateX(-10%);
     width: 545px;
-    height: 534px;
+    height: 792px;
     z-index: 104;
   }
   
@@ -3643,17 +3691,17 @@ body {
   /* MOUNTAINS -- 5 MAKALU */
   /* //////////////////////////////////////////////////////// */
   .mountain.makalu-title{
-    top: calc(5905px);
-    left: 70%;
+    top: calc(5915px);
+    left: 64%;
     z-index: 105;
   }
   .mountain-data.makalu-data {
-    left: 70%;
-    top: calc(5320px);
+    left: 62%;
+    top: calc(5341px);
     z-index: 105;
   }
   .mountain-svg.makalu-svg {
-    top: calc(5907px);
+    top: calc(5967px);
     width: 471px;
     height: 634px;
     z-index: 105;
@@ -3785,7 +3833,7 @@ body {
     transform: translateX(-50%);
   }
   .mountain-svg.tres-cruces-svg {
-    top: calc(18479px);
+    top: calc(18555px);
     left: 65%;
     width: 600px;
     height: 634px;
@@ -3803,7 +3851,7 @@ body {
     z-index: 112;
   }
   .mountain-svg.mount-denali-svg {
-    top: calc(22501px);
+    top: calc(22597px);
     width: 471px;
     height: 634px;
     z-index: 112;
@@ -3832,20 +3880,20 @@ body {
   /* MOUNTAINS -- 14 PICO ORIZABA */
   /* //////////////////////////////////////////////////////// */
   .mountain.pico-orizaba-title{
-    top: calc(26550px);
+    top: calc(26525px);
     left: 29%;
     z-index: 115;
   }
   .mountain-data.pico-orizaba-data {
-    top: calc(24928px);
-    left: 29%;
+    top: calc(24907px);
+    left: 24%;
     z-index: 114;
   }
   .mountain-svg.pico-orizaba-svg {
-    top: calc(26555px);
+    top: calc(26609px);
     left: 30%;
-    width: 600px;
-    height: 634px;
+    width: 521px;
+    height: 618px;
     z-index: 115;
     opacity: 0.95;
   }
@@ -3864,11 +3912,11 @@ body {
     left: 74%;
   }
   .mountain-svg.mount-elbrus-svg {
-    top: calc(26480px);
+    top: calc(26566px);
     left: 70%;
     z-index: 114;
-    width: 600px;
-    height: 500px;
+    width: 524px;
+    height: 540px;
   }
   /* //////////////////////////////////////////////////////// */
   /* MOUNTAINS -- 16 POPOCATEPETL */
@@ -3901,7 +3949,7 @@ body {
     top: calc(26971px);
   }
   .mountain-svg.mount-fraker-svg {
-    top: calc(28893px);
+    top: calc(29016px);
     opacity: 0.93;
     width: 471px;
     height: 634px;
@@ -3947,7 +3995,7 @@ body {
     transform: translateX(-50%);
   }
   .mountain-svg.dykh-tau-svg {
-    top: calc(29607px);
+    top: calc(29709px);
     left: 30%;
     width: 571px;
     height: 634px;
@@ -4071,325 +4119,6 @@ body {
   }
 }
 
-
-/* ////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////BUTTERFLIES/////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////// */
-
-
-
-/* ////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////// */
-/* FOG EFFECT */
-/* ---------- Fog ---------- */
-.fogwrapper {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
-  filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
-}
-#foglayer_01, #foglayer_02, #foglayer_03 {
-  height: 100%;
-  position: absolute;
-  width: 200%;
-}
-#foglayer_01 .image01, #foglayer_01 .image02,
-#foglayer_02 .image01, #foglayer_02 .image02,
-#foglayer_03 .image01, #foglayer_03 .image02 {
-  float: left;
-  height: 100%;
-  width: 50%;
-}
-#foglayer_01 {
-  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
-  -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
-  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
-}
-#foglayer_02, #foglayer_03 {
-  -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
-  -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
-  animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
-}
-
-/* ---------- Moving Fog ---------- */
-/*
-  'size: cover' || 'size: 100%'; results remain the same
-  'attachment: scroll' can be added or removed; results remain the same
-  'attachment: fixed' causing unexpected results in Chrome
-  'repeat-x' || 'no-repeat'; results remain the same
-*/
-#foglayer_01 .image01, #foglayer_01 .image02 {
-  background: url(/images/clouds/cloudsv2.png) center center/cover no-repeat transparent;
-}
-#foglayer_02 .image01, #foglayer_02 .image02,
-#foglayer_03 .image01, #foglayer_03 .image02{
-  background: url(/images/clouds/cloudsv2.png) center center/cover no-repeat transparent;
-}
-/* ---------- Keyframe Layer 1 ---------- */
-@-webkit-keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
-}
-@-moz-keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
-}
-@-o-keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
-}
-@keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
-}
-/* ---------- Keyframe Layer 2 ---------- */
-@-webkit-keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
-}
-@-moz-keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
-}
-@-o-keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
-}
-@keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
-}
-/* ---------- Keyframe Layer 3 ---------- */
-@-webkit-keyframes foglayer_03_opacity {
-  0% { opacity: .8 }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
-}
-@-moz-keyframes foglayer_03_opacity {
-  0% { opacity: .8 }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
-}
-@-o-keyframes foglayer_03_opacity {
-  0% { opacity: .8 }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
-}
-@keyframes foglayer_03_opacity {
-  0% { opacity: .8; }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
-}
-/* ---------- Keyframe moveMe ---------- */
-@-webkit-keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-@-moz-keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-@-o-keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-@keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-
-@media only screen
-  and (min-width: 280px)
-  and (max-width: 767px) {
-    #foglayer_01 .image01, #foglayer_01 .image02,
-    #foglayer_02 .image01, #foglayer_02 .image02,
-    #foglayer_03 .image01, #foglayer_03 .image02 {
-      width: 100%;
-  }
-}
-
-/* ////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////// */
-/* RAIN EFFECT  */
-.rain {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-.rain.back-row {
-  display: none;
-  z-index: 1;
-  bottom: 60px;
-  opacity: 0.5;
-}
-.body-2.back-row-toggle .rain.back-row {
-  display: block;
-}
-.drop {
-  position: absolute;
-  bottom: 100%;
-  width: 15px;
-  height: 120px;
-  pointer-events: none;
-  animation: drop 0.5s linear infinite;
-}
-@keyframes drop {
-  0% {
-    transform: translateY(0vh);
-  }
-  75% {
-    transform: translateY(90vh);
-  }
-  100% {
-    transform: translateY(90vh);
-  }
-}
-.stem {
-  width: 1px;
-  height: 60%;
-  margin-left: 7px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
-  animation: stem 0.5s linear infinite;
-}
-@keyframes stem {
-  0% {
-    opacity: 1;
-  }
-  65% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.splat {
-  width: 15px;
-  height: 10px;
-  border-top: 2px dotted rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 1;
-  transform: scale(0);
-  animation: splat 0.5s linear infinite;
-  display: none;
-}
-.body-2.splat-toggle .splat {
-  display: block;
-}
-@keyframes splat {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  90% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-}
-.toggles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-.toggle {
-  position: absolute;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  line-height: 51px;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.toggle:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-.toggle:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.toggle.active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-.splat-toggle {
-  top: 20px;
-}
-.back-row-toggle {
-  top: 90px;
-  line-height: 12px;
-  padding-top: 14px;
-}
-.single-toggle {
-  top: 160px;
-}
-.body-2.single-toggle .drop {
-  display: none;
-}
-.body-2.single-toggle .drop:nth-child(10) {
-  display: block;
-}
 
 
 
