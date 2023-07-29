@@ -45,18 +45,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.main-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-image: url(./images/gridBlack.svg);
-  background-repeat: repeat;
-  background-size: 175px 175px;
-  opacity: 0.5;
-}
 .main-container::before {
   content: "";
   position: absolute;
@@ -67,14 +55,25 @@ body {
   background-image: url(./images/grid.svg);
   background-repeat: repeat;
   background-size: 175px 175px;
-  opacity: 0.5;
+  z-index: 3;
+  opacity: 0.35;
 }
-
-
+.main-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url(./images/gridBlack.svg);
+  background-repeat: repeat;
+  background-size: 175px 175px;
+  opacity: 0.35;
+  z-index: 3;
+}
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////// METRONOMO ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////// */
-/* METRONOMO */
 .metronomo-wrapper {
   position: fixed;
   top: 0;
@@ -87,7 +86,23 @@ body {
   height: 70px;
   text-align: center;
   border-radius: 5px 5px 15px 15px;
-  border: 1px solid black;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
   z-index: 121;
 }
 .metronomo-grid {
@@ -152,17 +167,23 @@ body {
 /* STARS */
 .stars, .twinkleMask {
   position: absolute;
-  top: 22597px;
+  top: 21200px;
   display: block;
+  width: 100vw;
 }
 .stars {
-  background: #000 url(./images/stars/stars.jpg) repeat top center;
-  z-index: 0;
+  top: 20000px;
+  background: #0000 url(./images/stars/stars.png) repeat;
+  z-index: 1;
+  height: 7000px;
+  background-size: 628px;
+  opacity: 0.8;
 }
 .twinkleMask {
-  background: transparent url(./images/stars/twinkleMask.png) repeat top center;
+  top: 21200px;
+  background: #0000 url(./images/stars/twinkleMask.png) repeat top center;
   z-index: 2;
-  height: 200%;
+  height: 2200px;
   animation: twinkleFrames 300s linear infinite;
 }
 @keyframes twinkleFrames {
@@ -173,9 +194,6 @@ body {
        background-position: 10000px 5000px;
  }
 }
-
-
-
 
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -4117,6 +4135,18 @@ body {
     width: 700px;
     height: 550px;
   }
+/* ////////////////////////////////////////////////////////////////////////
+///////////////////////////// METRONOMO ///////////////////////////////////
+//////////////////////////////////////////////////////////////////////// */
+.metronomo-wrapper {
+  width: 180px;
+  height: 50px;
+}
+.metronomo {
+  font-size: 1.6rem;
+  padding-left: 11px;
+  letter-spacing: 20px;
+}
 }
 
 
