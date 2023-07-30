@@ -201,7 +201,7 @@ body {
   position:relative;
 }
 canvas {
-  position:absolute;
+  position: absolute;
   width:100%;
   height:100vh;
   top: 27500px;
@@ -209,7 +209,58 @@ canvas {
   -moz-transform3d: translate(0,0,0);
   transform3d: translate(0,0,0); */
 }
+/* CLOUDS  */
+.cloud-1 {
+  top: 30940px;
+}
+.cloud-2 {
+  top: 32940px;
+}
+.cloud-3 {
+  top: 34940px;
+}
+.cloud-4 {
+  top: 36940px;
+}
+.cloud-5 {
+  top: 38940px;
+}
+.clouds {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 300px;
+  z-index: 120;
+  overflow: hidden;
+}
 
+.cloud {
+  width: 590px;
+  height: 226px;
+  border-radius: 50%;
+  position: absolute;
+  top: -35vh;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+#cloud-back {
+  filter: url(#filter-back);
+  box-shadow: 300px 300px 30px -20px #fff;
+}
+
+#cloud-mid {
+  filter: url(#filter-mid);
+  box-shadow: 300px 340px 70px -60px rgba(158, 168, 179, 0.5);
+    left: -25vw;
+}
+
+#cloud-front {
+  filter: url(#filter-front);
+  box-shadow: 300px 370px 60px -100px rgba(0, 0, 0, 0.3);
+    left: -25vw;
+}
 
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -3578,15 +3629,13 @@ canvas {
                                     rgb(27, 18, 18) 26000px, /* Licorice */
                                     rgb(48, 25, 52) 27000px, /* PURPLISH */
                                     rgb(48, 25, 52) 27500px, /* PURPLISH */
-                                    rgb(74, 4, 4, 1) 27650px, /* STARTING THE NIGHT */
-                                    rgb(123, 24, 24, 1) 28100px, /* POPOCATEPETL LAVA */
-                                    rgb(123, 24, 24, 1) 28200px,
+                                    rgb(123, 24, 24, 1) 28200px,  /* POPOCATEPETL LAVA */
                                     rgb(123, 24, 24, 1) 28300px,
                                     rgb(123, 24, 24, 1) 28450px,
                                     rgb(123, 24, 24, 1) 28550px,
-                                    rgb(54, 69, 79) 28600px, /* Charcoal */
-                                    rgb(54, 69, 79) 28700px,
-                                    rgb(54, 69, 79) 28800px,
+                                    rgba(71, 34, 34, 1) 28600px, /* Charcoal */
+                                    rgba(71, 34, 34, 1) 28700px,
+                                    rgba(71, 34, 34, 1) 28800px,
                                     rgb(54, 69, 79) 29000px,
                                     rgb(54, 69, 79) 30000px,
                                     rgb(54, 69, 79) 31000px,
