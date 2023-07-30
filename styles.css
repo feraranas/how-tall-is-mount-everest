@@ -194,6 +194,22 @@ body {
        background-position: 10000px 5000px;
  }
 }
+/* ASHES */
+.ashes {
+  width:100%;
+  height:300px;
+  position:relative;
+}
+canvas {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  top: 27500px;
+  /* -webkit-transform3d: translate(0,0,0);
+  -moz-transform3d: translate(0,0,0);
+  transform3d: translate(0,0,0); */
+}
+
 
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -3562,9 +3578,10 @@ body {
                                     rgb(27, 18, 18) 26000px, /* Licorice */
                                     rgb(48, 25, 52) 27000px, /* PURPLISH */
                                     rgb(48, 25, 52) 27500px, /* PURPLISH */
-                                    rgb(74, 4, 4, 1) 28100px, /* STARTING THE NIGHT */
-                                    rgb(74, 4, 4, 1) 28200px, /* STARTING THE NIGHT */
-                                    rgb(123, 24, 24, 1) 28300px, /* POPOCATEPETL LAVA */
+                                    rgb(74, 4, 4, 1) 27650px, /* STARTING THE NIGHT */
+                                    rgb(123, 24, 24, 1) 28100px, /* POPOCATEPETL LAVA */
+                                    rgb(123, 24, 24, 1) 28200px,
+                                    rgb(123, 24, 24, 1) 28300px,
                                     rgb(123, 24, 24, 1) 28450px,
                                     rgb(123, 24, 24, 1) 28550px,
                                     rgb(54, 69, 79) 28600px, /* Charcoal */
