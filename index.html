@@ -10,7 +10,7 @@
     <!-- MAIN CONTAINER -->
     <div class="main-container">
       
-      <!-- //////////////////////////////////////////////////////////////// -->
+      <!-- /////////////////////// METRONOMO /////////////////////////////// -->
       <!-- METRONOMO FOR HEIGHT -->
       <div class="metronomo-wrapper">
         <div class="metronomo"></div>
@@ -23,9 +23,146 @@
             <div class="me"></div>
           </div>
       </div>
+      <!-- /////////////////////// ANIMATIONS ////////////////////////////// -->
+      <!-- STARS -->
+      <div class="stars"></div>
+      <div class="twinkleMask"></div>
+      <!-- ASHES  -->
+      <div class="ashes" id="canvascontainer">
+        <canvas id="buffer"></canvas>
+        <canvas id="canvas"></canvas>
+      </div>
+      <!-- CLOUDS -->
+      <div class="clouds-container">
+        <!-- cloud-1 -->
+        <div class="clouds cloud-1">
+          <div class="cloud" id="cloud-back"></div>
+          <div class="cloud" id="cloud-mid"></div>
+          <div class="cloud" id="cloud-front"></div>    
+          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
+          <svg width="0" height="0"> 
+            <!--Top Layer-->
+              <filter id="filter-back">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" 
+          seed="0" />     
+                <feDisplacementMap  in="SourceGraphic" scale="170" />
+              </filter>
+                <filter id="filter-mid">
+                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="150" />
+              </filter>
+              <filter id="filter-front">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="100" />
+              </filter>
+          </svg>
+        </div>
 
-      <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- MOUNTAINS -->   
+        <!-- cloud 2 -->
+        <div class="clouds cloud-2">
+          <div class="cloud" id="cloud-back"></div>
+          <div class="cloud" id="cloud-mid"></div>
+          <div class="cloud" id="cloud-front"></div>    
+          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
+          <svg width="0" height="0"> 
+            <!--Top Layer-->
+              <filter id="filter-back">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" 
+          seed="0" />     
+                <feDisplacementMap  in="SourceGraphic" scale="170" />
+              </filter>
+                <filter id="filter-mid">
+                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="150" />
+              </filter>
+              <filter id="filter-front">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="100" />
+              </filter>
+          </svg>
+        </div>
+        <!-- cloud 3 -->
+        <div class="clouds cloud-3">
+          <div class="cloud" id="cloud-back"></div>
+          <div class="cloud" id="cloud-mid"></div>
+          <div class="cloud" id="cloud-front"></div>    
+          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
+          <svg width="0" height="0"> 
+            <!--Top Layer-->
+              <filter id="filter-back">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" 
+          seed="0" />     
+                <feDisplacementMap  in="SourceGraphic" scale="170" />
+              </filter>
+                <filter id="filter-mid">
+                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="150" />
+              </filter>
+              <filter id="filter-front">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="100" />
+              </filter>
+          </svg>
+        </div>
+        <!-- cloud 4 -->
+        <div class="clouds cloud-4">
+          <div class="cloud" id="cloud-back"></div>
+          <div class="cloud" id="cloud-mid"></div>
+          <div class="cloud" id="cloud-front"></div>    
+          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
+          <svg width="0" height="0"> 
+            <!--Top Layer-->
+              <filter id="filter-back">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" 
+          seed="0" />     
+                <feDisplacementMap  in="SourceGraphic" scale="170" />
+              </filter>
+                <filter id="filter-mid">
+                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="150" />
+              </filter>
+              <filter id="filter-front">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="100" />
+              </filter>
+          </svg>
+        </div>
+        <!-- cloud 5 -->
+        <div class="clouds cloud-5">
+          <div class="cloud" id="cloud-back"></div>
+          <div class="cloud" id="cloud-mid"></div>
+          <div class="cloud" id="cloud-front"></div>    
+          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
+          <svg width="0" height="0"> 
+            <!--Top Layer-->
+              <filter id="filter-back">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" 
+          seed="0" />     
+                <feDisplacementMap  in="SourceGraphic" scale="170" />
+              </filter>
+                <filter id="filter-mid">
+                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="150" />
+              </filter>
+              <filter id="filter-front">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" 
+          seed="0"/>
+                <feDisplacementMap  in="SourceGraphic" scale="100" />
+              </filter>
+          </svg>
+        </div>
+      </div>
+
+      <!-- /////////////////////// MOUNTAINS ////////////////////////////// -->
       <!-- MOUNTAIN 1 - MOUNT EVEREST [8,849m]-->
       <div class="mountain-1">
         <div class="mountain mount-everest-title">
@@ -48,7 +185,6 @@
         </div>
         <div class="mountain-svg mount-everest-svg"></div>
       </div>
-
       <!-- MOUNTAIN 2 - K2 [8,611m] -->
       <div class="mountain-2">
         <div class="mountain k2-title">
@@ -74,8 +210,6 @@
 
         <div class="mountain-svg k2-svg"></div>
       </div>
-
-
       <!-- MOUNTAIN 3 - KANGCHENJUNGA SVG [8,586m] -->
       <div class="mountain-3">
         <div class="mountain kangchenjunga-title">
@@ -101,9 +235,6 @@
 
         <div class="mountain-svg kangchenjunga-svg"></div>
       </div>
-
-
-
       <!-- MOUNTAIN 4 - LHOTSE SVG [8,516m] -->
       <div class="mountain-4">
         <div class="mountain lhotse-title">
@@ -129,9 +260,6 @@
 
         <div class="mountain-svg lhotse-svg"></div>
       </div>
-
-
-
       <!-- MOUNTAIN 5 - MAKALU [8,481 m] -->
       <div class="mountain-5">
         <div class="mountain makalu-title">
@@ -157,9 +285,6 @@
 
         <div class="mountain-svg makalu-svg"></div>
       </div>
-
-
-
       <!-- MOUNTAIN 6 - ACACONCAGUA [6,961 m] -->
       <div class="mountain-6">
         <div class="mountain acaconcagua-title">
@@ -185,7 +310,6 @@
 
         <div class="mountain-svg acaconcagua-svg"></div>
       </div>
-
       <!-- MOUNTAIN 7 - OJOS DEL SALADO [6,893m] -->
       <div class="mountain-7">
         <div class="mountain ojos-salado-title">
@@ -210,8 +334,6 @@
 
         <div class="mountain-svg ojos-salado-svg"></div>
       </div>
-
-
       <!-- MOUNTAIN 8 - MONTE PISSIS [6,792m] -->
       <div class="mountain-8">
         <div class="mountain monte-pissis-title">
@@ -237,8 +359,6 @@
 
         <div class="mountain-svg monte-pissis-svg"></div>
       </div>
-
-
       <!-- MOUNTAIN 9 - HUASCARAN [6,768m] -->
       <div class="mountain-9">
         <div class="mountain huascaran-title">
@@ -263,8 +383,6 @@
 
         <div class="mountain-svg huascaran-svg"></div>
       </div>
-
-
       <!-- MOUNTAIN 10 - CERRO BONETE [6,759m] -->
       <div class="mountain-10">
         <div class="mountain cerro-bonete-title">
@@ -289,8 +407,6 @@
 
         <div class="mountain-svg cerro-bonete-svg"></div>
       </div>
-
-
       <!-- MOUNTAIN 11 - TRES CRUCES [6,748m] -->
       <div class="mountain-11">
         <div class="mountain tres-cruces-title">
@@ -315,7 +431,6 @@
 
         <div class="mountain-svg tres-cruces-svg"></div>
       </div>
-
       <!-- MOUNTAIN 12 - MOUNT DENALI [6,190m] -->
       <div class="mountain-12">
         <div class="mountain mount-denali-title">
@@ -341,7 +456,6 @@
 
         <div class="mountain-svg mount-denali-svg"></div>
       </div>
-
       <!-- MOUNTAIN 13 - KILIMANJARO [5,895m] -->
       <div class="mountain-13">
         <div class="mountain kilimanjaro-title">
@@ -367,7 +481,6 @@
 
         <div class="mountain-svg kilimanjaro-svg"></div>
       </div>
-
       <!-- MOUNTAIN 14 - PICO ORIZABA [5,636m] -->
       <div class="mountain-14">
         <div class="mountain pico-orizaba-title">
@@ -392,7 +505,6 @@
 
         <div class="mountain-svg pico-orizaba-svg"></div>
       </div>
-
       <!-- MOUNTAIN 15 - MOUNT ELBRUS [5,642m] -->
       <div class="mountain-15">
         <div class="mountain mount-elbrus-title">
@@ -418,7 +530,6 @@
 
         <div class="mountain-svg mount-elbrus-svg"></div>
       </div>
-
       <!-- MOUNTAIN 16 - VOLCAN POPOCATEPETL [5,393m] -->
       <div class="mountain-16">
         <div class="mountain popocatepetl-title">
@@ -443,7 +554,6 @@
 
         <div class="mountain-svg popocatepetl-svg"></div>
       </div>
-
       <!-- MOUNTAIN 17 - MOUNT FRAKER [5,304 m] -->
       <div class="mountain-17">
         <div class="mountain mount-fraker-title">
@@ -468,7 +578,6 @@
 
         <div class="mountain-svg mount-fraker-svg"></div>
       </div>
-
       <!-- MOUNTAIN 18 - IZTLACCIHUATL [5,230m] -->
       <div class="mountain-18">
         <div class="mountain iztlaccihuatl-title">
@@ -493,7 +602,6 @@
 
         <div class="mountain-svg iztlaccihuatl-svg"></div>
       </div>
-
       <!-- MOUNTAIN 19 - DYKH TAU [5,205m] -->
       <div class="mountain-19">
         <div class="mountain dykh-tau-title">
@@ -518,7 +626,6 @@
         
         <div class="mountain-svg dykh-tau-svg"></div>
       </div>
-
       <!-- MOUNTAIN 20 - NEVADO DE TOLUCA [4,680m] -->
       <div class="mountain-20">
         <div class="mountain nevado-toluca-title">
@@ -543,7 +650,6 @@
 
         <div class="mountain-svg nevado-toluca-svg"></div>
       </div>
-
       <!-- MOUNTAIN 21 - TEYOTL [4,660m] -->
       <div class="mountain-21">
         <div class="mountain teyotl-title">
@@ -568,7 +674,6 @@
         
         <div class="mountain-svg teyotl-svg"></div>
       </div>
-      
       <!-- MOUNTAIN 22 - VOLCAN LA MALINCHE [4,461 m] -->
       <div class="mountain-22">
         <div class="mountain volcan-malintzin-title">
@@ -593,7 +698,6 @@
         
         <div class="mountain-svg volcan-malintzin-svg"></div>
       </div>
-      
       <!-- MOUNTAIN 23 - COFRE DE PEROTE [4,282 m]  -->
       <div class="mountain-23">
         <div class="mountain cofre-perote-title">
@@ -618,7 +722,6 @@
 
         <div class="mountain-svg cofre-perote-svg"></div>
       </div>
-      
       <!-- MOUNTAIN 24 - CERRO NUBE OAXACA [3,720m]  -->
       <div class="mountain-24">
         <div class="mountain cerro-nube-oax-title">
@@ -643,7 +746,6 @@
     
         <div class="mountain-svg cerro-nube-oax-svg"></div>
       </div>
-
       <!-- MOUNTAIN 25 - NEVADO DE COLIMA [2,720m] -->
       <div class="mountain-25">
         <div class="mountain nevado-colima-title">
@@ -669,7 +771,7 @@
         <div class="mountain-svg nevado-colima-svg"></div>
       </div>
             
-      <!-- //////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////// INITIAL SCREEN /////////////////////////// -->
       <!-- 1. BACKGROUND OFFROAD SVG-->
       <div class="background-offroad"></div>
       <!-- 2. FLOOR SVG -->
@@ -694,7 +796,7 @@
         </div>  
       </div>
 
-      <!-- //////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////// END SCREEN ///////////////////////// -->
       <!-- END SCREEN ELEMENTS -->
       <div class="end-title slide-in">
         <h1 id="end-title">
@@ -704,137 +806,9 @@
         <div class="end-text">Creado por Fernando Arana</div>  
       </div>
 
-    </div> <!-- END CONTAINER FOR GRAPHICS -->
+    </div> <!-- END MAIN-CONTAINER -->
 
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="script.js"></script>
-
   </body>
-
 </html>
-
-
-<!--
-     var scrollContainer = document.querySelector('.scroll-container');
-     scrollContainer.addEventListener('scroll', function () {
-          console.log(scrollContainer.scrollLeft)
-          var scrollPercentage = scrollContainer.scrollLeft / (scrollContainer.scrollWidth - scrollContainer.clientWidth);
-          var maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-
-          // Calculate the distance to scroll horizontally based on the scroll position
-          var scrollDistance = Math.round(maxScroll * scrollPercentage);
-
-          // Scroll horizontally to the calculated distance
-          scrollContainer.scrollLeft = scrollDistance;
-     });
--->
-
-<!-- 
-  
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>MOUNTAINS</title>
-  </head>
-  <body>
-     MAIN SCROLL WRAPER
-    <div class="scroll-wrapper">
-      <p>where am i</p>
-       //////////////////////////////////////////////////////////////////////
-       MAIN CONTAINER
-      <div class="main-container">
-        
-      TRIGGERS & AREAS POSITIONED ABSOLUTE 
-        <div></div>
-        <div></div>
-        <div></div>
-
- CONTAINER GRAPHICS
-        <div class="container-graphics">
-
-     CLOUDS
-          <div></div>
-
-          CONTAINER INNER
-          <div></div>
-
-        </div>
-
-      </div> END MAIN CONTAINER
-    </div> END MAIN SCROLL WRAPER
-
- //////////////////////////////////////////////////////////////////////
-  JAVASCRIPT
-    <script>
-    
-      /* SCROLL TO THE BOTTOM OF THE PAGE ON LOAD */
-       window.onload = function () {
-          console.log(document.body.scrollHeight)
-          window.scrollTo(0, document.body.scrollHeight);
-       };
-       
-       /*
-       window.onscroll = function () {
-         var meter = document.querySelector('.meter');
-         var scrollHeight = document.documentElement.scrollHeight;
-         var viewportHeight = window.innerHeight;
-         var scrollPosition = scrollHeight - (window.pageYOffset || document.documentElement.scrollTop);
-         var scaleFactor = scrollPosition / (scrollHeight - viewportHeight);
-         var newHeight = viewportHeight * scaleFactor;
-     
-         meter.style.height = newHeight + 'px';
-       };
-       */
-       
-     </script>
-
-  </body>
-
-</html>
--->
-
-<!--
-     var scrollContainer = document.querySelector('.scroll-container');
-     scrollContainer.addEventListener('scroll', function () {
-          console.log(scrollContainer.scrollLeft)
-          var scrollPercentage = scrollContainer.scrollLeft / (scrollContainer.scrollWidth - scrollContainer.clientWidth);
-          var maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-
-          // Calculate the distance to scroll horizontally based on the scroll position
-          var scrollDistance = Math.round(maxScroll * scrollPercentage);
-
-          // Scroll horizontally to the calculated distance
-          scrollContainer.scrollLeft = scrollDistance;
-     });
--->
-
-<!--
-/* ROOT ELEMENT & GLOBAL VARIABLES */
-:root {
-     --page-height: 100000px;
-     --full-height: calc(100000px + 100vh);
-     font-size: 10px;
-}
-body {
-     margin: 0;
-     padding: 0;
-     width: 100vw;
-     background-color: #AFE7FE;
-}
-*, *:before, *:after {
-     box-sizing: inherit;
-}
-.scroll-wrapper {
-     width: 100%;
-     height: var(--page-height);
-     overflow-x: hidden;
-     overflow-y: scroll;
-     scroll-behavior: smooth;
-     overscroll-behavior: none;
-}
-.main-container {
-     width: 100vw;
-     overflow-x: hidden;
-}
--->
