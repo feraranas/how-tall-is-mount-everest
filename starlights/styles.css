@@ -5,7 +5,7 @@ body {
      height: 100vh;
      overflow: hidden;
  }
- 
+
  @keyframes shootingFrames {
        0% {
             transform: translateX(0);
@@ -19,7 +19,7 @@ body {
             transform: translateX(823px);
       }
  }
- 
+
  .stars, .twinkleMask2, .clouds {
        position: absolute;
        top: 0;
