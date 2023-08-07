@@ -610,7 +610,7 @@ body {
   left: 50%;
   transform: translateX(-64%);
   top: calc(29415px);
-  z-index: 27;
+  z-index: 26;
 }
 .mountain-data.iztlaccihuatl-data {
   left: 50%;
@@ -622,7 +622,7 @@ body {
   right: 16%;
   top: calc(29520px);
   background-image: url(../images/mountains/19-DYKH-TAU.svg);
-  z-index: 26;
+  z-index: 24;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 19 DYKH TAU */
@@ -631,20 +631,20 @@ body {
   top: calc(29715px);
   left: 51%;
   transform: translateX(-25%);
-  z-index: 30;
+  z-index: 26;
 }
 .mountain-data.dykh-tau-data {
   top: calc(25000px);
   left: 50%;
   transform: translateX(22%);
-  z-index: 31;
+  z-index: 27;
 }
 .mountain-svg.dykh-tau-svg {
   top: calc(29630px);
   opacity: 1;
   width: 142%;
   background-image: url(../images/mountains/18-IZTLACCIHUATL.svg);
-  z-index: 29;
+  z-index: 25;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 20 NEVADO DE TOLUCA */
@@ -715,12 +715,12 @@ body {
 .mountain.cofre-perote-title {
   top: calc(36275px);
   left: 4%;
-  z-index: 15;
+  z-index: 16;
 }
 .mountain-data.cofre-perote-data {
   top: calc(30680px);
   left: 53%;
-  z-index: 16;
+  z-index: 17;
 }
 .mountain-svg.cofre-perote-svg {
   top: calc(36421px);
@@ -743,7 +743,7 @@ body {
 .mountain-svg.cerro-nube-oax-svg {
   top: calc(40491px);
   background-image: url(../images/mountains/24-CERRO-NEGRO-OAX.svg);
-  z-index: 11;
+  z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 25 NEVADO DE COLIMA [2720m] */
@@ -1069,21 +1069,6 @@ canvas {
   /* -webkit-transform3d: translate(0,0,0);
   -moz-transform3d: translate(0,0,0);
   transform3d: translate(0,0,0); */
-}
-/* CLOUDS  */
-.cloud-1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url(../images/clouds/cloudsv2.png);
-  filter: brightness(1);
-  background-size: 100% 73%;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 500px;
-  padding: 50px;
-  top: 29432px;
-  z-index: 100;
 }
 
 /* KEYFRAMES */
