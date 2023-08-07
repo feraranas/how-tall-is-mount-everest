@@ -243,19 +243,24 @@ parentElement.forEach((item) => {
 // UPDATE THE METRONOMO ON SCROLL EVENT
 // Calculate pageHeight once outside the scroll event
 const windowHeight = window.innerHeight;
+console.log('window height: ', windowHeight)
 const pageHeight = document.documentElement.scrollHeight - windowHeight;
+console.log('scroll height: ', document.documentElement.scrollHeight)
+console.log('scrollHeight - windowHeight', pageHeight)
 
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
+  console.log('pageYOffset: ', scrollPosition)
   const normalizedHeight = Math.abs(
     (scrollPosition / pageHeight) * 6800 - mapHeight
   );
+  console.log('normalized height: ', normalizedHeight)
 
-  if (scrollPosition > totalHeight - (windowHeight + 100)) {
+  if (scrollPosition > totalHeight - (windowHeight + 100)) { // IF REACHED THE BOTTOM DISAPPEAR
     /* DISAPPEAR METRO */
     metronomo.classList.remove("active");
-  } else if (scrollPosition >= 0 && scrollPosition <= 350) {
+  } else if (scrollPosition >= 0 && scrollPosition <= 350) { // IF REACHED THE TOP DISAPPEAR
     /* DISAPPEAR METRO */
     metronomo.classList.remove("active");
     /* APPEAR END SCREEN */
@@ -310,61 +315,3 @@ window.onresize = function () {
     flag = false;
   }
 };
-
-// // RAIN
-// var makeItRain = function() {
-//   //clear out everything
-//   $('.rain').empty();
-
-//   var increment = 0;
-//   var drops = "";
-//   var backDrops = "";
-
-//   while (increment < 100) {
-//     //couple random numbers to use for various randomizations
-//     //random number between 98 and 1
-//     var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
-//     //random number between 5 and 2
-//     var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
-//     //increment
-//     increment += randoFiver;
-//     //add in a new raindrop with various randomizations to certain CSS
-//     properties drops += '<div class="drop" style="left: ' + increment + '%;
-//     bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay:
-//     0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div
-//     class="stem" style="animation-delay: 0.' + randoHundo + 's;
-//     animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat"
-//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
-//     randoHundo + 's;"></div></div>'; backDrops += '<div class="drop"
-//     style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver -
-//     1 + 100) + '%; animation-delay: 0.' + randoHundo + 's;
-//     animation-duration: 0.5' + randoHundo + 's;"><div class="stem"
-//     style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' +
-//     randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' +
-//     randoHundo + 's; animation-duration: 0.5' + randoHundo +
-//     's;"></div></div>';
-//   }
-
-//   $('.rain.front-row').append(drops);
-//   $('.rain.back-row').append(backDrops);
-// }
-
-// $('.splat-toggle.toggle').on('click', function() {
-//   $('body').toggleClass('splat-toggle');
-//   $('.splat-toggle.toggle').toggleClass('active');
-//   makeItRain();
-// });
-
-// $('.back-row-toggle.toggle').on('click', function() {
-//   $('body').toggleClass('back-row-toggle');
-//   $('.back-row-toggle.toggle').toggleClass('active');
-//   makeItRain();
-// });
-
-// $('.single-toggle.toggle').on('click', function() {
-//   $('body').toggleClass('single-toggle');
-//   $('.single-toggle.toggle').toggleClass('active');
-//   makeItRain();
-// });
-
-// makeItRain();
