@@ -27,6 +27,7 @@ body {
                                     rgba(255,255,255,1) 80%,
                                     rgba(255,255,255,1) 90%,
                                     rgba(255,255,255,1) 100%);
+  z-index: 0;
 }
 *, *:before, *:after {
   box-sizing: border-box;
@@ -44,6 +45,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 .main-container::before {
   content: "";
@@ -56,7 +58,8 @@ body {
   background-repeat: repeat;
   background-size: 175px 175px;
   z-index: 3;
-  opacity: 0.35;
+  opacity: 0.8;
+  z-index: 1;
 }
 .main-container::after {
   content: "";
@@ -68,8 +71,94 @@ body {
   background-image: url(../images/gridBlack.svg);
   background-repeat: repeat;
   background-size: 175px 175px;
-  opacity: 0.35;
-  z-index: 3;
+  opacity: 0.65;
+  z-index: 1;
+}
+
+/* ////////////////////////////////////////////////////////////////////////
+///////////////////////////// METRONOMO ///////////////////////////////////
+//////////////////////////////////////////////////////////////////////// */
+.metronomo-wrapper {
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%) translateY(-80px);
+  left: 50%;
+  transition: 0.5s ease;
+  background-color: white;
+  opacity: 1;
+  width: 280px;
+  height: 70px;
+  text-align: center;
+  border-radius: 5px 5px 15px 15px;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  z-index: 200;
+}
+.metronomo-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.metronomo-grid > div {
+  height: 100%;
+}
+.un{
+  grid-column: 1;
+  border-right: 1.2px solid black;
+}
+.de{
+  grid-column: 2;
+  border-right: 1.2px solid black;
+}
+.ce{
+  grid-column: 3;
+  border-right: 1.2px solid black;
+}
+.mi{
+  grid-column: 4;
+  border-right: 1.2px solid black;
+}
+.dm{
+  grid-column: 5;
+  border-right: 1.2px solid black;
+}
+.me{
+  grid-column: 6;
+  background-color: #C0DBE7;
+  border-radius: 0px 5px 15px 0px;
+}
+.metronomo {
+  position: absolute;
+  top: 0;
+  color: black;
+  width: 100%;
+  height: 100%;
+  font-size: 2.5rem;
+  display: grid;
+  align-content: center;
+  font-family: "Source Code Pro", monospace;
+  text-align: end;
+  padding-left: 22px;
+  letter-spacing: 30px;
+  z-index: 200;
+}
+.active {
+    transform: translateX(-50%) translateY(0px);
 }
 
 /* ////////////////////////////////////////////////////////////////////////
@@ -189,7 +278,7 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.mount-everest-title{
   top: calc(3168px);
-  z-index: 104;
+  z-index: ;
 }
 .mountain-data.mount-everest-data {
   top: calc(2945px);
@@ -518,22 +607,22 @@ body {
 /* MOUNTAINS -- 18 IZTLACCIHUATL */
 /* //////////////////////////////////////////////////////// */
 .mountain.iztlaccihuatl-title{
-  z-index: 116;
   left: 50%;
   transform: translateX(-64%);
   top: calc(29415px);
+  z-index: 27;
 }
 .mountain-data.iztlaccihuatl-data {
-  z-index: 116;
   left: 50%;
   transform: translateX(-91%);
   top: calc(24921px);
+  z-index: 28;
 }
 .mountain-svg.iztlaccihuatl-svg {
-  z-index: 116;
   right: 16%;
   top: calc(29520px);
   background-image: url(../images/mountains/19-DYKH-TAU.svg);
+  z-index: 26;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 19 DYKH TAU */
@@ -542,20 +631,20 @@ body {
   top: calc(29715px);
   left: 51%;
   transform: translateX(-25%);
-  z-index: 115;
+  z-index: 30;
 }
 .mountain-data.dykh-tau-data {
   top: calc(25000px);
   left: 50%;
-  z-index: 115;
   transform: translateX(22%);
+  z-index: 31;
 }
 .mountain-svg.dykh-tau-svg {
   top: calc(29630px);
   opacity: 1;
   width: 142%;
-  z-index: 117;
   background-image: url(../images/mountains/18-IZTLACCIHUATL.svg);
+  z-index: 29;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 20 NEVADO DE TOLUCA */
@@ -563,20 +652,22 @@ body {
 .mountain.nevado-toluca-title{
   top: calc(33401px);
   left: 19%;
+  z-index: 22;
 }
 .mountain-data.nevado-toluca-data {
   top: calc(28459px);
   left: 60%;
   transform: translateX(-25%);
+  z-index: 24;
 }
 .mountain-svg.nevado-toluca-svg {
   top: calc(33535px);
-  z-index: 119;
   opacity: 1;
   height: 1400px;
   width: 125%;
   background-position: left;
   background-image: url(../images/mountains/21-TEYOTL.svg);
+  z-index: 20;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 21 TEYOTL */
@@ -585,36 +676,38 @@ body {
   top: calc(33550px);
   left: 40%;
   transform: translateX(-60%);
+  z-index: 22;
 }
 .mountain-data.teyotl-data {
   top: calc(28391px);
   left: 30%;
+  z-index: 23;
 }
 .mountain-svg.teyotl-svg {
-  z-index: 118;
   top: calc(33687px);
   left: -17%;
   background-position: right;
   background-image: url(../images/mountains/20-NEVADO-TOLUCA.svg);
+  z-index: 21;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 22 VOLCAN MALINTZIN [4,461m] */
 /* //////////////////////////////////////////////////////// */
 .mountain.volcan-malintzin-title{
   top: calc(34975px);
-  z-index: 120;
   right: 10%;
+  z-index: 18;
 }
 .mountain-data.volcan-malintzin-data {
   top: calc(29590px);
-  z-index: 120;
   left: 39%;
+  z-index: 19;
 }
 .mountain-svg.volcan-malintzin-svg {
   top: calc(35120px);
-  z-index: 120;
   background-position: right center;
   background-image: url(../images/mountains/22-VOLCAN-MALINTZIN.svg);
+  z-index: 17;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 23 COFRE DE PEROTE [4282m] */
@@ -622,14 +715,17 @@ body {
 .mountain.cofre-perote-title {
   top: calc(36275px);
   left: 4%;
+  z-index: 15;
 }
 .mountain-data.cofre-perote-data {
   top: calc(30680px);
   left: 53%;
+  z-index: 16;
 }
 .mountain-svg.cofre-perote-svg {
   top: calc(36421px);
   background-image: url(../images/mountains/23-COFRE-DE-PEROTE.svg);
+  z-index: 14;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 24 CERRO NUBE OAXACA [3,720m] */
@@ -637,28 +733,34 @@ body {
 .mountain.cerro-nube-oax-title {
   top: calc(40353px);
   left: 3%;
+  z-index: 12;
 }
 .mountain-data.cerro-nube-oax-data {
   top: calc(34525px);
   left: 53%;
+  z-index: 13;
 }
 .mountain-svg.cerro-nube-oax-svg {
   top: calc(40491px);
   background-image: url(../images/mountains/24-CERRO-NEGRO-OAX.svg);
+  z-index: 11;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 25 NEVADO DE COLIMA [2720m] */
 /* //////////////////////////////////////////////////////// */
 .mountain.nevado-colima-title {
   top: calc(47595px);
+  z-index: 9;
 }
 .mountain-data.nevado-colima-data {
   top: calc(41550px);
   left: 51%;
+  z-index: 10;
 }
 .mountain-svg.nevado-colima-svg {
   top: calc(47735px);
   background-image: url(../images/mountains/25-NEVADO-DE-COLIMA.svg);
+  z-index: 8;
 }
 
 /* ////////////////////////////////////////////////////////////////////////
@@ -673,7 +775,7 @@ body {
   height: 900px;
   background-image: url(/images/background-offroad.png);
   background-size: 100% 100%;
-  z-index: 0;
+  z-index: 2;
 }
 .floor {
   position: absolute;
@@ -685,8 +787,8 @@ body {
   background-image: url(/images/floor.png);
   background: url(/images/floor.png) repeat-x;
   background-size: 100% 391px;
-  z-index: 100;
   background-position: 50%;
+  z-index: 3;
 }
 .man-1 {
   position: absolute;
@@ -698,7 +800,7 @@ body {
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100% 350px;
-  z-index: 102;
+  z-index: 6;
 }
 .woman-1 {
   position: absolute;
@@ -711,7 +813,7 @@ body {
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100% 600px;
-  z-index: 102;
+  z-index: 6;
 }
  .rock-boulder {
   position: absolute;
@@ -724,7 +826,7 @@ body {
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 100% 400px;
-  z-index: 99;
+  z-index: 5;
  }
  .rock-boulder-2 {
   position: absolute;
@@ -738,7 +840,7 @@ body {
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 100% 100%;
-  z-index: 98;
+  z-index: 4;
  }
 
  /* ////////////////////////////////////////////////////////////////////////
@@ -751,7 +853,7 @@ body {
   width: 100%;
   /* left: 50%;
   transform: translateX(-50%); */
-  z-index: 101;
+  z-index: 7;
 }
  .title > h1 {
   text-align: center;
@@ -833,6 +935,7 @@ body {
   height: 100vh;
   width: 100%;
   display: grid;
+  z-index: 7;
 }
 .slide-in {
   opacity: 0;
@@ -902,7 +1005,7 @@ body {
                  -8px -8px 0 #AE5752,
                  1px 6px 10px dimgrey;
 }
-/* TEXTO -> DESLÍZATE HACIA ARRIBA */
+/* TEXTO -> HECHO POR FER ARANA */
 .end-text {
   text-align: center;
   margin: auto;
@@ -913,6 +1016,7 @@ body {
   word-spacing: -8px;
   color: white;
   text-shadow: -1px -1px 0 #f9f9f9, -2px -2px 0 #50a8c3, -3px -3px 0 #8ec242, -4px -4px 0 firebrick, -5px -5px 0 firebrick, -6px -6px 0 firebrick, -7px -7px 0 firebrick, -8px -8px 0 firebrick, 1px 6px 10px dimgrey;
+  z-index: 7;
 }
 
 /* ////////////////////////////////////////////////////////////////////////
@@ -968,55 +1072,18 @@ canvas {
 }
 /* CLOUDS  */
 .cloud-1 {
-  top: 30940px;
-}
-.cloud-2 {
-  top: 32940px;
-}
-.cloud-3 {
-  top: 34940px;
-}
-.cloud-4 {
-  top: 36940px;
-}
-.cloud-5 {
-  top: 38940px;
-}
-.clouds {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 100vw;
-  height: 300px;
-  z-index: 120;
-  overflow: hidden;
-}
-
-.cloud {
-  width: 590px;
-  height: 226px;
-  border-radius: 50%;
-  position: absolute;
-  top: -35vh;
-  left: 0;
-  transform: translateX(-50%);
-}
-
-#cloud-back {
-  filter: url(#filter-back);
-  box-shadow: 300px 300px 30px -20px #fff;
-}
-
-#cloud-mid {
-  filter: url(#filter-mid);
-  box-shadow: 300px 340px 70px -60px rgba(158, 168, 179, 0.5);
-    left: -25vw;
-}
-
-#cloud-front {
-  filter: url(#filter-front);
-  box-shadow: 300px 370px 60px -100px rgba(0, 0, 0, 0.3);
-    left: -25vw;
+  background-image: url(../images/clouds/cloudsv2.png);
+  filter: brightness(1);
+  background-size: 100% 73%;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+  padding: 50px;
+  top: 29432px;
+  z-index: 100;
 }
 
 /* KEYFRAMES */

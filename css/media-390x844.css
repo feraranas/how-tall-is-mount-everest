@@ -92,19 +92,16 @@
      /* //////////////////////////////////////////////////////// */
      .mountain.mount-everest-title {
        top: calc(3250px);
-       z-index: 101;
      }
    
      .mountain-data.mount-everest-data {
        top: calc(3150px);
-       z-index: 101;
      }
      .mountain-svg.mount-everest-svg {
        top: calc(3336px);
        height: 804px;
        left: 56%;
        width: 600px;
-       z-index: 101;
      }
    
      /* //////////////////////////////////////////////////////// */
@@ -112,12 +109,10 @@
      /* //////////////////////////////////////////////////////// */
      .mountain.k2-title{
        top: calc(4965px);
-       z-index: 102;
        left: 25%;
      }
      .mountain-data.k2-data {
        top: calc(4760px);
-       z-index: 102;
        left: 25%;
      }
      .mountain-svg.k2-svg {
@@ -125,7 +120,6 @@
        left: 5%;
        width: 600px;
        height: 821px;
-       z-index: 102;
      }
      
      /* //////////////////////////////////////////////////////// */
@@ -133,22 +127,17 @@
      /* //////////////////////////////////////////////////////// */
      .mountain.kangchenjunga-title{
        top: calc(5166px);
-       z-index: 106;
        left: 68%;
-       z-index: 103;
      }
      .mountain-data.kangchenjunga-data {
        top: calc(4835px);
-       z-index: 106;
        left: 67%;
-       z-index: 103;
      }
      .mountain-svg.kangchenjunga-svg {
        top: calc(5233px);
        left: 50%;
        width: 401px;
        height: 634px;
-       z-index: 103;
      }  
      
      /* //////////////////////////////////////////////////////// */
@@ -157,12 +146,10 @@
      .mountain.lhotse-title{
        top: calc(5665px);
        left: 25%;
-       z-index: 104;
      }
      .mountain-data.lhotse-data {
        left: 25%;
        top: calc(5215px);
-       z-index: 104;
      }
      .mountain-svg.lhotse-svg {
        top: calc(5710px);
@@ -170,7 +157,6 @@
        transform: translateX(-10%);
        width: 545px;
        height: 792px;
-       z-index: 104;
      }
      
      /* //////////////////////////////////////////////////////// */
@@ -179,18 +165,15 @@
      .mountain.makalu-title{
        top: calc(5915px);
        left: 64%;
-       z-index: 105;
      }
      .mountain-data.makalu-data {
        left: 62%;
        top: calc(5341px);
-       z-index: 105;
      }
      .mountain-svg.makalu-svg {
        top: calc(5967px);
        width: 471px;
        height: 634px;
-       z-index: 105;
      }
      
      /* //////////////////////////////////////////////////////// */
@@ -198,17 +181,14 @@
      /* //////////////////////////////////////////////////////// */
      .mountain.acaconcagua-title{
        top: calc(16930px);
-       z-index: 106;
      }
      .mountain-data.acaconcagua-data {
        top: calc(16222px);
-       z-index: 106;
      }
      .mountain-svg.acaconcagua-svg {
        top: calc(16847px);
        width: 471px;
        height: 634px;
-       z-index: 106;
      }
      
      /* //////////////////////////////////////////////////////// */
@@ -216,13 +196,11 @@
      /* //////////////////////////////////////////////////////// */
      .mountain.ojos-salado-title{
        top: calc(17420px);
-       z-index: 107;
        left: 50%;
        transform: translateX(-50%);
      }
      .mountain-data.ojos-salado-data {
        top: calc(16605px);
-       z-index: 107;
        left: 50%;
        transform: translateX(-50%);
      }
@@ -231,7 +209,6 @@
        left: 27%;
        width: 600px;
        height: 634px;
-       z-index: 107;
      }
      
      
@@ -241,13 +218,11 @@
      .mountain.monte-pissis-title{
        top: calc(18100px);
        font-size: 1.8rem;
-       z-index: 108;
        left: 25%;
        transform: translateX(-50%);
      }
      .mountain-data.monte-pissis-data {
        top: calc(17160px);
-       z-index: 108;
        left: 25%;
        transform: translateX(-50%);
      }
@@ -256,7 +231,6 @@
        left: 9%;
        width: 600px;
        height: 634px;
-       z-index: 108;
      }
      
      /* //////////////////////////////////////////////////////// */
@@ -265,12 +239,10 @@
      .mountain.huascaran-title{
        top: calc(18315px);
        left: 70%;
-       z-index: 109;
      }
      .mountain-data.huascaran-data {
        top: calc(17288px);
        left: 70%;
-       z-index: 109;
      }
      .mountain-svg.huascaran-svg {
        top: calc(18334px);
@@ -278,7 +250,6 @@
        width: 600px;
        height: 634px;
        transform: translateX(-50%);
-       z-index: 109;
      }
      
      /* //////////////////////////////////////////////////////// */
@@ -287,12 +258,10 @@
      .mountain.cerro-bonete-title{
        top: calc(18407px);
        font-size: 1.8rem;
-       z-index: 110;
        left: 25%;
      }
      .mountain-data.cerro-bonete-data {
        top: calc(17270px);
-       z-index: 110;
        left: 25%;
      }
      .mountain-svg.cerro-bonete-svg {
@@ -300,7 +269,6 @@
        left: 32%;
        width: 600px;
        height: 634px;
-       z-index: 110;
      }
      
      /* //////////////////////////////////////////////////////// */
@@ -309,13 +277,11 @@
      .mountain.tres-cruces-title{
        top: calc(18481px);
        left: 70%;
-       z-index: 109;
        transform: translateX(-50%);
      }
      .mountain-data.tres-cruces-data {
        top: calc(17220px);
        left: 70%;
-       z-index: 111;
        transform: translateX(-50%);
      }
      .mountain-svg.tres-cruces-svg {
@@ -323,24 +289,20 @@
        left: 65%;
        width: 600px;
        height: 634px;
-       z-index: 111;
      }
      /* //////////////////////////////////////////////////////// */
      /* MOUNTAINS -- 12 MOUNT DENALI */
      /* //////////////////////////////////////////////////////// */
      .mountain.mount-denali-title{
        top: calc(22518px);
-       z-index: 112;
      }
      .mountain-data.mount-denali-data {
        top: calc(21118px);
-       z-index: 112;
      }
      .mountain-svg.mount-denali-svg {
        top: calc(22597px);
        width: 471px;
        height: 634px;
-       z-index: 112;
        opacity: 0.93;
      }
      
@@ -349,17 +311,14 @@
      /* //////////////////////////////////////////////////////// */
      .mountain.kilimanjaro-title{
        top: calc(24655px);
-       z-index: 113;
      }
      .mountain-data.kilimanjaro-data {
        top: calc(23121px);
-       z-index: 113;
      }
      .mountain-svg.kilimanjaro-svg {
        top: calc(24551px);
        width: 471px;
        height: 634px;
-       z-index: 113;
        opacity: 0.95;
      }
      /* //////////////////////////////////////////////////////// */
@@ -368,19 +327,16 @@
      .mountain.pico-orizaba-title{
        top: calc(26525px);
        left: 29%;
-       z-index: 115;
      }
      .mountain-data.pico-orizaba-data {
        top: calc(24907px);
        left: 24%;
-       z-index: 114;
      }
      .mountain-svg.pico-orizaba-svg {
        top: calc(26609px);
        left: 30%;
        width: 521px;
        height: 618px;
-       z-index: 115;
        opacity: 0.95;
      }
      /* //////////////////////////////////////////////////////// */
@@ -390,17 +346,14 @@
        top: calc(26480px);
        font-size: 1.8rem;
        left: 55%;
-       z-index: 114;
      }
      .mountain-data.mount-elbrus-data {
        top: calc(24720px);
-       z-index: 115;
        left: 74%;
      }
      .mountain-svg.mount-elbrus-svg {
        top: calc(26566px);
        left: 70%;
-       z-index: 114;
        width: 524px;
        height: 540px;
      }
@@ -424,14 +377,12 @@
      /* MOUNTAINS -- 17 MOUNT FRAKER */
      /* //////////////////////////////////////////////////////// */
      .mountain.mount-fraker-title{
-       z-index: 115;
        opacity: 1;
        top: calc(28946px);
        font-size: 1.8rem;
      }
      .mountain-data.mount-fraker-data {
        opacity: 1;
-       z-index: 115;
        top: calc(26971px);
      }
      .mountain-svg.mount-fraker-svg {
@@ -447,13 +398,11 @@
      /* //////////////////////////////////////////////////////// */
      .mountain.iztlaccihuatl-title{
        transform: translateX(-50%);
-       z-index: 116;
        left: 67%;
        font-size: 1.7rem;
        top: calc(29469px);
      }
      .mountain-data.iztlaccihuatl-data {
-       z-index: 120;
        left: 67%;
        transform: translateX(-50%);
        top: calc(27388px);
@@ -471,13 +420,11 @@
      .mountain.dykh-tau-title{
        top: calc(29661px);
        left: 30%;
-       z-index: 119;
        transform: translateX(-50%);
      }
      .mountain-data.dykh-tau-data {
        top: calc(27473px);
        left: 30%;
-       z-index: 119;
        transform: translateX(-50%);
      }
      .mountain-svg.dykh-tau-svg {
@@ -517,15 +464,12 @@
        font-size: 1.8rem;
        left: 26%;
        transform: translateX(-50%);
-       z-index: 119;
      }
      .mountain-data.teyotl-data {
        top: calc(31188px);
-       z-index: 119;
        left: 25%;
      }
      .mountain-svg.teyotl-svg {
-       z-index: 119;
        opacity: 1;
        top: calc(33669px);
        left: 43%;
@@ -542,7 +486,6 @@
      }
      .mountain-data.volcan-malintzin-data {
        top: calc(32539px);
-       z-index: 120;
        left: 50%;
      }
      .mountain-svg.volcan-malintzin-svg {
@@ -615,83 +558,4 @@
      padding-left: 11px;
      letter-spacing: 20px;
    }
-   }
-   
-   
-   
-   
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 1 MOUNT-EVEREST */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 2 K2 */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 3 KANGCHENJUNGA */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 4 LHOTSE */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 5 MAKALU */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 6 ACACONCAGUA */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 7 OJOS DEL SALADO */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 8 MONTE PISSIS */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 9 HUASCARAN */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 10 CERRO BONETE */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 11 TRES CRUCES */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 12 MOUNT DENALI */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 13 KILIMANJARO */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 14 PICO ORIZABA */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 15 MOUNT ELBRUS */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 16 POPOCATEPETL */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 17 MOUNT FRAKER */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 18 IZTLACCIHUATL */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 19 DYKH TAU */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 20 NEVADO DE TOLUCA */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 21 TEYOTL */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 22 VOLCAN MALINTZIN [4,461m] */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 23 COFRE DE PEROTE [4282m] */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 24 CERRO NUBE OAXACA [3,720m] */
-   /* //////////////////////////////////////////////////////// */
-   /* //////////////////////////////////////////////////////// */
-   /* MOUNTAINS -- 25 NEVADO DE COLIMA [2720m] */
-   /* //////////////////////////////////////////////////////// */
+}
