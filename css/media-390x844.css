@@ -334,7 +334,7 @@
      }
      .mountain-svg.pico-orizaba-svg {
        top: calc(26609px);
-       left: 30%;
+       left: 35%;
        width: 521px;
        height: 618px;
        opacity: 0.95;
@@ -571,65 +571,176 @@
       height: 500px;
       width: 500px;  
   }
-    .cloud-35 {
-      background-image: url(../images/clouds/cloudsv1.png);
-      filter: brightness(2);
-      top: 47705px;
-      z-index: 15;
+  .cloud-0 {
+       z-index: 15;
+  }
+  .cloud-1 {
+       z-index: 15;
+  }
+  .cloud-2 {
+       z-index: 15;
+  }
+  .cloud-3 {
+       z-index: 15;
+  }
+  .cloud-4 {
+       z-index: 15;
+  }
+  .cloud-5 {
+       z-index: 15;
+  }
+  .cloud-6 {
+       z-index: 15;
+  }
+  .cloud-7 {
+       z-index: 15;
+  }
+  .cloud-8 {
+       z-index: 15;
+  }
+  .cloud-9 {
+       z-index: 15;
+  }
+  .cloud-10 {
+       z-index: 15;
+  }
+  .cloud-11 {
+       z-index: 15;
+  }
+  .cloud-12 {
+       z-index: 15;
+  }
+  .cloud-13 {
+       z-index: 15;
+  }
+  .cloud-14 {
+       z-index: 15;
+  }
+  .cloud-15 {
+       z-index: 15;
+  }
+  .cloud-16 {
+       z-index: 15;
+  }
+  .cloud-17 {
+       z-index: 15;
+  }
+  .cloud-18 {
+       z-index: 15;
+  }
+  .cloud-19 {
+       z-index: 15;
+  }
+  .cloud-20 {
+       z-index: 15;
+       top: 18500px;
+  }
+  .cloud-21 {
+       z-index: 15;
+       top: 18900px;
+  }
+  .cloud-22 {
+    z-index: 15;
+    filter: brightness(0.8);
+    height: 1000px;
+    top: 19200px;
+  }
+  .cloud-23 {
+       z-index: 15;
+    top: 20200px;
+  }
+  .cloud-24 {
+    z-index: 15;
+    top: 22700px;
+    
+  }
+  .cloud-25 {
+    transform: translateX(-50%) scaleX(-1.5) scaleY(1);
+    top: 22500px;
+  }
+  .cloud-26 {
+       z-index: 15;
+       top: 24000px;
+  }
+  .cloud-27 {
+    transform: translateX(-50%) scaleX(-1);
+    top: 24600px;
+  }
+  .cloud-28 {
+    height: 300px;
+    top: 24900px;
+  }
+  .cloud-29 {
+    z-index: 14;
+    top: 25600px;
+    width: 600px;
+  }
+  .cloud-30 {
+    z-index: 15;
+    top: 26390px;
+  }
+  .cloud-31 {
+    width: 600px;
+    top: 26700px;
+    z-index: 113;
+  }
+  .cloud-32 {
+    top: 26950px;
+    width: 600px;
+    height: 250px;
+    z-index: 145;
+  }
+  .cloud-33 {
+    top: 28000px;
+    z-index: 15;
+  }
+  .cloud-34 {
+    width: 800px;
+    transform: translateX(-50%) scaleX(-1);
+    top: 28750px;
+    z-index: 15;
+  }
+  .cloud-35 {
+    top: 29300px;
+    z-index: 15;
   }
   .cloud-36 {
-      background-image: url(../images/clouds/cloudsv1.png);
-      filter: brightness(2);
-      top: 47705px;
-      z-index: 15;
+    top: 29750px;
+    height: 400px;
+    z-index: 24;
   }
   .cloud-37 {
-    background-image: url(../images/clouds/cloudsv4.png);
-    filter: contrast(0.6) brightness(0.9);
-    transform: translateX(-50%) scaleX(-1);
-    top: 30000px;
+    top: 47705px;
     z-index: 15;
   }
   .cloud-38 {
-    background-image: url(../images/clouds/cloudsv3.png);
-    transform: translateX(-50%) scaleX(-1.5);
-    width: 1000px;
-    top: 32600px;
+    top: 29600px;
+    filter: brightness(1.5);
     z-index: 15;
   }
   .cloud-39 {
-    background-image: url(../images/clouds/cloudsv1.png);
-    filter: brightness(2);
-    height: 140px;
     transform: translateX(-70%) scale(2);
+    height: 140px;
     top: 33500px;
     z-index: 15;
   }
   .cloud-40 {
-    background-image: url(../images/clouds/cloudsv3.png);
     height: 250px;
-    filter: brightness(2);
     top: 33200px;
     z-index: 15;
   }
   .cloud-41 {
-    background-image: url(../images/clouds/cloudsv1.png);
-    filter: brightness(2);
     height: 150px;
     top: 35500px;
     z-index: 15;
   }
   .cloud-42 {
-    background-image: url(../images/clouds/cloudsv1.png);
-    height: 150px;
     transform: translateX(-66%) scaleX(-1);
-    filter: brightness(2);
+    height: 150px;
     top: 35000px;
     z-index: 16;
   }
   .cloud-43 {
-    background-image: url(../images/clouds/cloudsv2.png);
-    filter: brightness(2);
     height: 150px;
     left: 75%;
     top: 36225px;
@@ -637,36 +748,26 @@
     z-index: 13;
   }
     .cloud-44 {
-      background-image: url(../images/clouds/cloudsv1.png);
-      filter: brightness(2);
       height: 150px;
       top: 36369px;
       z-index: 13;
     }
     .cloud-45 {
-      background-image: url(../images/clouds/cloudsv7.png);
-      filter: brightness(2);
       height: 300px;
       top: 36769px;
       z-index: 15;
     }
     .cloud-46 {
-        background-image: url(../images/clouds/cloudsv4.png);
-        filter: brightness(2);
         top: 45705px;
         z-index: 13;
     }
     .cloud-47 {
-      background-image: url(../images/clouds/cloudsv4.png);
-      filter: brightness(2);
       width: 500px;
       top: 41000px;
       z-index: 11;
     }
     .cloud-48 {
-      opacity: 0.82;
-      background-image: url(../images/clouds/cloudsv6.png);
-      filter: brightness(1.5);
+      transform: translateX(-80%) scaleX(-1);
       width: 650px;
       height: 300px;
       top: 40824px;
@@ -675,16 +776,12 @@
     .cloud-49 {
       width: 300px;
       height: 150px;
-      background-image: url(../images/clouds/cloudsv2.png);
-      filter: brightness(2);
-      top: 40425px;
       left: 80%;
+      top: 40425px;
       z-index: 7;
     }
     .cloud-50 {
-        background-image: url(../images/clouds/cloudsv1.png);
         height: 150px;
-        filter: brightness(2);
         top: 47705px;
         z-index: 7;
     }
