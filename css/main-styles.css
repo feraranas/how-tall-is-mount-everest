@@ -461,16 +461,16 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.cerro-bonete-title{
   top: calc(18271px);
-  z-index: 105;
+  z-index: 123;
 }
 .mountain-data.cerro-bonete-data {
   top: calc(15633px);
-  z-index: 105;
+  z-index: 124;
 }
 .mountain-svg.cerro-bonete-svg {
   top: calc(18378px);
   z-index: 105;
-  opacity: 1;
+  opacity: 118;
   background-image: url(../images/mountains/10-CERRO-BONETE.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -480,20 +480,20 @@ body {
   top: calc(18479px);
   left: 50%;
   transform: translateX(-31%);
-  z-index: 106;
+  z-index: 121;
 }
 .mountain-data.tres-cruces-data {
   top: calc(15563px);
   transform: translateX(6%);
   left: 50%;
-  z-index: 106;
+  z-index: 122;
 }
 .mountain-svg.tres-cruces-svg {
   top: calc(18572px);
   height: 1600px;
   width: 134%;
   opacity: 1;
-  z-index: 106;
+  z-index: 120;
   background-image: url(../images/mountains/11-TRES-CRUCES.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -501,15 +501,16 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.mount-denali-title{
   top: calc(22442px);
-  z-index: 110;
+  z-index: 112;
 }
 .mountain-data.mount-denali-data {
   top: calc(19190px);
-  z-index: 110;
+  z-index: 113;
 }
 .mountain-svg.mount-denali-svg {
   top: calc(22471px);
   z-index: 110;
+  opacity: 1;
   background-image: url(../images/mountains/12-MOUNT-DENALI.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -525,6 +526,7 @@ body {
 }
 .mountain-svg.kilimanjaro-svg {
   z-index: 111;
+  opacity: 1;
   top: calc(24471px);
   background-image: url(../images/mountains/13-KILIMANJARO.svg);
 }
@@ -563,6 +565,7 @@ body {
 }
 .mountain-svg.mount-elbrus-svg {
   top: calc(26325px);
+  opacity: 0.9;
   left: 34%;
   z-index: 112;
   background-image: url(../images/mountains/15-MOUNT-ELBRUS.svg);
@@ -582,7 +585,7 @@ body {
   top: calc(27700px);
   z-index: 114;
   height: 1329px;
-  opacity: 0.9;
+  opacity: 1;
   background-image: url(../images/mountains/16-POPOCATEPETL.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -591,15 +594,16 @@ body {
 .mountain.mount-fraker-title{
   z-index: 115;
   top: calc(29060px);
-  opacity: 0;
+  opacity: 1;
 }
 .mountain-data.mount-fraker-data {
-  opacity: 0;
+  opacity: 1;
   z-index: 115;
   top: calc(24555px);
 }
 .mountain-svg.mount-fraker-svg {
   z-index: 115;
+  opacity: 1;
   top: calc(28980px);
   background-image: url(../images/mountains/11-TRES-CRUCES.svg);
 }
@@ -620,9 +624,10 @@ body {
 }
 .mountain-svg.iztlaccihuatl-svg {
   right: 16%;
+  opacity: 1;
   top: calc(29520px);
   background-image: url(../images/mountains/19-DYKH-TAU.svg);
-  z-index: 24;
+  z-index: 23;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 19 DYKH TAU */
