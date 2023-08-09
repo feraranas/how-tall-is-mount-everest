@@ -1,9 +1,9 @@
 /* ///////////////////////////////////////////////// */
 /* ///////////// GLOBAL VARIABLES  ///////////////// */
 /* ///////////////////////////////////////////////// */
-let flag = false; /* FOR TITLE HEIGHT RESPONSIVENESS */
+let flag = false;          /* FOR TITLE HEIGHT RESPONSIVENESS */
 const totalHeight = 50000; /* FULL HEIGHT */
-const mapHeight = 6800; /* FOR METRONOMO NORMALIZATION */
+const mapHeight = 6800;    /* FOR METRONOMO NORMALIZATION */
 
 /* ///////////////////////////////////////////////// */
 /* ////////////GET NECESSARY ELEMENTS////////////// */
@@ -25,9 +25,7 @@ function removeBr() {
   let title = document.querySelector("#title");
   let titleDiv = document.querySelector(".title");
   let brElements = document.querySelectorAll("#title br");
-  brElements.forEach(function (brElement) {
-    brElement.remove();
-  });
+  brElements.forEach(function(brElement) { brElement.remove(); });
   title.style.fontSize = "calc(2rem + 2vw)";
   titleDiv.style.width = "80%";
 }
@@ -49,13 +47,11 @@ function addBr() {
 // Throttle function to reduce scroll event calls
 function throttle(callback, delay) {
   let isThrottled = false;
-  return function () {
+  return function() {
     if (!isThrottled) {
       callback.apply(this, arguments);
       isThrottled = true;
-      setTimeout(() => {
-        isThrottled = false;
-      }, delay);
+      setTimeout(() => { isThrottled = false; }, delay);
     }
   };
 }
@@ -76,20 +72,23 @@ console.log('scrollHeight - windowHeight', pageHeight)
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
   console.log('pageYOffset: ', scrollPosition)
-  const normalizedHeight = Math.abs(
-    (scrollPosition / pageHeight) * 6800 - mapHeight
-  );
+  const normalizedHeight =
+      Math.abs((scrollPosition / pageHeight) * 6800 - mapHeight);
   console.log('normalized height: ', normalizedHeight)
 
-  if (scrollPosition > totalHeight - (windowHeight + 100)) { // IF REACHED THE BOTTOM DISAPPEAR
+  if (scrollPosition >
+      totalHeight - (windowHeight + 100)) { // IF REACHED THE BOTTOM DISAPPEAR
     /* DISAPPEAR METRO */
     metronomo.classList.remove("active");
-  } else if (scrollPosition >= 0 && scrollPosition <= 350) { // IF REACHED THE TOP DISAPPEAR
+  }
+  else if (scrollPosition >= 0 &&
+           scrollPosition <= 350) { // IF REACHED THE TOP DISAPPEAR
     /* DISAPPEAR METRO */
     metronomo.classList.remove("active");
     /* APPEAR END SCREEN */
     endScreen.classList.add("active-end-screen");
-  } else {
+  }
+  else {
     /* APPEAR METRO */
     if (!metronomo.classList.contains("active")) {
       metronomo.classList.add("active");
@@ -98,9 +97,8 @@ function updateMetronomo() {
     endScreen.classList.remove("active-end-screen");
   }
 
-  let meters = (Math.round(`${normalizedHeight}`) + 2500)
-    .toString()
-    .padStart(5, "0");
+  let meters =
+      (Math.round(`${normalizedHeight}`) + 2500).toString().padStart(5, "0");
   if (isNaN(meters)) {
     meters = "00000";
   }
@@ -111,7 +109,7 @@ function updateMetronomo() {
 window.addEventListener("scroll", throttle(updateMetronomo, 25));
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
-window.onload = function () {
+window.onload = function() {
   console.log(window.innerHeight);
   if (window.innerHeight <= 620) {
     removeBr();
@@ -121,13 +119,11 @@ window.onload = function () {
     addBr();
   }
 
-  setTimeout(() => {
-    window.scrollTo(0, document.body.scrollHeight);
-  }, 0);
+  setTimeout(() => { window.scrollTo(0, document.body.scrollHeight); }, 0);
 };
 
 /* TITLE RESPONSIVENESS */
-window.onresize = function () {
+window.onresize = function() {
   console.log(window.innerHeight);
 
   if (window.innerHeight <= 620) {
