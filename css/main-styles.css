@@ -278,17 +278,17 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.mount-everest-title{
   top: calc(3168px);
-  z-index: ;
+  z-index: 25;
 }
 .mountain-data.mount-everest-data {
   top: calc(2945px);
-  z-index: 104;
+  z-index: 26;
 }
 .mountain-svg.mount-everest-svg {
   top: calc(3300px);
   height: 1150px;
   width: 110%;
-  z-index: 104;
+  z-index: 22;
   background-image: url(../images/mountains/1-MOUNT-EVEREST.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -296,12 +296,12 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.k2-title{
   top: calc(4930px);
-  z-index: 105;
+  z-index: 28;
   right: 16%;
 }
 .mountain-data.k2-data {
   top: calc(4455px);
-  z-index: 105;
+  z-index: 30;
   left: 34%;
 }
 .mountain-svg.k2-svg {
@@ -309,7 +309,7 @@ body {
   top: calc(5041px);
   width: 100%;
   height: 1275px;
-  z-index: 105;
+  z-index: 23;
   background-image: url(../images/mountains/2-K2.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -317,19 +317,19 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.kangchenjunga-title{
   top: calc(5117px);
-  z-index: 106;
+  z-index: 28;
   left: 22%;
 }
 .mountain-data.kangchenjunga-data {
   top: calc(4372px);
-  z-index: 106;
+  z-index: 29;
   left: 71%;
 }
 .mountain-svg.kangchenjunga-svg {
   top: calc(5206px);
   opacity: 1;
   width: 115%;
-  z-index: 106;
+  z-index: 26;
   background-image: url(../images/mountains/3-KANCHENJUNGA.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -338,10 +338,10 @@ body {
 .mountain.lhotse-title{
   top: calc(5631px);
   right: 21%;
-  z-index: 107;
+  z-index: 31;
 }
 .mountain-data.lhotse-data {
-  z-index: 107;
+  z-index: 33;
   left: 28%;
   top: calc(4593px);
 }
@@ -349,7 +349,7 @@ body {
   top: calc(5767px);
   opacity: 1;
   height: 1211px;
-  z-index: 107;
+  z-index: 27;
   background-image: url(../images/mountains/4-LHOTSE.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -358,19 +358,19 @@ body {
 .mountain.makalu-title{
   top: calc(5857px);
   left: 19%;
-  z-index: 108;
+  z-index: 31;
 }
 .mountain-data.makalu-data {
-  z-index: 108;
   left: 68%;
   top: calc(4537px);
+  z-index: 32;
 }
 .mountain-svg.makalu-svg {
   top: calc(5990px);
   width: 115%;
   height: 1265px;
   opacity: 1;
-  z-index: 108;
+  z-index: 29;
   background-image: url(../images/mountains/5-MAKALU.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -378,15 +378,15 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.acaconcagua-title{
   top: calc(16864px);
-  z-index: 101;
+  z-index: 31;
 }
 .mountain-data.acaconcagua-data {
   top: calc(15275px);
-  z-index: 101;
+  z-index: 33;
 }
 .mountain-svg.acaconcagua-svg {
   top: calc(16820px);
-  z-index: 101;
+  z-index: 27;
   background-image: url(../images/mountains/6-ACACONCAGUA.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -395,20 +395,20 @@ body {
 .mountain.ojos-salado-title{
   top: calc(17364px);
     left: 60%;
-    z-index: 102;
+    z-index: 31;
     transform: translateX(-40%);
 }
 .mountain-data.ojos-salado-data {
   top: calc(15460px);
   left: 60%;
-  z-index: 102;
+  z-index: 32;
   transform: translateX(-20%);
 }
 .mountain-svg.ojos-salado-svg {
   top: calc(17412px);
   opacity: 1;
   width: 120%;
-  z-index: 102;
+  z-index: 29;
   background-image: url(../images/mountains/7-OJOS-DEL-SALADO.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -416,23 +416,23 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.monte-pissis-title{
   top: calc(18110px);
-  z-index: 104;
+  z-index: 31;
   left: 50%;
   transform: translateX(-31%);
 }
 .mountain-data.monte-pissis-data {
   top: calc(15940px);
-  z-index: 104;
+  z-index: 35;
   left: 50%;
   transform: translateX(5%);
 }
 .mountain-svg.monte-pissis-svg {
   top: calc(18210px);
-  z-index: 104;
   opacity: 1;
   width: 120%;
   height: 1425px;
   background-image: url(../images/mountains/9-HUASCARAN.svg);
+  z-index: 24;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 9 HUASCARAN */
@@ -440,12 +440,12 @@ body {
 .mountain.huascaran-title{
   top: calc(18155px);
   right: 25%;
-  z-index: 103;
+  z-index: 31;
 }
 .mountain-data.huascaran-data {
   top: calc(15763px);
   left: 24%;
-  z-index: 103;
+  z-index: 34;
 }
 .mountain-svg.huascaran-svg {
   top: calc(18300px);
@@ -453,7 +453,7 @@ body {
   opacity: 1;
   height: 1200px;
   transform: translateX(-25%);
-  z-index: 103;
+  z-index: 26;
   background-image: url(../images/mountains/8-MONTE-PISSIS.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -461,16 +461,16 @@ body {
 /* //////////////////////////////////////////////////////// */
 .mountain.cerro-bonete-title{
   top: calc(18271px);
-  z-index: 123;
+  z-index: 31;
 }
 .mountain-data.cerro-bonete-data {
   top: calc(15633px);
-  z-index: 124;
+  z-index: 33;
 }
 .mountain-svg.cerro-bonete-svg {
   top: calc(18378px);
-  z-index: 105;
-  opacity: 118;
+  z-index: 28;
+  opacity: 1;
   background-image: url(../images/mountains/10-CERRO-BONETE.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -480,20 +480,20 @@ body {
   top: calc(18479px);
   left: 50%;
   transform: translateX(-31%);
-  z-index: 121;
+  z-index: 31;
 }
 .mountain-data.tres-cruces-data {
   top: calc(15563px);
   transform: translateX(6%);
   left: 50%;
-  z-index: 122;
+  z-index: 32;
 }
 .mountain-svg.tres-cruces-svg {
   top: calc(18572px);
   height: 1600px;
   width: 134%;
   opacity: 1;
-  z-index: 120;
+  z-index: 30;
   background-image: url(../images/mountains/11-TRES-CRUCES.svg);
 }
 /* //////////////////////////////////////////////////////// */
