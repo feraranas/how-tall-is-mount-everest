@@ -1,15 +1,20 @@
 .divider {
      position: absolute;
      left: 50%;
-     transform: translateX(-50%);
+     transform: translateX(50%);
      width: 100vw;
      height: 50px;
      text-align: center;
+     font-size: calc(2rem + 2vmin);
+     transition: 0.8s all ease;
 }
 .three-thousander{
      top: 45705px;
-     background-image: linear-gradient(to-top,
+     background-image: linear-gradient(to top,
                                         #FFFFFF 0%,
-                                        transparent 50%,
-                                        transparent 50%);
+                                        #FFFFFF 25%,
+                                        transparent 100%);
+}
+.active-divider {
+     transform: translateX(-50%);
 }
