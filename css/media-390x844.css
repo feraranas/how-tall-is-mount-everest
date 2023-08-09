@@ -572,72 +572,83 @@
       width: 500px;  
   }
   .cloud-0 {
-       z-index: 15;
+
   }
   .cloud-1 {
-       z-index: 15;
+
   }
   .cloud-2 {
-       z-index: 15;
+
   }
   .cloud-3 {
-       z-index: 15;
+
   }
   .cloud-4 {
-       z-index: 15;
+
   }
   .cloud-5 {
-       z-index: 15;
+
   }
   .cloud-6 {
-       z-index: 15;
+    top: 3385px;
+    width: 250px;
+    transform: translateX(-80%) scaleX(-1);
   }
   .cloud-7 {
-       z-index: 15;
+    top: 3785px;
   }
   .cloud-8 {
-       z-index: 15;
+    top: 3785px;
+    transform: translateX(-50%) scaleX(-1);
   }
   .cloud-9 {
-       z-index: 15;
+    top: 3985px;
   }
   .cloud-10 {
-       z-index: 15;
+    top: 3585px;
+    width: 250px;
+    transform: translateX(-16%);
   }
   .cloud-11 {
-       z-index: 15;
+    top: 5300px;
+    transform: translateX(-50%) scaleX(-1);
   }
   .cloud-12 {
-       z-index: 15;
+    top: 5550px;
+    transform: translateX(-40%) scaleX(-1);
   }
   .cloud-13 {
-       z-index: 15;
+    top: 5100px;
+    width: 600px;
+    height: 800px;
+    transform: translateX(-60%) scaleX(-1);
   }
   .cloud-14 {
-       z-index: 15;
+    top: 5800px;
   }
   .cloud-15 {
-       z-index: 15;
+    top: 5800px;
   }
   .cloud-16 {
-       z-index: 15;
+    top: 5900px;
+    transform: translateX(-50%) scaleX(-1);
   }
   .cloud-17 {
-       z-index: 15;
+    top: 16800px;
   }
   .cloud-18 {
-       z-index: 15;
+    top: 17200px;
+    height: 700px;
   }
   .cloud-19 {
-       z-index: 15;
+    top: 18200px;
   }
   .cloud-20 {
-       z-index: 15;
-       top: 18500px;
+    top: 18500px;
+    height: 250px;
   }
   .cloud-21 {
-       z-index: 15;
-       top: 18900px;
+      top: 18900px;
   }
   .cloud-22 {
     z-index: 15;
@@ -711,7 +722,6 @@
   }
   .cloud-37 {
     top: 47705px;
-    z-index: 15;
   }
   .cloud-38 {
     top: 29600px;
@@ -781,8 +791,7 @@
       z-index: 7;
     }
     .cloud-50 {
-        height: 150px;
-        top: 47705px;
-        z-index: 7;
+      height: 350px;
+      top: 47603px;
     }
 }
