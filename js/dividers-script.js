@@ -1,4 +1,4 @@
 /* ///////////////////////////////////////////////// */
 /* ////////////GET NECESSARY ELEMENTS////////////// */
 /* ///////////////////////////////////////////////// */
-const threeThousander = document.querySelector('.three-thousander');
+const threeThousander = document.querySelector(".three-thousander");
