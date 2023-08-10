@@ -1,0 +1,122 @@
+/* ILLUSTRATIONS  */
+.illustration {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     height: 250px;
+     width: 250px;
+}
+/* 9000m */
+.plane-1 {
+     background-image: url(../images/illustrations/DassaultMirage2000V1.png);
+     /* background-image: url(../images/illustrations/DassaultMirage2000V2.png); */
+     z-index: 15;
+}
+/* 8000m */
+.hellicopter-2 {
+     background-image: url(../images/illustrations/AerospatialeSA315BLamaV1.png);
+     /* background-image: url(../images/illustrations/AerospatialeSA315BLamaV2.png); */
+     z-index: 15;
+}
+/* 7500m */
+.plane-3 {
+     background-image: url(../images/illustrations/AntonovAn2.png);
+     z-index: 15;
+}
+/* 7000m */
+.plane-2 {
+     background-image: url(../images/illustrations/dragonLadyV1.png);
+     /* background-image: url(../images/illustrations/dragonLadyV2.png); */
+     z-index: 15;
+}
+/* 6500m */
+.bird-alpine-cough {
+     background-image: url(../images/illustrations/alpineCough.png);
+}
+/* 7000m */
+.evo2-dron {
+     background-image: url(../images/illustrations/autelEvo2.png);
+     z-index: 15;
+}
+/* 6000m */
+.dragonfish-dron {
+     background-image: url(../images/illustrations/autelDragonFish.png);
+     z-index: 15;
+}
+/* 6000m */
+.hellicopter-1 {
+     background-image: url(../images/illustrations/EurocopterAS350.png);
+     z-index: 15;
+}
+/* 6000m */
+.hellicopter-3 {
+     background-image: url(../images/illustrations/EurocopterEC130.png);
+     z-index: 15;
+}
+/* 5900m */
+.dji-dron {
+     background-image: url(../images/illustrations/djimavic2.png);
+     z-index: 15;
+}
+/* 5000m */
+.air-balloon {
+     background-image: url(../images/illustrations/airBalloon.png);
+     z-index: 15;
+}
+/* 5100m */
+.bird-wallcreeper {
+     background-image: url(../images/illustrations/wallcreeper.png);
+     z-index: 15;
+}
+/* 4876.8m */
+.bird-himalayan-snowcock {
+     background-image: url(../images/illustrations/himalayanSnowcock.png);
+     z-index: 15;
+}
+/* 4500.72m */
+.bird-andean-flamingo {
+     background-image: url(../images/illustrations/andeanFlamingo.png);
+     z-index: 15;
+}
+/* 4000m */
+.bird-mountain-hawk-eagle {
+     background-image: url(../images/illustrations/mountainHawkEagle.png);
+     z-index: 15;
+}
+/* 3352.8m */
+.bird-golden-eagle {
+     background-image: url(../images/illustrations/goldenEagle.png);
+     z-index: 15;
+}
+/* 3200m */
+.bird-snow-flinch {
+     background-image: url(../images/illustrations/snowFlinch.png);
+     z-index: 15;
+}
+/* 3200m */
+.bird-white-cheeked-nuthatch {
+     background-image: url(../images/illustrations/whiteCheekedNuthatch.png);
+     z-index: 15;
+}
+/* 3000m */
+.bird-bald-eagle {
+     background-image: url(../images/illustrations/baldEagle.png);
+     z-index: 15;
+}
+/* 2700m */
+.bird-rufous-bellied-niltava {
+     background-image: url(../images/illustrations/rufousBelliedNiltava.png);
+     z-index: 15;
+}
+/* 2500m */
+.bird-snowy-owl {
+     background-image: url(../images/illustrations/snowyOwl.png);
+     z-index: 15;
+}
+/* 1828m */
+.bird-pigeon {
+     background-image: url(../images/illustrations/pigeon.png);
+     z-index: 15;
+}

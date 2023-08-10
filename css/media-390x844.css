@@ -61,32 +61,34 @@
                                        rgba(175, 231, 254, 1) 49000px,
                                        rgba(175, 231, 254, 1) 50000px);
      }
+     /* ////////////////////////////////////////////////////////////////////////
+     /* ////////////////////////////// MOUNTAINS /////////////////////////////// */
      .mountain {
-       font-size: calc(2rem);
-       right: 0;
-       left: 50%;
-       transform: translateX(-50%);
-     }
-     .mountain-data {
-       width: 200px;
-       font-size: calc(1rem);
-     }
-     .mountain-info {
-       padding: 0px 0px 14px 0px;
-     }
-     .mountain-svg {
-       right: 0;
-       left: 50%;
-       transform: translateX(-50%);
-     }
-     .fa-info {
-       font-size: 10px;
-       height: 14px;
-     }
-     .bottom-row {
-       height: 14px;
-     }
-     /* MOUNTAINS  */
+      font-size: calc(2rem);
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .mountain-data {
+      width: 200px;
+      font-size: calc(1rem);
+    }
+    .mountain-info {
+      padding: 0px 0px 14px 0px;
+    }
+    .mountain-svg {
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .fa-info {
+      font-size: 10px;
+      height: 14px;
+    }
+    .bottom-row {
+      height: 14px;
+    }
+
      /* //////////////////////////////////////////////////////// */
      /* MOUNTAINS -- 1 MOUNT-EVEREST */
      /* //////////////////////////////////////////////////////// */
@@ -794,4 +796,118 @@
       height: 350px;
       top: 47603px;
     }
+
+  /* ////////////////////////////////////////////////////////////////////////
+   ////////////////////////// ILLUSTRATIONS /////////////////////////////////
+   //////////////////////////////////////////////////////////////////////// */
+  /* 9000m */
+  .plane-1 {
+    z-index: 15;
+    top: 2200px;
+  }
+  /* 8000m */
+  .hellicopter-2 {
+    z-index: 15;
+    top: 9400px;
+  }
+  /* 7500m */
+  .plane-3 {
+    z-index: 15;
+    top: 13000px;
+  }
+  /* 7000m */
+  .plane-2 {
+    z-index: 15;
+    top: 16550px
+  }
+  /* 6500m */
+  .bird-alpine-cough {
+    z-index: 15;
+    top: 20150px;
+  }
+  /* 7000m */
+  .evo2-dron {
+    z-index: 15;
+    top: 16550px;
+  }
+  /* 6000m */
+  .dragonfish-dron {
+    z-index: 15;
+    top: 23850px;
+  }
+  /* 6000m */
+  .hellicopter-1 {
+    z-index: 15;
+    top: 23850px;
+  }
+  /* 6000m */
+  .hellicopter-3 {
+    z-index: 15;
+    top: 23850px;
+  }
+  /* 5900m */
+  .dji-dron {
+    z-index: 15;
+    top: 24520px;
+  }
+  /* 5000m */
+  .air-balloon {
+    z-index: 15;
+    top: 31020px;
+  }
+  /* 5100m */
+  .bird-wallcreeper {
+    z-index: 15;
+    top: 30300px;
+  }
+  /* 4876.8m */
+  .bird-himalayan-snowcock {
+    z-index: 15;
+    top: 32000px;
+  }
+  /* 4500.0672m */
+  .bird-andean-flamingo {
+    z-index: 15;
+    top: 34500px;
+  }
+  /* 4,000 m */
+  .bird-mountain-hawk-eagle {
+    z-index: 15;
+    top: 38300px;
+  }
+  /* 3352.8m */
+  .bird-golden-eagle {
+    z-index: 15;
+    top: 42950px;
+  }
+  /* 3,200 m */
+  .bird-snow-flinch {
+    z-index: 15;
+    top: 44100px;
+  }
+  /* 3,200 m */
+  .bird-white-cheeked-nuthatch {
+    z-index: 15;
+    top: 44100px;
+  }
+  /* 3000m */
+  .bird-bald-eagle {
+    z-index: 15;
+    top: 45600px;
+  }
+  /* 2700m */
+  .bird-rufous-bellied-niltava {
+    z-index: 15;
+    top: 47700px;
+  }
+  /* 2500m */
+  .bird-snowy-owl {
+    z-index: 15;
+    top: 48700px;
+  }
+  /* 1,828m */
+  .bird-pigeon {
+    z-index: 15;
+    top: 49450px;
+  }
 }
