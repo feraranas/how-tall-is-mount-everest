@@ -1,12 +1,21 @@
 /* ILLUSTRATIONS  */
-.illustration {
+/* FOR THE WHOLE CONTAINER */
+.illustration-container {
      position: absolute;
      left: 50%;
      transform: translateX(-50%);
+     height: 120px;
+     width: 100px;
+     display: grid;
+}
+/* FOR IMAGES */
+.illustration {
      background-size: 100%;
      background-repeat: no-repeat;
-     height: 250px;
-     width: 250px;
+     align-self: end;
+}
+.illustration-data {
+     
 }
 /* 9000m */
 .plane-1 {
@@ -119,4 +128,6 @@
 .bird-pigeon {
      background-image: url(../images/illustrations/pigeon.png);
      z-index: 15;
+     width: 100px;
+     height: 100px;
 }

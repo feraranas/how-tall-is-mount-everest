@@ -801,113 +801,114 @@
    ////////////////////////// ILLUSTRATIONS /////////////////////////////////
    //////////////////////////////////////////////////////////////////////// */
   /* 9000m */
-  .plane-1 {
+  .plane-1-container {
     z-index: 15;
     top: 2200px;
   }
   /* 8000m */
-  .hellicopter-2 {
+  .hellicopter-2-container {
     z-index: 15;
     top: 9400px;
   }
   /* 7500m */
-  .plane-3 {
+  .plane-3-container {
     z-index: 15;
     top: 13000px;
   }
   /* 7000m */
-  .plane-2 {
+  .plane-2-container {
     z-index: 15;
     top: 16550px
   }
   /* 6500m */
-  .bird-alpine-cough {
+  .bird-alpine-cough-container {
     z-index: 15;
     top: 20150px;
   }
   /* 7000m */
-  .evo2-dron {
+  .evo2-dron-container {
     z-index: 15;
     top: 16550px;
   }
   /* 6000m */
-  .dragonfish-dron {
+  .dragonfish-dron-container {
     z-index: 15;
     top: 23850px;
   }
   /* 6000m */
-  .hellicopter-1 {
+  .hellicopter-1-container {
     z-index: 15;
     top: 23850px;
   }
   /* 6000m */
-  .hellicopter-3 {
+  .hellicopter-3-container {
     z-index: 15;
     top: 23850px;
   }
   /* 5900m */
-  .dji-dron {
+  .dji-dron-container {
     z-index: 15;
     top: 24520px;
   }
   /* 5000m */
-  .air-balloon {
+  .air-balloon-container {
     z-index: 15;
     top: 31020px;
   }
   /* 5100m */
-  .bird-wallcreeper {
+  .bird-wallcreeper-container {
     z-index: 15;
     top: 30300px;
   }
   /* 4876.8m */
-  .bird-himalayan-snowcock {
+  .bird-himalayan-snowcock-container {
     z-index: 15;
     top: 32000px;
   }
   /* 4500.0672m */
-  .bird-andean-flamingo {
+  .bird-andean-flamingo-container {
     z-index: 15;
     top: 34500px;
   }
   /* 4,000 m */
-  .bird-mountain-hawk-eagle {
+  .bird-mountain-hawk-eagle-container {
     z-index: 15;
     top: 38300px;
   }
   /* 3352.8m */
-  .bird-golden-eagle {
+  .bird-golden-eagle-container {
     z-index: 15;
     top: 42950px;
   }
   /* 3,200 m */
-  .bird-snow-flinch {
+  .bird-snow-flinch-container {
     z-index: 15;
     top: 44100px;
   }
   /* 3,200 m */
-  .bird-white-cheeked-nuthatch {
+  .bird-white-cheeked-nuthatch-container {
     z-index: 15;
     top: 44100px;
   }
   /* 3000m */
-  .bird-bald-eagle {
+  .bird-bald-eagle-container {
     z-index: 15;
     top: 45600px;
   }
   /* 2700m */
-  .bird-rufous-bellied-niltava {
+  .bird-rufous-bellied-niltava-container {
     z-index: 15;
     top: 47700px;
   }
   /* 2500m */
-  .bird-snowy-owl {
+  .bird-snowy-owl-container {
     z-index: 15;
     top: 48700px;
   }
   /* 1,828m */
-  .bird-pigeon {
+  .bird-pigeon-container {
     z-index: 15;
-    top: 49450px;
+    top: 49150px;
+    left: 70%;
   }
 }
