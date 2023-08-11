@@ -490,12 +490,10 @@
      /* MOUNTAINS -- 24 CERRO NUBE OAXACA [3,720m] */
      /* //////////////////////////////////////////////////////// */
      .mountain.cerro-nube-oax-title {
-       top: calc(40250px);
        font-size: calc(1.85rem + 1.5vmin);
        left: 0;
      }
      .mountain-data.cerro-nube-oax-data {
-       top: calc(36140px);
        left: 53%;
      }
      .mountain-svg.cerro-nube-oax-svg {
@@ -510,12 +508,10 @@
      /* //////////////////////////////////////////////////////// */
      /* Mountain Nevado de Colima */
      .mountain.nevado-colima-title {
-       top: calc(47455px);
        font-size: calc(1.85rem + 1.5vmin);
      }
      .mountain-data.nevado-colima-data {
        width: 400px;
-       top: calc(43164px);
      }
      .mountain-svg.nevado-colima-svg {
        top: calc(47555px);

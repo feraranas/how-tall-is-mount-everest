@@ -13,10 +13,35 @@
      background-size: 100%;
      background-repeat: no-repeat;
      align-self: end;
+     width: 100px;
+     height: 100px;
 }
-.illustration-data {
-     
+.tab-arrow-illustration {
+     position: absolute;
+     top: 9px;
+     right: 7px;
+     width: 10px;
+     height: 10px;
+     background: rgba(25,25,25,1);
+     transform: translateY(50%) rotate(45deg);
 }
+.fa-info-illustration {
+     font-size: 11px;
+     height: 22px;
+     width: 22px;
+     top: 0;
+     right: 1px;
+     color: white;
+     padding-top: 5px;
+     background: rgba(25,25,25,1);
+     z-index: 1;
+     position: absolute;
+     text-align: center;
+     border-radius: 25px;
+}
+.fa-info-illustration:before {
+     content: "\f129";
+ }
 /* 9000m */
 .plane-1 {
      background-image: url(../images/illustrations/DassaultMirage2000V1.png);
@@ -128,6 +153,4 @@
 .bird-pigeon {
      background-image: url(../images/illustrations/pigeon.png);
      z-index: 15;
-     width: 100px;
-     height: 100px;
 }

@@ -70,11 +70,11 @@
       transform: translateX(-50%);
     }
     .mountain-data {
-      width: 200px;
-      font-size: calc(1rem);
+      /* width: 200px;
+      font-size: calc(1rem); */
     }
     .mountain-info {
-      padding: 0px 0px 14px 0px;
+      /* padding: 0px 0px 14px 0px; */
     }
     .mountain-svg {
       right: 0;
@@ -82,11 +82,11 @@
       transform: translateX(-50%);
     }
     .fa-info {
-      font-size: 10px;
-      height: 14px;
+      /* font-size: 10px;
+      height: 14px; */
     }
     .bottom-row {
-      height: 14px;
+      /* height: 14px; */
     }
 
      /* //////////////////////////////////////////////////////// */
@@ -537,11 +537,10 @@
      /* MOUNTAINS -- 25 NEVADO DE COLIMA [2720m] */
      /* //////////////////////////////////////////////////////// */
      .mountain.nevado-colima-title {
-       top: calc(47660px);
        font-size: 1.8rem;
      }
      .mountain-data.nevado-colima-data {
-       top: calc(44821px);
+       
      }
      .mountain-svg.nevado-colima-svg {
        top: calc(47737px);
