@@ -773,14 +773,11 @@ body {
 /* //////////////////////////////////////////////////////// */
 .m-24 {
   top: 40353px;
-}
-.mountain.cerro-nube-oax-title {
-  left: 3%;
   z-index: 12;
 }
+.mountain.cerro-nube-oax-title {
+}
 .mountain-data.cerro-nube-oax-data {
-  left: 53%;
-  z-index: 13;
 }
 .mountain-svg.cerro-nube-oax-svg {
   top: calc(40491px);
@@ -792,6 +789,7 @@ body {
 /* //////////////////////////////////////////////////////// */
 .m-25 {
   top: 47550px;
+  z-index: 11;
 }
 .mountain.nevado-colima-title {
   /* z-index: 9; */
