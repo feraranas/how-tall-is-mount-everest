@@ -301,11 +301,11 @@ body {
   z-index: 26;
 }
 .mountain-svg.mount-everest-svg {
+  background-image: url(../images/mountains/1-MOUNT-EVEREST.svg);
   top: calc(3300px);
   height: 1150px;
   width: 110%;
   z-index: 22;
-  background-image: url(../images/mountains/1-MOUNT-EVEREST.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 2 K2 */
@@ -322,12 +322,12 @@ body {
   left: 34%;
 }
 .mountain-svg.k2-svg {
-  right: 33%;
-  top: calc(5041px);
-  width: 100%;
-  height: 1275px;
-  z-index: 23;
   background-image: url(../images/mountains/2-K2.svg);
+  top: calc(5041px);
+  height: 1275px;
+  width: 100%;
+  right: 33%;
+  z-index: 23;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 3 KANGCHENJUNGA */
@@ -344,11 +344,12 @@ body {
   left: 71%;
 }
 .mountain-svg.kangchenjunga-svg {
-  top: calc(5206px);
-  opacity: 1;
-  width: 115%;
-  z-index: 26;
   background-image: url(../images/mountains/3-KANCHENJUNGA.svg);
+  top: calc(5206px);
+  height: 1250px;
+  width: 115%;
+  opacity: 1;
+  z-index: 26;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 4 LHOTSE */
@@ -365,11 +366,12 @@ body {
   left: 28%;
 }
 .mountain-svg.lhotse-svg {
-  top: calc(5767px);
-  opacity: 1;
-  height: 1211px;
-  z-index: 27;
   background-image: url(../images/mountains/4-LHOTSE.svg);
+  top: calc(5767px);
+  height: 1211px;
+  width: 115%;
+  opacity: 1;
+  z-index: 27;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 5 MAKALU */
@@ -386,12 +388,12 @@ body {
   z-index: 32;
 }
 .mountain-svg.makalu-svg {
+  background-image: url(../images/mountains/5-MAKALU.svg);
   top: calc(5990px);
-  width: 115%;
   height: 1265px;
+  width: 115%;
   opacity: 1;
   z-index: 29;
-  background-image: url(../images/mountains/5-MAKALU.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 6 Nanga Parbat */
@@ -631,14 +633,8 @@ body {
   top: 18479px;
 }
 .mountain.illimani-title{
-  left: 50%;
-  transform: translateX(-31%);
-  z-index: 31;
 }
 .mountain-data.illimani-data {
-  transform: translateX(6%);
-  left: 50%;
-  z-index: 32;
 }
 .mountain-svg.illimani-svg {
   top: calc(18572px);
@@ -852,7 +848,8 @@ body {
 .mountain-svg.alam-kuh-svg {
   top: calc(29630px);
   opacity: 1;
-  width: 142%;
+  height: 1250px;
+  width: 100%;
   background-image: url(../images/mountains/28-ALAM-KUH.svg);
   z-index: 25;
 }
@@ -900,6 +897,7 @@ body {
   left: -17%;
   background-position: right;
   background-image: url(../images/mountains/30-TEYOTL.svg);
+  background-color: transparent;
   z-index: 21;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1076,6 +1074,25 @@ body {
 .mountain-svg.nevado-colima-svg {
   top: calc(47735px);
   background-image: url(../images/mountains/40-NEVADO-DE-COLIMA.svg);
+  z-index: 8;
+}
+/* //////////////////////////////////////////////////////// */
+/* MOUNTAINS -- 41 HALF DOME [2696m] */
+/* //////////////////////////////////////////////////////// */
+.m-41 {
+  top: 47550px;
+  z-index: 11;
+}
+.mountain.half-dome-title {
+  /* z-index: 9; */
+}
+.mountain-data.half-dome-data {
+  /* left: 51%;
+  z-index: 10; */
+}
+.mountain-svg.half-dome-svg {
+  top: calc(47735px);
+  background-image: url(../images/mountains/41-HALF-DOME.svg);
   z-index: 8;
 }
 
