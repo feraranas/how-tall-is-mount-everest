@@ -651,13 +651,9 @@ body {
   top: 18479px;
 }
 .mountain.rasac-title{
-  left: 50%;
-  transform: translateX(-31%);
   z-index: 31;
 }
 .mountain-data.rasac-data {
-  transform: translateX(6%);
-  left: 50%;
   z-index: 32;
 }
 .mountain-svg.rasac-svg {
@@ -836,13 +832,9 @@ body {
   top: 29715px;
 }
 .mountain.alam-kuh-title{
-  left: 51%;
-  transform: translateX(-25%);
   z-index: 26;
 }
 .mountain-data.alam-kuh-data {
-  left: 50%;
-  transform: translateX(22%);
   z-index: 27;
 }
 .mountain-svg.alam-kuh-svg {
@@ -940,17 +932,15 @@ body {
   z-index: 14;
 }
 /* //////////////////////////////////////////////////////// */
-/* MOUNTAINS -- 33 Jbel Toubkal [4282m] */
+/* MOUNTAINS -- 33 Jbel Toubkal [] */
 /* //////////////////////////////////////////////////////// */
 .m-33 {
   top: 36275px;
 }
 .mountain.jbel-toubkal-title { 
-  left: 4%;
   z-index: 16;
 }
 .mountain-data.jbel-toubkal-data {
-  left: 53%;
   z-index: 17;
 }
 .mountain-svg.jbel-toubkal-svg {
@@ -965,11 +955,9 @@ body {
   top: 36275px;
 }
 .mountain.tochal-title { 
-  left: 4%;
   z-index: 16;
 }
 .mountain-data.tochal-data {
-  left: 53%;
   z-index: 17;
 }
 .mountain-svg.tochal-svg {
