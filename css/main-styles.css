@@ -335,7 +335,7 @@ body {
 .m-3 {
   top: 5117px;
 }
-.mountain.kangchenjunga-title{  
+.mountain.kangchenjunga-title{
   z-index: 28;
   left: 22%;
 }
@@ -543,7 +543,7 @@ body {
 .m-14 {
   top: 18110px;
 }
-.mountain.monte-pissis-title{ 
+.mountain.monte-pissis-title{
   z-index: 31;
   left: 50%;
   transform: translateX(-31%);
@@ -725,7 +725,7 @@ body {
 .m-23 {
   top: 26326px;
 }
-.mountain.mount-elbrus-title {  
+.mountain.mount-elbrus-title {
   transform: translateX(-30%);
   left: 60%;
   z-index: 112;
@@ -918,7 +918,7 @@ body {
 .m-32 {
   top: 36275px;
 }
-.mountain.cofre-perote-title { 
+.mountain.cofre-perote-title {
   left: 4%;
   z-index: 16;
 }
@@ -937,7 +937,7 @@ body {
 .m-33 {
   top: 36275px;
 }
-.mountain.jbel-toubkal-title { 
+.mountain.jbel-toubkal-title {
   z-index: 16;
 }
 .mountain-data.jbel-toubkal-data {
@@ -954,7 +954,7 @@ body {
 .m-34 {
   top: 36275px;
 }
-.mountain.tochal-title { 
+.mountain.tochal-title {
   z-index: 16;
 }
 .mountain-data.tochal-data {
@@ -1089,7 +1089,7 @@ body {
 //////////////////////////////////////////////////////////////////////// */
 .background-offroad {
   position: absolute;
-  pointer-events: none; 
+  pointer-events: none;
   bottom: 0;
   left: -150px;
   width: 200%;
