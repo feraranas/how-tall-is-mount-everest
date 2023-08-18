@@ -95,13 +95,10 @@
 .mountain-data.mount-everest-data {
 }
 .mountain-svg.mount-everest-svg {
-  top: calc(3336px);
+  top: 3336px;
   padding: 480px 350px 480px 350px;
   width: 0px;
   height: 0px;
-  /* height: 804px; */
-  left: 56%;
-  /* width: 600px; */
 }
 
 /* //////////////////////////////////////////////////////// */
