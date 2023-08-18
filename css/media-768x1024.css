@@ -96,7 +96,10 @@
 }
 .mountain-svg.mount-everest-svg {
   top: calc(3336px);
-  padding: 550px 400px 550px 400px;
+  padding: calc(480px + 5vh) calc(270px + 15vw);
+  background-size: contain;
+  height: 0px;
+  width: 0px;
 }
 
 /* //////////////////////////////////////////////////////// */
