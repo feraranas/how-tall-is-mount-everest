@@ -866,8 +866,7 @@ body {
 }
 .mountain-svg.nevado-toluca-svg {
   top: calc(33535px);
-  opacity: 1;
-  height: 1400px;
+  opacity: 0.85;
   width: 125%;
   background-position: left;
   background-image: url(../images/mountains/29-NEVADO-TOLUCA.svg);

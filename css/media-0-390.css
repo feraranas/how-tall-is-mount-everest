@@ -565,7 +565,7 @@
      /* MOUNTAINS -- 29 NEVADO DE TOLUCA */
      /* //////////////////////////////////////////////////////// */
       .m-29 {
-        top: 33401px;
+        top: 33200px;
       }
      .mountain.nevado-toluca-title{
        font-size: 1.8rem;
@@ -576,17 +576,17 @@
        transform: translateX(-50%);
      }
      .mountain-svg.nevado-toluca-svg {
-       top: calc(33536px);
-       left: 39%;
-       opacity: 0.85;
-       padding: 250px 250px;
+      top: 33442px;
+      left: 74%;
+      opacity: 0.85;
+      padding: 250px 500px;
      }
      
      /* //////////////////////////////////////////////////////// */
      /* MOUNTAINS -- 30 TEYOTL */
      /* //////////////////////////////////////////////////////// */
       .m-30 {
-        top: 33550px;
+        top: 33350px;
       }
      .mountain.teyotl-title{
        font-size: 1.8rem;
@@ -597,17 +597,17 @@
        left: 25%;
      }
      .mountain-svg.teyotl-svg {
-       opacity: 1;
-       top: 33669px;
-       left: 43%;
-       padding: 250px 250px;
+      opacity: 1;
+      top: 33550px;
+      left: 39%;
+      padding: 250px 500px;
      }
      
      /* //////////////////////////////////////////////////////// */
      /* MOUNTAINS -- 31 VOLCAN MALINTZIN [4,461m] */
      /* //////////////////////////////////////////////////////// */
       .m-31 {
-        top: 34975px;
+        top: 34800px;
       }
      .mountain.volcan-malintzin-title{
        font-size: 1.8rem;
@@ -616,15 +616,17 @@
        left: 50%;
      }
      .mountain-svg.volcan-malintzin-svg {
-       top: 35124px;
-       padding: 250px 250px;
+      top: 35020px;
+      left: 80%;
+      padding: 250px 556px;
      }
      
      /* //////////////////////////////////////////////////////// */
      /* MOUNTAINS -- 32 COFRE DE PEROTE [4282m] */
      /* //////////////////////////////////////////////////////// */
       .m-32 {
-        top: 36275px;
+        top: 36100px;
+        z-index: 20;
       }
      .mountain.cofre-perote-title {
        font-size: 1.8rem;
@@ -634,8 +636,8 @@
        left: 53%;
      }
      .mountain-svg.cofre-perote-svg {
-       top: calc(36420px);
-       padding: 250px 250px;
+      top: 36315px;
+      padding: 255px 250px;
      }
      /* //////////////////////////////////////////////////////// */
     /* MOUNTAINS -- 33 Jbel Toubkal [4282m] */
