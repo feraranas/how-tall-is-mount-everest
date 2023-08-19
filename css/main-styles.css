@@ -18,7 +18,7 @@ body {
   scroll-behavior: smooth;
   background-image: linear-gradient(to top,
                                     rgba(175, 231, 254, 1) 10%,
-                                    rgba(175, 231, 254, 1) 20%,
+                     b               rgba(175, 231, 254, 1) 20%,
                                     rgba(175, 231, 254, 1) 30%,
                                     rgba(175, 231, 254, 1) 40%,
                                     rgba(175, 231, 254, 1) 50%,
@@ -169,6 +169,8 @@ body {
 //////////////////////////////////////////////////////////////////////// */
 .data-container {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: grid;
   grid-template-rows: 145px 75px;
   width: 100vw;
@@ -278,8 +280,10 @@ body {
 }
 .mountain-svg {
   position: absolute;
-  width: 100%;
-  height: 1100px;
+  /* width: 100%;
+  height: 1100px; */
+  width: 0px;
+  height: 0px;
   pointer-events: none;
   opacity: 0.75;
   background-size: cover;
@@ -862,8 +866,7 @@ body {
 }
 .mountain-svg.nevado-toluca-svg {
   top: calc(33535px);
-  opacity: 1;
-  height: 1400px;
+  opacity: 0.85;
   width: 125%;
   background-position: left;
   background-image: url(../images/mountains/29-NEVADO-TOLUCA.svg);
@@ -982,25 +985,9 @@ body {
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
-/* MOUNTAINS -- 36 AORAKI [3,720m] */
+/* MOUNTAINS -- 36 MAFADI [3,720m] */
 /* //////////////////////////////////////////////////////// */
 .m-36 {
-  top: 40353px;
-  z-index: 12;
-}
-.mountain.aoraki-title {
-}
-.mountain-data.aoraki-data {
-}
-.mountain-svg.aoraki-svg {
-  top: calc(40491px);
-  background-image: url(../images/mountains/36-AORAKI.svg);
-  z-index: 10;
-}
-/* //////////////////////////////////////////////////////// */
-/* MOUNTAINS -- 37 MAFADI [3,720m] */
-/* //////////////////////////////////////////////////////// */
-.m-37 {
   top: 40353px;
   z-index: 12;
 }
@@ -1010,7 +997,23 @@ body {
 }
 .mountain-svg.mafadi-svg {
   top: calc(40491px);
-  background-image: url(../images/mountains/37-MAFADI.svg);
+  background-image: url(../images/mountains/36-MAFADI.svg);
+  z-index: 10;
+}
+/* //////////////////////////////////////////////////////// */
+/* MOUNTAINS -- 37 CERRO MOHONIRA [3,300m] */
+/* //////////////////////////////////////////////////////// */
+.m-37 {
+  top: 43200px;
+  z-index: 12;
+}
+.mountain.cerro-mohonira-title {
+}
+.mountain-data.cerro-mohonira-data {
+}
+.mountain-svg.cerro-mohonira-svg {
+  top: 43410px;
+  background-image: url(../images/mountains/37-CERRO-MOHONIRA.svg);
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1050,7 +1053,7 @@ body {
 /* //////////////////////////////////////////////////////// */
 .m-40 {
   top: 47550px;
-  z-index: 11;
+  z-index: 12;
 }
 .mountain.nevado-colima-title {
   /* z-index: 9; */
@@ -1072,14 +1075,12 @@ body {
   z-index: 11;
 }
 .mountain.half-dome-title {
-  /* z-index: 9; */
 }
 .mountain-data.half-dome-data {
-  /* left: 51%;
-  z-index: 10; */
 }
 .mountain-svg.half-dome-svg {
-  top: calc(47735px);
+  top: 47735px;
+  opacity: 0.8;
   background-image: url(../images/mountains/41-HALF-DOME.svg);
   z-index: 8;
 }

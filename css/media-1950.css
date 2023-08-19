@@ -1,5 +1,5 @@
-/* Macbook Pro 1440x900 */
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+/* Bigger thaniMAC's */
+@media screen and (min-width: 1951px) {
   body {
     background-image: linear-gradient(to bottom,
                                   rgba(255, 255, 255, 1) 0px, /* FULL WHITE */
@@ -713,24 +713,9 @@
   padding: 450px 400px 450px 380px;
 }
 /* //////////////////////////////////////////////////////// */
-/* MOUNTAINS -- 36 AORAKI [] */
+/* MOUNTAINS -- 36 MAFADI [] */
 /* //////////////////////////////////////////////////////// */
 .m-36 {
- top: 41200px;
- z-index: 12;
-}
-.mountain.aoraki-title {
-}
-.mountain-data.aoraki-data {
-}
-.mountain-svg.aoraki-svg {
-  top: 41430px;
-  padding: 450px 400px 450px 380px;
-}
-/* //////////////////////////////////////////////////////// */
-/* MOUNTAINS -- 37 MAFADI [] */
-/* //////////////////////////////////////////////////////// */
-.m-37 {
  top: 42270px;
  z-index: 12;
 }
@@ -741,6 +726,21 @@
 .mountain-svg.mafadi-svg {
   top: 42500px;
   padding: 450px 400px 450px 380px;
+}
+/* //////////////////////////////////////////////////////// */
+/* MOUNTAINS -- 37 Cerro Mohinora [] */
+/* //////////////////////////////////////////////////////// */
+.m-37 {
+  top: 40550px;
+  z-index: 12;
+}
+.mountain.cerro-mohonira-title {
+}
+.mountain-data.cerro-mohonira-data {
+}
+.mountain-svg.cerro-mohonira-svg {
+  top: 40600px;
+  padding: 250px 250px;
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 38 MOUNT SEFTON [] */
