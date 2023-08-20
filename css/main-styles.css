@@ -19,22 +19,22 @@ body {
   background-image: linear-gradient(to bottom,
                                 rgba(255, 255, 255, 1) 0px, /* FULL WHITE */
                                 rgba(255, 255, 255, 1) 1000px,
-                                rgba(255, 255, 255, 1) 2000px, 
+                                rgba(255, 255, 255, 1) 2000px,
                                 rgba(255, 255, 255, 1) 3000px,
-                                rgba(255, 255, 255, 1) 4000px, 
+                                rgba(255, 255, 255, 1) 4000px,
                                 rgb(250, 249, 246) 5000px, /* OFF WHITE */
                                 rgb(250, 249, 246) 6000px,
                                 rgb(250, 249, 246) 7000px,
                                 rgb(250, 249, 246) 8000px,
-                                rgb(250, 249, 246) 9000px, 
+                                rgb(250, 249, 246) 9000px,
                                 rgb(249, 246, 238) 10000px, /* BONE WHITE */
                                 rgb(249, 246, 238) 11000px,
                                 rgb(249, 246, 238) 12000px,
                                 rgb(249, 246, 238) 13000px,
                                 rgb(249, 246, 238) 14000px,
                                 rgb(249, 246, 238) 15000px,
-                                rgb(249, 246, 238) 16000px, 
-                                rgb(249, 246, 238) 17000px, 
+                                rgb(249, 246, 238) 16000px,
+                                rgb(249, 246, 238) 17000px,
                                 rgb(249, 246, 238) 18000px,
                                 rgb(249, 246, 238) 19000px,
                                 rgb(249, 246, 238) 20000px,
@@ -56,7 +56,7 @@ body {
                                 rgb(54, 69, 79) 29000px,
                                 rgb(54, 69, 79) 30000px,
                                 rgb(54, 69, 79) 31000px,
-                                rgb(54, 69, 79) 31500px, 
+                                rgb(54, 69, 79) 31500px,
                                 rgb(137, 207, 240) 33000px, /* Baby blue */
                                 rgb(137, 207, 240) 36000px,
                                 rgb(137, 207, 240) 36500px,
@@ -383,7 +383,7 @@ body {
 .m-3 {
   top: 5117px;
 }
-.mountain.kangchenjunga-title{  
+.mountain.kangchenjunga-title{
   z-index: 28;
   left: 22%;
 }
@@ -584,7 +584,7 @@ body {
 .m-14 {
   top: 18110px;
 }
-.mountain.monte-pissis-title{ 
+.mountain.monte-pissis-title{
   z-index: 31;
   left: 50%;
   transform: translateX(-31%);
@@ -756,7 +756,7 @@ body {
 .m-23 {
   top: 26326px;
 }
-.mountain.mount-elbrus-title {  
+.mountain.mount-elbrus-title {
   transform: translateX(-30%);
   left: 60%;
   z-index: 112;
@@ -889,7 +889,7 @@ body {
 }
 .mountain-svg.nevado-toluca-svg {
   top: 33535px;
-  opacity: 0.85; 
+  opacity: 0.85;
   background-position: left;
   background-image: url(../images/mountains/29-NEVADO-TOLUCA.svg);
   z-index: 20;
@@ -943,7 +943,7 @@ body {
 .m-32 {
   top: 36275px;
 }
-.mountain.cofre-perote-title { 
+.mountain.cofre-perote-title {
   left: 4%;
   z-index: 16;
 }
@@ -962,7 +962,7 @@ body {
 .m-33 {
   top: 36275px;
 }
-.mountain.jbel-toubkal-title { 
+.mountain.jbel-toubkal-title {
   z-index: 16;
 }
 .mountain-data.jbel-toubkal-data {
@@ -979,7 +979,7 @@ body {
 .m-34 {
   top: 36275px;
 }
-.mountain.tochal-title { 
+.mountain.tochal-title {
   z-index: 16;
 }
 .mountain-data.tochal-data {
@@ -1112,7 +1112,7 @@ body {
 //////////////////////////////////////////////////////////////////////// */
 .background-offroad {
   position: absolute;
-  pointer-events: none; 
+  pointer-events: none;
   bottom: 0;
   left: -150px;
   width: 200%;

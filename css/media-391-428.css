@@ -74,7 +74,7 @@
 .mountain-svg.kangchenjunga-svg {
  left: 36%;
  padding: 250px 500px;
-}  
+}
 
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 4 LHOTSE */
@@ -139,7 +139,7 @@
  top: 9670px;
 }
 .mountain.annapurna-ii-title{
- 
+
 }
 .mountain-data.annapurna-ii-data {
 }
@@ -170,10 +170,10 @@
  z-index: 151;
 }
 .mountain.kangkar-punzum-title{
- 
+
 }
 .mountain-data.kangkar-punzum-data {
- 
+
 }
 .mountain-svg.kangkar-punzum-svg {
  top: 12500px;
@@ -257,7 +257,7 @@
  top: 17930px;
  z-index: 152;
  left: 60%;
- }  
+ }
 .mountain.monte-pissis-title{
   left: 25%;
   transform: translateX(-50%);
@@ -617,7 +617,7 @@
 .m-33 {
  top: 37000px;
 }
-.mountain.jbel-toubkal-title { 
+.mountain.jbel-toubkal-title {
  z-index: 16;
 }
 .mountain-data.jbel-toubkal-data {
@@ -634,7 +634,7 @@
 .m-34 {
  top: 38460px;
 }
-.mountain.tochal-title { 
+.mountain.tochal-title {
  z-index: 16;
 }
 .mountain-data.tochal-data {
@@ -780,7 +780,7 @@ letter-spacing: 20px;
  background-size: 100%;
  background-repeat: no-repeat;
  height: 500px;
- width: 500px;  
+ width: 500px;
 }
 .cloud-0 {
 top: 3385px;
