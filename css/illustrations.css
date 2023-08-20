@@ -4,7 +4,7 @@
      position: absolute;
      left: 50%;
      transform: translateX(-50%);
-     height: 120px;
+     height: 150px;
      width: 100px;
      display: grid;
 }
@@ -98,6 +98,8 @@
 .air-balloon {
      background-image: url(../images/illustrations/airBalloon.png);
      z-index: 15;
+    width: 85px;
+    height: 108px;
 }
 /* 5100m */
 .bird-wallcreeper {
