@@ -306,9 +306,7 @@ body {
 }
 .mountain-svg.mount-everest-svg {
   background-image: url(../images/mountains/1-MOUNT-EVEREST.svg);
-  top: calc(3300px);
-  height: 1150px;
-  width: 110%;
+  top: 3300px;
   z-index: 22;
 }
 /* //////////////////////////////////////////////////////// */
@@ -327,9 +325,7 @@ body {
 }
 .mountain-svg.k2-svg {
   background-image: url(../images/mountains/2-K2.svg);
-  top: calc(5041px);
-  height: 1275px;
-  width: 100%;
+  top: 5041px;
   right: 33%;
   z-index: 23;
 }
@@ -349,9 +345,7 @@ body {
 }
 .mountain-svg.kangchenjunga-svg {
   background-image: url(../images/mountains/3-KANCHENJUNGA.svg);
-  top: calc(5206px);
-  height: 1250px;
-  width: 115%;
+  top: 5206px;
   opacity: 1;
   z-index: 26;
 }
@@ -371,9 +365,7 @@ body {
 }
 .mountain-svg.lhotse-svg {
   background-image: url(../images/mountains/4-LHOTSE.svg);
-  top: calc(5767px);
-  height: 1211px;
-  width: 115%;
+  top: 5767px;
   opacity: 1;
   z-index: 27;
 }
@@ -393,9 +385,7 @@ body {
 }
 .mountain-svg.makalu-svg {
   background-image: url(../images/mountains/5-MAKALU.svg);
-  top: calc(5990px);
-  height: 1265px;
-  width: 115%;
+  top: 5990px;
   opacity: 1;
   z-index: 29;
 }
@@ -412,7 +402,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.nanga-parbat-svg {
-  top: calc(16820px);
+  top: 16820px;
   z-index: 27;
   background-image: url(../images/mountains/6-NANGA-PARBAT.svg);
 }
@@ -429,7 +419,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.annapurna-ii-svg {
-  top: calc(16820px);
+  top: 16820px;
   z-index: 27;
   background-image: url(../images/mountains/7-ANNAPURNA.svg);
 }
@@ -446,7 +436,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.chogolisa-svg {
-  top: calc(16820px);
+  top: 16820px;
   z-index: 27;
   background-image: url(../images/mountains/8-CHOGOLISA.svg);
 }
@@ -463,7 +453,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.kangkar-punzum-svg {
-  top: calc(16820px);
+  top: 16820px;
   z-index: 27;
   background-image: url(../images/mountains/9-KANGKAR-PUNZUM.svg);
 }
@@ -480,7 +470,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.ismoil-somoni-svg {
-  top: calc(16820px);
+  top: 16820px;
   z-index: 27;
   background-image: url(../images/mountains/10-ISMOIL-SOMONI.svg);
 }
@@ -497,7 +487,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.lenin-peak-svg {
-  top: calc(16820px);
+  top: 16820px;
   z-index: 27;
   background-image: url(../images/mountains/11-LENIN-PEAK.svg);
 }
@@ -514,7 +504,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.acaconcagua-svg {
-  top: calc(16820px);
+  top: 16820px;
   z-index: 27;
   background-image: url(../images/mountains/12-ACACONCAGUA.svg);
 }
@@ -535,9 +525,8 @@ body {
   transform: translateX(-20%);
 }
 .mountain-svg.ojos-salado-svg {
-  top: calc(17412px);
+  top: 17412px;
   opacity: 1;
-  width: 120%;
   z-index: 29;
   background-image: url(../images/mountains/13-OJOS-DEL-SALADO.svg);
 }
@@ -558,10 +547,8 @@ body {
   transform: translateX(5%);
 }
 .mountain-svg.monte-pissis-svg {
-  top: calc(18210px);
+  top: 18210px;
   opacity: 1;
-  width: 120%;
-  height: 1425px;
   background-image: url(../images/mountains/14-MONTE-PISSIS.svg);
   z-index: 24;
 }
@@ -580,10 +567,9 @@ body {
   z-index: 34;
 }
 .mountain-svg.huascaran-svg {
-  top: calc(18300px);
+  top: 18300px;
   left: -2%;
   opacity: 1;
-  height: 1200px;
   transform: translateX(-25%);
   z-index: 26;
   background-image: url(../images/mountains/15-HUASCARAN.svg);
@@ -601,7 +587,7 @@ body {
   z-index: 33;
 }
 .mountain-svg.cerro-bonete-svg {
-  top: calc(18378px);
+  top: 18378px;
   z-index: 28;
   opacity: 1;
   background-image: url(../images/mountains/16-CERRO-BONETE.svg);
@@ -623,9 +609,7 @@ body {
   z-index: 32;
 }
 .mountain-svg.tres-cruces-svg {
-  top: calc(18572px);
-  height: 1600px;
-  width: 134%;
+  top: 18572px;
   opacity: 1;
   z-index: 30;
   background-image: url(../images/mountains/17-TRES-CRUCES.svg);
@@ -641,9 +625,7 @@ body {
 .mountain-data.illimani-data {
 }
 .mountain-svg.illimani-svg {
-  top: calc(18572px);
-  height: 1600px;
-  width: 134%;
+  top: 18572px;
   opacity: 1;
   z-index: 30;
   background-image: url(../images/mountains/18-ILLIMANI.svg);
@@ -661,9 +643,7 @@ body {
   z-index: 32;
 }
 .mountain-svg.rasac-svg {
-  top: calc(18572px);
-  height: 1600px;
-  width: 134%;
+  top: 18572px;
   opacity: 1;
   z-index: 30;
   background-image: url(../images/mountains/19-RASAC.svg);
@@ -681,7 +661,7 @@ body {
   z-index: 113;
 }
 .mountain-svg.mount-denali-svg {
-  top: calc(22471px);
+  top: 22471px;
   z-index: 110;
   opacity: 1;
   background-image: url(../images/mountains/20-MOUNT-DENALI.svg);
@@ -701,7 +681,7 @@ body {
 .mountain-svg.kilimanjaro-svg {
   z-index: 111;
   opacity: 1;
-  top: calc(24471px);
+  top: 24471px;
   background-image: url(../images/mountains/21-KILIMANJARO.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -717,8 +697,7 @@ body {
   z-index: 113;
 }
 .mountain-svg.pico-orizaba-svg {
-  top: calc(26590px);
-  height: 1200px;
+  top: 26590px;
   opacity: 1;
   z-index: 113;
   background-image: url(../images/mountains/22-PICO-ORIZABA.svg);
@@ -740,7 +719,7 @@ body {
   z-index: 112;
 }
 .mountain-svg.mount-elbrus-svg {
-  top: calc(26325px);
+  top: 26325px;
   opacity: 0.9;
   left: 34%;
   z-index: 112;
@@ -759,9 +738,8 @@ body {
   z-index: 115;
 }
 .mountain-svg.popocatepetl-svg {
-  top: calc(27700px);
+  top: 27700px;
   z-index: 114;
-  height: 1329px;
   opacity: 1;
   background-image: url(../images/mountains/24-POPOCATEPETL.svg);
 }
@@ -780,7 +758,7 @@ body {
 .mountain-svg.mount-fraker-svg {
   z-index: 115;
   opacity: 1;
-  top: calc(28980px);
+  top: 28980px;
   background-image: url(../images/mountains/25-MOUNT-FRAKER.svg);
 }
 /* //////////////////////////////////////////////////////// */
@@ -802,7 +780,7 @@ body {
 .mountain-svg.iztlaccihuatl-svg {
   right: 16%;
   opacity: 1;
-  top: calc(29520px);
+  top: 29520px;
   background-image: url(../images/mountains/26-IZTLACCIHUATL.svg);
   z-index: 23;
 }
@@ -823,9 +801,8 @@ body {
   z-index: 27;
 }
 .mountain-svg.dykh-tau-svg {
-  top: calc(29630px);
+  top: 29630px;
   opacity: 1;
-  width: 142%;
   background-image: url(../images/mountains/27-DYKH-TAU.svg);
   z-index: 25;
 }
@@ -842,10 +819,8 @@ body {
   z-index: 27;
 }
 .mountain-svg.alam-kuh-svg {
-  top: calc(29630px);
+  top: 29630px;
   opacity: 1;
-  height: 1250px;
-  width: 100%;
   background-image: url(../images/mountains/28-ALAM-KUH.svg);
   z-index: 25;
 }
@@ -865,9 +840,8 @@ body {
   z-index: 24;
 }
 .mountain-svg.nevado-toluca-svg {
-  top: calc(33535px);
-  opacity: 0.85;
-  width: 125%;
+  top: 33535px;
+  opacity: 0.85; 
   background-position: left;
   background-image: url(../images/mountains/29-NEVADO-TOLUCA.svg);
   z-index: 20;
@@ -888,7 +862,7 @@ body {
   z-index: 23;
 }
 .mountain-svg.teyotl-svg {
-  top: calc(33687px);
+  top: 33687px;
   left: -17%;
   background-position: right;
   background-image: url(../images/mountains/30-TEYOTL.svg);
@@ -910,7 +884,7 @@ body {
   z-index: 19;
 }
 .mountain-svg.volcan-malintzin-svg {
-  top: calc(35120px);
+  top: 35120px;
   background-position: right center;
   background-image: url(../images/mountains/31-VOLCAN-MALINTZIN.svg);
   z-index: 17;
@@ -930,7 +904,7 @@ body {
   z-index: 17;
 }
 .mountain-svg.cofre-perote-svg {
-  top: calc(36421px);
+  top: 36421px;
   background-image: url(../images/mountains/32-COFRE-DE-PEROTE.svg);
   z-index: 14;
 }
@@ -947,7 +921,7 @@ body {
   z-index: 17;
 }
 .mountain-svg.jbel-toubkal-svg {
-  top: calc(36421px);
+  top: 36421px;
   background-image: url(../images/mountains/33-JBEL-TOUBKAL.svg);
   z-index: 14;
 }
@@ -964,7 +938,7 @@ body {
   z-index: 17;
 }
 .mountain-svg.tochal-svg {
-  top: calc(36421px);
+  top: 36421px;
   background-image: url(../images/mountains/34-TOCHAL.svg);
   z-index: 14;
 }
@@ -980,7 +954,7 @@ body {
 .mountain-data.cerro-nube-oax-data {
 }
 .mountain-svg.cerro-nube-oax-svg {
-  top: calc(40491px);
+  top: 40491px;
   background-image: url(../images/mountains/35-CERRO-NEGRO-OAX.svg);
   z-index: 10;
 }
@@ -996,7 +970,7 @@ body {
 .mountain-data.mafadi-data {
 }
 .mountain-svg.mafadi-svg {
-  top: calc(40491px);
+  top: 40491px;
   background-image: url(../images/mountains/36-MAFADI.svg);
   z-index: 10;
 }
@@ -1028,7 +1002,7 @@ body {
 .mountain-data.mount-sefton-data {
 }
 .mountain-svg.mount-sefton-svg {
-  top: calc(40491px);
+  top: 40491px;
   background-image: url(../images/mountains/38-MOUNT-SEFTON.svg);
   z-index: 10;
 }
@@ -1044,7 +1018,7 @@ body {
 .mountain-data.cathedral-peak-data {
 }
 .mountain-svg.cathedral-peak-svg {
-  top: calc(40491px);
+  top: 40491px;
   background-image: url(../images/mountains/39-CATHEDRAL-PEAK.svg);
   z-index: 10;
 }
@@ -1063,7 +1037,7 @@ body {
   z-index: 10; */
 }
 .mountain-svg.nevado-colima-svg {
-  top: calc(47735px);
+  top: 47735px;
   background-image: url(../images/mountains/40-NEVADO-DE-COLIMA.svg);
   z-index: 8;
 }
