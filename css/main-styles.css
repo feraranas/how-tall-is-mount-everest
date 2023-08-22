@@ -102,7 +102,8 @@ body {
   left: 0;
   width: 100%;
   height: 60%;
-  background-image: url(../images/grid.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/0c31c5ab-7749-45b0-ba56-83915b67ee00/public');
+  /* background-image: url(../images/grid.svg); */
   background-repeat: repeat;
   background-size: 175px 175px;
   z-index: 3;
@@ -116,7 +117,8 @@ body {
   left: 0;
   width: 100%;
   height: 50%;
-  background-image: url(../images/gridBlack.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b96a2084-0dd9-44be-79cd-a90d27210900/public');
+  /* background-image: url(../images/gridBlack.svg); */
   background-repeat: repeat;
   background-size: 175px 175px;
   opacity: 0.65;
@@ -712,7 +714,8 @@ body {
   top: 18572px;
   opacity: 1;
   z-index: 30;
-  background-image: url(../images/mountains/19-RASAC.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/3c68fbbd-dcfc-4f40-71e9-21d3d8c1c200/public');
+  /* background-image: url(../images/mountains/19-RASAC.svg); */
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 20 MOUNT DENALI */
@@ -895,7 +898,8 @@ body {
 .mountain-svg.alam-kuh-svg {
   top: 29630px;
   opacity: 1;
-  background-image: url(../images/mountains/28-ALAM-KUH.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a70755c7-e850-48a9-237e-bb3ce3ed5300/public');
+  /* background-image: url(../images/mountains/28-ALAM-KUH.svg); */
   z-index: 25;
 }
 /* //////////////////////////////////////////////////////// */
@@ -940,7 +944,8 @@ body {
   top: 33687px;
   left: -17%;
   background-position: right;
-  background-image: url(../images/mountains/30-TEYOTL.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/f974a553-d1ad-490b-b8e6-bb667a47d700/public');
+  /* background-image: url(../images/mountains/30-TEYOTL.svg); */
   background-color: transparent;
   z-index: 21;
 }
@@ -999,7 +1004,8 @@ body {
 }
 .mountain-svg.jbel-toubkal-svg {
   top: 36421px;
-  background-image: url(../images/mountains/33-JBEL-TOUBKAL.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/5472b677-b00f-4f46-e234-7fa462579800/public');
+  /* background-image: url(../images/mountains/33-JBEL-TOUBKAL.svg); */
   z-index: 14;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1067,7 +1073,8 @@ body {
 }
 .mountain-svg.cerro-mohonira-svg {
   top: 43410px;
-  background-image: url(../images/mountains/37-CERRO-MOHONIRA.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/104247cd-356b-4c86-0bc4-bf7b9efc2c00/public');
+  /* background-image: url(../images/mountains/37-CERRO-MOHONIRA.svg); */
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1153,7 +1160,8 @@ body {
   left: -150px;
   width: 200%;
   height: 900px;
-  background-image: url(/images/background-offroad.png);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/0437bdb2-6d7c-4f36-c56b-f2bc5ae5ac00/public');
+  /* background-image: url(/images/background-offroad.png); */
   background-size: 100% 100%;
   z-index: 2;
 }
@@ -1164,8 +1172,8 @@ body {
   left: -250px;
   width: 3100px;
   height: 391px;
-  background-image: url(/images/floor.png);
-  background: url(/images/floor.png) repeat-x;
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/df2e4712-8ac0-4356-4891-d1fa6997cd00/public');
+  /* background: url(/images/floor.png) repeat-x; */
   background-size: 100% 391px;
   background-position: 50%;
   z-index: 3;
@@ -1176,7 +1184,8 @@ body {
   top: calc(var(--page-height) - 350px);
   width: calc(100% + 650px);
   height: 350px;
-  background-image: url(/images/menMountaineerSVG2.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/cc8c9b73-2719-4c42-96ac-0a6b4c3db100/public');
+  /* background-image: url(/images/menMountaineerSVG2.svg); */
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100% 350px;
@@ -1189,7 +1198,8 @@ body {
   left: 30px;
   width: 300px;
   height: 490px;
-  background-image: url(/images/womenMountaineerSVG4.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a8ac867e-618c-43d8-0786-63e7b3858d00/public');
+  /* background-image: url(/images/womenMountaineerSVG4.svg); */
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100% 600px;
@@ -1202,7 +1212,8 @@ body {
   right: -100PX;
   width: 500px;
   height: 400PX;
-  background-image: url(/images/rock-cleaned.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/634c23cb-74c1-4820-b762-fee360dc1700/public');
+  /* background-image: url(/images/rock-cleaned.svg); */
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 100% 400px;
@@ -1216,7 +1227,8 @@ body {
   width: 500px;
   height: 450px;
   transform: scaleX(-1);
-  background-image: url(/images/rock-cleaned.svg);
+  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/634c23cb-74c1-4820-b762-fee360dc1700/public');
+  /* background-image: url(/images/rock-cleaned.svg); */
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 100% 100%;
