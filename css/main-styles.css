@@ -1173,8 +1173,7 @@ body {
   width: 3100px;
   height: 391px;
   background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/df2e4712-8ac0-4356-4891-d1fa6997cd00/public');
-  /* background-image: url(/images/floor.png); */
-  background: url(/images/floor.png) repeat-x;
+  /* background: url(/images/floor.png) repeat-x; */
   background-size: 100% 391px;
   background-position: 50%;
   z-index: 3;
