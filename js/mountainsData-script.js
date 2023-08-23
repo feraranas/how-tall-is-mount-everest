@@ -4,6 +4,15 @@
 
 // Get tab & arrow to appear the mountain data
 const getInfoTab = document.querySelector(".fa-info");
+const mountainInfoIcon = document.querySelector(".mountain-info-icon");
+mountainInfoIcon.addEventListener("mouseenter", (e) => {
+  if(!e.target.classList.contains('hover-icon')){
+    e.target.classList.add('hover-icon');
+  }
+});
+mountainInfoIcon.addEventListener("mouseout", (e) => {
+  e.target.classList.remove('hover-icon');
+});
 
 /* ///////////////////////////////////////////////// */
 /* ////////////// AUXILIARY FUNCTIONS ////////////// */

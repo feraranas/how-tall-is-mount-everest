@@ -43,7 +43,7 @@
      content: "\f129";
  }
  .mountain-info-icon {
-     background-image: url(https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/618aa9d4-283a-47b6-ea5c-27386db17600/public);
+     background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/855e2d97-efca-4e68-c583-27247fe24a00/public');
      background-size: contain;
      background-repeat: no-repeat;
      z-index: 150;
@@ -53,6 +53,9 @@
      position: absolute;
      top: 15.8px;
      right: 15px;
+ }
+ .hover-icon {
+     transform: scale(1.1);
  }
 /* 9000m */
 .plane-1 {
