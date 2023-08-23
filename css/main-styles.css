@@ -235,7 +235,7 @@ body {
   width: 100%;
   height: 75px;
   font-family: 'Playfair Display', serif;
-  font-size: calc(2.5rem + 2vmin);
+  font-size: 2.5rem;
   background: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1131,6 +1131,34 @@ body {
   /* background-image: url(../images/mountains/40-NEVADO-DE-COLIMA.svg); */
   z-index: 8;
 }
+
+
+.m-41-container {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  top: 47550px;
+  position: absolute;
+  width: 250px;
+  white-space: nowrap;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: start;
+  left: 10%;
+}
+.m-41-container-title {
+  grid-row: 1;
+  width: 156px;
+  border-bottom: 4.2px dashed rgba(0,0,0,1);
+}
+.m-41-container-object{
+  grid-row: 2;
+  width: 175px;
+  text-align: center;
+}
+
+
+
+
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 41 HALF DOME [2696m] */
 /* //////////////////////////////////////////////////////// */

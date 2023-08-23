@@ -42,6 +42,18 @@
 .fa-info-illustration:before {
      content: "\f129";
  }
+ .mountain-info-icon {
+     background-image: url(https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/618aa9d4-283a-47b6-ea5c-27386db17600/public);
+     background-size: contain;
+     background-repeat: no-repeat;
+     z-index: 150;
+     height: 0px;
+     width: 0px;
+     padding: 35px 39px;
+     position: absolute;
+     top: 15.8px;
+     right: 15px;
+ }
 /* 9000m */
 .plane-1 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/774fac3d-4228-49d1-e48e-68b557cf0100/public');
