@@ -1,0 +1,1156 @@
+/* Macbook Pro 1440x900 */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .mountain {
+    font-size: 2.3rem;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   .mountain-data {
+   }
+   .mountain-info {
+   }
+   .mountain-svg {
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   .fa-info {
+   }
+   .bottom-row {
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 1 MOUNT-EVEREST */
+   /* //////////////////////////////////////////////////////// */
+   .m-1 {
+    top: 3100px;
+    z-index: 199;
+    }
+   .mountain.mount-everest-title {
+   }
+   .mountain-data.mount-everest-data {
+   }
+   .mountain-svg.mount-everest-svg {
+    top: 3336px;
+    left: 52%;
+    padding: 495px 1000px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 2 K2 */
+   /* //////////////////////////////////////////////////////// */
+   .m-2 {
+    top: 4800px;
+    left: 88%;
+    z-index: 150;
+   }
+   .mountain.k2-title{
+     left: 25%;
+   }
+   .mountain-data.k2-data {
+     left: 25%;
+   }
+   .mountain-svg.k2-svg {
+    top: 4753px;
+    left: 69%;
+    padding: 528px 1016px
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 3 KANGCHENJUNGA */
+   /* //////////////////////////////////////////////////////// */
+   .m-3 {
+    top: 4976px;
+    left: 15%;
+    z-index: 150;
+   }
+   .mountain.kangchenjunga-title{
+     left: 68%;
+   }
+   .mountain-data.kangchenjunga-data {
+     left: 67%;
+   }
+   .mountain-svg.kangchenjunga-svg {
+    left: 36%;
+    padding: 470px 975px;
+   }  
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 4 LHOTSE */
+   /* //////////////////////////////////////////////////////// */
+   .m-4 {
+    z-index: 151;
+    left: 59%;
+    top: 5550px;
+   }
+   .mountain.lhotse-title{
+     left: 25%;
+   }
+   .mountain-data.lhotse-data {
+     left: 25%;
+   }
+   .mountain-svg.lhotse-svg {
+    top: 5710px;
+    left: 27%;
+    padding: 470px 1100px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 5 MAKALU */
+   /* //////////////////////////////////////////////////////// */
+    .m-5 {
+      top: 5750px;
+      z-index: 151;
+    }
+   .mountain.makalu-title{
+     left: 64%;
+   }
+   .mountain-data.makalu-data {
+     left: 62%;
+   }
+   .mountain-svg.makalu-svg {
+    top: 5967px;
+    left: 63%;
+    padding: 470px 975px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 6 Nanga Parbat */
+   /* //////////////////////////////////////////////////////// */
+   .m-6 {
+    top: 8320px;
+   }
+   .mountain.nanga-parbat-title{
+    z-index: 31;
+   }
+   .mountain-data.nanga-parbat-data {
+    z-index: 33;
+   }
+   .mountain-svg.nanga-parbat-svg {
+    opacity: 0.95;
+    top: 8550px;
+    padding: 470px 975px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 7 ANNAPURNA II */
+   /* //////////////////////////////////////////////////////// */
+   .m-7 {
+    top: 9670px;
+   }
+   .mountain.annapurna-ii-title{
+    
+   }
+   .mountain-data.annapurna-ii-data {
+   }
+   .mountain-svg.annapurna-ii-svg {
+    top: 9900px;
+    left: 47%;
+    padding: 470px 975px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS 8 -- CHOGOLISA */
+   /* //////////////////////////////////////////////////////// */
+   .m-8 {
+    top: 11630px;
+   }
+   .mountain.chogolisa-title{
+   }
+   .mountain-data.chogolisa-data {
+   }
+   .mountain-svg.chogolisa-svg {
+    top: 11860px;
+    padding: 470px 975px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS 9 -- KANGKAR PUNZUM */
+   /* //////////////////////////////////////////////////////// */
+   .m-9 {
+    top: 12260px;
+    z-index: 151;
+   }
+   .mountain.kangkar-punzum-title{
+    
+   }
+   .mountain-data.kangkar-punzum-data {
+    
+   }
+   .mountain-svg.kangkar-punzum-svg {
+    top: 12500px;
+    left: 48%;
+    padding: 417px 1000px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS 10 -- ISMOIL SOMONI */
+   /* //////////////////////////////////////////////////////// */
+   .m-10 {
+    top: 12850px;
+    z-index: 151;
+   }
+   .mountain.ismoil-somoni-title{
+   }
+   .mountain-data.ismoil-somoni-data {
+   }
+   .mountain-svg.ismoil-somoni-svg {
+    top: 13100px;
+    left: 46%;
+    padding: 470px 917px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS 11 -- LENIN PEAK */
+   /* //////////////////////////////////////////////////////// */
+   .m-11 {
+    top: 15485px;
+    z-index: 151;
+   }
+   .mountain.lenin-peak-title{
+   }
+   .mountain-data.lenin-peak-data {
+   }
+   .mountain-svg.lenin-peak-svg {
+    top: 15715px;
+    padding: 470px 975px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 12 ACACONCAGUA */
+   /* //////////////////////////////////////////////////////// */
+   .m-12 {
+    top: 16737px;
+    z-index: 150;
+    }
+   .mountain.acaconcagua-title{
+   }
+   .mountain-data.acaconcagua-data {
+   }
+   .mountain-svg.acaconcagua-svg {
+    top: 16950px;
+    padding: 470px 975px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 13 OJOS DEL SALADO */
+   /* //////////////////////////////////////////////////////// */
+   .m-13 {
+    top: 17230px;
+    z-index: 150;
+    }
+   .mountain.ojos-salado-title{
+     left: 50%;
+     transform: translateX(-50%);
+   }
+   .mountain-data.ojos-salado-data {
+     left: 50%;
+     transform: translateX(-50%);
+   }
+   .mountain-svg.ojos-salado-svg {
+    top: 17362px;
+    padding: 470px 975px;
+   }
+   
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 14 MONTE PISSIS */
+   /* //////////////////////////////////////////////////////// */
+   .m-14 {
+    top: 17930px;
+    z-index: 152;
+    left: 60%;
+    }  
+   .mountain.monte-pissis-title{
+     left: 25%;
+     transform: translateX(-50%);
+   }
+   .mountain-data.monte-pissis-data {
+     left: 25%;
+     transform: translateX(-50%);
+   }
+   .mountain-svg.monte-pissis-svg {
+    top: 18145px;
+    left: 50%;
+    padding: 470px 975px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 15 HUASCARAN */
+   /* //////////////////////////////////////////////////////// */
+   .m-15 {
+    top: 18121px;
+    z-index: 151;
+    }
+   .mountain.huascaran-title{
+     left: 70%;
+   }
+   .mountain-data.huascaran-data {
+     left: 70%;
+   }
+   .mountain-svg.huascaran-svg {
+    top: 18300px;
+    left: 80%;
+    transform: translateX(-50%);
+    padding: 470px 975px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 16 CERRO BONETE */
+   /* //////////////////////////////////////////////////////// */
+   .m-16 {
+    top: 18200px;
+    left: 55%;
+    z-index: 150;
+    }
+   .mountain.cerro-bonete-title{
+     font-size: 1.8rem;
+     left: 25%;
+   }
+   .mountain-data.cerro-bonete-data {
+     left: 25%;
+   }
+   .mountain-svg.cerro-bonete-svg {
+    top: 18427px;
+    left: 32%;
+    padding: 470px 975px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 17 TRES CRUCES */
+   /* //////////////////////////////////////////////////////// */
+    .m-17 {
+      top: 18369px;
+      z-index: 150;
+      }
+   .mountain.tres-cruces-title{
+     left: 70%;
+     transform: translateX(-50%);
+   }
+   .mountain-data.tres-cruces-data {
+     left: 70%;
+     transform: translateX(-50%);
+   }
+   .mountain-svg.tres-cruces-svg {
+    top: 18555px;
+    left: 65%;
+    padding: 470px 975px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 18 illimani */
+   /* //////////////////////////////////////////////////////// */
+   .m-18 {
+     top: 20500px;
+   }
+   .mountain.illimani-title{
+    color: ghostwhite;
+   }
+   .mountain-data.illimani-data {
+   }
+   .mountain-svg.illimani-svg {
+    top: 20750px;
+    left: 56%;
+    padding: 473px 960px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 19 RASAC */
+   /* //////////////////////////////////////////////////////// */
+   .m-19 {
+    top: 23550px;
+    z-index: 150;
+   }
+   .mountain.rasac-title{
+    color: white;
+   }
+   .mountain-data.rasac-data {
+   }
+   .mountain-svg.rasac-svg {
+    top: 23750px;
+    left: 29%;
+    padding: 371px 706px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 20 MOUNT DENALI */
+   /* //////////////////////////////////////////////////////// */
+    .m-20 {
+      z-index: 150;
+      top: 22300px;
+    }
+   .mountain.mount-denali-title{
+    color: white;
+   }
+   .mountain-data.mount-denali-data {
+   }
+   .mountain-svg.mount-denali-svg {
+    top: 22526px;
+    left: 36%;
+    padding: 473px 960px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 21 KILIMANJARO */
+   /* //////////////////////////////////////////////////////// */
+    .m-21 {
+      top: 24416px;
+      z-index: 150;
+    }
+   .mountain.kilimanjaro-title{
+    color: white;
+   }
+   .mountain-data.kilimanjaro-data {
+   }
+   .mountain-svg.kilimanjaro-svg {
+    top: 24651px;
+    padding: 473px 950px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 22 PICO ORIZABA */
+   /* //////////////////////////////////////////////////////// */
+    .m-22 {
+      top: 26325px;
+      left: 53%;
+      z-index: 150;
+    }
+   .mountain.pico-orizaba-title{
+    left: 29%;
+    color: whitesmoke;
+   }
+   .mountain-data.pico-orizaba-data {
+     left: 29%;
+   }
+   .mountain-svg.pico-orizaba-svg {
+    top: 26550px;
+    left: 35%;
+    padding: 464px 984px;
+  }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 23 MOUNT ELBRUS */
+   /* //////////////////////////////////////////////////////// */
+    .m-23 {
+      z-index: 151;
+      top: 26266px;
+    }
+   .mountain.mount-elbrus-title{
+    font-size: 1.8rem;
+    color: white;
+    left: 55%;
+   }
+   .mountain-data.mount-elbrus-data {
+     left: 74%;
+   }
+   .mountain-svg.mount-elbrus-svg {
+    top: 26489px;
+    left: 76%;
+    padding: 464px 984px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 24 POPOCATEPETL */
+   /* //////////////////////////////////////////////////////// */
+    .m-24 {
+      top: 27944px;
+      z-index: 130;
+    }
+   .mountain.popocatepetl-title{
+     font-size: 1.6rem;
+   }
+   .mountain-data.popocatepetl-data {
+   }
+   .mountain-svg.popocatepetl-svg {
+    z-index: 10;
+    top: 28176px;
+    opacity: 0.92;
+    padding: 464px 984px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 25 MOUNT FRAKER */
+   /* //////////////////////////////////////////////////////// */
+    .m-25 {
+      top: 28607px;
+      z-index: 190;
+      left: 55%;
+    }
+   .mountain.mount-fraker-title{
+   }
+   .mountain-data.mount-fraker-data {
+   }
+   .mountain-svg.mount-fraker-svg {
+    top: 28735px;
+    opacity: 0.93;
+    z-index: 11;
+    padding: 464px 984px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 26 IZTLACCIHUATL */
+   /* //////////////////////////////////////////////////////// */
+    .m-26 {
+      top: 29120px;
+      left: 49%;
+      z-index: 150;
+    }
+   .mountain.iztlaccihuatl-title{
+     transform: translateX(-50%);
+     left: 67%;
+   }
+   .mountain-data.iztlaccihuatl-data {
+     left: 67%;
+     transform: translateX(-50%);
+   }
+   .mountain-svg.iztlaccihuatl-svg {
+    left: 63%;
+    top: 29360px;
+    opacity: 0.9;
+    padding: 464px 984px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 27 DYKH TAU */
+   /* //////////////////////////////////////////////////////// */
+    .m-27 {
+      z-index: 26;
+      left: 57%;
+      top: 29300px;
+    }
+   .mountain.dykh-tau-title{
+     left: 30%;
+     transform: translateX(-50%);
+   }
+   .mountain-data.dykh-tau-data {
+     left: 30%;
+     transform: translateX(-50%);
+   }
+   .mountain-svg.dykh-tau-svg {
+    top: 29500px;
+    left: 40%;
+    opacity: 0.935;
+    padding: 464px 984px;
+   }
+   /* //////////////////////////////////////////////////////// */
+    /* MOUNTAINS -- 28 ALAM KUH */
+    /* //////////////////////////////////////////////////////// */
+    .m-28 {
+      top: 32000px;
+    }
+    .mountain.alam-kuh-title{
+    }
+    .mountain-data.alam-kuh-data {
+    }
+    .mountain-svg.alam-kuh-svg {
+      top: 32220px;
+      left: 53%;
+      padding: 464px 984px;
+    }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 29 NEVADO DE TOLUCA */
+   /* //////////////////////////////////////////////////////// */
+    .m-29 {
+      top: 33120px;
+      left: 57%;
+    }
+   .mountain.nevado-toluca-title{
+     left: 66%;
+   }
+   .mountain-data.nevado-toluca-data {
+     left: 66%;
+     transform: translateX(-50%);
+   }
+   .mountain-svg.nevado-toluca-svg {
+    top: 33345px;
+    left: 74%;
+    opacity: 0.85;
+    padding: 436px 882px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 30 TEYOTL */
+   /* //////////////////////////////////////////////////////// */
+    .m-30 {
+      top: 33350px;
+      left: 56%;
+      z-index: 30;
+    }
+   .mountain.teyotl-title{
+     left: 26%;
+     transform: translateX(-50%);
+   }
+   .mountain-data.teyotl-data {
+     left: 25%;
+   }
+   .mountain-svg.teyotl-svg {
+    top: 33550px;
+    left: 30%;
+    padding: 443px 1011px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 31 VOLCAN MALINTZIN [4,461m] */
+   /* //////////////////////////////////////////////////////// */
+    .m-31 {
+      top: 34800px;
+    }
+   .mountain.volcan-malintzin-title{
+     font-size: 1.8rem;
+   }
+   .mountain-data.volcan-malintzin-data {
+     left: 50%;
+   }
+   .mountain-svg.volcan-malintzin-svg {
+    top: 35020px;
+    left: 57%;
+    padding: 416px 1000px;
+  }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 32 COFRE DE PEROTE [4282m] */
+   /* //////////////////////////////////////////////////////// */
+    .m-32 {
+      top: 36080px;
+      z-index: 20;
+    }
+   .mountain.cofre-perote-title {
+     font-size: 1.8rem;
+     left: 51%;
+   }
+   .mountain-data.cofre-perote-data {
+     left: 51%;
+   }
+   .mountain-svg.cofre-perote-svg {
+    top: 36315px;
+    padding: 380px 900px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 33 Jbel Toubkal [4282m] */
+   /* //////////////////////////////////////////////////////// */
+   .m-33 {
+    top: 37000px;
+   }
+   .mountain.jbel-toubkal-title { 
+    z-index: 16;
+   }
+   .mountain-data.jbel-toubkal-data {
+    z-index: 17;
+   }
+   .mountain-svg.jbel-toubkal-svg {
+    top: 37229px;
+    left: 64%;
+    padding: 380px 1000px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 34 TOCHAL [] */
+   /* //////////////////////////////////////////////////////// */
+   .m-34 {
+    top: 38460px;
+   }
+   .mountain.tochal-title { 
+    z-index: 16;
+   }
+   .mountain-data.tochal-data {
+    z-index: 17;
+   }
+   .mountain-svg.tochal-svg {
+    top: 38700px;
+    left: 47%;
+    padding: 379px 1000px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 35 CERRO NUBE OAXACA [] */
+   /* //////////////////////////////////////////////////////// */
+    .m-35 {
+      top: 40120px;
+    }
+   .mountain.cerro-nube-oax-title {
+     font-size: 1.8rem;
+     left: 50%;
+   }
+   .mountain-data.cerro-nube-oax-data {
+     left: 50%;
+   }
+   .mountain-svg.cerro-nube-oax-svg {
+    top: 40250px;
+    left: 49%;
+    padding: 380px 1000px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 36 MAFADI [] */
+   /* //////////////////////////////////////////////////////// */
+   .m-36 {
+    top: 42120px;
+    z-index: 12;
+   }
+   .mountain.mafadi-title {
+   }
+   .mountain-data.mafadi-data {
+   }
+   .mountain-svg.mafadi-svg {
+    top: 42300px;
+    padding: 397px 1000px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 37 Cerro Mohinora [] */
+   /* //////////////////////////////////////////////////////// */
+   .m-37 {
+    top: 43200px;
+    z-index: 12;
+   }
+   .mountain.cerro-mohonira-title {
+   }
+   .mountain-data.cerro-mohonira-data {
+   }
+   .mountain-svg.cerro-mohonira-svg {
+    top: 43410px;
+    padding: 397px 1000px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 38 MOUNT SEFTON [] */
+   /* //////////////////////////////////////////////////////// */
+   .m-38 {
+    top: 44300px;
+    z-index: 12;
+   }
+   .mountain.mount-sefton-title {
+   }
+   .mountain-data.mount-sefton-data {
+   }
+   .mountain-svg.mount-sefton-svg {
+    top: 44530px;
+    left: 53%;
+    padding: 397px 1000px;
+   }
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 39 CATHEDRAL PEAK [3,720m] */
+   /* //////////////////////////////////////////////////////// */
+   .m-39 {
+    top: 45320px;
+    z-index: 12;
+   }
+   .mountain.cathedral-peak-title {
+   }
+   .mountain-data.cathedral-peak-data {
+   }
+   .mountain-svg.cathedral-peak-svg {
+    top: 45550px;
+    padding: 397px 1000px;
+   }
+   
+   /* //////////////////////////////////////////////////////// */
+   /* MOUNTAINS -- 40 NEVADO DE COLIMA [2720m] */
+   /* //////////////////////////////////////////////////////// */
+   .m-40 {
+    top: 47500px;
+    left: 65%;
+   }
+   .mountain.nevado-colima-title {
+   }
+   .mountain-data.nevado-colima-data {
+   }
+   .mountain-svg.nevado-colima-svg {
+    opacity: 0.85;
+    left: 65%;
+    top: 47669px;
+    padding: 397px 1000px;
+   }
+   /* //////////////////////////////////////////////////////// */
+    /* MOUNTAINS -- 41 HALF DOME [2696m] */
+    /* //////////////////////////////////////////////////////// */
+    .m-41 {
+      top: 47635px;
+      left: 34%;
+    }
+    .mountain.half-dome-title {
+    }
+    .mountain-data.half-dome-data {
+    }
+    .mountain-svg.half-dome-svg {
+      top: 47740px;
+      left: 42%;
+      padding: 404px 1000px;
+    }
+
+   /* ////////////////////////////////////////////////////////////////////////
+   ///////////////////////////// METRONOMO ///////////////////////////////////
+   //////////////////////////////////////////////////////////////////////// */
+   .metronomo-wrapper {
+   width: 285px;
+   height: 50px;
+   }
+   .metronomo {
+    font-size: 2rem;
+    padding-left: 22px;
+    letter-spacing: 34px;
+   }
+   
+   /* ////////////////////////////////////////////////////////////////////////
+   ///////////////////////////// CLOUDS ///////////////////////////////////
+   //////////////////////////////////////////////////////////////////////// */
+   .cloud-0 {
+    top: 3385px;
+    padding: 400px 800px;
+    transform: translateX(-80%) scaleX(-1);
+    }
+    .cloud-1 {
+    top: 3385px;
+    padding: 400px 800px;
+    transform: translateX(-80%) scaleX(-1);
+    }
+    .cloud-2 {
+    top: 3385px;
+    padding: 400px 800px;
+    transform: translateX(-80%) scaleX(-1);
+    }
+    .cloud-3 {
+    top: 3385px;
+    padding: 400px 800px;
+    transform: translateX(-80%) scaleX(-1);
+    }
+    .cloud-4 {
+    top: 3385px;
+    padding: 400px 800px;
+    transform: translateX(-80%) scaleX(-1);
+    }
+    .cloud-5 {
+    top: 3385px;
+    padding: 400px 800px;
+    transform: translateX(-80%) scaleX(-1);
+    }
+    .cloud-6 {
+    top: 3385px;
+    padding: 400px 800px;
+    transform: translateX(-80%) scaleX(-1);
+    }
+    .cloud-7 {
+    top: 3785px;
+    padding: 400px 800px;
+    }
+    .cloud-8 {
+    top: 3785px;
+    transform: translateX(-50%) scaleX(-1);
+    padding: 400px 800px;
+    }
+    .cloud-9 {
+    top: 3985px;
+    padding: 400px 800px;
+    }
+    .cloud-10 {
+    top: 3585px;
+    padding: 400px 800px;
+    transform: translateX(-16%);
+    }
+    .cloud-11 {
+    top: 5300px;
+    padding: 400px 800px;
+    transform: translateX(-50%) scaleX(-1);
+    }
+    .cloud-12 {
+    top: 5550px;
+    padding: 400px 800px;
+    transform: translateX(-40%) scaleX(-1);
+    }
+    .cloud-13 {
+    top: 5100px;
+    padding: 400px 800px;
+    transform: translateX(-60%) scaleX(-1);
+    }
+    .cloud-14 {
+    top: 5800px;
+    padding: 400px 800px;
+    }
+    .cloud-15 {
+    top: 5800px;
+    padding: 400px 800px;
+    }
+    .cloud-16 {
+    top: 5900px;
+    padding: 400px 800px;
+    transform: translateX(-50%) scaleX(-1);
+    }
+    .cloud-17 {
+    top: 16800px;
+    padding: 400px 800px;
+    }
+    .cloud-18 {
+    top: 17200px;
+    padding: 400px 800px;
+    height: 700px;
+    }
+    .cloud-19 {
+    top: 18200px;
+    padding: 400px 800px;
+    }
+    .cloud-20 {
+    top: 18500px;
+    padding: 400px 800px;
+    }
+    .cloud-21 {
+     top: 18900px;
+     padding: 400px 800px;
+    }
+    .cloud-22 {
+    z-index: 15;
+    filter: brightness(0.8);
+    padding: 400px 800px;
+    top: 19200px;
+    }
+    .cloud-23 {
+      z-index: 15;
+    top: 20200px;
+    padding: 400px 800px;
+    }
+    .cloud-24 {
+    z-index: 15;
+    top: 22700px;
+    padding: 400px 800px;
+    }
+    .cloud-25 {
+    transform: translateX(-50%) scaleX(-1.5) scaleY(1);
+    top: 22500px;
+    padding: 400px 800px;
+    }
+    .cloud-26 {
+      z-index: 15;
+      top: 24000px;
+      padding: 400px 800px;
+    }
+    .cloud-27 {
+    transform: translateX(-50%) scaleX(-1);
+    top: 24600px;
+    padding: 400px 800px;
+    }
+    .cloud-28 {
+     padding: 400px 800px;
+    top: 24900px;
+    }
+    .cloud-29 {
+    z-index: 14;
+    top: 25600px;
+    padding: 400px 800px;
+    }
+    .cloud-30 {
+    z-index: 15;
+    top: 26390px;
+    padding: 400px 800px;
+    }
+    .cloud-31 {
+     padding: 400px 800px;
+    top: 26700px;
+    z-index: 113;
+    }
+    .cloud-32 {
+    top: 26950px;
+    padding: 400px 800px;
+    z-index: 145;
+    }
+    .cloud-33 {
+     padding: 400px 800px;
+    top: 28000px;
+    z-index: 15;
+    }
+    .cloud-34 {
+     padding: 400px 800px;
+    transform: translateX(-50%) scaleX(-1);
+    top: 28750px;
+    z-index: 15;
+    }
+    .cloud-35 {
+    top: 29300px;
+    z-index: 15;
+    padding: 400px 800px;
+    }
+    .cloud-36 {
+    top: 29750px;
+    z-index: 24;
+    padding: 400px 800px;
+    }
+    .cloud-37 {
+    top: 47705px;
+    }
+    .cloud-38 {
+    top: 29600px;
+    filter: brightness(1.5);
+    z-index: 15;
+    }
+    .cloud-39 {
+    transform: translateX(-70%) scale(2);
+    top: 33500px;
+    z-index: 15;
+    padding: 400px 800px;
+    }
+    .cloud-40 {
+    top: 33200px;
+    z-index: 15;
+    padding: 400px 800px;
+    }
+    .cloud-41 {
+     padding: 400px 800px;
+    top: 35500px;
+    z-index: 15;
+    }
+    .cloud-42 {
+    transform: translateX(-66%) scaleX(-1);
+    padding: 400px 800px;
+    top: 35000px;
+    z-index: 16;
+    }
+    .cloud-43 {
+    left: 75%;
+    top: 36225px;
+    padding: 400px 800px;
+    z-index: 13;
+    }
+    .cloud-44 {
+     padding: 400px 800px;
+     top: 36369px;
+     z-index: 13;
+    }
+    .cloud-45 {
+     padding: 400px 800px;
+     top: 36769px;
+     z-index: 15;
+    }
+    .cloud-46 {
+     padding: 400px 800px;
+     top: 45705px;
+     z-index: 13;
+    }
+    .cloud-47 {
+     padding: 400px 800px;
+     top: 41000px;
+     z-index: 11;
+    }
+    .cloud-48 {
+     padding: 400px 800px;
+     transform: translateX(-80%) scaleX(-1);
+     top: 40824px;
+     z-index: 11;
+    }
+    .cloud-49 {
+     padding: 400px 800px;
+     left: 80%;
+     top: 40425px;
+     z-index: 7;
+    }
+    .cloud-50 {
+     padding: 400px 800px;
+     top: 47603px;
+     /* animation: cloudHorizontall 4s infinite; */
+    }
+   
+   /* ////////////////////////////////////////////////////////////////////////
+   ////////////////////////// ILLUSTRATIONS /////////////////////////////////
+   //////////////////////////////////////////////////////////////////////// */
+   /* 9000m */
+   .plane-1-container {
+   z-index: 15;
+   top: 2200px;
+   }
+   /* 8000m */
+   .hellicopter-2-container {
+   z-index: 15;
+   top: 9400px;
+   }
+   /* 7500m */
+   .plane-3-container {
+   z-index: 15;
+   left: 75%;
+   top: 13500px;
+   }
+   /* 7000m */
+   .plane-2-container {
+   z-index: 15;
+   top: 16550px
+   }
+   /* 6500m */
+   .bird-alpine-cough-container {
+   z-index: 15;
+   top: 20150px;
+   }
+   /* 7000m */
+   .evo2-dron-container {
+   z-index: 15;
+   top: 16550px;
+   }
+   /* 6000m */
+   .dragonfish-dron-container {
+   z-index: 15;
+   top: 23850px;
+   }
+   /* 6000m */
+   .hellicopter-1-container {
+   z-index: 15;
+   top: 23850px;
+   }
+   /* 6000m */
+   .hellicopter-3-container {
+   z-index: 15;
+   top: 23850px;
+   }
+   /* 5900m */
+   .dji-dron-container {
+   z-index: 15;
+   left: 80%;
+   top: 24400px;
+   }
+   /* 5000m */
+   .air-balloon-container {
+   z-index: 15;
+   top: 31020px;
+   }
+   /* 5100m */
+   .bird-wallcreeper-container {
+   z-index: 15;
+   left: 70%;
+   top: 30300px;
+   }
+   /* 4876.8m */
+   .bird-himalayan-snowcock-container {
+   z-index: 15;
+   left: 20%;
+   top: 32000px;
+   }
+   /* 4500.0672m */
+   .bird-andean-flamingo-container {
+   z-index: 15;
+   top: 34500px;
+   }
+   /* 4,000 m */
+   .bird-mountain-hawk-eagle-container {
+   z-index: 15;
+   top: 38300px;
+   }
+   /* 3352.8m */
+   .bird-golden-eagle-container {
+   z-index: 15;
+   left: 20%;
+   top: 42950px;
+   }
+   /* 3,200 m */
+   .bird-snow-flinch-container {
+   z-index: 15;
+   left: 65%;
+   top: 44100px;
+   }
+   /* 3,200 m */
+   .bird-white-cheeked-nuthatch-container {
+   z-index: 15;
+   left: 25%;
+   top: 44950px;
+   }
+   /* 3000m */
+   .bird-bald-eagle-container {
+   z-index: 15;
+   left: 78%;
+   top: 45550px;
+   }
+   /* 2700m */
+   .bird-rufous-bellied-niltava-container {
+   z-index: 15;
+   left: 70%;
+   top: 47400px;
+   }
+   /* 2500m */
+   .bird-snowy-owl-container {
+   z-index: 15;
+   top: 48700px;
+   }
+   /* 1,828m */
+   .bird-pigeon-container {
+   z-index: 15;
+   top: 49150px;
+   left: 70%;
+   }
+}

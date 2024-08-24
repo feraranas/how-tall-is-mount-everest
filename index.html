@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/main-styles.css">
+    <link rel="stylesheet" href="./css/clouds.css">
+    <link rel="stylesheet" href="./css/illustrations.css">
+    <link rel="stylesheet" href="./css/divider-ranges.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 390px)" href="/css/media-0-390.css">
+    <link rel="stylesheet" media="screen and (min-width: 391px) and (max-width: 428px)" href="/css/media-391-428.css">
+    <link rel="stylesheet" media="screen and (min-width: 429px) and (max-width: 768px)" href="/css/media-429-768.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1440px)" href="/css/media-769-1440.css">
+    <link rel="stylesheet" media="screen and (min-width: 1441px) and (max-width: 1950px)" href="/css/media-1441-1950.css">
+    <link rel="stylesheet" media="screen and (min-width: 1951px)" href="/css/media-1950.css">
     <title>MOUNTAINS</title>
     <script src="https://kit.fontawesome.com/8c1f754ca0.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -23,10 +33,20 @@
             <div class="me"></div>
           </div>
       </div>
+      
+      <!-- /////////////////////// DIVIDERS ////////////////////////////// -->
+      <!-- DIVIDERS - MOUNTAIN RANGES -->
+      <div class="dividers-container">
+        <div class="divider three-thousander">
+          Hikable three-thousander's
+        </div>
+      </div>
+
       <!-- /////////////////////// ANIMATIONS ////////////////////////////// -->
       <!-- STARS -->
       <div class="stars"></div>
-      <div class="twinkleMask"></div>
+      <!-- <div class="twinkleMask"></div> -->
+      
       <!-- ASHES  -->
       <div class="ashes" id="canvascontainer">
         <canvas id="buffer"></canvas>
@@ -34,741 +54,1411 @@
       </div>
       <!-- CLOUDS -->
       <div class="clouds-container">
-        <!-- cloud-1 -->
-        <div class="clouds cloud-1">
-          <div class="cloud" id="cloud-back"></div>
-          <div class="cloud" id="cloud-mid"></div>
-          <div class="cloud" id="cloud-front"></div>
-          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
-          <svg width="0" height="0">
-            <!--Top Layer-->
-              <filter id="filter-back">
-                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4"
-          seed="0" />
-                <feDisplacementMap  in="SourceGraphic" scale="170" />
-              </filter>
-                <filter id="filter-mid">
-                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="150" />
-              </filter>
-              <filter id="filter-front">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="100" />
-              </filter>
-          </svg>
-        </div>
-
-        <!-- cloud 2 -->
-        <div class="clouds cloud-2">
-          <div class="cloud" id="cloud-back"></div>
-          <div class="cloud" id="cloud-mid"></div>
-          <div class="cloud" id="cloud-front"></div>
-          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
-          <svg width="0" height="0">
-            <!--Top Layer-->
-              <filter id="filter-back">
-                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4"
-          seed="0" />
-                <feDisplacementMap  in="SourceGraphic" scale="170" />
-              </filter>
-                <filter id="filter-mid">
-                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="150" />
-              </filter>
-              <filter id="filter-front">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="100" />
-              </filter>
-          </svg>
-        </div>
-        <!-- cloud 3 -->
-        <div class="clouds cloud-3">
-          <div class="cloud" id="cloud-back"></div>
-          <div class="cloud" id="cloud-mid"></div>
-          <div class="cloud" id="cloud-front"></div>
-          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
-          <svg width="0" height="0">
-            <!--Top Layer-->
-              <filter id="filter-back">
-                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4"
-          seed="0" />
-                <feDisplacementMap  in="SourceGraphic" scale="170" />
-              </filter>
-                <filter id="filter-mid">
-                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="150" />
-              </filter>
-              <filter id="filter-front">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="100" />
-              </filter>
-          </svg>
-        </div>
-        <!-- cloud 4 -->
-        <div class="clouds cloud-4">
-          <div class="cloud" id="cloud-back"></div>
-          <div class="cloud" id="cloud-mid"></div>
-          <div class="cloud" id="cloud-front"></div>
-          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
-          <svg width="0" height="0">
-            <!--Top Layer-->
-              <filter id="filter-back">
-                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4"
-          seed="0" />
-                <feDisplacementMap  in="SourceGraphic" scale="170" />
-              </filter>
-                <filter id="filter-mid">
-                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="150" />
-              </filter>
-              <filter id="filter-front">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="100" />
-              </filter>
-          </svg>
-        </div>
-        <!-- cloud 5 -->
-        <div class="clouds cloud-5">
-          <div class="cloud" id="cloud-back"></div>
-          <div class="cloud" id="cloud-mid"></div>
-          <div class="cloud" id="cloud-front"></div>
-          <!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
-          <svg width="0" height="0">
-            <!--Top Layer-->
-              <filter id="filter-back">
-                <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4"
-          seed="0" />
-                <feDisplacementMap  in="SourceGraphic" scale="170" />
-              </filter>
-                <filter id="filter-mid">
-                  <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="150" />
-              </filter>
-              <filter id="filter-front">
-                  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2"
-          seed="0"/>
-                <feDisplacementMap  in="SourceGraphic" scale="100" />
-              </filter>
-          </svg>
-        </div>
+        <div class="cloud cloud-0"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+        <div class="cloud cloud-5"></div>
+        <div class="cloud cloud-6"></div>
+        <div class="cloud cloud-7"></div>
+        <div class="cloud cloud-8"></div>
+        <div class="cloud cloud-9"></div>
+        <div class="cloud cloud-10"></div>
+        <div class="cloud cloud-11"></div>
+        <div class="cloud cloud-12"></div>
+        <div class="cloud cloud-13"></div>
+        <div class="cloud cloud-14"></div>
+        <div class="cloud cloud-15"></div>
+        <div class="cloud cloud-16"></div>
+        <div class="cloud cloud-17"></div>
+        <div class="cloud cloud-18"></div>
+        <div class="cloud cloud-19"></div>
+        <div class="cloud cloud-20"></div>
+        <div class="cloud cloud-21"></div>
+        <div class="cloud cloud-22"></div>
+        <div class="cloud cloud-23"></div>
+        <div class="cloud cloud-24"></div>
+        <div class="cloud cloud-25"></div>
+        <div class="cloud cloud-26"></div>
+        <div class="cloud cloud-27"></div>
+        <div class="cloud cloud-28"></div>
+        <div class="cloud cloud-29"></div>
+        <div class="cloud cloud-30"></div>
+        <div class="cloud cloud-31"></div>
+        <div class="cloud cloud-32"></div>
+        <div class="cloud cloud-33"></div>
+        <div class="cloud cloud-34"></div>
+        <div class="cloud cloud-35"></div>
+        <div class="cloud cloud-36"></div>
+        <div class="cloud cloud-37"></div>
+        <div class="cloud cloud-38"></div>
+        <div class="cloud cloud-39"></div>
+        <div class="cloud cloud-40"></div>
+        <div class="cloud cloud-41"></div>
+        <div class="cloud cloud-42"></div>
+        <div class="cloud cloud-43"></div>
+        <div class="cloud cloud-44"></div>
+        <div class="cloud cloud-45"></div>
+        <div class="cloud cloud-46"></div>
+        <div class="cloud cloud-47"></div>
+        <div class="cloud cloud-48"></div>
+        <div class="cloud cloud-49"></div>
+        <div class="cloud cloud-50"></div>
       </div>
 
       <!-- /////////////////////// MOUNTAINS ////////////////////////////// -->
       <!-- MOUNTAIN 1 - MOUNT EVEREST [8,849m]-->
       <div class="mountain-1">
-        <div class="mountain mount-everest-title">
-          <div class="mountain-title">MOUNT EVEREST 🇨🇳</div>
-          <div class="mountain-height">8,849m</div>
-        </div>
-        <div class="mountain-data mount-everest-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="1"></i>
-          <div class="mountain-info" data-key="1">
-            <ul>
-              <li>Ubicación: China 🇨🇳</li>
-              <li>Altura: 8,849m</li>
-              <li>Prominencia: 8,848m</li>
-              <li>Año de primer ascenso: 1953</li>
-              <li>Dificultad: Extremo</li>
-            </ul>
-            <div class="bottom-row"></div>
+
+        <div class="data-container m-1">
+          <div class="mountain mount-everest-title">
+            <div class="mountain-title">MOUNT EVEREST 🇨🇳</div>
+            <div class="mountain-height">8,849m</div>
+          </div>
+          <div class="mountain-data mount-everest-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="1"></i>
+            <div class="mountain-info" data-key="1">
+              <ul>
+                <li>Ubicación: China 🇨🇳</li>
+                <li>Altura: 8,849m</li>
+                <li>Prominencia: 8,848m</li>
+                <li>Año de primer ascenso: 1953</li>
+                <li>Dificultad: Extremo</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
+        
         <div class="mountain-svg mount-everest-svg"></div>
       </div>
       <!-- MOUNTAIN 2 - K2 [8,611m] -->
       <div class="mountain-2">
-        <div class="mountain k2-title">
-          <div class="mountain-title">K2 🇵🇰🇨🇳</div>
-          <div class="mountain-height">8,611m</div>
-        </div>
 
-        <div class="mountain-data k2-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="2"></i>
-          <div class="mountain-info" data-key="2">
-            <ul>
-              <li>Ubicación: Pakistan 🇵🇰 & China 🇨🇳</li>
-              <li>Altura: 8,611m</li>
-              <li>Prominencia: 4,020m</li>
-              <li>Mountain range: Karakoram</li>
-              <li>Año de primer ascenso: 1954</li>
-              <li>Dificultad: Extremo</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="data-container m-2">
+          <div class="mountain k2-title">
+            <div class="mountain-title">K2 🇵🇰🇨🇳</div>
+            <div class="mountain-height">8,611m</div>
+          </div>
+
+          <div class="mountain-data k2-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="2"></i>
+            <div class="mountain-info" data-key="2">
+              <ul>
+                <li>Ubicación: Pakistan 🇵🇰 & China 🇨🇳</li>
+                <li>Altura: 8,611m</li>
+                <li>Prominencia: 4,020m</li>
+                <li>Mountain range: Karakoram</li>
+                <li>Año de primer ascenso: 1954</li>
+                <li>Dificultad: Extremo</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg k2-svg"></div>
       </div>
+
       <!-- MOUNTAIN 3 - KANGCHENJUNGA SVG [8,586m] -->
       <div class="mountain-3">
-        <div class="mountain kangchenjunga-title">
-          <div class="mountain-title">KANGCHENJUNGA 🇳🇵🇮🇳</div>
-          <div class="mountain-height">8,586m</div>
-        </div>
 
-        <div class="mountain-data kangchenjunga-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="3"></i>
-          <div class="mountain-info" data-key="3">
-            <ul>
-              <li>Ubicación: Nepal 🇳🇵& India 🇮🇳</li>
-              <li>Altura: 8,586m</li>
-              <li>Prominencia: 3,922m</li>
-              <li>Mountain range: Himalayas</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Básico Intermedio</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="data-container m-3">
+          <div class="mountain kangchenjunga-title">
+            <div class="mountain-title">KANGCHENJUNGA 🇳🇵🇮🇳</div>
+            <div class="mountain-height">8,586m</div>
+          </div>
+
+          <div class="mountain-data kangchenjunga-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="3"></i>
+            <div class="mountain-info" data-key="3">
+              <ul>
+                <li>Ubicación: Nepal 🇳🇵& India 🇮🇳</li>
+                <li>Altura: 8,586m</li>
+                <li>Prominencia: 3,922m</li>
+                <li>Mountain range: Himalayas</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Básico Intermedio</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg kangchenjunga-svg"></div>
       </div>
+
       <!-- MOUNTAIN 4 - LHOTSE SVG [8,516m] -->
       <div class="mountain-4">
-        <div class="mountain lhotse-title">
-          <div class="mountain-title">LHOTSE 🇳🇵</div>
-          <div class="mountain-height">8,516m</div>
-        </div>
 
-        <div class="mountain-data lhotse-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="4"></i>
-          <div class="mountain-info" data-key="4">
-            <ul>
-              <li>Ubicación: Nepal 🇳🇵</li>
-              <li>Altura: 8,516m</li>
-              <li>Prominencia: 610m</li>
-              <li>Mountain range: Himalayas, Mahalangur Himal</li>
-              <li>Año de primer ascenso: 1956</li>
-              <li>Dificultad: Extremo</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="data-container m-4">
+          <div class="mountain lhotse-title">
+            <div class="mountain-title">LHOTSE 🇳🇵</div>
+            <div class="mountain-height">8,516m</div>
+          </div>
+
+          <div class="mountain-data lhotse-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="4"></i>
+            <div class="mountain-info" data-key="4">
+              <ul>
+                <li>Ubicación: Nepal 🇳🇵</li>
+                <li>Altura: 8,516m</li>
+                <li>Prominencia: 610m</li>
+                <li>Mountain range: Himalayas, Mahalangur Himal</li>
+                <li>Año de primer ascenso: 1956</li>
+                <li>Dificultad: Extremo</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg lhotse-svg"></div>
       </div>
+
       <!-- MOUNTAIN 5 - MAKALU [8,481 m] -->
       <div class="mountain-5">
-        <div class="mountain makalu-title">
-          <div class="mountain-title">MAKALU 🇳🇵</div>
-          <div class="mountain-height">8,481m</div>
-        </div>
 
-        <div class="mountain-data makalu-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="5"></i>
-          <div class="mountain-info" data-key="5">
-            <ul>
-              <li>Ubicación: Nepal 🇳🇵</li>
-              <li>Altura: 8,481m</li>
-              <li>Prominencia: 2,386m</li>
-              <li>Mountain range: Himalayas, Mahalangur Hima</li>
-              <li>Año de primer ascenso: 1955</li>
-              <li>Dificultad: Extremo</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="data-container m-5">
+          <div class="mountain makalu-title">
+            <div class="mountain-title">MAKALU 🇳🇵</div>
+            <div class="mountain-height">8,481m</div>
+          </div>
+
+          <div class="mountain-data makalu-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="5"></i>
+            <div class="mountain-info" data-key="5">
+              <ul>
+                <li>Ubicación: Nepal 🇳🇵</li>
+                <li>Altura: 8,481m</li>
+                <li>Prominencia: 2,386m</li>
+                <li>Mountain range: Himalayas, Mahalangur Hima</li>
+                <li>Año de primer ascenso: 1955</li>
+                <li>Dificultad: Extremo</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg makalu-svg"></div>
       </div>
-      <!-- MOUNTAIN 6 - ACACONCAGUA [6,961 m] -->
+
+      <!-- MOUNTAIN 6 - Nanga Parbat [8,126 m] -->
       <div class="mountain-6">
-        <div class="mountain acaconcagua-title">
-          <div class="mountain-title">ACACONCAGUA 🇦🇷</div>
-          <div class="mountain-height">6,961m</div>
+
+        <div class="data-container m-6">
+          <div class="mountain nanga-parbat-title">
+            <div class="mountain-title">NANGA PARBAT</div>
+            <div class="mountain-height">8,126m</div>
+          </div>
+
+          <div class="mountain-data nanga-parbat-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="6"></i>
+            <div class="mountain-info" data-key="6">
+              <ul>
+                <li>Ubicación: Gilgit–Baltistan, Pakistan</li>
+                <li>Altura: 8,126m</li>
+                <li>Prominencia: 4,608m</li>
+                <li>Mountain range: Himalayas, Western Himalayas</li>
+                <li>Año de primer ascenso: </li>
+                <li>Dificultad: Extremo</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
         </div>
 
-        <div class="mountain-data acaconcagua-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="6"></i>
-          <div class="mountain-info" data-key="6">
-            <ul>
-              <li>Ubicación: Mendoza Province, Argentina 🇦🇷</li>
-              <li>Altura: 6,961m</li>
-              <li>Prominencia: 6,962m</li>
-              <li>Mountain range: Andes, Cordillera Principal</li>
-              <li>Año de primer ascenso: 1897</li>
-              <li>Dificultad: Avanzado</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="mountain-svg nanga-parbat-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 7 - ANNAPURNA II [7,937m] -->
+      <div class="mountain-7">
+
+        <div class="data-container m-7">
+          <div class="mountain annapurna-ii-title">
+            <div class="mountain-title">ANNAPURNA II 🇳🇵</div>
+            <div class="mountain-height">7,937m</div>
+          </div>
+
+          <div class="mountain-data annapurna-ii-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="7"></i>
+            <div class="mountain-info" data-key="7">
+              <ul>
+                <li>Ubicación: Nepal 🇳🇵</li>
+                <li>Altura: 7,937m</li>
+                <li>Prominencia: 2,437m</li>
+                <li>Mountain range: Himalayas</li>
+                <li>Año de primer ascenso: 1960</li>
+                <li>Dificultad: Extremo</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg annapurna-ii-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 8 - Chogolisa [7,665m] -->
+      <div class="mountain-8">
+
+        <div class="data-container m-8">
+          <div class="mountain chogolisa-title">
+            <div class="mountain-title">CHOGOLISA</div>
+            <div class="mountain-height">7,665m</div>
+          </div>
+
+          <div class="mountain-data chogolisa-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="8"></i>
+            <div class="mountain-info" data-key="8">
+              <ul>
+                <li>Ubicación: Gilgit–Baltistan, Pakistan </li>
+                <li>Altura: 7,665m</li>
+                <li>Prominencia: </li>
+                <li>Mountain range: Karakoram, Masherbrum Range</li>
+                <li>Año de primer ascenso: </li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg chogolisa-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 9 - Kangkar Pünzum [7,570m] -->
+      <div class="mountain-9">
+
+        <div class="data-container m-9">
+          <div class="mountain kangkar-punzum-title">
+            <div class="mountain-title">KANGKAR PÜNZUM</div>
+            <div class="mountain-height">7,570m</div>
+          </div>
+
+          <div class="mountain-data kangkar-punzum-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="9"></i>
+            <div class="mountain-info" data-key="9">
+              <ul>
+                <li>Ubicación: Bhutan–China border </li>
+                <li>Altura: 7,570m</li>
+                <li>Prominencia: </li>
+                <li>Mountain range: Pamir Mountains in Central Asia, 'Roof of the World'</li>
+                <li>Año de primer ascenso: </li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg kangkar-punzum-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 10 - ISMOIL SOMONI [7,495m] -->
+      <div class="mountain-10">
+
+        <div class="data-container m-10">
+          <div class="mountain ismoil-somoni-title">
+            <div class="mountain-title">ISMOIL SOMONI 🇹🇯</div>
+            <div class="mountain-height">7,495m</div>
+          </div>
+
+          <div class="mountain-data ismoil-somoni-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="10"></i>
+            <div class="mountain-info" data-key="10">
+              <ul>
+                <li>Ubicación: Tajikistan 🇹🇯 </li>
+                <li>Altura: 7,495m</li>
+                <li>Prominencia: </li>
+                <li>Mountain range: Pamir Mountains in Central Asia, 'Roof of the World'</li>
+                <li>Año de primer ascenso: </li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg ismoil-somoni-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 11 - LENIN PEAK [7,134m] -->
+      <div class="mountain-11">
+
+        <div class="data-container m-11">
+          <div class="mountain lenin-peak-title">
+            <div class="mountain-title">LENIN PEAK </div>
+            <div class="mountain-height">7,134m</div>
+          </div>
+
+          <div class="mountain-data lenin-peak-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="11"></i>
+            <div class="mountain-info" data-key="11">
+              <ul>
+                <li>Ubicación: Kyrgyzstan–Tajikistan border </li>
+                <li>Altura: 7,134m</li>
+                <li>Prominencia: </li>
+                <li>Mountain range: Pamir Mountains in Central Asia 'Roof of the World'</li>
+                <li>Año de primer ascenso: </li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg lenin-peak-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 12 - ACACONCAGUA [6,961 m] -->
+      <div class="mountain-12">
+
+        <div class="data-container m-12">
+          <div class="mountain acaconcagua-title">
+            <div class="mountain-title">ACACONCAGUA 🇦🇷</div>
+            <div class="mountain-height">6,961m</div>
+          </div>
+
+          <div class="mountain-data acaconcagua-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="12"></i>
+            <div class="mountain-info" data-key="12">
+              <ul>
+                <li>Ubicación: Mendoza Province, Argentina 🇦🇷</li>
+                <li>Altura: 6,961m</li>
+                <li>Prominencia: 6,962m</li>
+                <li>Mountain range: Andes, Cordillera Principal</li>
+                <li>Año de primer ascenso: 1897</li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg acaconcagua-svg"></div>
       </div>
-      <!-- MOUNTAIN 7 - OJOS DEL SALADO [6,893m] -->
-      <div class="mountain-7">
-        <div class="mountain ojos-salado-title">
-          <div class="mountain-title">OJOS DEL SALADO 🇨🇱🇦🇷</div>
-          <div class="mountain-height">6,893m</div>
-        </div>
 
-        <div class="mountain-data ojos-salado-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="7"></i>
-          <div class="mountain-info" data-key="7">
-            <ul>
-              <li>Ubicación: Cordillera de los Andes [Chile 🇨🇱, Argentina 🇦🇷]</li>
-              <li>Altura: 6,893m</li>
-              <li>Prominencia: 3,688m</li>
-              <li>Año de primer ascenso: 1937</li>
-              <li>Dificultad: Avanzado</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 13 - OJOS DEL SALADO [6,893m] -->
+      <div class="mountain-13">
+
+        <div class="data-container m-13">
+          <div class="mountain ojos-salado-title">
+            <div class="mountain-title">OJOS DEL SALADO 🇨🇱🇦🇷</div>
+            <div class="mountain-height">6,893m</div>
+          </div>
+
+          <div class="mountain-data ojos-salado-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="13"></i>
+            <div class="mountain-info" data-key="13">
+              <ul>
+                <li>Ubicación: Cordillera de los Andes [Chile 🇨🇱, Argentina 🇦🇷]</li>
+                <li>Altura: 6,893m</li>
+                <li>Prominencia: 3,688m</li>
+                <li>Año de primer ascenso: 1937</li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg ojos-salado-svg"></div>
       </div>
-      <!-- MOUNTAIN 8 - MONTE PISSIS [6,792m] -->
-      <div class="mountain-8">
-        <div class="mountain monte-pissis-title">
-          <div class="mountain-title">MONTE PISSIS 🇦🇷</div>
-          <div class="mountain-height">6,792m</div>
-        </div>
 
-        <div class="mountain-data monte-pissis-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="8"></i>
-          <div class="mountain-info" data-key="8">
-            <ul>
-              <li>Ubicación: La Rioja y Catamarca, Argentina 🇦🇷</li>
-              <li>Altura: 6,792m</li>
-              <li>Prominencia: 2,145m</li>
-              <li>Mountain range: Andes</li>
-              <li>Año de primer ascenso: 1937</li>
-              <li>Dificultad: Avanzado</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 14 - MONTE PISSIS [6,792m] -->
+      <div class="mountain-14">
+
+        <div class="data-container m-14">
+          <div class="mountain monte-pissis-title">
+            <div class="mountain-title">MONTE PISSIS 🇦🇷</div>
+            <div class="mountain-height">6,792m</div>
+          </div>
+
+          <div class="mountain-data monte-pissis-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="14"></i>
+            <div class="mountain-info" data-key="14">
+              <ul>
+                <li>Ubicación: La Rioja y Catamarca, Argentina 🇦🇷</li>
+                <li>Altura: 6,792m</li>
+                <li>Prominencia: 2,145m</li>
+                <li>Mountain range: Andes</li>
+                <li>Año de primer ascenso: 1937</li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg monte-pissis-svg"></div>
       </div>
-      <!-- MOUNTAIN 9 - HUASCARAN [6,768m] -->
-      <div class="mountain-9">
-        <div class="mountain huascaran-title">
-          <div class="mountain-title">HUASCARAN 🇵🇪</div>
-          <div class="mountain-height">6,768m</div>
-        </div>
 
-        <div class="mountain-data huascaran-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="9"></i>
-          <div class="mountain-info" data-key="9">
-            <ul>
-              <li>Ubicación: Yungay, Peru 🇵🇪</li>
-              <li>Altura: 6,768m</li>
-              <li>Prominencia: 2,776m</li>
-              <li>Año de primer ascenso: 1932</li>
-              <li>Dificultad: Avanzado</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 15 - HUASCARAN [6,768m] -->
+      <div class="mountain-15">
+
+        <div class="data-container m-15">
+          <div class="mountain huascaran-title">
+            <div class="mountain-title">HUASCARAN 🇵🇪</div>
+            <div class="mountain-height">6,768m</div>
+          </div>
+
+          <div class="mountain-data huascaran-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="15"></i>
+            <div class="mountain-info" data-key="15">
+              <ul>
+                <li>Ubicación: Yungay, Peru 🇵🇪</li>
+                <li>Altura: 6,768m</li>
+                <li>Prominencia: 2,776m</li>
+                <li>Año de primer ascenso: 1932</li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg huascaran-svg"></div>
       </div>
-      <!-- MOUNTAIN 10 - CERRO BONETE [6,759m] -->
-      <div class="mountain-10">
-        <div class="mountain cerro-bonete-title">
-          <div class="mountain-title">CERRO BONETE 🇦🇷</div>
-          <div class="mountain-height">6,759m</div>
-        </div>
 
-        <div class="mountain-data cerro-bonete-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="10"></i>
-          <div class="mountain-info" data-key="10">
-            <ul>
-              <li>Ubicación: La Rioja, Argentina, 🇦🇷</li>
-              <li>Altura: 6,759m</li>
-              <li>Prominencia: 1,459m</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Avanzado</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 16 - CERRO BONETE [6,759m] -->
+      <div class="mountain-16">
+
+        <div class="data-container m-16">
+          <div class="mountain cerro-bonete-title">
+            <div class="mountain-title">CERRO BONETE 🇦🇷</div>
+            <div class="mountain-height">6,759m</div>
+          </div>
+
+          <div class="mountain-data cerro-bonete-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="16"></i>
+            <div class="mountain-info" data-key="16">
+              <ul>
+                <li>Ubicación: La Rioja, Argentina, 🇦🇷</li>
+                <li>Altura: 6,759m</li>
+                <li>Prominencia: 1,459m</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg cerro-bonete-svg"></div>
       </div>
-      <!-- MOUNTAIN 11 - TRES CRUCES [6,748m] -->
-      <div class="mountain-11">
-        <div class="mountain tres-cruces-title">
-          <div class="mountain-title">TRES CRUCES 🇨🇱🇦🇷</div>
-          <div class="mountain-height">6,748m</div>
-        </div>
 
-        <div class="mountain-data tres-cruces-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="11"></i>
-          <div class="mountain-info" data-key="11">
-            <ul>
-              <li>Ubicación: Cordillera de los Andes [Chile 🇨🇱, Argentina 🇦🇷] </li>
-              <li>Altura: 6,748m</li>
-              <li>Prominencia: 1422 m</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Avanzado</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 17 - TRES CRUCES [6,748m] -->
+      <div class="mountain-17">
+
+        <div class="data-container m-17">
+          <div class="mountain tres-cruces-title">
+            <div class="mountain-title">TRES CRUCES 🇨🇱🇦🇷</div>
+            <div class="mountain-height">6,748m</div>
+          </div>
+
+          <div class="mountain-data tres-cruces-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="17"></i>
+            <div class="mountain-info" data-key="17">
+              <ul>
+                <li>Ubicación: Cordillera de los Andes [Chile 🇨🇱, Argentina 🇦🇷] </li>
+                <li>Altura: 6,748m</li>
+                <li>Prominencia: 1422 m</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg tres-cruces-svg"></div>
       </div>
-      <!-- MOUNTAIN 12 - MOUNT DENALI [6,190m] -->
-      <div class="mountain-12">
-        <div class="mountain mount-denali-title">
-          <div class="mountain-title">MOUNT DENALI 🇺🇸</div>
-          <div class="mountain-height">6,190m</div>
+
+      <!-- MOUNTAIN 18 - ILLIMANI [6,438m] -->
+      <div class="mountain-18">
+
+        <div class="data-container m-18">
+          <div class="mountain illimani-title">
+            <div class="mountain-title">ILLLIMANI 🇧🇴</div>
+            <div class="mountain-height">6,438m</div>
+          </div>
+
+          <div class="mountain-data illimani-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="18"></i>
+            <div class="mountain-info" data-key="18">
+              <ul>
+                <li>Ubicación: Bolivia 🇧🇴</li>
+                <li>Altura: 6,438m</li>
+                <li>Prominencia: </li>
+                <li>Mountain range: Cordillera Real, Andes Bolivia</li>
+                <li>Año de primer ascenso: </li>
+                <li>Dificultad: Difícil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
         </div>
 
-        <div class="mountain-data mount-denali-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="12"></i>
-          <div class="mountain-info" data-key="12">
-            <ul>
-              <li>Ubicación: Denali, USA 🇺🇸 </li>
-              <li>Altura: 6,190m</li>
-              <li>Prominencia: 6,144m</li>
-              <li>Mountain range: Alaska Range, American Cordillera, North American Cordillera</li>
-              <li>Año de primer ascenso: 1913</li>
-              <li>Dificultad: Difícil</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="mountain-svg illimani-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 20 - MOUNT DENALI [6,190m] -->
+      <div class="mountain-20">
+
+        <div class="data-container m-20">
+          <div class="mountain mount-denali-title">
+            <div class="mountain-title">MOUNT DENALI 🇺🇸</div>
+            <div class="mountain-height">6,190m</div>
+          </div>
+
+          <div class="mountain-data mount-denali-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="20"></i>
+            <div class="mountain-info" data-key="20">
+              <ul>
+                <li>Ubicación: Denali, USA 🇺🇸 </li>
+                <li>Altura: 6,190m</li>
+                <li>Prominencia: 6,144m</li>
+                <li>Mountain range: Alaska Range, American Cordillera, North American Cordillera</li>
+                <li>Año de primer ascenso: 1913</li>
+                <li>Dificultad: Difícil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg mount-denali-svg"></div>
       </div>
-      <!-- MOUNTAIN 13 - KILIMANJARO [5,895m] -->
-      <div class="mountain-13">
-        <div class="mountain kilimanjaro-title">
-          <div class="mountain-title">KILIMANJARO 🇹🇿</div>
-          <div class="mountain-height">5,895m</div>
-        </div>
 
-        <div class="mountain-data kilimanjaro-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="13"></i>
-          <div class="mountain-info" data-key="13">
-            <ul>
-              <li>Ubicación: United Republic of Tanzania 🇹🇿</li>
-              <li>Altura: 5,895m</li>
-              <li>Prominencia: 5,885m</li>
-              <li>Mountain range: Eastern Rift mountains</li>
-              <li>Año de primer ascenso: 1889</li>
-              <li>Dificultad: Avanzado</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 19 - RASAC [6,017m] -->
+      <div class="mountain-19">
+
+        <div class="data-container m-19">
+          <div class="mountain rasac-title">
+            <div class="mountain-title">RASAC </div>
+            <div class="mountain-height">6,017m</div>
+          </div>
+      
+          <div class="mountain-data rasac-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="19"></i>
+            <div class="mountain-info" data-key="19">
+              <ul>
+                <li>Ubicación: Perú 🇺🇸 </li>
+                <li>Altura: 6,017m</li>
+                <li>Prominencia: </li>
+                <li>Mountain range: Cordillera Huayhuash, Peruvian Andes</li>
+                <li>Año de primer ascenso: </li>
+                <li>Dificultad: Difícil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="mountain-svg rasac-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 21 - KILIMANJARO [5,895m] -->
+      <div class="mountain-21">
+
+        <div class="data-container m-21">
+          <div class="mountain kilimanjaro-title">
+            <div class="mountain-title">KILIMANJARO 🇹🇿</div>
+            <div class="mountain-height">5,895m</div>
+          </div>
+
+          <div class="mountain-data kilimanjaro-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="21"></i>
+            <div class="mountain-info" data-key="21">
+              <ul>
+                <li>Ubicación: United Republic of Tanzania 🇹🇿</li>
+                <li>Altura: 5,895m</li>
+                <li>Prominencia: 5,885m</li>
+                <li>Mountain range: Eastern Rift mountains</li>
+                <li>Año de primer ascenso: 1889</li>
+                <li>Dificultad: Avanzado</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg kilimanjaro-svg"></div>
       </div>
-      <!-- MOUNTAIN 14 - PICO ORIZABA [5,636m] -->
-      <div class="mountain-14">
-        <div class="mountain pico-orizaba-title">
-          <div class="mountain-title">PICO DE ORIZABA 🇲🇽</div>
-          <div class="mountain-height">5,636m</div>
-        </div>
 
-        <div class="mountain-data pico-orizaba-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="14"></i>
-          <div class="mountain-info" data-key="14">
-            <ul>
-              <li>Ubicación: México </li>
-              <li>Altura: 5,636m</li>
-              <li>Prominencia: 4,922m</li>
-              <li>Año de primer ascenso: 1848</li>
-              <li>Dificultad: Intermedio</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 22 - PICO ORIZABA [5,636m] -->
+      <div class="mountain-22">
+
+        <div class="data-container m-22">
+          <div class="mountain pico-orizaba-title">
+            <div class="mountain-title">PICO DE ORIZABA 🇲🇽</div>
+            <div class="mountain-height">5,636m</div>
+          </div>
+
+          <div class="mountain-data pico-orizaba-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="22"></i>
+            <div class="mountain-info" data-key="22">
+              <ul>
+                <li>Ubicación: México </li>
+                <li>Altura: 5,636m</li>
+                <li>Prominencia: 4,922m</li>
+                <li>Año de primer ascenso: 1848</li>
+                <li>Dificultad: Intermedio</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg pico-orizaba-svg"></div>
       </div>
-      <!-- MOUNTAIN 15 - MOUNT ELBRUS [5,642m] -->
-      <div class="mountain-15">
-        <div class="mountain mount-elbrus-title">
-          <div class="mountain-title">MOUNT ELBRUS 🇷🇺</div>
-          <div class="mountain-height">5,642m</div>
-        </div>
 
-        <div class="mountain-data mount-elbrus-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="15"></i>
-          <div class="mountain-info" data-key="15">
-            <ul>
-              <li>Ubicación: Russia 🇷🇺</li>
-              <li>Altura: 5,642m</li>
-              <li>Prominencia: 4,741m</li>
-              <li>Mountain range: Caucasus Mountains</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Intermedio</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 23 - MOUNT ELBRUS [5,642m] -->
+      <div class="mountain-23">
+
+        <div class="data-container m-23">
+          <div class="mountain mount-elbrus-title">
+            <div class="mountain-title">MOUNT ELBRUS 🇷🇺</div>
+            <div class="mountain-height">5,642m</div>
+          </div>
+
+          <div class="mountain-data mount-elbrus-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="23"></i>
+            <div class="mountain-info" data-key="23">
+              <ul>
+                <li>Ubicación: Russia 🇷🇺</li>
+                <li>Altura: 5,642m</li>
+                <li>Prominencia: 4,741m</li>
+                <li>Mountain range: Caucasus Mountains</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Intermedio</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg mount-elbrus-svg"></div>
       </div>
-      <!-- MOUNTAIN 16 - VOLCAN POPOCATEPETL [5,393m] -->
-      <div class="mountain-16">
-        <div class="mountain popocatepetl-title">
-          <div class="mountain-title">VOLCAN POPOCATEPETL 🇲🇽</div>
-          <div class="mountain-height">5,393m</div>
-        </div>
 
-        <div class="mountain-data popocatepetl-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="16"></i>
-          <div class="mountain-info" data-key="16">
-            <ul>
-              <li>Ubicación: Puebla, México 🇲🇽</li>
-              <li>Altura: 5,393m</li>
-              <li>Prominencia: 3,020m</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Básico Intermedio</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 24 - VOLCAN POPOCATEPETL [5,393m] -->
+      <div class="mountain-24">
+
+        <div class="data-container m-24">
+          <div class="mountain popocatepetl-title">
+            <div class="mountain-title">VOLCAN POPOCATEPETL 🇲🇽</div>
+            <div class="mountain-height">5,393m</div>
+          </div>
+
+          <div class="mountain-data popocatepetl-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="24"></i>
+            <div class="mountain-info" data-key="24">
+              <ul>
+                <li>Ubicación: Puebla, México 🇲🇽</li>
+                <li>Altura: 5,393m</li>
+                <li>Prominencia: 3,020m</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Básico Intermedio</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg popocatepetl-svg"></div>
       </div>
-      <!-- MOUNTAIN 17 - MOUNT FRAKER [5,304 m] -->
-      <div class="mountain-17">
-        <div class="mountain mount-fraker-title">
-          <div class="mountain-title">MOUNT FRAKER 🇺🇸</div>
-          <div class="mountain-height">5,304m</div>
-        </div>
 
-        <div class="mountain-data mount-fraker-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="17"></i>
-          <div class="mountain-info" data-key="17">
-            <ul>
-              <li>Ubicación: Alaska, USA 🇺🇸 </li>
-              <li>Altura: 5,304m</li>
-              <li>Prominencia: 2,209m</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Básico Intermedio</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 25 - MOUNT FRAKER [5,304 m] -->
+      <div class="mountain-25">
+        
+        <div class="data-container m-25">
+          <div class="mountain mount-fraker-title">
+            <div class="mountain-title">MOUNT FRAKER 🇺🇸</div>
+            <div class="mountain-height">5,304m</div>
+          </div>
+
+          <div class="mountain-data mount-fraker-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="25"></i>
+            <div class="mountain-info" data-key="25">
+              <ul>
+                <li>Ubicación: Alaska, USA 🇺🇸 </li>
+                <li>Altura: 5,304m</li>
+                <li>Prominencia: 2,209m</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Básico Intermedio</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg mount-fraker-svg"></div>
       </div>
-      <!-- MOUNTAIN 18 - IZTLACCIHUATL [5,230m] -->
-      <div class="mountain-18">
-        <div class="mountain iztlaccihuatl-title">
-          <div class="mountain-title">IZTLACCIHUATL 🇲🇽</div>
-          <div class="mountain-height">5,230m</div>
-        </div>
 
-        <div class="mountain-data iztlaccihuatl-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="18"></i>
-          <div class="mountain-info" data-key="18">
-            <ul>
-              <li>Ubicación: México 🇲🇽</li>
-              <li>Altura: 5,230m</li>
-              <li>Prominencia: 1,560m</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Básico Intermedio</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 26 - IZTLACCIHUATL [5,230m] -->
+      <div class="mountain-26">
+        
+        <div class="data-container m-26">
+          <div class="mountain iztlaccihuatl-title">
+            <div class="mountain-title">IZTLACCIHUATL 🇲🇽</div>
+            <div class="mountain-height">5,230m</div>
+          </div>
+
+          <div class="mountain-data iztlaccihuatl-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="26"></i>
+            <div class="mountain-info" data-key="26">
+              <ul>
+                <li>Ubicación: México 🇲🇽</li>
+                <li>Altura: 5,230m</li>
+                <li>Prominencia: 1,560m</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Básico Intermedio</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg iztlaccihuatl-svg"></div>
       </div>
-      <!-- MOUNTAIN 19 - DYKH TAU [5,205m] -->
-      <div class="mountain-19">
-        <div class="mountain dykh-tau-title">
-          <div class="mountain-title">DYKH TAU 🇷🇺</div>
-          <div class="mountain-height">5,205m</div>
-        </div>
 
-        <div class="mountain-data dykh-tau-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="19"></i>
-          <div class="mountain-info" data-key="19">
-            <ul>
-              <li>Ubicación: Russia 🇷🇺</li>
-              <li>Altura: 5,205m</li>
-              <li>Prominencia: 2,002m</li>
-              <li>Año de primer ascenso: Básico Intermedio</li>
-              <li>Dificultad: Fácil</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 27 - DYKH TAU [5,205m] CAMBIAR MONTAÑA (NO ME GUSTA NADA)-->
+      <div class="mountain-27">
+
+        <div class="data-container m-27">
+          <div class="mountain dykh-tau-title">
+            <div class="mountain-title">DYKH TAU 🇷🇺</div>
+            <div class="mountain-height">5,205m</div>
+          </div>
+
+          <div class="mountain-data dykh-tau-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="27"></i>
+            <div class="mountain-info" data-key="27">
+              <ul>
+                <li>Ubicación: Russia 🇷🇺</li>
+                <li>Altura: 5,205m</li>
+                <li>Prominencia: 2,002m</li>
+                <li>Año de primer ascenso: Básico Intermedio</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg dykh-tau-svg"></div>
       </div>
-      <!-- MOUNTAIN 20 - NEVADO DE TOLUCA [4,680m] -->
-      <div class="mountain-20">
-        <div class="mountain nevado-toluca-title">
-          <div class="mountain-title">NEVADO DE TOLUCA 🇲🇽</div>
-          <div class="mountain-height">4,680m</div>
+
+      <!-- MOUNTAIN 28 - ALAM KUH [4,850m] -->
+      <div class="mountain-28">
+        
+        <div class="data-container m-28">
+          <div class="mountain alam-kuh-title">
+            <div class="mountain-title">ALAM KUH 🇮🇷</div>
+            <div class="mountain-height">4,850m</div>
+          </div>
+
+          <div class="mountain-data alam-kuh-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="28"></i>
+            <div class="mountain-info" data-key="28">
+              <ul>
+                <li>Ubicación: IRAN 🇮🇷</li>
+                <li>Altura: 4,850m</li>
+                <li>Prominencia: --- </li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
         </div>
 
-        <div class="mountain-data nevado-toluca-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="20"></i>
-          <div class="mountain-info" data-key="20">
-            <ul>
-              <li>Ubicación: México 🇲🇽</li>
-              <li>Altura: 4,680m</li>
-              <li>Prominencia: 2,210m</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Fácil</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="mountain-svg alam-kuh-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 29 - NEVADO DE TOLUCA [4,680m] -->
+      <div class="mountain-29">
+        
+        <div class="data-container m-29">
+          <div class="mountain nevado-toluca-title">
+            <div class="mountain-title">NEVADO DE TOLUCA 🇲🇽</div>
+            <div class="mountain-height">4,680m</div>
+          </div>
+
+          <div class="mountain-data nevado-toluca-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="29"></i>
+            <div class="mountain-info" data-key="29">
+              <ul>
+                <li>Ubicación: México 🇲🇽</li>
+                <li>Altura: 4,680m</li>
+                <li>Prominencia: 2,210m</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg nevado-toluca-svg"></div>
       </div>
-      <!-- MOUNTAIN 21 - TEYOTL [4,660m] -->
-      <div class="mountain-21">
-        <div class="mountain teyotl-title">
-          <div class="mountain-title">PICO TEYOTL 🇲🇽</div>
-          <div class="mountain-height">4,660m</div>
-        </div>
 
-        <div class="mountain-data teyotl-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="21"></i>
-          <div class="mountain-info" data-key="21">
-            <ul>
-              <li>Ubicación: México 🇲🇽</li>
-              <li>Altura: 4,660m</li>
-              <li>Prominencia: [Pendiente]</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Fácil</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 30 - TEYOTL [4,660m] -->
+      <div class="mountain-30">
+        
+        <div class="data-container m-30">
+          <div class="mountain teyotl-title">
+            <div class="mountain-title">PICO TEYOTL 🇲🇽</div>
+            <div class="mountain-height">4,660m</div>
+          </div>
+
+          <div class="mountain-data teyotl-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="30"></i>
+            <div class="mountain-info" data-key="30">
+              <ul>
+                <li>Ubicación: México 🇲🇽</li>
+                <li>Altura: 4,660m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg teyotl-svg"></div>
       </div>
-      <!-- MOUNTAIN 22 - VOLCAN LA MALINCHE [4,461 m] -->
-      <div class="mountain-22">
-        <div class="mountain volcan-malintzin-title">
-          <div class="mountain-title">VOLCAN LA MALINCHE 🇲🇽</div>
-          <div class="mountain-height">4,461m</div>
-        </div>
 
-        <div class="mountain-data volcan-malintzin-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="22"></i>
-          <div class="mountain-info" data-key="22">
-            <ul>
-              <li>Ubicación: México 🇲🇽</li>
-              <li>Altura: 4,461m</li>
-              <li>Prominencia: [Pendiente]</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Fácil</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 31 - VOLCAN LA MALINCHE [4,461 m] -->
+      <div class="mountain-31">
+        
+        <div class="data-container m-31">
+          <div class="mountain volcan-malintzin-title">
+            <div class="mountain-title">VOLCAN LA MALINCHE 🇲🇽</div>
+            <div class="mountain-height">4,461m</div>
+          </div>
+
+          <div class="mountain-data volcan-malintzin-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="31"></i>
+            <div class="mountain-info" data-key="31">
+              <ul>
+                <li>Ubicación: México 🇲🇽</li>
+                <li>Altura: 4,461m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg volcan-malintzin-svg"></div>
       </div>
-      <!-- MOUNTAIN 23 - COFRE DE PEROTE [4,282 m]  -->
-      <div class="mountain-23">
-        <div class="mountain cofre-perote-title">
-          <div class="mountain-title">COFRE DE PEROTE 🇲🇽</div>
-          <div class="mountain-height">4,282m</div>
-        </div>
 
-        <div class="mountain-data cofre-perote-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="23"></i>
-          <div class="mountain-info" data-key="23">
-            <ul>
-              <li>Ubicación: México 🇲🇽</li>
-              <li>Altura: 4,282m</li>
-              <li>Prominencia: [Pendiente]</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Fácil</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 32 - COFRE DE PEROTE [4,282 m]  -->
+      <div class="mountain-32">
+
+        <div class="data-container m-32">
+          <div class="mountain cofre-perote-title">
+            <div class="mountain-title">COFRE DE PEROTE 🇲🇽</div>
+            <div class="mountain-height">4,282m</div>
+          </div>
+
+          <div class="mountain-data cofre-perote-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="32"></i>
+            <div class="mountain-info" data-key="32">
+              <ul>
+                <li>Ubicación: México 🇲🇽</li>
+                <li>Altura: 4,282m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg cofre-perote-svg"></div>
       </div>
-      <!-- MOUNTAIN 24 - CERRO NUBE OAXACA [3,720m]  -->
-      <div class="mountain-24">
-        <div class="mountain cerro-nube-oax-title">
-          <div class="mountain-title">CERRO NUBE OAXACA 🇲🇽</div>
-          <div class="mountain-height">3,720m</div>
-        </div>
 
-        <div class="mountain-data cerro-nube-oax-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="24"></i>
-          <div class="mountain-info" data-key="24">
-            <ul>
-              <li>Ubicación: México 🇲🇽</li>
-              <li>Altura: 3,720m</li>
-              <li>Prominencia: [Pendiente]</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Fácil</li>
-            </ul>
-            <div class="bottom-row"></div>
+      <!-- MOUNTAIN 33 - Jbel Toubkal [4,167 m]  -->
+      <div class="mountain-33">
+
+        <div class="data-container m-33">
+          <div class="mountain jbel-toubkal-title">
+            <div class="mountain-title">JBEL TOUBKAL 🇲🇦</div>
+            <div class="mountain-height">4,167m</div>
+          </div>
+
+          <div class="mountain-data jbel-toubkal-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="33"></i>
+            <div class="mountain-info" data-key="33">
+              <ul>
+                <li>Ubicación: Morocco 🇲🇦</li>
+                <li>Altura: 4,167m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
-        <div class="mountain-svg cerro-nube-oax-svg"></div>
+        <div class="mountain-svg jbel-toubkal-svg"></div>
       </div>
-      <!-- MOUNTAIN 25 - NEVADO DE COLIMA [2,720m] -->
-      <div class="mountain-25">
-        <div class="mountain nevado-colima-title">
-          <div class="mountain-title">NEVADO DE COLIMA 🇲🇽</div>
-          <div class="mountain-height">2,720m</div>
+
+      <!-- MOUNTAIN 34 - TOCHAL [3,963m]  -->
+      <div class="mountain-34">
+
+        <div class="data-container m-34">
+          <div class="mountain tochal-title">
+            <div class="mountain-title">TOCHAL 🇮🇷</div>
+            <div class="mountain-height">3,963m</div>
+          </div>
+
+          <div class="mountain-data tochal-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="34"></i>
+            <div class="mountain-info" data-key="34">
+              <ul>
+                <li>Ubicación: IRAN 🇮🇷</li>
+                <li>Altura: 3,963m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
         </div>
 
-        <div class="mountain-data nevado-colima-data">
-          <div class="tab-arrow"></div>
-          <i class="fa-solid fa-info" data-mountain-key="25"></i>
-          <div class="mountain-info" data-key="25">
-            <ul>
-              <li>Ubicación: México 🇲🇽</li>
-              <li>Altura: 2,720m</li>
-              <li>Prominencia: [Pendiente]</li>
-              <li>Año de primer ascenso: [Pendiente]</li>
-              <li>Dificultad: Muy fácil</li>
-            </ul>
-            <div class="bottom-row"></div>
+        <div class="mountain-svg tochal-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 35 - CERRO NUBE OAXACA [3,720m]  -->
+      <div class="mountain-35">
+
+        <div class="data-container m-35">
+          <div class="mountain cerro-nube-oax-title">
+            <div class="mountain-title">CERRO NUBE OAXACA 🇲🇽</div>
+            <div class="mountain-height">3,720m</div>
+          </div>
+
+          <div class="mountain-data cerro-nube-oax-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="35"></i>
+            <div class="mountain-info" data-key="35">
+              <ul>
+                <li>Ubicación: México 🇲🇽</li>
+                <li>Altura: 3,720m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mountain-svg cerro-nube-oax-svg"></div>
+      </div>
+        
+      <!-- MOUNTAIN 36 - MAFADI [3,446m]  -->
+      <div class="mountain-36">
+
+        <div class="data-container m-36">
+          <div class="mountain mafadi-title">
+            <div class="mountain-title">MAFADI 🇿🇦</div>
+            <div class="mountain-height">3,446m</div>
+          </div>
+
+          <div class="mountain-data mafadi-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="36"></i>
+            <div class="mountain-info" data-key="36">
+              <ul>
+                <li>Ubicación: South Africa </li>
+                <li>Altura: 3,446m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg mafadi-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 37 - cerro-mohonira  [3,300m]  -->
+      <div class="mountain-37">
+
+        <div class="data-container m-37">
+          <div class="mountain cerro-mohonira-title">
+            <div class="mountain-title">CERRO MOHONIRA</div>
+            <div class="mountain-height">3,300m</div>
+          </div>
+
+          <div class="mountain-data cerro-mohonira-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="37"></i>
+            <div class="mountain-info" data-key="37">
+              <ul>
+                <li>Ubicación: México</li>
+                <li>Altura: 3,300m</li>
+                <li>Prominencia: 873m</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mountain-svg cerro-mohonira-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 38 - MOUNT SEFTON [3,151m]  -->
+      <div class="mountain-38">
+
+        <div class="data-container m-38">
+          <div class="mountain mount-sefton-title">
+            <div class="mountain-title">MOUNT SEFTON 🇳🇿</div>
+            <div class="mountain-height">3,151m</div>
+          </div>
+
+          <div class="mountain-data mount-sefton-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="38"></i>
+            <div class="mountain-info" data-key="38">
+              <ul>
+                <li>Ubicación: New Zealand 🇳🇿</li>
+                <li>Altura: 3,151m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg mount-sefton-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 39 - CATHEDRAL PEAK [3,004m]  -->
+      <div class="mountain-39">
+
+        <div class="data-container m-39">
+          <div class="mountain cathedral-peak-title">
+            <div class="mountain-title">CATHEDRAL PEAK 🇿🇦</div>
+            <div class="mountain-height">3,004m</div>
+          </div>
+
+          <div class="mountain-data cathedral-peak-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="39"></i>
+            <div class="mountain-info" data-key="39">
+              <ul>
+                <li>Ubicación: South Africa </li>
+                <li>Altura: 3,004m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg cathedral-peak-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 40 - NEVADO DE COLIMA [2,720m] -->
+      <div class="mountain-40">
+        
+        <div class="data-container m-40">
+          <div class="mountain nevado-colima-title">
+            <div class="mountain-title">NEVADO DE COLIMA 🇲🇽</div>
+            <div class="mountain-height">2,720m</div>
+          </div>
+
+          <div class="mountain-data nevado-colima-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="40"></i>
+            <div class="mountain-info" data-key="40">
+              <ul>
+                <li>Ubicación: México 🇲🇽</li>
+                <li>Altura: 2,720m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Muy fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
           </div>
         </div>
 
         <div class="mountain-svg nevado-colima-svg"></div>
+      </div>
+
+      <!-- MOUNTAIN 41 - Half Dome 2696 m -->
+      <div class="mountain-41">
+
+        <div class="m-41-container">
+          <div class="m-41-container-title">HALF DOME 🇺🇸</div>
+          <div class="m-41-container-object">2,696m</div>
+          <div class="mountain-info-icon"></div>
+        </div>
+
+        
+        <div class="data-container m-41">
+          <div class="mountain half-dome-title">
+            <div class="mountain-title">HALF DOME 🇺🇸</div>
+            <div class="mountain-height">
+              <span>2,696m</span>              
+            </div>
+          </div>
+
+          <div class="mountain-data half-dome-data">
+            <div class="tab-arrow"></div>
+            <i class="fa-solid fa-info" data-mountain-key="41"></i>
+            <div class="mountain-info" data-key="41">
+              <ul>
+                <li>Ubicación: North America 🇲🇺🇸</li>
+                <li>Altura: 2,696m</li>
+                <li>Prominencia: [Pendiente]</li>
+                <li>Año de primer ascenso: [Pendiente]</li>
+                <li>Dificultad: Muy fácil</li>
+              </ul>
+              <div class="bottom-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mountain-svg half-dome-svg"></div>
+      </div>
+
+      <!-- /////////////////////// ILLUSTRATIONS /////////////////////////// -->
+
+      <div class="illustrations">
+        <!-- 9000m -->
+        <div class="illustration-container plane-1-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration plane-1"></div>
+        </div>
+        <!-- 8000m -->
+        <div class="illustration-container hellicopter-2-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration hellicopter-2"></div>
+        </div>
+        <!-- 7500m -->
+        <div class="illustration-container plane-3-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration plane-3"></div>
+        </div>
+        <!-- 7000m -->
+        <div class="illustration-container plane-2-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration plane-2"></div>
+        </div>
+        <!-- 6500m -->
+        <div class="illustration-container bird-alpine-cough-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-alpine-cough"></div>
+        </div>
+        <!-- 7000m -->
+        <div class="illustration-container evo2-dron-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration evo2-dron"></div>
+        </div>
+        <!-- 6000m -->
+        <div class="illustration-container dragonfish-dron-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration dragonfish-dron"></div>
+        </div>
+        <!-- 6000m -->
+        <div class="illustration-container hellicopter-1-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration hellicopter-1"></div>
+        </div>
+        <!-- 6000m -->
+        <div class="illustration-container hellicopter-3-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration hellicopter-3"></div>
+        </div>
+        <!-- 5900m -->
+        <div class="illustration-container dji-dron-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration dji-dron"></div>
+        </div>
+        <!-- 5000m -->
+        <div class="illustration-container air-balloon-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration air-balloon"></div>
+        </div>
+        <!-- 5100m -->
+        <div class="illustration-container bird-wallcreeper-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-wallcreeper"></div>
+        </div>
+        <!-- 4876.8m -->
+        <div class="illustration-container bird-himalayan-snowcock-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-himalayan-snowcock"></div>
+        </div>
+        <!-- 4500.72m -->
+        <div class="illustration-container bird-andean-flamingo-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-andean-flamingo"></div>
+        </div>
+        <!-- 4000m -->
+        <div class="illustration-container bird-mountain-hawk-eagle-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-mountain-hawk-eagle"></div>
+        </div>
+        <!-- 3352.8m -->
+        <div class="illustration-container bird-golden-eagle-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-golden-eagle"></div>
+        </div>
+        <!-- 3200m -->
+        <div class="illustration-container bird-snow-flinch-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-snow-flinch"></div>
+        </div>
+        <!-- 3200m -->
+        <div class="illustration-container bird-white-cheeked-nuthatch-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-white-cheeked-nuthatch"></div>
+        </div>
+        <!-- 3000m -->
+        <div class="illustration-container bird-bald-eagle-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-bald-eagle"></div>
+        </div>
+        <!-- 2700m -->
+        <div class="illustration-container bird-rufous-bellied-niltava-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-rufous-bellied-niltava"></div>
+        </div>
+        <!-- 2500m -->
+        <div class="illustration-container bird-snowy-owl-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-snowy-owl"></div>
+        </div>
+        <!-- 1828m -->
+        <div class="illustration-container bird-pigeon-container">
+          <div class="illustration-data">
+            <div class="tab-arrow-illustration"></div>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="1"></i>
+          </div>
+          <div class="illustration bird-pigeon"></div>
+        </div>
       </div>
 
       <!-- ////////////////////// INITIAL SCREEN /////////////////////////// -->
@@ -809,6 +1499,10 @@
     </div> <!-- END MAIN-CONTAINER -->
 
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/ashesAnimation-script.js"></script>
+    <script type="text/javascript" src="./js/rainAnimation-script.js"></script>
+    <script type="text/javascript" src="./js/snowAnimation-script.js"></script>
+    <script type="text/javascript" src="./js/mountainsData-script.js"></script>
   </body>
 </html>
