@@ -16,18 +16,18 @@ export const Mountain: React.FC<mountainConfig> = ({
     
     const mountainVariants = {
         "mountain-1": "top-[500px] bg-mountain-1 z-1",
-        "mountain-2": "top-[10500px] bg-mountain-2 z-2",
-        "mountain-3": "top-[10500px] bg-mountain-3 z-3",
-        "mountain-4": "top-[10500px] bg-mountain-4 z-4",
-        "mountain-5": "top-[10500px] bg-mountain-5 z-5",
-        "mountain-6": "top-[10500px] bg-mountain-6 z-6",
-        "mountain-7": "top-[10500px] bg-mountain-7 z-7",
-        "mountain-8": "top-[10500px] bg-mountain-8 z-8",
-        "mountain-9": "top-[10500px] bg-mountain-9 z-9",
-        "mountain-10": "top-[10500px] bg-mountain-10 z-10",
-        "mountain-11": "top-[10500px] bg-mountain-11 z-11",
-        "mountain-12": "top-[10500px] bg-mountain-12 z-12",
-        "mountain-13": "top-[10500px] bg-mountain-13 z-13",
+        "mountain-2": "top-[12500px] bg-mountain-2 z-2",
+        "mountain-3": "top-[15000px] bg-mountain-3 z-3",
+        "mountain-4": "top-[20500px] bg-mountain-4 z-4",
+        "mountain-5": "top-[22500px] bg-mountain-5 z-5",
+        "mountain-6": "top-[25000px] bg-mountain-6 z-6",
+        "mountain-7": "top-[30500px] bg-mountain-7 z-7",
+        "mountain-8": "top-[32500px] bg-mountain-8 z-8",
+        "mountain-9": "top-[35000px] bg-mountain-9 z-9",
+        "mountain-10": "top-[37500px] bg-mountain-10 z-10",
+        "mountain-11": "top-[40500px] bg-mountain-11 z-11",
+        "mountain-12": "top-[42500px] bg-mountain-12 z-12",
+        "mountain-13": "top-[47500px] bg-mountain-13 z-13",
         "mountain-14": "top-[10500px] bg-mountain-14 z-14",
         "mountain-15": "top-[10500px] bg-mountain-15 z-15",
         "mountain-16": "top-[10500px] bg-mountain-16 z-16",
@@ -56,7 +56,7 @@ export const Mountain: React.FC<mountainConfig> = ({
                         ${mountainVariants[id]}
                         `}
         >
-            {/* <DataContainer
+            <DataContainer
                 id={id}
                 name={name}
                 altitude={altitude}
@@ -65,7 +65,7 @@ export const Mountain: React.FC<mountainConfig> = ({
                 range={range}
                 firstAscent={firstAscent}
                 difficulty={difficulty}
-            /> */}
+            />
         </div>
     )
 }
