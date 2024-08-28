@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react'
 
 function Metronome() {
@@ -6,6 +7,7 @@ function Metronome() {
 
     const wrapper = useRef<HTMLDivElement | null>(null);
     const text = useRef<HTMLDivElement | null>(null);
+    const metersText = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         const windowHeight = window.innerHeight;
@@ -35,8 +37,8 @@ function Metronome() {
                 meters = "00000";
             }
             
-            if (text.current) {
-                text.current.textContent = `${meters}m`;
+            if (metersText.current) {
+                metersText.current.textContent = `${meters}m`;
             }
         }
         
@@ -52,22 +54,31 @@ function Metronome() {
         <div
             ref={wrapper}
             className="fixed mx-auto inset-x-0 top-0 w-[280px] h-[70px] z-[99]
-                        text-black items-center justify-center bg-slate-400
+                        text-black justify-center bg-slate-100
                         rounded-t-[0px] rounded-b-[15px] border border-t-0 border-black
+                        shadow-sm
                         ">
-        <div
-            ref={text}
-            className="absolute top-0 text-black text-wrap w-full h-full
-                        font-light grid content-center font-mono
-                        text-[2.5rem] text-right pl-[22px] tracking-[30px]
-                        ">
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-        </div>
+            <div
+                ref={text}
+                className=" text-black w-full h-full
+                           font-mono text-[1.5rem] tracking-[30px]
+                          ">
+                
+                <div ref={metersText} className="flex h-full w-full absolute top-0
+                                                 items-center justify-center pl-6
+                                                 ">
+                    Scroll up!
+                </div>
+
+                <div className="grid grid-cols-6 h-full w-full">
+                    <div className="border-r-[1.2px] border-solid border-black"></div>
+                    <div className="border-r-[1.2px] border-solid border-black"></div>
+                    <div className="border-r-[1.2px] border-solid border-black"></div>
+                    <div className="border-r-[1.2px] border-solid border-black"></div>
+                    <div className="border-r-[1.2px] border-solid border-black"></div>
+                    
+                </div>
+            </div>
         </div>
     )
 }
