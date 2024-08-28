@@ -4,45 +4,26 @@
 
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-color: black;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  --page-height: 50000px;
-  --font-size: 50px;
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
-  height: var(--page-height);
-  background-color: #AFE7FE;
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
-  scroll-behavior: smooth;
-  background-image: linear-gradient(to top,
-                                    rgba(175, 231, 254, 1) 10%,
-                                    rgba(175, 231, 254, 1) 20%,
-                                    rgba(175, 231, 254, 1) 30%,
-                                    rgba(175, 231, 254, 1) 40%,
-                                    rgba(175, 231, 254, 1) 50%,
-                                    rgba(255,255,255,1) 60%,
-                                    rgba(255,255,255,1) 70%,
-                                    rgba(255,255,255,1) 80%,
-                                    rgba(255,255,255,1) 90%,
-                                    rgba(255,255,255,1) 100%);
-}
-
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-color: black;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --page-height: 50000px;
+    --half-page-height: 25000px;
+    --font-size: 50px;
+    --primary-color: #AFE7FE;
+    --secondary-color: #AFFFF;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  

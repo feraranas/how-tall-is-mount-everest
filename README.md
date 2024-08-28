@@ -1,5 +1,15 @@
 <h3>🌿 A site dedicated to my love 💚 for mountains & volcanoes 🌋</h3>
 
+run:
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
 <details>
 <summary>step by step</summary>
 
@@ -7,7 +17,65 @@
 npm create vite@latest .
 ```
 
+<details>
+<summary>tailwind</summary>
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+tailwind.config.js
+
+```typescript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+tailwind directives
+
+```typescript
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
 </details>
+
+<br>
+
+<details>
+<summary>optimizing tailwind for production</summary>
+
+minifying css with `cssnano`, then compressing with `brotli`
+
+```typescript
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+    ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
+  }
+}
+```
+
+</details>
+
+<br>
+
+
+
+</details>
+
 
 <details>
 <summary>check initial docs later</summary>
