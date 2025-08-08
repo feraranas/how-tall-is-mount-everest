@@ -117,8 +117,8 @@ body {
   left: 0;
   width: 100%;
   height: 50%;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b96a2084-0dd9-44be-79cd-a90d27210900/public');
-  /* background-image: url(../images/gridBlack.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b96a2084-0dd9-44be-79cd-a90d27210900/public'); */
+  background-image: url(../images/gridBlack.svg);
   background-repeat: repeat;
   background-size: 175px 175px;
   opacity: 0.65;
@@ -355,8 +355,8 @@ body {
   z-index: 26;
 }
 .mountain-svg.mount-everest-svg {
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b51b6fc2-e8e2-451e-1e54-56b1658cd400/public');
-  /* background-image: url(../images/mountains/1-MOUNT-EVEREST.svg); */
+  /*background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b51b6fc2-e8e2-451e-1e54-56b1658cd400/public');*/
+  background-image: url(../images/mountains/1-MOUNT-EVEREST.svg);
   top: 3300px;
   z-index: 22;
 }
@@ -375,8 +375,8 @@ body {
   left: 34%;
 }
 .mountain-svg.k2-svg {
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a2eb1073-ff53-4eba-c745-6adaa6794200/public');
-  /* background-image: url(../images/mountains/2-K2.svg); */
+  /*background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a2eb1073-ff53-4eba-c745-6adaa6794200/public');*/
+  background-image: url(../images/mountains/2-K2.svg);
   top: 5041px;
   right: 33%;
   z-index: 23;
@@ -396,8 +396,8 @@ body {
   left: 71%;
 }
 .mountain-svg.kangchenjunga-svg {
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/dd667933-b425-4eef-464b-306e8ff41800/public');
-  /* background-image: url(../images/mountains/3-KANCHENJUNGA.svg); */
+  /*background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/dd667933-b425-4eef-464b-306e8ff41800/public');*/
+  background-image: url(../images/mountains/3-KANCHENJUNGA.svg);
   top: 5206px;
   opacity: 1;
   z-index: 26;
@@ -417,8 +417,8 @@ body {
   left: 28%;
 }
 .mountain-svg.lhotse-svg {
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/bab2b9fb-d5b4-439a-4c94-9b2777c44200/public');
-  /* background-image: url(../images/mountains/4-LHOTSE.svg); */
+  /*background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/bab2b9fb-d5b4-439a-4c94-9b2777c44200/public');*/
+  background-image: url(../images/mountains/4-LHOTSE.svg);
   top: 5767px;
   opacity: 1;
   z-index: 27;
@@ -438,8 +438,8 @@ body {
   z-index: 32;
 }
 .mountain-svg.makalu-svg {
-  /* background-image: url(../images/mountains/5-MAKALU.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/4d9768ef-7dfe-49dd-bd2f-4e075d86a700/public');
+  background-image: url(../images/mountains/5-MAKALU.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/4d9768ef-7dfe-49dd-bd2f-4e075d86a700/public'); */
   top: 5990px;
   opacity: 1;
   z-index: 29;
@@ -459,8 +459,8 @@ body {
 .mountain-svg.nanga-parbat-svg {
   top: 16820px;
   z-index: 27;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/54eb1838-ed6a-4dc1-a25d-69565c538300/public');
-  /* background-image: url(../images/mountains/6-NANGA-PARBAT.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/54eb1838-ed6a-4dc1-a25d-69565c538300/public'); */
+  background-image: url(../images/mountains/6-NANGA-PARBAT.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 7 ANNAPURNA II */
@@ -477,8 +477,8 @@ body {
 .mountain-svg.annapurna-ii-svg {
   top: 16820px;
   z-index: 27;
-  /* background-image: url(../images/mountains/7-ANNAPURNA.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/60ef2837-23c5-4476-1f72-165ff8d10a00/public');
+  background-image: url(../images/mountains/7-ANNAPURNA.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/60ef2837-23c5-4476-1f72-165ff8d10a00/public'); */
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS 8 -- CHOGOLISA */
@@ -495,8 +495,8 @@ body {
 .mountain-svg.chogolisa-svg {
   top: 16820px;
   z-index: 27;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/e2a787c1-bc5e-4f2a-6ace-250a568b3e00/public');
-  /* background-image: url(../images/mountains/8-CHOGOLISA.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/e2a787c1-bc5e-4f2a-6ace-250a568b3e00/public'); */
+  background-image: url(../images/mountains/8-CHOGOLISA.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS 9 -- KANGKAR PUNZUM */
@@ -513,8 +513,8 @@ body {
 .mountain-svg.kangkar-punzum-svg {
   top: 16820px;
   z-index: 27;
-  /* background-image: url(../images/mountains/9-KANGKAR-PUNZUM.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/57830ee0-3fbb-4a03-ec82-9b88fd1dff00/public');
+  background-image: url(../images/mountains/9-KANGKAR-PUNZUM.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/57830ee0-3fbb-4a03-ec82-9b88fd1dff00/public'); */
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS 10 -- ISMOIL SOMONI */
@@ -531,8 +531,8 @@ body {
 .mountain-svg.ismoil-somoni-svg {
   top: 16820px;
   z-index: 27;
-  /* background-image: url(../images/mountains/10-ISMOIL-SOMONI.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/2db00a87-67f0-479e-be84-c61a31e42400/public');
+  background-image: url(../images/mountains/10-ISMOIL-SOMONI.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/2db00a87-67f0-479e-be84-c61a31e42400/public'); */
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS 11 -- LENIN PEAK */
@@ -549,8 +549,8 @@ body {
 .mountain-svg.lenin-peak-svg {
   top: 16820px;
   z-index: 27;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/1386c2bc-6319-45b1-3389-51c5f8106d00/public');
-  /* background-image: url(../images/mountains/11-LENIN-PEAK.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/1386c2bc-6319-45b1-3389-51c5f8106d00/public'); */
+  background-image: url(../images/mountains/11-LENIN-PEAK.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 12 ACACONCAGUA */
@@ -567,8 +567,8 @@ body {
 .mountain-svg.acaconcagua-svg {
   top: 16820px;
   z-index: 27;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/0a470449-87f7-4c67-924d-bc2b1e614600/public');
-  /* background-image: url(../images/mountains/12-ACACONCAGUA.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/0a470449-87f7-4c67-924d-bc2b1e614600/public'); */
+  background-image: url(../images/mountains/12-ACACONCAGUA.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 13 OJOS DEL SALADO */
@@ -590,8 +590,8 @@ body {
   top: 17412px;
   opacity: 1;
   z-index: 29;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b33de8b2-b9b6-4711-02cf-a3041626f300/public');
-  /* background-image: url(../images/mountains/13-OJOS-DEL-SALADO.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b33de8b2-b9b6-4711-02cf-a3041626f300/public'); */
+  background-image: url(../images/mountains/13-OJOS-DEL-SALADO.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 14 MONTE PISSIS */
@@ -612,8 +612,8 @@ body {
 .mountain-svg.monte-pissis-svg {
   top: 18210px;
   opacity: 1;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/9fb6ebd8-a6ba-4c2a-cc3a-13803b0fda00/public');
-  /* background-image: url(../images/mountains/14-MONTE-PISSIS.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/9fb6ebd8-a6ba-4c2a-cc3a-13803b0fda00/public'); */
+  background-image: url(../images/mountains/14-MONTE-PISSIS.svg);
   z-index: 24;
 }
 /* //////////////////////////////////////////////////////// */
@@ -636,8 +636,8 @@ body {
   opacity: 1;
   transform: translateX(-25%);
   z-index: 26;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/45b2b4f1-9b4e-4283-a566-f1621e50bd00/public');
-  /* background-image: url(../images/mountains/15-HUASCARAN.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/45b2b4f1-9b4e-4283-a566-f1621e50bd00/public'); */
+  background-image: url(../images/mountains/15-HUASCARAN.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 16 CERRO BONETE */
@@ -655,8 +655,8 @@ body {
   top: 18378px;
   z-index: 28;
   opacity: 1;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/91ef34b3-f0ab-4cae-5187-672f751d7700/public');
-  /* background-image: url(../images/mountains/16-CERRO-BONETE.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/91ef34b3-f0ab-4cae-5187-672f751d7700/public'); */
+  background-image: url(../images/mountains/16-CERRO-BONETE.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 17 TRES CRUCES */
@@ -678,8 +678,8 @@ body {
   top: 18572px;
   opacity: 1;
   z-index: 30;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/496f878b-5d48-4651-521a-1fc22c2dcb00/public');
-  /* background-image: url(../images/mountains/17-TRES-CRUCES.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/496f878b-5d48-4651-521a-1fc22c2dcb00/public'); */
+  background-image: url(../images/mountains/17-TRES-CRUCES.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 18 illimani */
@@ -695,8 +695,8 @@ body {
   top: 18572px;
   opacity: 1;
   z-index: 30;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/2bc56fe7-a1da-4d41-ff5e-73c7a35a8b00/public');
-  /* background-image: url(../images/mountains/18-ILLIMANI.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/2bc56fe7-a1da-4d41-ff5e-73c7a35a8b00/public'); */
+  background-image: url(../images/mountains/18-ILLIMANI.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 19 RASAC */
@@ -714,8 +714,8 @@ body {
   top: 18572px;
   opacity: 1;
   z-index: 30;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/3c68fbbd-dcfc-4f40-71e9-21d3d8c1c200/public');
-  /* background-image: url(../images/mountains/19-RASAC.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/3c68fbbd-dcfc-4f40-71e9-21d3d8c1c200/public'); */
+  background-image: url(../images/mountains/19-RASAC.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 20 MOUNT DENALI */
@@ -733,8 +733,8 @@ body {
   top: 22471px;
   z-index: 110;
   opacity: 1;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/88cf7d94-387e-434d-4d47-26abb0921300/public');
-  /* background-image: url(../images/mountains/20-MOUNT-DENALI.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/88cf7d94-387e-434d-4d47-26abb0921300/public'); */
+  background-image: url(../images/mountains/20-MOUNT-DENALI.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 21 KILIMANJARO */
@@ -771,8 +771,8 @@ body {
   top: 26590px;
   opacity: 1;
   z-index: 113;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/99fbdc57-c46c-4626-671f-890db11e6f00/public');
-  /* background-image: url(../images/mountains/22-PICO-ORIZABA.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/99fbdc57-c46c-4626-671f-890db11e6f00/public'); */
+  background-image: url(../images/mountains/22-PICO-ORIZABA.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 23 MOUNT ELBRUS */
@@ -795,8 +795,8 @@ body {
   opacity: 0.9;
   left: 34%;
   z-index: 112;
-  /* background-image: url(../images/mountains/23-MOUNT-ELBRUS.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/56135545-3bf3-4cd9-92ff-fec09d604100/public');
+  background-image: url(../images/mountains/23-MOUNT-ELBRUS.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/56135545-3bf3-4cd9-92ff-fec09d604100/public'); */
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 24 POPOCATEPETL */
@@ -814,8 +814,8 @@ body {
   top: 27700px;
   z-index: 114;
   opacity: 1;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/09b872e4-6fc8-4b96-f8bb-d5b36fb53600/public');
-  /* background-image: url(../images/mountains/24-POPOCATEPETL.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/09b872e4-6fc8-4b96-f8bb-d5b36fb53600/public'); */
+  background-image: url(../images/mountains/24-POPOCATEPETL.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 25 MOUNT FRAKER */
@@ -833,8 +833,8 @@ body {
   z-index: 115;
   opacity: 1;
   top: 28980px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/e01e938e-8978-44bf-5df4-18790b1f0900/public');
-  /* background-image: url(../images/mountains/25-MOUNT-FRAKER.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/e01e938e-8978-44bf-5df4-18790b1f0900/public'); */
+  background-image: url(../images/mountains/25-MOUNT-FRAKER.svg);
 }
 /* //////////////////////////////////////////////////////// */
 /* MOUNTAINS -- 26 IZTLACCIHUATL */
@@ -856,8 +856,8 @@ body {
   right: 16%;
   opacity: 1;
   top: 29520px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/7d12b9a0-7002-4203-d107-f8890ac6ce00/public');
-  /* background-image: url(../images/mountains/26-IZTLACCIHUATL.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/7d12b9a0-7002-4203-d107-f8890ac6ce00/public'); */
+  background-image: url(../images/mountains/26-IZTLACCIHUATL.svg);
   z-index: 23;
 }
 /* //////////////////////////////////////////////////////// */
@@ -879,8 +879,8 @@ body {
 .mountain-svg.dykh-tau-svg {
   top: 29630px;
   opacity: 1;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/05f9625d-1972-41ac-931f-62257c92cb00/public');
-  /* background-image: url(../images/mountains/27-DYKH-TAU.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/05f9625d-1972-41ac-931f-62257c92cb00/public'); */
+  background-image: url(../images/mountains/27-DYKH-TAU.svg);
   z-index: 25;
 }
 /* //////////////////////////////////////////////////////// */
@@ -898,8 +898,8 @@ body {
 .mountain-svg.alam-kuh-svg {
   top: 29630px;
   opacity: 1;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a70755c7-e850-48a9-237e-bb3ce3ed5300/public');
-  /* background-image: url(../images/mountains/28-ALAM-KUH.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a70755c7-e850-48a9-237e-bb3ce3ed5300/public'); */
+  background-image: url(../images/mountains/28-ALAM-KUH.svg);
   z-index: 25;
 }
 /* //////////////////////////////////////////////////////// */
@@ -921,8 +921,8 @@ body {
   top: 33535px;
   opacity: 0.85; 
   background-position: left;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/43bb202f-841f-4558-3136-1f69eb406100/public');
-  /* background-image: url(../images/mountains/29-NEVADO-TOLUCA.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/43bb202f-841f-4558-3136-1f69eb406100/public'); */
+  background-image: url(../images/mountains/29-NEVADO-TOLUCA.svg);
   z-index: 20;
 }
 /* //////////////////////////////////////////////////////// */
@@ -944,8 +944,8 @@ body {
   top: 33687px;
   left: -17%;
   background-position: right;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/f974a553-d1ad-490b-b8e6-bb667a47d700/public');
-  /* background-image: url(../images/mountains/30-TEYOTL.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/f974a553-d1ad-490b-b8e6-bb667a47d700/public'); */
+  background-image: url(../images/mountains/30-TEYOTL.svg);
   background-color: transparent;
   z-index: 21;
 }
@@ -966,8 +966,8 @@ body {
 .mountain-svg.volcan-malintzin-svg {
   top: 35120px;
   background-position: right center;
-  /* background-image: url(../images/mountains/31-VOLCAN-MALINTZIN.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/820cf59a-b867-4b03-c3c1-905afb177f00/public');
+  background-image: url(../images/mountains/31-VOLCAN-MALINTZIN.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/820cf59a-b867-4b03-c3c1-905afb177f00/public'); */
   z-index: 17;
 }
 /* //////////////////////////////////////////////////////// */
@@ -986,8 +986,8 @@ body {
 }
 .mountain-svg.cofre-perote-svg {
   top: 36421px;
-  /* background-image: url(../images/mountains/32-COFRE-DE-PEROTE.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ac5a6fd7-1606-4e9a-55bb-d1314eaf7100/public');
+  background-image: url(../images/mountains/32-COFRE-DE-PEROTE.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ac5a6fd7-1606-4e9a-55bb-d1314eaf7100/public'); */
   z-index: 14;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1004,8 +1004,8 @@ body {
 }
 .mountain-svg.jbel-toubkal-svg {
   top: 36421px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/5472b677-b00f-4f46-e234-7fa462579800/public');
-  /* background-image: url(../images/mountains/33-JBEL-TOUBKAL.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/5472b677-b00f-4f46-e234-7fa462579800/public'); */
+  background-image: url(../images/mountains/33-JBEL-TOUBKAL.svg);
   z-index: 14;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1022,8 +1022,8 @@ body {
 }
 .mountain-svg.tochal-svg {
   top: 36421px;
-  /* background-image: url(../images/mountains/34-TOCHAL.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/3bdbbf30-b031-4a7d-ab75-312143939b00/public');
+  background-image: url(../images/mountains/34-TOCHAL.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/3bdbbf30-b031-4a7d-ab75-312143939b00/public'); */
   z-index: 14;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1039,8 +1039,8 @@ body {
 }
 .mountain-svg.cerro-nube-oax-svg {
   top: 40491px;
-  /* background-image: url(../images/mountains/35-CERRO-NEGRO-OAX.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/58319574-ae2e-4de8-0d0e-ad3f81bb9300/public');
+  background-image: url(../images/mountains/35-CERRO-NEGRO-OAX.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/58319574-ae2e-4de8-0d0e-ad3f81bb9300/public'); */
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1056,8 +1056,8 @@ body {
 }
 .mountain-svg.mafadi-svg {
   top: 40491px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/f55e96aa-60db-46b1-c743-c57a56840600/public');
-  /* background-image: url(../images/mountains/36-MAFADI.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/f55e96aa-60db-46b1-c743-c57a56840600/public'); */
+  background-image: url(../images/mountains/36-MAFADI.svg);
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1073,8 +1073,8 @@ body {
 }
 .mountain-svg.cerro-mohonira-svg {
   top: 43410px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/104247cd-356b-4c86-0bc4-bf7b9efc2c00/public');
-  /* background-image: url(../images/mountains/37-CERRO-MOHONIRA.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/104247cd-356b-4c86-0bc4-bf7b9efc2c00/public'); */
+  background-image: url(../images/mountains/37-CERRO-MOHONIRA.svg);
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1090,8 +1090,8 @@ body {
 }
 .mountain-svg.mount-sefton-svg {
   top: 40491px;
-  /* background-image: url(../images/mountains/38-MOUNT-SEFTON.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/fbfb160b-021c-42de-e642-686bede94800/public');
+  background-image: url(../images/mountains/38-MOUNT-SEFTON.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/fbfb160b-021c-42de-e642-686bede94800/public'); */
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1107,8 +1107,8 @@ body {
 }
 .mountain-svg.cathedral-peak-svg {
   top: 40491px;
-  /* background-image: url(../images/mountains/39-CATHEDRAL-PEAK.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/04c1f849-f2cd-4c63-c0cc-acac238cbf00/public');
+  /* background-image: url(../images/mountains/24-CERRO-NEGRO-OAX.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/04c1f849-f2cd-4c63-c0cc-acac238cbf00/public'); */
   z-index: 10;
 }
 /* //////////////////////////////////////////////////////// */
@@ -1126,9 +1126,9 @@ body {
   z-index: 10; */
 }
 .mountain-svg.nevado-colima-svg {
-  top: 47735px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/7fba4ead-9ad6-4040-bb62-1d018e1b0a00/public');
-  /* background-image: url(../images/mountains/40-NEVADO-DE-COLIMA.svg); */
+  top: 40491px;
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/7fba4ead-9ad6-4040-bb62-1d018e1b0a00/public'); */
+  background-image: url(../images/mountains/25-NEVADO-DE-COLIMA.svg);
   z-index: 8;
 }
 
@@ -1173,8 +1173,8 @@ body {
 .mountain-svg.half-dome-svg {
   top: 47735px;
   opacity: 0.95;
-  /* background-image: url(../images/mountains/41-HALF-DOME.svg); */
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ccbae210-13b5-4c9c-9024-7405c9f71500/public');
+  background-image: url(../images/mountains/41-HALF-DOME.svg);
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ccbae210-13b5-4c9c-9024-7405c9f71500/public'); */
   z-index: 8;
 }
 
@@ -1188,8 +1188,8 @@ body {
   left: -150px;
   width: 200%;
   height: 900px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/0437bdb2-6d7c-4f36-c56b-f2bc5ae5ac00/public');
-  /* background-image: url(/images/background-offroad.png); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/0437bdb2-6d7c-4f36-c56b-f2bc5ae5ac00/public'); */
+  background-image: url(/images/background-offroad.png);
   background-size: 100% 100%;
   z-index: 2;
 }
@@ -1200,8 +1200,8 @@ body {
   left: -250px;
   width: 3100px;
   height: 391px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/df2e4712-8ac0-4356-4891-d1fa6997cd00/public');
-  /* background: url(/images/floor.png) repeat-x; */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/df2e4712-8ac0-4356-4891-d1fa6997cd00/public'); */
+  background: url(/images/floor.png) repeat-x;
   background-size: 100% 391px;
   background-position: 50%;
   z-index: 3;
@@ -1212,8 +1212,8 @@ body {
   top: calc(var(--page-height) - 350px);
   width: calc(100% + 650px);
   height: 350px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/cc8c9b73-2719-4c42-96ac-0a6b4c3db100/public');
-  /* background-image: url(/images/menMountaineerSVG2.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/cc8c9b73-2719-4c42-96ac-0a6b4c3db100/public'); */
+  background-image: url(/images/menMountaineerSVG2.svg);
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100% 350px;
@@ -1226,8 +1226,8 @@ body {
   left: 30px;
   width: 300px;
   height: 490px;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a8ac867e-618c-43d8-0786-63e7b3858d00/public');
-  /* background-image: url(/images/womenMountaineerSVG4.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/a8ac867e-618c-43d8-0786-63e7b3858d00/public'); */
+  background-image: url(/images/womenMountaineerSVG4.svg);
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100% 600px;
@@ -1240,8 +1240,8 @@ body {
   right: -100PX;
   width: 500px;
   height: 400PX;
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/634c23cb-74c1-4820-b762-fee360dc1700/public');
-  /* background-image: url(/images/rock-cleaned.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/634c23cb-74c1-4820-b762-fee360dc1700/public'); */
+  background-image: url(/images/rock-cleaned.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 100% 400px;
@@ -1255,8 +1255,8 @@ body {
   width: 500px;
   height: 450px;
   transform: scaleX(-1);
-  background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/634c23cb-74c1-4820-b762-fee360dc1700/public');
-  /* background-image: url(/images/rock-cleaned.svg); */
+  /* background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/634c23cb-74c1-4820-b762-fee360dc1700/public'); */
+  background-image: url(/images/rock-cleaned.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 100% 100%;
