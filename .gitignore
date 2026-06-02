@@ -25,3 +25,7 @@ dist-ssr
 .history
 .history/*
 .env
+
+# claude
+docs/
+docs/**

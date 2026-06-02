@@ -1,7 +1,2 @@
-import React from 'react'
+export const Ashes = () => null;
 
-export const Ashes = () => {
-  return (
-    <div>Ashes</div>
-  )
-}

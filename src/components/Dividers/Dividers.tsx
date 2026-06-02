@@ -1,7 +1,2 @@
-import React from 'react'
+export const Dividers = () => null;
 
-export const Dividers = () => {
-  return (
-    <div>Dividers</div>
-  )
-}

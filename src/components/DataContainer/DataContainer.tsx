@@ -1,10 +1,18 @@
 import { useRef } from "react";
 import MountainTitle from "../MountainTitle/MountainTitle";
 import MountainInformation from "../MountainInformation/MountainInformation";
-import { mountainConfig } from "../Mountains/Mountains";
 
+interface DataContainerProps {
+    name: string;
+    altitude: number;
+    location: string;
+    prominence: number;
+    range: string;
+    firstAscent: number;
+    difficulty: string;
+}
 
-const DataContainer: React.FC<mountainConfig> = ({
+const DataContainer: React.FC<DataContainerProps> = ({
     name,
     altitude,
     location,
@@ -20,7 +28,6 @@ const DataContainer: React.FC<mountainConfig> = ({
             ref={data}
             className="absolute grid grid-rows-[145px_75px]
                     w-screen h-[150px] text-black bg-slate-500
-                    
                     ">
                 <MountainTitle name={name} altitude={altitude} />
                 <MountainInformation location={location}
@@ -30,7 +37,7 @@ const DataContainer: React.FC<mountainConfig> = ({
                                      difficulty={difficulty}
                 />
         </div>
-    )
-}
+    );
+};
 
-export default DataContainer
+export default DataContainer;

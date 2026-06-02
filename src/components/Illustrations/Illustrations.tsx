@@ -1,13 +1,3 @@
-import React from 'react'
+const Illustrations = () => null;
 
-const Illustrations = () => {
-  return (
-    <>
-      <div className=''>
-
-      </div>
-    </>
-  )
-}
-
-export default Illustrations
+export default Illustrations;

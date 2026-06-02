@@ -1,7 +1,2 @@
-import React from 'react'
+export const Stars = () => null;
 
-export const Stars = () => {
-  return (
-    <div>Stars</div>
-  )
-}
