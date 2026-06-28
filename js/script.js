@@ -3,8 +3,8 @@
 /* ///////////////////////////////////////////////// */
 
 let flag = false; // FOR TITLE HEIGHT RESPONSIVENESS
-const totalHeight = 50000; // FULL HEIGHT
-const mapHeight = 6800; // FOR METRONOMO NORMALIZATION
+const totalHeight = PAGE_HEIGHT; // FULL HEIGHT (see js/scene.js)
+const mapHeight = MAP_HEIGHT; // FOR METRONOMO NORMALIZATION (see js/scene.js)
 const threeThousander = 44500 + window.innerHeight;// THREE THOUSANDER DIVIDER
 
 /* ///////////////////////////////////////////////// */
@@ -51,18 +51,17 @@ function addBr() {
   t3Element.appendChild(brElement);
 }
 
-// Throttle function to reduce scroll event calls
-function throttle(callback, delay) {
-  let isThrottled = false;
-  return function () {
-    if (!isThrottled) {
-      callback.apply(this, arguments);
-      isThrottled = true;
-      setTimeout(() => {
-        isThrottled = false;
-      }, delay);
-    }
-  };
+// requestAnimationFrame ticking guard: coalesce scroll events into one
+// metronome update per frame.
+let scrollTicking = false;
+function onScroll() {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(() => {
+      updateMetronomo();
+      scrollTicking = false;
+    });
+    scrollTicking = true;
+  }
 }
 
 /* ///////////////////////////////////////////////// */
@@ -82,7 +81,7 @@ function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
   //console.log('pageYOffset: ', scrollPosition)
   const normalizedHeight = Math.abs(
-    (scrollPosition / pageHeight) * 6800 - mapHeight
+    (scrollPosition / pageHeight) * MAP_HEIGHT - mapHeight
   );
   //console.log('normalized height: ', normalizedHeight)
 
@@ -113,7 +112,7 @@ function updateMetronomo() {
     threeThousanderContainer.classList.add('active-divider')
   }
 
-  let meters = (Math.round(`${normalizedHeight}`) + 2500)
+  let meters = (Math.round(`${normalizedHeight}`) + SUMMIT_OFFSET)
     .toString()
     .padStart(5, "0");
   if (isNaN(meters)) {
@@ -122,8 +121,8 @@ function updateMetronomo() {
   metronomoText.textContent = `${meters}m`;
 }
 
-// Add the throttled event listener to scroll Events
-window.addEventListener('scroll', throttle(updateMetronomo, 25));
+// Add the rAF-throttled event listener to scroll Events
+window.addEventListener('scroll', onScroll);
 
 
 

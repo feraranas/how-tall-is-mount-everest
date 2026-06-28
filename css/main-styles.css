@@ -6,7 +6,7 @@
 //////////////////////////////////////////////////////////////////////// */
 /* ROOT ELEMENT & GLOBAL VARIABLES */
 :root {
-  --page-height: 50000px;
+  /* --page-height / --half-page-height injected at boot from js/scene.js */
   font-size: 10px;
 }
 html {
