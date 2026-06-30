@@ -76,7 +76,7 @@ function infoListItems(m) {
 function mountainMarkup(m) {
   // Half Dome (#41) carries an extra summary header and a <span>-wrapped height.
   const header41 = m.header41
-    ? `\n        <div class="m-41-container">
+    ? `\n        <div class="m-41-container" aria-hidden="true" draggable="false">
           <div class="m-41-container-title">${m.title}</div>
           <div class="m-41-container-object">${m.height}</div>
           <div class="mountain-info-icon"></div>
@@ -89,7 +89,7 @@ function mountainMarkup(m) {
       <div class="mountain-${m.n}">
 ${header41}
         <div class="data-container m-${m.n}">
-          <div class="mountain ${m.slug}-title">
+          <div class="mountain ${m.slug}-title" aria-hidden="true" draggable="false">
             <div class="mountain-title">${m.title}</div>
             <div class="mountain-height">${heightInner}</div>
           </div>
@@ -106,7 +106,7 @@ ${header41}
           </div>
         </div>
 
-        <div class="mountain-svg ${m.slug}-svg"></div>
+        <div class="mountain-svg ${m.slug}-svg" aria-hidden="true" draggable="false"></div>
       </div>`;
 }
 
