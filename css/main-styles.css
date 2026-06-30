@@ -9,6 +9,11 @@
   --page-height: 50000px;
   font-size: 10px;
 }
+html {
+  /* Clip horizontal overflow at the viewport (was previously on
+     .main-container, where it broke vertical wheel scrolling). */
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -90,7 +95,12 @@ body {
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
   position: relative;
-  overflow-x: hidden;
+  /* NOTE: do NOT set overflow-x here. On a block whose other axis is
+     `visible`, `overflow-x: hidden` forces `overflow-y` to compute to
+     `auto`, turning this full-height (50000px) container into a dead
+     scroll container that traps wheel/touch scrolling (the page could
+     only be scrolled by keyboard). Horizontal clipping is handled on
+     <html> instead so the viewport stays the vertical scroller. */
   margin: 0;
   padding: 0;
   z-index: 1;
