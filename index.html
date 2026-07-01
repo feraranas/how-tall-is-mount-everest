@@ -109,7 +109,10 @@
 
       <!-- /////////////////////// MOUNTAINS ////////////////////////////// -->
       <!-- Generated from js/mountainsData-script.js into #mountains-root. -->
-      <div id="mountains-root"></div>
+      <!-- scene-layer: decorative mountains are inert (no text selection); the
+           .fa-info tabs inside stay interactive. Kept STATIC (not positioned)
+           so the absolutely-positioned peaks still resolve to .main-container. -->
+      <div id="mountains-root" class="scene-layer"></div>
 
       <!-- /////////////////////// ILLUSTRATIONS /////////////////////////// -->
 
