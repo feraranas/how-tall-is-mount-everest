@@ -62,15 +62,22 @@ const mountains = [
 /* ///////////////////////////////////////////////// */
 
 function infoListItems(m) {
-  const lines = [
-    `Ubicación: ${m.location}`,
-    `Altura: ${m.altitude}`,
-    `Prominencia: ${m.prominence}`,
+  // Each row is a [label, value] pair rendered as distinct spans so the panel
+  // has a real visual hierarchy (styled in css/main-styles.css).
+  const rows = [
+    ["Ubicación", m.location],
+    ["Altura", m.altitude],
+    ["Prominencia", m.prominence],
   ];
-  if (m.range != null) lines.push(`Mountain range: ${m.range}`);
-  lines.push(`Año de primer ascenso: ${m.firstAscent}`);
-  lines.push(`Dificultad: ${m.difficulty}`);
-  return lines.map((t) => `<li>${t}</li>`).join("\n                ");
+  if (m.range != null) rows.push(["Cordillera", m.range]);
+  rows.push(["Año de primer ascenso", m.firstAscent]);
+  rows.push(["Dificultad", m.difficulty]);
+  return rows
+    .map(
+      ([label, value]) =>
+        `<li><span class="info-label">${label}:</span> <span class="info-value">${value}</span></li>`
+    )
+    .join("\n                ");
 }
 
 function mountainMarkup(m) {

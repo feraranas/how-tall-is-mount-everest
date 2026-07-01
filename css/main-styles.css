@@ -316,26 +316,45 @@ body {
 .mountain-info {
   position: relative;
   bottom: -19px;
-  padding: 0px 0px 21px 0px;
-  background-color: white;
+  padding: 6px 0px 21px 0px;
+  background-color: #fff;
   left: 50%;
-  transform: translateX(-50%);
+  /* Centered (translateX) + a small downward offset that eases to 0 on hover
+     for a subtle "settle" entrance. */
+  transform: translateX(-50%) translateY(6px);
   width: 250px;
-  font-size: 1.5rem;
-  transition: 0.3s opacity ease;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transition: 0.28s opacity ease, 0.28s transform ease;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 .mountain-info > ul {
   width: 100%;
-  border: 1px solid rgba(0,0,0,0.1);
   list-style: none;
   margin: 0;
   padding: 0;
 }
+.mountain-info > ul > li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 12px;
+  line-height: 1.35;
+}
 .mountain-info > ul >:nth-child(even) {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.045);
+}
+.mountain-info .info-label {
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.mountain-info .info-value {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: right;
 }
 /* Show the panel while the cursor is over the icon OR the panel itself (both
    live inside .mountain-data), so moving from icon into the panel keeps it
@@ -345,6 +364,18 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+/* Motion-safety: no entrance transition/animation when the user asks for it. */
+@media (prefers-reduced-motion: reduce) {
+  .mountain-info {
+    transition-duration: 0s;
+    animation-duration: 0s;
+    transform: translateX(-50%);
+  }
+  .mountain-data:hover .mountain-info {
+    transform: translateX(-50%);
+  }
 }
 .mountain-svg {
   position: absolute;
