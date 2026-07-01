@@ -94,25 +94,23 @@ test.describe('mount-everest static site smoke', () => {
 
     const startY = await page.evaluate(() => window.pageYOffset);
 
-    // Wheel UP (negative deltaY) should decrease pageYOffset. Headless firefox
-    // intermittently delays or drops a single discrete wheel event, so re-issue
-    // the wheel on each poll until the viewport actually moves (deterministic,
-    // still exercises real wheel-driven scrolling).
+    // Wheel UP (negative deltaY) should decrease pageYOffset. Firefox applies
+    // input-driven scrolling asynchronously, so poll for the change instead of
+    // reading once after a fixed rAF tick (which races the scroll landing).
+    await page.mouse.wheel(0, -4000);
     await expect
-      .poll(async () => {
-        await page.mouse.wheel(0, -1000);
-        return page.evaluate(() => window.pageYOffset);
-      }, { message: 'wheel up should change scroll position', timeout: 5000 })
+      .poll(() => page.evaluate(() => window.pageYOffset), {
+        message: 'wheel up should change scroll position',
+      })
       .toBeLessThan(startY);
-
     const afterWheel = await page.evaluate(() => window.pageYOffset);
 
-    // Keyboard PageUp should also move the viewport (same re-issue-and-poll).
+    // Keyboard PageUp should also move the viewport.
+    await page.keyboard.press('PageUp');
     await expect
-      .poll(async () => {
-        await page.keyboard.press('PageUp');
-        return page.evaluate(() => window.pageYOffset);
-      }, { message: 'PageUp should change scroll position', timeout: 5000 })
+      .poll(() => page.evaluate(() => window.pageYOffset), {
+        message: 'PageUp should change scroll position',
+      })
       .toBeLessThan(afterWheel);
   });
 
