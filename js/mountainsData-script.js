@@ -103,8 +103,10 @@ ${header41}
 
           <div class="mountain-data ${m.slug}-data">
             <div class="tab-arrow"></div>
-            <i class="fa-solid fa-info" data-mountain-key="${m.n}"></i>
-            <div class="mountain-info" data-key="${m.n}">
+            <button type="button" class="fa-solid fa-info" data-mountain-key="${m.n}"
+                    aria-controls="minfo-${m.n}" aria-expanded="false"
+                    aria-label="Información de ${m.title}"></button>
+            <div class="mountain-info" id="minfo-${m.n}" data-key="${m.n}">
               <ul>
                 ${infoListItems(m)}
               </ul>
@@ -129,7 +131,21 @@ function renderMountains() {
 /* /////////////////// BOOTSTRAP /////////////////// */
 /* ///////////////////////////////////////////////// */
 
-// The info panel is driven entirely by CSS (`.mountain-data:hover
-// .mountain-info` in css/main-styles.css) — no JS hover wiring, so there is
-// no stuck-panel race. Just generate the DOM.
+// The info panel is revealed entirely by CSS (`.mountain-data:hover` /
+// `:focus-within .mountain-info`) — no JS hover wiring, so no stuck-panel race.
 renderMountains();
+
+// The `.fa-info` trigger is the ONE intentionally-interactive element in the
+// otherwise-inert scene: keep its `aria-expanded` in sync with focus (the CSS
+// :focus-within already reveals the panel) and let Escape dismiss it.
+function wireInfoTriggers() {
+  const triggers = document.querySelectorAll(".fa-info[aria-controls]");
+  triggers.forEach((btn) => {
+    btn.addEventListener("focus", () => btn.setAttribute("aria-expanded", "true"));
+    btn.addEventListener("blur", () => btn.setAttribute("aria-expanded", "false"));
+    btn.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") btn.blur();
+    });
+  });
+}
+wireInfoTriggers();
