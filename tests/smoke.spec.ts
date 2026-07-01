@@ -94,17 +94,24 @@ test.describe('mount-everest static site smoke', () => {
 
     const startY = await page.evaluate(() => window.pageYOffset);
 
-    // Wheel UP (negative deltaY) should decrease pageYOffset.
+    // Wheel UP (negative deltaY) should decrease pageYOffset. Firefox applies
+    // input-driven scrolling asynchronously, so poll for the change instead of
+    // reading once after a fixed rAF tick (which races the scroll landing).
     await page.mouse.wheel(0, -4000);
-    await settle(page);
+    await expect
+      .poll(() => page.evaluate(() => window.pageYOffset), {
+        message: 'wheel up should change scroll position',
+      })
+      .toBeLessThan(startY);
     const afterWheel = await page.evaluate(() => window.pageYOffset);
-    expect(afterWheel, 'wheel up should change scroll position').toBeLessThan(startY);
 
     // Keyboard PageUp should also move the viewport.
     await page.keyboard.press('PageUp');
-    await settle(page);
-    const afterKey = await page.evaluate(() => window.pageYOffset);
-    expect(afterKey, 'PageUp should change scroll position').toBeLessThan(afterWheel);
+    await expect
+      .poll(() => page.evaluate(() => window.pageYOffset), {
+        message: 'PageUp should change scroll position',
+      })
+      .toBeLessThan(afterWheel);
   });
 
   test('metronome altitude changes across scroll checkpoints', async ({ page }) => {
