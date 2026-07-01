@@ -13,7 +13,9 @@
      background-repeat: no-repeat;
      height: 0px;
      width: 0px;
-     
+     /* Parallax (js/cloudsParallax-script.js) animates transform; hint the
+        compositor so the scroll-driven drift stays on the GPU. */
+     will-change: transform;
 }
 .cloud-0 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/226cc6fa-7209-4d02-e5e8-8c16103d8f00/public');
