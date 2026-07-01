@@ -296,6 +296,13 @@ body {
   transform: translateX(-50%);
   text-align: center;
   border-radius: 0px 0px 0px 0px;
+  /* Rendered as a <button> for keyboard/AT access — strip the native chrome
+     while keeping the icon-tab look. */
+  border: none;
+  padding-bottom: 0;
+  font-family: inherit;
+  line-height: 1;
+  cursor: pointer;
 }
 .tab-arrow {
   position: absolute;
@@ -360,7 +367,8 @@ body {
    live inside .mountain-data), so moving from icon into the panel keeps it
    open — no JS, no stuck-panel race. The -19px overlap keeps icon+panel one
    continuous hover region (no dead zone). */
-.mountain-data:hover .mountain-info {
+.mountain-data:hover .mountain-info,
+.mountain-data:focus-within .mountain-info {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -373,7 +381,8 @@ body {
     animation-duration: 0s;
     transform: translateX(-50%);
   }
-  .mountain-data:hover .mountain-info {
+  .mountain-data:hover .mountain-info,
+  .mountain-data:focus-within .mountain-info {
     transform: translateX(-50%);
   }
 }
