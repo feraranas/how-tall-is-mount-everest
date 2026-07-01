@@ -119,50 +119,10 @@ function renderMountains() {
 }
 
 /* ///////////////////////////////////////////////// */
-/* ////////////// INFO-TAB INTERACTIONS //////////// */
-/* ///////////////////////////////////////////////// */
-
-// Show the matching info panel.
-function showInfo(e) {
-  const m = document.querySelector(
-    `[data-key="${e.srcElement.dataset.mountainKey}"]`
-  );
-  setTimeout(() => m.classList.add("show-info"), 100);
-}
-// Hide the matching info panel.
-function hideInfo(e) {
-  const m = document.querySelector(
-    `[data-key="${e.srcElement.dataset.mountainKey}"]`
-  );
-  m.classList.remove("show-info");
-}
-// Helper for debounce.
-function debounce(func, delay) {
-  let timer;
-  return function () {
-    clearTimeout(timer);
-    timer = setTimeout(func, delay);
-  };
-}
-function debouncedShow(e) {
-  return debounce(showInfo(e), 100);
-}
-function debouncedHide(e) {
-  return debounce(hideInfo(e), 100);
-}
-
-function wireInfoTabs() {
-  const tabs = Array.from(document.querySelectorAll(".fa-info"));
-  tabs.forEach((item) => {
-    item.addEventListener("mouseenter", debouncedShow);
-    item.addEventListener("mouseleave", debouncedHide);
-  });
-}
-
-/* ///////////////////////////////////////////////// */
 /* /////////////////// BOOTSTRAP /////////////////// */
 /* ///////////////////////////////////////////////// */
 
-// Generate the DOM first, then attach listeners to the freshly-created tabs.
+// The info panel is driven entirely by CSS (`.mountain-data:hover
+// .mountain-info` in css/main-styles.css) — no JS hover wiring, so there is
+// no stuck-panel race. Just generate the DOM.
 renderMountains();
-wireInfoTabs();
