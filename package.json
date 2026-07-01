@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "python3 -m http.server 5599",
+    "preview": "python3 -m http.server 5599",
+    "build": "echo \"Static site — no build step (vanilla HTML/CSS/JS served as-is).\"",
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
