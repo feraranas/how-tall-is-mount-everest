@@ -1,9 +1,8 @@
-/* ILLUSTRATIONS  */
-/* FOR THE WHOLE CONTAINER */
+/* ILLUSTRATION — skin + internal structure (sprites, i-tooltip chip/arrow).
+   Canvas anchoring lives in css/layout/illustration-placement.css; each
+   instance's top/left overrides stay in the css/media-*.css files. */
+/* FOR THE WHOLE CONTAINER (structure needed to render in isolation) */
 .illustration-container {
-     position: absolute;
-     left: 50%;
-     transform: translateX(-50%);
      height: 150px;
      width: 100px;
      display: grid;
@@ -57,80 +56,80 @@
 /* 9000m */
 .plane-1 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/774fac3d-4228-49d1-e48e-68b557cf0100/public');
-     /* background-image: url(../images/illustrations/DassaultMirage2000V2.png); */
+     /* background-image: url(../../images/illustrations/DassaultMirage2000V2.png); */
      z-index: 15;
 }
 /* 8000m */
 .hellicopter-2 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/c2ace4cf-3480-4bc7-92db-18d5948e9100/public');
-     /* background-image: url(../images/illustrations/AerospatialeSA315BLamaV2.png); */
+     /* background-image: url(../../images/illustrations/AerospatialeSA315BLamaV2.png); */
      z-index: 15;
 }
 /* 7500m */
 .plane-3 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/2bd15ace-8ff1-4d76-ea9e-85fd27b47800/public');
-     /* background-image: url(../images/illustrations/AntonovAn2.png); */
+     /* background-image: url(../../images/illustrations/AntonovAn2.png); */
      z-index: 15;
 }
 /* 7000m */
 .plane-2 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/7d23156b-2a8e-4548-92ae-051a0eb9d500/public');
-     /* background-image: url(../images/illustrations/dragonLadyV2.png); */
+     /* background-image: url(../../images/illustrations/dragonLadyV2.png); */
      z-index: 15;
 }
 /* 6500m */
 .bird-alpine-cough {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/5152d3ee-37ce-45e6-d9db-e64ce21c5e00/public');
-     /* background-image: url(../images/illustrations/alpineCough.png); */
+     /* background-image: url(../../images/illustrations/alpineCough.png); */
 }
 /* 7000m */
 .evo2-dron {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/64138483-3bcd-4111-7465-db9fb84c9a00/public');
-     /* background-image: url(../images/illustrations/autelEvo2.png); */
+     /* background-image: url(../../images/illustrations/autelEvo2.png); */
      z-index: 15;
 }
 /* 6000m */
 .dragonfish-dron {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/460b22a6-01b5-4cb4-cbc9-8ab40af8fe00/public');
-     /* background-image: url(../images/illustrations/autelDragonFish.png); */
+     /* background-image: url(../../images/illustrations/autelDragonFish.png); */
      z-index: 15;
 }
 /* 6000m */
 .hellicopter-1 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b5381e95-3565-4ca7-0a3c-195712d6b600/public');
-     /* background-image: url(../images/illustrations/EurocopterAS350.png); */
+     /* background-image: url(../../images/illustrations/EurocopterAS350.png); */
      z-index: 15;
 }
 /* 6000m */
 .hellicopter-3 {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/5c73bea0-844e-4695-6e20-6c2b240e7c00/public');
-     /* background-image: url(../images/illustrations/EurocopterEC130.png); */
+     /* background-image: url(../../images/illustrations/EurocopterEC130.png); */
      z-index: 15;
 }
 /* 5900m */
 .dji-dron {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/d6d73f69-8989-437d-0fb8-890b82b0d200/public');
-     /* background-image: url(../images/illustrations/djimavic2.png); */
+     /* background-image: url(../../images/illustrations/djimavic2.png); */
      z-index: 15;
 }
 /* 5000m */
 .air-balloon {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/c28ca166-244d-4d96-d31f-8c1b505be400/public');
-     /* background-image: url(../images/illustrations/airBalloon.png); */
+     /* background-image: url(../../images/illustrations/airBalloon.png); */
      z-index: 15;
     width: 85px;
     height: 108px;
 }
 /* 5100m */
 .bird-wallcreeper {
-     /* background-image: url(../images/illustrations/wallcreeper.png); */
+     /* background-image: url(../../images/illustrations/wallcreeper.png); */
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/d377edd5-a3fe-458a-5b81-10e554222300/public');
      z-index: 15;
 }
 /* 4876.8m */
 .bird-himalayan-snowcock {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/8435b7a8-e416-49a2-bd41-4c9c5b84df00/public');
-     /* background-image: url(../images/illustrations/himalayanSnowcock.png); */
+     /* background-image: url(../../images/illustrations/himalayanSnowcock.png); */
      z-index: 15;
 }
 /* 4500.72m */
@@ -141,47 +140,47 @@
 /* 4000m */
 .bird-mountain-hawk-eagle {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/467bebe8-7622-4288-9c55-ca5db60ddb00/public');
-     /* background-image: url(../images/illustrations/mountainHawkEagle.png); */
+     /* background-image: url(../../images/illustrations/mountainHawkEagle.png); */
      z-index: 15;
 }
 /* 3352.8m */
 .bird-golden-eagle {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/679b4c41-b961-48d6-3aef-e4c79af81c00/public');
-     /* background-image: url(../images/illustrations/goldenEagle.png); */
+     /* background-image: url(../../images/illustrations/goldenEagle.png); */
      z-index: 15;
 }
 /* 3200m */
 .bird-snow-flinch {
-     background-image: url(../images/illustrations/snowFlinch.png);
+     background-image: url(../../images/illustrations/snowFlinch.png);
      z-index: 15;
 }
 /* 3200m */
 .bird-white-cheeked-nuthatch {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/b1ab5784-f9b1-49e5-8d76-cfca7d9b1900/public');
-     /* background-image: url(../images/illustrations/whiteCheekedNuthatch.png); */
+     /* background-image: url(../../images/illustrations/whiteCheekedNuthatch.png); */
      z-index: 15;
 }
 /* 3000m */
 .bird-bald-eagle {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/377bcbe0-be00-43c4-f4a1-b9170b640e00/public');
-     /* background-image: url(../images/illustrations/baldEagle.png); */
+     /* background-image: url(../../images/illustrations/baldEagle.png); */
      z-index: 15;
 }
 /* 2700m */
 .bird-rufous-bellied-niltava {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/87e30d90-89bc-414f-aaad-532cc3480b00/public');
-     /* background-image: url(../images/illustrations/rufousBelliedNiltava.png); */
+     /* background-image: url(../../images/illustrations/rufousBelliedNiltava.png); */
      z-index: 15;
 }
 /* 2500m */
 .bird-snowy-owl {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/3466feec-338e-4df7-7ed8-66a96f2eae00/public');
-     /* background-image: url(../images/illustrations/snowyOwl.png); */
+     /* background-image: url(../../images/illustrations/snowyOwl.png); */
      z-index: 15;
 }
 /* 1828m */
 .bird-pigeon {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/e1484485-33b4-4e5e-fbc7-7c22a5c39400/public');
-     /* background-image: url(../images/illustrations/pigeon.png); */
+     /* background-image: url(../../images/illustrations/pigeon.png); */
      z-index: 15;
 }
