@@ -1,0 +1,18 @@
+{
+  "feature": "cloud horizontal drift",
+  "source": "js/cloudsParallax-script.js",
+  "model": "Each .cloud drifts horizontally, independent of scroll, and wraps edge-to-edge. Position x is relative to the left:50% center origin; transform is translate3d(x,0,0) scaleX(sx) scaleY(sy) where sx/sy are the cloud's base CSS scale (preserving flips).",
+  "params": {
+    "speed_px_per_s": "base = MIN_SPEED(8) + depth*(MAX_SPEED(22)-MIN_SPEED), depth = zIndex/maxZ; jitter = ±15%",
+    "direction": "random ±1 per cloud (mixed)",
+    "wrap_span_px": "halfViewport + cloudWidth; x wraps from +span to -span (and vice versa)",
+    "max_dt_s": 0.05,
+    "reduced_motion": "disabled entirely under prefers-reduced-motion"
+  },
+  "invariants": {
+    "drifts_over_time": "|Δm41| > 0 with no scroll",
+    "depth_ordering": "nearer (higher z-index) clouds accumulate more distance per unit time",
+    "bounded": "|m41| ≤ halfViewport + widestCloudWidth (+ one clamped frame)",
+    "reduced_motion_static": "m41 unchanged over time"
+  }
+}
