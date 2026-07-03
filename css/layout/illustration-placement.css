@@ -1,0 +1,9 @@
+/* ILLUSTRATION — canvas anchoring. Per-instance top/left/size overrides live
+   in the css/media-*.css breakpoint files (e.g. .plane-1-container { top: … }).
+   Skin/structure lives in css/components/illustration.css. */
+
+.illustration-container {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+}

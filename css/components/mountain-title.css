@@ -1,0 +1,35 @@
+/* MOUNTAIN TITLE — skin + internal structure (renders in isolation).
+   Canvas anchoring (.data-container) lives in css/layout/mountain-placement.css;
+   per-peak top/z rules (.m-N, .<slug>-title) stay in css/main-styles.css. */
+
+.mountain {
+  grid-row: 2;
+  position: absolute;
+  top: 0;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 75px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  background: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mountain-title {
+  border-bottom: 3px dashed rgba(0,0,0,0.5);
+  border-radius: 0;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  width: inherit;
+  z-index: 1;
+}
+.mountain-height {
+  display: grid;
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+  width: inherit;
+  z-index: 1;
+}
