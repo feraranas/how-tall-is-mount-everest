@@ -1,0 +1,21 @@
+/* CLOUD — canvas placement only (where clouds sit on the 50,000px canvas).
+   Skin (backgrounds, filters, opacity, depth z-index) lives in
+   css/components/cloud.css. Per-breakpoint top/size/transform overrides stay
+   in the css/media-*.css files, which load after this and win the cascade. */
+
+.cloud {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+}
+
+/* Stray per-cloud placement previously mixed into the skin rules. These load
+   after the base .cloud rule (same specificity), preserving the original
+   override order from css/clouds.css. */
+.cloud-32 {
+     height: 250px;
+}
+.cloud-38 {
+     transform: translateX(-50%) scaleX(-1.5);
+     width: 1000px;
+}
