@@ -1,0 +1,14 @@
+/* MOUNTAIN — canvas anchoring of the title+tooltip composite. The .m-N rules
+   in css/main-styles.css set each peak's top/z on the 50,000px canvas; this is
+   the shared anchor they position. Skin/structure lives in
+   css/components/mountain-title.css and css/components/info-tooltip.css. */
+
+.data-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-rows: 145px 75px;
+  width: 100vw;
+  height: 150px;
+}
