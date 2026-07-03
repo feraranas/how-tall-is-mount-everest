@@ -1151,30 +1151,6 @@ body {
 }
 
 
-.m-41-container {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  top: 47550px;
-  position: absolute;
-  width: 250px;
-  white-space: nowrap;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  text-align: start;
-  left: 10%;
-}
-.m-41-container-title {
-  grid-row: 1;
-  width: 156px;
-  border-bottom: 4.2px dashed rgba(0,0,0,1);
-}
-.m-41-container-object{
-  grid-row: 2;
-  width: 175px;
-  text-align: center;
-}
-
-
 
 
 /* //////////////////////////////////////////////////////// */

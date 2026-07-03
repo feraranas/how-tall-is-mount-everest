@@ -54,7 +54,7 @@ const mountains = [
   { n: 38, slug: "mount-sefton",    title: "MOUNT SEFTON 🇳🇿",         height: "3,151m", location: "New Zealand 🇳🇿", altitude: "3,151m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Fácil" },
   { n: 39, slug: "cathedral-peak",  title: "CATHEDRAL PEAK 🇿🇦",       height: "3,004m", location: "South Africa ", altitude: "3,004m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Fácil" },
   { n: 40, slug: "nevado-colima",   title: "NEVADO DE COLIMA 🇲🇽",     height: "2,720m", location: "México 🇲🇽", altitude: "2,720m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Muy fácil" },
-  { n: 41, slug: "half-dome",       title: "HALF DOME 🇺🇸",            height: "2,696m", heightSpan: true, header41: true, location: "North America 🇲🇺🇸", altitude: "2,696m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Muy fácil" },
+  { n: 41, slug: "half-dome",       title: "HALF DOME 🇺🇸",            height: "2,696m", location: "North America 🇲🇺🇸", altitude: "2,696m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Muy fácil" },
 ];
 
 /* ///////////////////////////////////////////////// */
@@ -74,24 +74,13 @@ function infoListItems(m) {
 }
 
 function mountainMarkup(m) {
-  // Half Dome (#41) carries an extra summary header and a <span>-wrapped height.
-  const header41 = m.header41
-    ? `\n        <div class="m-41-container">
-          <div class="m-41-container-title">${m.title}</div>
-          <div class="m-41-container-object">${m.height}</div>
-          <div class="mountain-info-icon"></div>
-        </div>\n`
-    : "";
-  const heightInner = m.heightSpan ? `<span>${m.height}</span>` : m.height;
-
   return `
       <!-- MOUNTAIN ${m.n} - ${m.slug} -->
       <div class="mountain-${m.n}">
-${header41}
         <div class="data-container m-${m.n}">
           <div class="mountain ${m.slug}-title">
             <div class="mountain-title">${m.title}</div>
-            <div class="mountain-height">${heightInner}</div>
+            <div class="mountain-height">${m.height}</div>
           </div>
 
           <div class="mountain-data ${m.slug}-data">
