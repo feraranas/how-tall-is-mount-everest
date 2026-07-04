@@ -14,10 +14,11 @@ import { test, expect, type Page } from '@playwright/test';
 
 const PAGE_HEIGHT = 50000;
 
-// Errors we knowingly tolerate (pre-existing missing assets / external ORB blocks).
+// Errors we knowingly tolerate (external ORB blocks / CDN hiccups).
+// cloudsv8.png / snowFlinch.png were removed from this list once the broken
+// local references were fixed (repointed to CDN / bird removed) — a new 404
+// on those names should fail the smoke again.
 const KNOWN_ERROR_PATTERNS = [
-  /cloudsv8\.png/i,
-  /snowFlinch\.png/i,
   /imagedelivery\.net/i,
   /ERR_BLOCKED_BY_ORB/i,
   /net::ERR_/i,

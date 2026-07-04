@@ -15,6 +15,17 @@
      width: 100px;
      height: 100px;
 }
+/* The hover region for the info panel: a small positioned box over the
+   container's top-right corner where the chip sits. Chip/arrow/panel are
+   absolute within it (previously they anchored to the container itself,
+   which left this div zero-sized — fine while the chips were inert). */
+.illustration-data {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 24px;
+     height: 24px;
+}
 .tab-arrow-illustration {
      position: absolute;
      top: 9px;
@@ -41,6 +52,44 @@
 .fa-info-illustration:before {
      content: "\f129";
  }
+/* Hover info panel — same pure-CSS mechanism as the mountain tooltip
+   (.mountain-data:hover .mountain-info in css/components/info-tooltip.css):
+   the chip and the panel both live inside .illustration-data, so the shared
+   hover region keeps the panel open while the cursor moves into it. */
+.illustration-info {
+     position: absolute;
+     top: 22px;
+     right: 1px;
+     width: 250px;
+     padding: 8px 10px;
+     background-color: white;
+     border: 1px solid rgba(0,0,0,0.1);
+     font-family: 'Playfair Display', serif;
+     font-size: 1.4rem;
+     z-index: 160;
+     transition: 0.3s opacity ease;
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+}
+.illustration-info-title {
+     font-size: 1.6rem;
+     border-bottom: 2px dashed rgba(0,0,0,0.5);
+     margin-bottom: 4px;
+}
+.illustration-info > ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+.illustration-info > ul >:nth-child(even) {
+     background-color: rgba(0,0,0,0.1);
+}
+.illustration-data:hover .illustration-info {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+}
  .mountain-info-icon {
      background-image: url(https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/618aa9d4-283a-47b6-ea5c-27386db17600/public);
      background-size: contain;
@@ -147,11 +196,6 @@
 .bird-golden-eagle {
      background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/679b4c41-b961-48d6-3aef-e4c79af81c00/public');
      /* background-image: url(../../images/illustrations/goldenEagle.png); */
-     z-index: 15;
-}
-/* 3200m */
-.bird-snow-flinch {
-     background-image: url(../../images/illustrations/snowFlinch.png);
      z-index: 15;
 }
 /* 3200m */
