@@ -29,7 +29,12 @@ export const Single = {
   args: { name: "bird-golden-eagle" },
   render: ({ name }) => {
     const item = illustrations_data.find((i) => i.name === name);
-    return host(makeIllustration(item));
+    const el = host(makeIllustration(item));
+    const hint = document.createElement("small");
+    hint.textContent = "hover the chip ⓘ for the info panel";
+    hint.style.cssText = "font-family: monospace; display: block; margin-top: 4px;";
+    el.appendChild(hint);
+    return el;
   },
 };
 
