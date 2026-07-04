@@ -12,7 +12,7 @@ const SAMPLES = {
   "mount-everest": { n: 1, slug: "mount-everest", title: "MOUNT EVEREST 🇨🇳", height: "8,849m", location: "China 🇨🇳", altitude: "8,849m", prominence: "8,848m", firstAscent: "1953", difficulty: "Extremo" },
   "k2 (with range)": { n: 2, slug: "k2", title: "K2 🇵🇰🇨🇳", height: "8,611m", location: "Pakistan 🇵🇰 & China 🇨🇳", altitude: "8,611m", prominence: "4,020m", range: "Karakoram", firstAscent: "1954", difficulty: "Extremo" },
   "popocatepetl (long name)": { n: 24, slug: "popocatepetl", title: "VOLCAN POPOCATEPETL 🇲🇽", height: "5,393m", location: "Puebla, México 🇲🇽", altitude: "5,393m", prominence: "3,020m", firstAscent: "[Pendiente]", difficulty: "Básico Intermedio" },
-  "half-dome (pendiente fields)": { n: 41, slug: "half-dome", title: "HALF DOME 🇺🇸", height: "2,696m", location: "North America 🇲🇺🇸", altitude: "2,696m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Muy fácil" },
+  "half-dome (pendiente fields)": { n: 41, slug: "half-dome", title: "HALF DOME 🇺🇸", height: "2,696m", location: "North America 🇺🇸", altitude: "2,696m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Muy fácil" },
 };
 
 function host(html, { width = 500, height = 300 } = {}) {
