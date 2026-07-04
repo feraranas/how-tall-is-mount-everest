@@ -61,38 +61,16 @@ const mountains = [
 /* ////////////////// DOM BUILDER ////////////////// */
 /* ///////////////////////////////////////////////// */
 
-function infoListItems(m) {
-  const lines = [
-    `Ubicación: ${m.location}`,
-    `Altura: ${m.altitude}`,
-    `Prominencia: ${m.prominence}`,
-  ];
-  if (m.range != null) lines.push(`Mountain range: ${m.range}`);
-  lines.push(`Año de primer ascenso: ${m.firstAscent}`);
-  lines.push(`Dificultad: ${m.difficulty}`);
-  return lines.map((t) => `<li>${t}</li>`).join("\n                ");
-}
-
+/* Title + tooltip markup comes from the shared component factories in
+   js/components/mountain.js (makeMountainTitle / makeInfoPanel). */
 function mountainMarkup(m) {
   return `
       <!-- MOUNTAIN ${m.n} - ${m.slug} -->
       <div class="mountain-${m.n}">
         <div class="data-container m-${m.n}">
-          <div class="mountain ${m.slug}-title">
-            <div class="mountain-title">${m.title}</div>
-            <div class="mountain-height">${m.height}</div>
-          </div>
+          ${makeMountainTitle(m)}
 
-          <div class="mountain-data ${m.slug}-data">
-            <div class="tab-arrow"></div>
-            <i class="fa-solid fa-info" data-mountain-key="${m.n}"></i>
-            <div class="mountain-info" data-key="${m.n}">
-              <ul>
-                ${infoListItems(m)}
-              </ul>
-              <div class="bottom-row"></div>
-            </div>
-          </div>
+          ${makeInfoPanel(m)}
         </div>
 
         <div class="mountain-svg ${m.slug}-svg"></div>
