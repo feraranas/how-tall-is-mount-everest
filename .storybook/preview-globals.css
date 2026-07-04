@@ -1,0 +1,18 @@
+/* Global tokens the components assume from the site (subset of
+   css/main-styles.css :root + the fonts loaded in index.html's head).
+   --page-height is injected by js/scene.js on the site; stub it here so any
+   var() consumer resolves sensibly in isolation. */
+
+@import url('https://fonts.cdnfonts.com/css/source-code-pro');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+:root {
+  font-size: 10px;
+  --page-height: 50000px;
+  --half-page-height: 25000px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
