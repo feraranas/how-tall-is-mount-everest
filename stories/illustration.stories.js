@@ -1,8 +1,6 @@
 /* Illustration stories: planes, helicopters, drones, air balloon, birds —
    each with its i-tooltip chip. Markup from js/components/illustration.js;
-   skin from css/components/illustration.css. Note: bird-snow-flinch's local
-   sprite (images/illustrations/snowFlinch.png) is missing in the repo — it
-   renders empty here just as it does on the site. */
+   skin from css/components/illustration.css. */
 
 import "../js/components/illustration.js";
 

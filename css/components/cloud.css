@@ -67,7 +67,8 @@
      z-index: 21;
 }
 .cloud-8 {
-     background-image: url(../../images/clouds/cloudsv8.png);
+     background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ed9f7b74-f8a3-48ac-29ea-b9e5b8459b00/public');
+     /* background-image: url(../../images/clouds/cloudsv8.png); */
      filter: brightness(0.9);
      z-index: 22;
 }
@@ -115,12 +116,14 @@
      z-index: 26;
 }
 .cloud-16 {
-     background-image: url(../../images/clouds/cloudsv8.png);
+     background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ed9f7b74-f8a3-48ac-29ea-b9e5b8459b00/public');
+     /* background-image: url(../../images/clouds/cloudsv8.png); */
      filter: brightness(0.6);
      z-index: 28;
 }
 .cloud-17 {
-     background-image: url(../../images/clouds/cloudsv8.png);
+     background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ed9f7b74-f8a3-48ac-29ea-b9e5b8459b00/public');
+     /* background-image: url(../../images/clouds/cloudsv8.png); */
      filter: brightness(0.5);
      z-index: 26;
 }
@@ -131,7 +134,8 @@
      z-index: 28;
 }
 .cloud-19 {
-     background-image: url(../../images/clouds/cloudsv8.png);
+     background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ed9f7b74-f8a3-48ac-29ea-b9e5b8459b00/public');
+     /* background-image: url(../../images/clouds/cloudsv8.png); */
      filter: brightness(1);
      z-index: 25;
 }
@@ -178,7 +182,8 @@
      z-index: 15;
 }
 .cloud-27 {
-     background-image: url(../../images/clouds/cloudsv8.png);
+     background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ed9f7b74-f8a3-48ac-29ea-b9e5b8459b00/public');
+     /* background-image: url(../../images/clouds/cloudsv8.png); */
      filter: brightness(0.2);
      z-index: 15;
 }
@@ -244,7 +249,8 @@
      z-index: 8;
 }
 .cloud-38 {
-     background-image: url(../../images/clouds/cloudsv8.png);
+     background-image: url('https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/ed9f7b74-f8a3-48ac-29ea-b9e5b8459b00/public');
+     /* background-image: url(../../images/clouds/cloudsv8.png); */
      z-index: 15;
 }
 .cloud-39 {

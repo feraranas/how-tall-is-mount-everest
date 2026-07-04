@@ -27,7 +27,6 @@ const illustrations_data = [
   { name: "bird-andean-flamingo",        altitude: "4500.72m", key: "1" },
   { name: "bird-mountain-hawk-eagle",    altitude: "4000m",    key: "1" },
   { name: "bird-golden-eagle",           altitude: "3352.8m",  key: "1" },
-  { name: "bird-snow-flinch",            altitude: "3200m",    key: "1" },
   { name: "bird-white-cheeked-nuthatch", altitude: "3200m",    key: "1" },
   { name: "bird-bald-eagle",             altitude: "3000m",    key: "1" },
   { name: "bird-rufous-bellied-niltava", altitude: "2700m",    key: "1" },
