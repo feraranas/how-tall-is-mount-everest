@@ -9,7 +9,8 @@
     "build": "echo \"Static site — no build step (vanilla HTML/CSS/JS served as-is).\"",
     "test": "playwright test",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "check-storybook": "node scripts/check-storybook.mjs"
   },
   "keywords": [],
   "author": "",

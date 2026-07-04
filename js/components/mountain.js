@@ -39,3 +39,8 @@ function makeInfoPanel(m) {
             </div>
           </div>`;
 }
+
+/* Dual-mode: globals for the site's classic <script>, explicit attach for ES
+   module imports (Storybook/Vite). */
+globalThis.makeMountainTitle = makeMountainTitle;
+globalThis.makeInfoPanel = makeInfoPanel;
