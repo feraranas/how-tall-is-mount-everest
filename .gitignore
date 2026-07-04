@@ -17,3 +17,10 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# bv (beads viewer) local config and caches
+.bv/
+
+# Storybook build output
+storybook-static/
+*storybook.log
