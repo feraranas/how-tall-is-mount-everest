@@ -6,7 +6,7 @@
 /** @type {import('@storybook/html-vite').StorybookConfig} */
 export default {
   framework: "@storybook/html-vite",
-  stories: ["../stories/**/*.stories.js", "../stories/**/*.mdx"],
+  stories: ["../stories/**/*.stories.js"],
   staticDirs: [
     // Expose site assets at the same absolute paths the CSS expects.
     { from: "../images", to: "/images" },

@@ -57,4 +57,8 @@ function renderIllustrations() {
   root.innerHTML = illustrations_data.map(makeIllustration).join("\n");
 }
 
-renderIllustrations();
+/* Dual-mode: globals for the site's classic <script>, explicit attach for ES
+   module imports (Storybook/Vite). Only boot when the site container exists. */
+globalThis.makeIllustration = makeIllustration;
+globalThis.illustrations_data = illustrations_data;
+if (document.querySelector(".illustrations")) renderIllustrations();

@@ -28,4 +28,9 @@ function renderClouds() {
   root.replaceChildren(...clouds_data.map(makeCloud));
 }
 
-renderClouds();
+/* Dual-mode: as a classic <script> these are globals already; when imported
+   as an ES module (Storybook/Vite) top-level declarations are module-scoped,
+   so attach explicitly. Only boot on the site (Storybook has no container). */
+globalThis.makeCloud = makeCloud;
+globalThis.clouds_data = clouds_data;
+if (document.querySelector(".clouds-container")) renderClouds();
