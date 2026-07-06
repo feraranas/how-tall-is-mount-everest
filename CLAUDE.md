@@ -28,7 +28,7 @@ The whole experience is **one tall scrollable canvas** (50,000px). You "start" a
 - `js/components/cloud.js` → generates cloud DOM; `js/cloudsParallax-script.js` → horizontal drift engine (depth-aware speed, wrap-around, honors `prefers-reduced-motion`).
 - `js/components/illustration.js` — illustration DOM + hover info panels.
 - `js/ashesAnimation-script.js` — canvas ashes effect. `rainAnimation-script.js` / `snowAnimation-script.js` are empty placeholders.
-- `css/` — `main-styles.css` (globals, altitude gradient with hardcoded px stops), `components/*.css`, `layout/*.css` (placement), plus **six breakpoint files** (`media-0-390.css` … `media-1950.css`) that are near-duplicates of each other; a positioning change usually has to be replicated across them.
+- `css/` — `main-styles.css` (globals, altitude gradient with hardcoded px stops), `components/*.css`, `layout/*.css` (placement), plus responsive styles split as `media-common.css` (declarations shared by all breakpoints, loaded at every width) and six breakpoint files (`media-0-390.css` … `media-1950.css`) holding only per-width overrides. Edit shared values in `media-common.css` once; a breakpoint file only needs a rule when that width genuinely differs.
 
 ### How a mountain works (important)
 
