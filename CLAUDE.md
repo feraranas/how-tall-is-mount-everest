@@ -4,44 +4,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-An interactive single-page site visualizing the world's tallest mountains and volcanoes by altitude. Built with Vite + React 18 + TypeScript + Tailwind CSS v3.
+An interactive single-page site visualizing the world's tallest mountains and volcanoes by altitude ("Montañas de México lindo y del mundo"). **Vanilla HTML/CSS/JS — no framework, no bundler, no build step.** The React/Vite/Tailwind/webpack entries in `package.json` are leftovers and are not used by the site; the live dev dependencies are Playwright (tests) and Storybook.
 
 ## Commands
 
 ```bash
-npm install      # install deps
-npm run dev      # Vite dev server with HMR
-npm run build    # tsc -b (typecheck) then vite build → dist/
-npm run lint     # eslint over the repo
-npm run preview  # serve the production build
+npm install        # installs Playwright + Storybook tooling
+npm run dev        # python3 -m http.server 5599 (site is served as-is)
+npm test           # Playwright suite in tests/ — this is the regression gate
+npm run storybook  # component stories (Storybook html-vite)
 ```
 
-There is no test suite. `npm run build` is the type-check gate (run `tsc -b` before assuming TS is clean).
+There is no build or typecheck step. `npm test` (Playwright) is the gate before claiming a change works.
 
 ## Architecture
 
-The whole experience is **one tall scrollable canvas** (50,000px). There is no router and no state management — the visualization is driven entirely by absolute positioning along the Y axis and a single scroll listener.
+The whole experience is **one tall scrollable canvas** (50,000px). You "start" at the bottom (page auto-scrolls to bottom on load) and scroll *up* to gain altitude. Everything is absolutely positioned along the Y axis; a single rAF-throttled scroll listener drives the altitude readout.
 
-- `index.html` — sets `<body>` to `--page-height` (50000px) tall and paints the `bg-floor-to-sky-2` gradient as the altitude backdrop. The `::before`/`::after` pseudo-elements draw the grid overlays (`gridWhite`/`gridBlack`).
-- `src/App.tsx` — composition root. Renders `Metronome`, `Animations`, `Mountains`, `Illustrations` as flat siblings (no layout wrapper).
-- `src/components/Metronome/Metronome.tsx` — fixed altitude readout. The only interactive logic: a `scroll` listener maps `window.scrollY` over the page height to a meters value and toggles an `active` class. `totalHeight` (50000) and `mapHeight` (6800) here must stay in sync with the page height in `index.html`/`index.css`.
-- `src/components/Mountains/` — `Mountains.tsx` maps over the `mountains` array and renders a `Mountain` per entry; each `Mountain` wraps a `DataContainer` (→ `MountainTitle` + `MountainInformation`).
-- `src/components/Animations/` — `Stars`, `Ashes`, `Clouds`. These are mostly stubs/placeholders right now.
+- `js/scene.js` — **single source of truth for canvas constants** (`PAGE_HEIGHT`, `MAP_HEIGHT`, `SUMMIT_OFFSET`, `MOUNTAIN_SPACING`). Injects `--page-height`/`--half-page-height` CSS vars at boot so CSS and JS cannot drift. Loaded first; its globals are shared by the other scripts.
+- `index.html` — static shell: metronome, dividers, animation containers, `#mountains-root`, `.illustrations`, intro/end screens. Script order at the bottom matters (scene → cloud DOM → drift engine → script.js → renderers).
+- `js/script.js` — metronome update on scroll (maps `scrollY` to a meters readout), intro-title responsiveness, show/hide of metronome, end screen, and the three-thousander divider.
+- `js/mountainsData-script.js` — the `mountains` data array (content only) + DOM builder that renders every peak into `#mountains-root`. Markup comes from the factories in `js/components/mountain.js` (`makeMountainTitle` / `makeInfoPanel`).
+- `js/components/cloud.js` → generates cloud DOM; `js/cloudsParallax-script.js` → horizontal drift engine (depth-aware speed, wrap-around, honors `prefers-reduced-motion`).
+- `js/components/illustration.js` — illustration DOM + hover info panels.
+- `js/ashesAnimation-script.js` — canvas ashes effect. `rainAnimation-script.js` / `snowAnimation-script.js` are empty placeholders.
+- `css/` — `main-styles.css` (globals, altitude gradient with hardcoded px stops), `components/*.css`, `layout/*.css` (placement), plus responsive styles split as `media-common.css` (declarations shared by all breakpoints, loaded at every width) and six breakpoint files (`media-0-390.css` … `media-1950.css`) holding only per-width overrides. Edit shared values in `media-common.css` once; a breakpoint file only needs a rule when that width genuinely differs.
 
-### How a mountain is positioned (important)
+### How a mountain works (important)
 
-Adding or moving a mountain requires **several coordinated edits**, because the data, the SVG, and the layout are decoupled:
+Content and layout are decoupled:
 
-1. **Asset** — SVG in `src/assets/mountains/N-NAME.svg`.
-2. **Tailwind background** — register it as `bg-mountain-N` under `theme.extend.backgroundImage` in `tailwind.config.js` (paths are relative to project root, e.g. `url("src/assets/mountains/...")`).
-3. **Layout variant** — `mountainVariants` in `src/components/Mountains/Mountain.tsx` is a hardcoded map from `MountainID` → Tailwind classes that set the `top-[Npx]` scroll position, size, `bg-mountain-N`, and `z` index. This is the source of truth for *where* each mountain sits on the canvas.
-4. **Type** — extend the `MountainID` union in `src/components/Mountains/Mountains.tsx`.
-5. **Data** — add the entry to `mountains` in `src/components/Mountains/mountainsInfo.ts` (shape is `mountainConfig`).
+1. **Data** — add a row to `mountains` in `js/mountainsData-script.js` (`n`, `slug`, `title`, `height`, `location`, …). `n` preserves original ordering identity (note the 18 → 20 → 19 quirk); rows past #25 may have no SVG yet — WIP, not bugs.
+2. **Asset** — SVG referenced from CSS as a background image.
+3. **Layout** — bespoke CSS rules keyed by the slug class (`.mountain-svg.<slug>-svg`, `.mountain-N`, `.data-container.m-N`) set `top`/`left`/size/`z-index` in `css/layout/mountain-placement.css`, `main-styles.css`, and the media breakpoint files.
 
-Note: `mountainsInfo.ts` currently holds **placeholder/duplicated data** (many entries are copies of mountain-1), and several `mountainVariants` `top-[...]` values past mountain-18 still point at `12500px` — these are works in progress, not bugs to "fix" blindly.
+Info panels are pure CSS (`.mountain-data:hover .mountain-info`) — no JS hover wiring.
 
-### Styling conventions
+## Conventions
 
-- Styling is Tailwind utility classes inline in JSX; there is almost no hand-written CSS beyond `src/index.css` (CSS custom properties + resets).
-- Layout relies heavily on arbitrary values (`top-[2500px]`, `w-[500px]`, `z-[99]`). Because positions are arbitrary-value classes keyed dynamically (`bg-mountain-${id}`), they must exist as literal strings somewhere Tailwind's content scanner can see them — keep the full class strings in `mountainVariants`/`backgroundImage`, don't build them by string concatenation.
-- CSS variables (`--page-height`, `--half-page-height`, `--primary-color`) live in `:root` in `src/index.css`.
+- Playwright tests live in `tests/`; run against the local http.server. Add/extend a spec when changing user-visible behavior.
+- Media stylesheets are loaded per-breakpoint via `media=` attributes in `index.html`.
+- Site text is Spanish; keep new UI copy in Spanish.
+- Commits: no AI co-author trailer.

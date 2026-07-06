@@ -71,19 +71,14 @@ function onScroll() {
 // UPDATE THE METRONOMO ON SCROLL EVENT
 // Calculate pageHeight once outside the scroll event
 const windowHeight = window.innerHeight;
-console.log('window height: ', windowHeight)
 const pageHeight = document.documentElement.scrollHeight - windowHeight;
-console.log('scroll height: ', document.documentElement.scrollHeight)
-console.log('scrollHeight - windowHeight', pageHeight)
 
 // Function to update the metronomo on scroll event
 function updateMetronomo() {
   const scrollPosition = window.pageYOffset;
-  //console.log('pageYOffset: ', scrollPosition)
   const normalizedHeight = Math.abs(
     (scrollPosition / pageHeight) * MAP_HEIGHT - mapHeight
   );
-  //console.log('normalized height: ', normalizedHeight)
 
   if (scrollPosition > totalHeight - (windowHeight + 100)) { // IF REACHED THE BOTTOM DISAPPEAR
     /* DISAPPEAR METRO */
@@ -105,10 +100,8 @@ function updateMetronomo() {
   }
 
   if (scrollPosition > threeThousander + 200 || scrollPosition < threeThousander - 100) {
-    console.log('disappear threeThousander!!!')
     threeThousanderContainer.classList.remove('active-divider')
   } else {
-    console.log('appear threeThousander!!!')
     threeThousanderContainer.classList.add('active-divider')
   }
 
@@ -128,7 +121,6 @@ window.addEventListener('scroll', onScroll);
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
 window.onload = function () {
-  console.log(window.innerHeight);
   if (window.innerHeight <= 620) {
     removeBr();
     flag = true;
@@ -144,8 +136,6 @@ window.onload = function () {
 
 /* TITLE RESPONSIVENESS */
 window.onresize = function () {
-  console.log(window.innerHeight);
-
   if (window.innerHeight <= 620) {
     removeBr();
     flag = true;

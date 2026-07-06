@@ -40,7 +40,7 @@ const mountains = [
   { n: 24, slug: "popocatepetl",    title: "VOLCAN POPOCATEPETL 🇲🇽",  height: "5,393m", location: "Puebla, México 🇲🇽", altitude: "5,393m", prominence: "3,020m", firstAscent: "[Pendiente]", difficulty: "Básico Intermedio" },
   { n: 25, slug: "mount-fraker",    title: "MOUNT FRAKER 🇺🇸",         height: "5,304m", location: "Alaska, USA 🇺🇸 ", altitude: "5,304m", prominence: "2,209m", firstAscent: "[Pendiente]", difficulty: "Básico Intermedio" },
   { n: 26, slug: "iztlaccihuatl",   title: "IZTLACCIHUATL 🇲🇽",        height: "5,230m", location: "México 🇲🇽", altitude: "5,230m", prominence: "1,560m", firstAscent: "[Pendiente]", difficulty: "Básico Intermedio" },
-  { n: 27, slug: "dykh-tau",        title: "DYKH TAU 🇷🇺",             height: "5,205m", location: "Russia 🇷🇺", altitude: "5,205m", prominence: "2,002m", firstAscent: "Básico Intermedio", difficulty: "Fácil" },
+  { n: 27, slug: "dykh-tau",        title: "DYKH TAU 🇷🇺",             height: "5,205m", location: "Russia 🇷🇺", altitude: "5,205m", prominence: "2,002m", firstAscent: "1888", difficulty: "Básico Intermedio" },
   { n: 28, slug: "alam-kuh",        title: "ALAM KUH 🇮🇷",             height: "4,850m", location: "IRAN 🇮🇷", altitude: "4,850m", prominence: "--- ", firstAscent: "[Pendiente]", difficulty: "Fácil" },
   { n: 29, slug: "nevado-toluca",   title: "NEVADO DE TOLUCA 🇲🇽",     height: "4,680m", location: "México 🇲🇽", altitude: "4,680m", prominence: "2,210m", firstAscent: "[Pendiente]", difficulty: "Fácil" },
   { n: 30, slug: "teyotl",          title: "PICO TEYOTL 🇲🇽",          height: "4,660m", location: "México 🇲🇽", altitude: "4,660m", prominence: "[Pendiente]", firstAscent: "[Pendiente]", difficulty: "Fácil" },
