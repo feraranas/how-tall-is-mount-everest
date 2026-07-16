@@ -85,10 +85,17 @@
 .illustration-info > ul >:nth-child(even) {
      background-color: rgba(0,0,0,0.1);
 }
-.illustration-data:hover .illustration-info {
+/* :focus-within mirrors the mountain tooltip: keyboard focus on the chip
+   (tabindex="0") opens the panel; also helps touch taps. */
+.illustration-data:hover .illustration-info,
+.illustration-data:focus-within .illustration-info {
      opacity: 1;
      visibility: visible;
      pointer-events: auto;
+}
+.fa-info-illustration:focus-visible {
+     outline: 2px solid #fff;
+     outline-offset: 2px;
 }
  .mountain-info-icon {
      background-image: url(https://imagedelivery.net/vaYALZ1mQeCdIxO6VkL8Lg/618aa9d4-283a-47b6-ea5c-27386db17600/public);

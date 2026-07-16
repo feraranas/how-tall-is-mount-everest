@@ -30,8 +30,9 @@ function makeInfoPanel(m) {
 
   return `<div class="mountain-data ${m.slug}-data">
             <div class="tab-arrow"></div>
-            <i class="fa-solid fa-info" data-mountain-key="${m.n}"></i>
-            <div class="mountain-info" data-key="${m.n}">
+            <i class="fa-solid fa-info" data-mountain-key="${m.n}" tabindex="0"
+               aria-label="Información de ${m.title}" aria-describedby="mountain-info-${m.n}"></i>
+            <div class="mountain-info" data-key="${m.n}" id="mountain-info-${m.n}" role="tooltip">
               <ul>
                 ${items}
               </ul>

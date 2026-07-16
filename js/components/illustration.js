@@ -41,7 +41,7 @@ const illustrations_data = [
    panel share the hover region, so moving into the panel keeps it open. */
 function makeIllustrationInfo({ name, label, facts, key }) {
   const items = (facts ?? []).map((t) => `<li>${t}</li>`).join("\n                ");
-  return `<div class="illustration-info" data-key="${key}">
+  return `<div class="illustration-info" data-key="${key}" id="illustration-info-${key}" role="tooltip">
               <div class="illustration-info-title">${label ?? name}</div>
               <ul>
                 ${items}
@@ -58,10 +58,11 @@ function makeIllustration(item) {
         <div class="illustration-container ${name}-container">
           <div class="illustration-data">
             <div class="tab-arrow-illustration"></div>
-            <i class="fa-solid fa-info-illustration" data-illustration-key="${key}"></i>
+            <i class="fa-solid fa-info-illustration" data-illustration-key="${key}" tabindex="0"
+               aria-label="Información de ${item.label ?? name}" aria-describedby="illustration-info-${key}"></i>
             ${makeIllustrationInfo(item)}
           </div>
-          <div class="illustration ${name}"></div>
+          <div class="illustration ${name}" aria-hidden="true"></div>
         </div>`;
 }
 
