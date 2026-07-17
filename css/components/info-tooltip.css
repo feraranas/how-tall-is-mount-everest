@@ -77,8 +77,15 @@
    live inside .mountain-data), so moving from icon into the panel keeps it
    open — no JS, no stuck-panel race. The -19px overlap keeps icon+panel one
    continuous hover region (no dead zone). */
-.mountain-data:hover .mountain-info {
+/* :focus-within opens the same panel for keyboard users (the i-chip carries
+   tabindex="0"), and helps touch, where tapping the chip focuses it. */
+.mountain-data:hover .mountain-info,
+.mountain-data:focus-within .mountain-info {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+.fa-info:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }

@@ -73,7 +73,7 @@ function mountainMarkup(m) {
           ${makeInfoPanel(m)}
         </div>
 
-        <div class="mountain-svg ${m.slug}-svg"></div>
+        <div class="mountain-svg ${m.slug}-svg" aria-hidden="true"></div>
       </div>`;
 }
 

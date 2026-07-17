@@ -117,6 +117,14 @@ function updateMetronomo() {
 // Add the rAF-throttled event listener to scroll Events
 window.addEventListener('scroll', onScroll);
 
+/* Escape closes a keyboard-opened info panel (panels open via :focus-within,
+   so dropping focus closes them). Hover-opened panels are unaffected. */
+window.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  const el = document.activeElement;
+  if (el && el.closest('.mountain-data, .illustration-data')) el.blur();
+});
+
 
 
 /* EVERYTIME RELOADS, GO TO THE BOTTOM OF THE PAGE WHICH IS WHERE WE START */
