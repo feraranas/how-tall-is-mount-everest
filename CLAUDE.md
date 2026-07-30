@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-An interactive single-page site visualizing the world's tallest mountains and volcanoes by altitude ("Montañas de México lindo y del mundo"). **Vanilla HTML/CSS/JS — no framework, no bundler, no build step.** The React/Vite/Tailwind/webpack entries in `package.json` are leftovers and are not used by the site; the live dev dependencies are Playwright (tests) and Storybook.
+An interactive single-page site visualizing the world's tallest mountains and volcanoes by altitude ("Montañas de México lindo y del mundo"). **Vanilla HTML/CSS/JS — no production framework, bundler, or build step.** The development toolchain is deliberately small: Playwright for browser tests and Storybook with its Vite-based HTML adapter for the component catalog.
 
 ## Commands
 

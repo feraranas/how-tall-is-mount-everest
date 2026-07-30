@@ -102,9 +102,8 @@ Companion plan: `.claude/plans/vanilla-design-system-storybook.md`.
 
 ## Cross-cutting facts
 
-- **`styles.css` (4,295 lines) is dead code** — not linked from `index.html`
-  (only `css/*.css` files are). Do not split it; candidate for deletion in a
-  separate cleanup.
+- The former root `styles.css` snapshot was dead code and has been removed;
+  `index.html` loads only the maintained styles under `css/`.
 - **`css/animations.css`** holds one unused keyframe (`cloudHorizontall`) —
   fold real keyframes into their component files during the split.
 - **Breakpoints:** 0–390 / 391–428 / 429–768 / 769–1440 / 1441–1950 / 1950+
