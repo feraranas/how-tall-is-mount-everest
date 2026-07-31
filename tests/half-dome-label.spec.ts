@@ -11,7 +11,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('half dome label', () => {
   test('renders exactly one HALF DOME title and no m-41-container', async ({ page }) => {
-    await page.goto('/', { waitUntil: 'load' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
 
     // Exactly one leaf element carries the Half Dome title text.
     const titleCount = await page.evaluate(
