@@ -1,4 +1,4 @@
-import { test, expect, type Page, type TestInfo } from '@playwright/test';
+import { test, expect, isExternalAsset, type Page, type TestInfo } from './fixtures';
 
 /**
  * Visual + behavioral regression SMOKE test for the static vanilla site.
@@ -10,26 +10,6 @@ import { test, expect, type Page, type TestInfo } from '@playwright/test';
  */
 
 const PAGE_HEIGHT = 50000;
-
-// The product currently depends on these third-party asset hosts. Network
-// failures from them are outside the local regression gate; every local URL is
-// still required to resolve successfully.
-const ALLOWED_EXTERNAL_HOSTS = new Set([
-  'imagedelivery.net',
-  'fonts.cdnfonts.com',
-  'fonts.googleapis.com',
-  'fonts.gstatic.com',
-  'kit.fontawesome.com',
-  'ka-f.fontawesome.com',
-]);
-
-function isAllowedExternal(url: string): boolean {
-  try {
-    return ALLOWED_EXTERNAL_HOSTS.has(new URL(url).hostname);
-  } catch {
-    return false;
-  }
-}
 
 function collectErrors(page: Page): string[] {
   const errors: string[] = [];
@@ -45,12 +25,12 @@ function collectErrors(page: Page): string[] {
     errors.push(`pageerror: ${err.message}`);
   });
   page.on('requestfailed', (request) => {
-    if (!isAllowedExternal(request.url())) {
+    if (!isExternalAsset(request.url())) {
       errors.push(`requestfailed: ${request.url()} — ${request.failure()?.errorText ?? 'unknown'}`);
     }
   });
   page.on('response', (response) => {
-    if (response.status() >= 400 && !isAllowedExternal(response.url())) {
+    if (response.status() >= 400 && !isExternalAsset(response.url())) {
       errors.push(`response: ${response.status()} ${response.url()}`);
     }
   });
@@ -135,6 +115,11 @@ test.describe('mount-everest static site smoke', () => {
 
   test('metronome altitude changes across scroll checkpoints', async ({ page }) => {
     await page.goto('/', { waitUntil: 'domcontentloaded' });
+    // Manual checkpoints own scroll position in this test. Prevent a late
+    // third-party load from firing the product onload auto-scroll between them.
+    await page.evaluate(() => {
+      window.onload = null;
+    });
     await settle(page);
 
     // BOTTOM (summit).

@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures';
 
 /**
  * Regression for the missing <meta charset="utf-8">: without it the UTF-8 flag

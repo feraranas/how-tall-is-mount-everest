@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures';
 
 const STABLE_CANVAS_CSS = `
   .clouds-container,
@@ -22,6 +22,12 @@ const STABLE_CANVAS_CSS = `
     animation: none !important;
     transition: none !important;
   }
+  .main-container::before {
+    background-image: url('/images/grid.svg') !important;
+  }
+  .main-container::after {
+    background-image: url('/images/gridBlack.svg') !important;
+  }
 `;
 
 test('canvas background remains stable at representative altitudes', async ({ page }, testInfo) => {
@@ -29,6 +35,9 @@ test('canvas background remains stable at representative altitudes', async ({ pa
 
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await page.evaluate(() => {
+    window.onload = null;
+  });
   await page.addStyleTag({ content: STABLE_CANVAS_CSS });
 
   for (const y of [0, 25_000, 49_000]) {

@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures';
 
 test('declares a local favicon that resolves successfully', async ({ page, request }) => {
   await page.goto('/', { waitUntil: 'domcontentloaded' });

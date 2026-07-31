@@ -1,10 +1,10 @@
 import AxeBuilder from '@axe-core/playwright';
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures';
 
-// Font Awesome's runtime marks the existing focusable <i> controls aria-hidden.
-// Keep that known semantics debt explicit until those controls become buttons;
-// any other serious/critical WCAG A/AA violation still fails this gate.
-const KNOWN_BLOCKING_RULES = new Set(['aria-hidden-focus']);
+// The current focusable <i> controls have no semantic role. Converting them to
+// buttons is tracked as product work; keep that debt explicit while preventing
+// any additional serious/critical violation from entering the suite.
+const KNOWN_BLOCKING_RULES = new Set(['aria-prohibited-attr']);
 
 test('has no unexpected serious or critical automatically detectable WCAG A/AA violations', async ({ page }) => {
   await page.goto('/', { waitUntil: 'domcontentloaded' });

@@ -1,4 +1,4 @@
-import { test, expect, type Page, type TestInfo } from '@playwright/test';
+import { test, expect, type Page, type TestInfo } from './fixtures';
 
 /**
  * Illustration hover info-panel (mirrors tests/info-panel.spec.ts).
