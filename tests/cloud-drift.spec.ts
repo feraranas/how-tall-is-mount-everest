@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from './fixtures';
 
 /**
  * Horizontal cloud drift (js/cloudsParallax-script.js).
@@ -37,7 +37,7 @@ async function advance(page: Page, ms: number) {
 
 test.describe('cloud horizontal drift', () => {
   test('a cloud drifts horizontally over time (no scroll)', async ({ page }) => {
-    await page.goto('/', { waitUntil: 'load' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     const a = await cloudTx(page, NEAR);
     await advance(page, 300);
     const b = await cloudTx(page, NEAR);
@@ -45,7 +45,7 @@ test.describe('cloud horizontal drift', () => {
   });
 
   test('clouds move differently from one another (randomness)', async ({ page }) => {
-    await page.goto('/', { waitUntil: 'load' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     const before = await allTx(page);
     await advance(page, 300);
     const after = await allTx(page);
@@ -56,7 +56,7 @@ test.describe('cloud horizontal drift', () => {
   });
 
   test('nearer (higher-z) clouds drift faster than far clouds', async ({ page }) => {
-    await page.goto('/', { waitUntil: 'load' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     // Accumulate distance travelled over several short steps, discarding the
     // big jumps produced when a cloud wraps edge-to-edge (so a wrap during the
     // window doesn't corrupt the measured speed).
@@ -78,7 +78,7 @@ test.describe('cloud horizontal drift', () => {
   });
 
   test('drift stays within the wrap span (never runs away)', async ({ page }) => {
-    await page.goto('/', { waitUntil: 'load' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     // Max span for any cloud is halfViewport + its own width. Measure a generous
     // upper bound: half the viewport plus the widest cloud box.
     const bound = await page.evaluate(() => {
@@ -100,7 +100,7 @@ test.describe('cloud horizontal drift', () => {
 
   test('respects prefers-reduced-motion (no drift)', async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' });
-    await page.goto('/', { waitUntil: 'load' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     const a = await cloudTx(page, NEAR);
     await advance(page, 400);
     const b = await cloudTx(page, NEAR);

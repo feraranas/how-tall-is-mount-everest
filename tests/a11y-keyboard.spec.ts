@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from './fixtures';
 
 /**
  * Keyboard accessibility for the info panels.
@@ -20,7 +20,10 @@ const panelOpacity = (p: Page, sel: string) =>
   p.locator(sel).evaluate((el) => getComputedStyle(el).opacity);
 
 async function open(page: Page, icon: string) {
-  await page.goto('/', { waitUntil: 'load' });
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await page.evaluate(() => {
+    window.onload = null;
+  });
   await page.locator(icon).scrollIntoViewIfNeeded();
 }
 

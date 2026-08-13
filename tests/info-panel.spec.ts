@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page, type TestInfo } from './fixtures';
 
 /**
  * Mountain hover info-panel behavior.
@@ -16,19 +16,25 @@ const PANEL = '.mountain-1 .mountain-info';
 const panelOpacity = (p: Page, sel: string) =>
   p.locator(sel).evaluate((el) => getComputedStyle(el).opacity);
 
+function skipOnTouch(testInfo: TestInfo) {
+  test.skip(testInfo.project.use.hasTouch === true, 'hover behavior does not apply to touch input');
+}
+
 async function open(page: Page) {
-  await page.goto('/', { waitUntil: 'load' });
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
   await page.locator(ICON).scrollIntoViewIfNeeded();
 }
 
 test.describe('mountain hover info-panel', () => {
-  test('hovering the icon opens the panel', async ({ page }) => {
+  test('hovering the icon opens the panel', async ({ page }, testInfo) => {
+    skipOnTouch(testInfo);
     await open(page);
     await page.locator(ICON).hover();
     await expect.poll(() => panelOpacity(page, PANEL), { timeout: 3000 }).toBe('1');
   });
 
-  test('moving the cursor into the panel keeps it open', async ({ page }) => {
+  test('moving the cursor into the panel keeps it open', async ({ page }, testInfo) => {
+    skipOnTouch(testInfo);
     await open(page);
     await page.locator(ICON).hover();
     await expect.poll(() => panelOpacity(page, PANEL), { timeout: 3000 }).toBe('1');
@@ -50,7 +56,8 @@ test.describe('mountain hover info-panel', () => {
     expect(await panelOpacity(page, PANEL)).toBe('0');
   });
 
-  test('leaving the panel closes it', async ({ page }) => {
+  test('leaving the panel closes it', async ({ page }, testInfo) => {
+    skipOnTouch(testInfo);
     await open(page);
     await page.locator(ICON).hover();
     await expect.poll(() => panelOpacity(page, PANEL), { timeout: 3000 }).toBe('1');

@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page, type TestInfo } from './fixtures';
 
 /**
  * Illustration hover info-panel (mirrors tests/info-panel.spec.ts).
@@ -13,13 +13,18 @@ const CONTAINER = '.bird-golden-eagle-container';
 const CHIP = `${CONTAINER} .fa-info-illustration`;
 const PANEL = `${CONTAINER} .illustration-info`;
 
+function skipOnTouch(testInfo: TestInfo) {
+  test.skip(testInfo.project.use.hasTouch === true, 'hover behavior does not apply to touch input');
+}
+
 async function open(page: Page) {
-  await page.goto('/', { waitUntil: 'load' });
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
   await page.locator(CHIP).scrollIntoViewIfNeeded();
 }
 
 test.describe('illustration hover info-panel', () => {
-  test('hovering the chip opens the panel with the right content', async ({ page }) => {
+  test('hovering the chip opens the panel with the right content', async ({ page }, testInfo) => {
+    skipOnTouch(testInfo);
     await open(page);
     await expect(page.locator(PANEL)).toBeHidden();
     await page.locator(CHIP).hover();
@@ -28,7 +33,8 @@ test.describe('illustration hover info-panel', () => {
     await expect(page.locator(PANEL)).toContainText('3,352.8m');
   });
 
-  test('moving the cursor into the panel keeps it open', async ({ page }) => {
+  test('moving the cursor into the panel keeps it open', async ({ page }, testInfo) => {
+    skipOnTouch(testInfo);
     await open(page);
     await page.locator(CHIP).hover();
     await expect(page.locator(PANEL)).toBeVisible();
@@ -36,7 +42,8 @@ test.describe('illustration hover info-panel', () => {
     await expect(page.locator(PANEL)).toBeVisible();
   });
 
-  test('leaving closes the panel', async ({ page }) => {
+  test('leaving closes the panel', async ({ page }, testInfo) => {
+    skipOnTouch(testInfo);
     await open(page);
     await page.locator(CHIP).hover();
     await expect(page.locator(PANEL)).toBeVisible();
@@ -45,7 +52,7 @@ test.describe('illustration hover info-panel', () => {
   });
 
   test('panels are unique per illustration (no shared key content)', async ({ page }) => {
-    await page.goto('/', { waitUntil: 'load' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     const keys = await page.$$eval('.illustration-info', (els) =>
       els.map((el) => el.getAttribute('data-key'))
     );
