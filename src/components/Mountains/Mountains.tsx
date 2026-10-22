@@ -11,12 +11,12 @@ type MountainID = 'mountain-1' | 'mountain-2' | 'mountain-3' | 'mountain-4' | 'm
 export interface mountainConfig {
     id: MountainID;
     name: string;
-    altitude: number;
+    altitude: number | null;
     location: string;
-    prominence: number
-    range: string;
-    firstAscent: number;
-    difficulty: string;
+    prominence: number | null;
+    range: string | null;
+    firstAscent: number | null;
+    difficulty: string | null;
 }
 
 const Mountains = () => {
