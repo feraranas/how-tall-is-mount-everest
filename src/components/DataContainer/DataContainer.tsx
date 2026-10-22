@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import MountainTitle from "../MountainTitle/MountainTitle";
 import MountainInformation from "../MountainInformation/MountainInformation";
 import { mountainConfig } from "../Mountains/Mountains";
@@ -13,11 +12,8 @@ const DataContainer: React.FC<mountainConfig> = ({
     firstAscent,
     difficulty,
 }) => {
-    const data = useRef<HTMLDivElement | null>(null);
-
     return (
         <div
-            ref={data}
             className="absolute grid grid-rows-[145px_75px]
                     w-screen h-[150px] text-black bg-slate-500
                     
