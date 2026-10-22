@@ -1,6 +1,6 @@
 interface mountainTitle {
     name: string;
-    altitude: number;
+    altitude: number | null;
 }
 
 const MountainTitle: React.FC<mountainTitle> = ({
@@ -22,7 +22,7 @@ const MountainTitle: React.FC<mountainTitle> = ({
         <div className="grid justify-center text-center items-center
                         w-screen
                         ">
-            {altitude}
+            {altitude ?? "unknown"}
         </div>
     </div>
   )

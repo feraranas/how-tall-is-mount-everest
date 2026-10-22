@@ -1,9 +1,9 @@
 interface info {
     location: string;
-    prominence: number;
-    range: string;
-    firstAscent: number;
-    difficulty: string;
+    prominence: number | null;
+    range: string | null;
+    firstAscent: number | null;
+    difficulty: string | null;
 }
 
 const MountainInformation: React.FC<info> = ({
@@ -36,10 +36,10 @@ const MountainInformation: React.FC<info> = ({
                 
           <ul>
             <li>Location: {location}</li>
-            <li>Prominence: {prominence}</li>
-            <li>Mountain Ranges: {range}</li>
-            <li>First Ascent: {firstAscent}</li>
-            <li>Difficulty: {difficulty}</li>
+            <li>Prominence: {prominence ?? "unknown"}</li>
+            <li>Mountain Ranges: {range ?? "unknown"}</li>
+            <li>First Ascent: {firstAscent ?? "unknown"}</li>
+            <li>Difficulty: {difficulty ?? "unknown"}</li>
           </ul>
 
           <div className="absolute bottom-0 w-screen h-[18.5px] bg-slate-400"></div>
