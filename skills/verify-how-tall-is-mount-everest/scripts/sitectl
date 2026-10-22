@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+# sitectl — launch, check, drive and tear down the How-tall-is-Mount-Everest Vite site.
+# Resolves its own real path, so it works via skills/, .cursor/skills/ or .claude/skills/.
+set -euo pipefail
+SELF="$(readlink -f "${BASH_SOURCE[0]}")"
+SKILL_DIR="$(cd "$(dirname "$SELF")/.." && pwd)"
+REPO="$(git -C "$SKILL_DIR" rev-parse --show-toplevel)"
+RUN_ID="${RUN_ID:-default}"
+PORT="${SITE_PORT:-15173}"
+STATE="${SITE_VERIFY_STATE:-/tmp/verify-everest-$RUN_ID}"
+EVIDENCE="${SITE_VERIFY_EVIDENCE:-$SKILL_DIR/evidence/$RUN_ID}"
+CHROME="${CHROME_PATH:-$(command -v google-chrome || command -v chromium || true)}"
+URL="http://127.0.0.1:$PORT/"
+die(){ echo "sitectl: $*" >&2; exit 1; }
+
+launch() {
+  mkdir -p "$STATE/tools"
+  if [ -f "$STATE/vite.pid" ] && kill -0 "$(cat "$STATE/vite.pid")" 2>/dev/null; then die "already running (pid $(cat "$STATE/vite.pid"))"; fi
+  if (exec 3<>/dev/tcp/127.0.0.1/$PORT) 2>/dev/null; then die "port $PORT already in use by someone else; set SITE_PORT"; fi
+  [ -d "$REPO/node_modules" ] || (cd "$REPO" && npm ci --no-audit --no-fund)
+  [ -d "$STATE/tools/node_modules/playwright-core" ] || (cd "$STATE/tools" && npm init -y >/dev/null && npm i --no-audit --no-fund playwright-core@1 >/dev/null)
+  # New session: the bash below is the session/process-group leader and writes its own pid, so cleanup can kill exactly this group.
+  (cd "$REPO" && setsid bash -c 'echo $$ > "$1"; exec npx vite --host 127.0.0.1 --port "$2" --strictPort' _ "$STATE/vite.pid" "$PORT" >"$STATE/vite.log" 2>&1 < /dev/null &)
+  sleep 1
+  for _ in $(seq 1 60); do
+    if grep -q "Local:" "$STATE/vite.log" 2>/dev/null && curl -fs "$URL" | grep -q "<title>How tall is Mount Everest</title>"; then
+      echo "READY url=$URL pid=$(cat "$STATE/vite.pid") state=$STATE"; return 0; fi
+    sleep 1
+  done
+  cat "$STATE/vite.log" >&2; die "vite did not become ready"
+}
+
+doctor() {
+  local ok=0 pid; pid="$(cat "$STATE/vite.pid" 2>/dev/null || echo none)"
+  chk(){ if eval "$2" >/dev/null 2>&1; then echo "OK   $1"; else echo "FAIL $1"; ok=1; fi; }
+  chk "vite pid $pid alive (started by this run)" "kill -0 $pid"
+  chk "port $PORT is listening" "ss -ltnp 'sport = :$PORT' | grep -q 'pid='"
+  chk "page title is 'How tall is Mount Everest'" "curl -fs '$URL' | grep -q '<title>How tall is Mount Everest</title>'"
+  chk "app module compiles (/src/main.tsx 200)" "curl -fs '${URL}src/main.tsx' -o /dev/null"
+  chk "chrome found ($CHROME)" "[ -x '$CHROME' ]"
+  chk "playwright-core installed" "[ -d '$STATE/tools/node_modules/playwright-core' ]"
+  echo "repo HEAD: $(git -C "$REPO" rev-parse --short HEAD)"
+  return $ok
+}
+
+journey() {
+  [ -n "${1:-}" ] || die "journeys: altimeter-scroll | mountain-cards"
+  mkdir -p "$EVIDENCE/$1"
+  NODE_PATH="$STATE/tools/node_modules" SITE_URL="$URL" CHROME_PATH="$CHROME" EVIDENCE_DIR="$EVIDENCE/$1" \
+    node "$SKILL_DIR/scripts/browser.mjs" "$1"
+}
+
+cleanup() {
+  if [ -f "$STATE/vite.pid" ]; then
+    local pid; pid="$(cat "$STATE/vite.pid")"
+    kill -- -"$pid" 2>/dev/null || true
+    for _ in $(seq 1 10); do pgrep -g "$pid" >/dev/null || break; sleep 0.5; done
+    pgrep -g "$pid" >/dev/null && { kill -9 -- -"$pid" 2>/dev/null || true; }
+  fi
+  case "$STATE" in /tmp/verify-everest-*) rm -rf "$STATE";; *) die "refusing to rm $STATE";; esac
+  if (exec 3<>/dev/tcp/127.0.0.1/$PORT) 2>/dev/null; then echo "WARN port $PORT still in use after cleanup" >&2; fi
+  echo "stopped our vite, removed $STATE; evidence kept at $EVIDENCE"
+}
+
+case "${1:-}" in
+  launch) launch;; doctor) doctor;; cleanup) cleanup;;
+  journey) journey "${2:-}";;
+  *) echo "usage: sitectl launch|doctor|journey <altimeter-scroll|mountain-cards>|cleanup  (env RUN_ID, SITE_PORT)"; exit 2;;
+esac

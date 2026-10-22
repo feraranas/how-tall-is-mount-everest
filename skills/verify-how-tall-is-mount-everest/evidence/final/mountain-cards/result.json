@@ -1,0 +1,14 @@
+{
+  "journey": "mountain-cards",
+  "url": "http://127.0.0.1:15173/",
+  "steps": [
+    {
+      "step": "cards",
+      "mountEverestTitles": 25,
+      "firstCardVisible": true
+    }
+  ],
+  "title": "How tall is Mount Everest",
+  "pageErrors": [],
+  "pass": true
+}
