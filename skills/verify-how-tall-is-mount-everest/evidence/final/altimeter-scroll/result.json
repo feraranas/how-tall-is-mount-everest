@@ -1,0 +1,41 @@
+{
+  "journey": "altimeter-scroll",
+  "url": "http://127.0.0.1:15173/",
+  "steps": [
+    {
+      "step": "load",
+      "altimeter": {
+        "text": "",
+        "active": false,
+        "scrollY": 0
+      }
+    },
+    {
+      "step": "scroll-1000",
+      "altimeter": {
+        "text": "09162m",
+        "active": true,
+        "scrollY": 1000
+      }
+    },
+    {
+      "step": "scroll-10000",
+      "altimeter": {
+        "text": "07918m",
+        "active": true,
+        "scrollY": 10000
+      }
+    },
+    {
+      "step": "scroll-25000",
+      "altimeter": {
+        "text": "05845m",
+        "active": true,
+        "scrollY": 25000
+      }
+    }
+  ],
+  "title": "How tall is Mount Everest",
+  "pageErrors": [],
+  "pass": true
+}
