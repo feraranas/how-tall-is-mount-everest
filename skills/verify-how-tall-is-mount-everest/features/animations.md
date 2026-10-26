@@ -1,16 +1,15 @@
-# Sky animations
+# Sky layers
 
-Background layers of clouds, stars and ash (`src/components/Animations`) move or appear across the page.
+`src/components/Animations` renders `Stars`, `Ashes` and `Clouds` directly under the altimeter. Each one is currently a placeholder `<div>` holding only its own name. There are no images and no motion.
 
 ## Sub-features
 
-- `anim-clouds` cloud images (`src/assets/clouds/cloudsv1-4.png`).
-- `anim-stars` star images.
-- `anim-ashes` ash particles.
+- `sky-placeholders` three top-level divs with the text `Stars`, `Ashes`, `Clouds`.
+- `sky-no-assets` no `src/assets/clouds/*` or `src/assets/stars/*` image is requested, even though the assets and `bg-cloud-*` Tailwind classes exist.
 
 ## How to get to it (user POV)
 
-- Scroll through the page; layers appear at their depths.
+- Open the page. The placeholder text is white (`rgba(255, 255, 255, 0.87)`) on the light grid background, so a visitor effectively sees nothing.
 
 ## Driving it with sitectl
 
@@ -18,8 +17,9 @@ Preconditions:
 
 - Launched, doctor `OK`.
 
-- **Not yet scripted.** Add a journey to `browser.mjs` that screenshots the depths where each layer sits, and compares two screenshots taken a moment apart to prove motion.
+- **Layers.** Run `sitectl journey sky-layers`. `result.json` step `layers`: all three `present: true`, `img: 0`; `skyRequests: []`.
+- **Proof.** `01-top.aria.txt` lists `Stars`, `Ashes`, `Clouds` as text.
 
 ## Gotchas
 
-- Not proved. Motion needs two captures over time, not one screenshot.
+- If real animations land, replace this recipe: take two captures over time to prove motion, and check that the sky images return 200.

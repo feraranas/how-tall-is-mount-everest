@@ -1,0 +1,33 @@
+{
+  "journey": "sky-layers",
+  "url": "http://127.0.0.1:15291/",
+  "steps": [
+    {
+      "step": "layers",
+      "layers": [
+        {
+          "text": "Stars",
+          "present": true,
+          "color": "rgba(255, 255, 255, 0.87)",
+          "img": 0
+        },
+        {
+          "text": "Ashes",
+          "present": true,
+          "color": "rgba(255, 255, 255, 0.87)",
+          "img": 0
+        },
+        {
+          "text": "Clouds",
+          "present": true,
+          "color": "rgba(255, 255, 255, 0.87)",
+          "img": 0
+        }
+      ],
+      "skyRequests": []
+    }
+  ],
+  "title": "How tall is Mount Everest",
+  "pageErrors": [],
+  "pass": true
+}
