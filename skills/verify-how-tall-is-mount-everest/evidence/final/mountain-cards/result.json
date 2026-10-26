@@ -1,11 +1,421 @@
 {
   "journey": "mountain-cards",
-  "url": "http://127.0.0.1:15173/",
+  "url": "http://127.0.0.1:15291/",
   "steps": [
     {
       "step": "cards",
-      "mountEverestTitles": 25,
-      "firstCardVisible": true
+      "count": 25,
+      "distinctNames": 25,
+      "distinctTops": 25,
+      "visible": {
+        "mount-everest": true,
+        "cerro-negro": true,
+        "nevado-de-colima": true
+      },
+      "svgStatus": {
+        "/src/assets/mountains/1-MOUNT-EVEREST.svg": 200,
+        "/src/assets/mountains/2-K2.svg": 200,
+        "/src/assets/mountains/3-KANCHENJUNGA.svg": 200,
+        "/src/assets/mountains/4-LHOTSE.svg": 200,
+        "/src/assets/mountains/5-MAKALU.svg": 200,
+        "/src/assets/mountains/6-ACACONCAGUA.svg": 200,
+        "/src/assets/mountains/7-OJOS-DEL-SALADO.svg": 200,
+        "/src/assets/mountains/8-MONTE-PISSIS.svg": 200,
+        "/src/assets/mountains/9-HUASCARAN.svg": 200,
+        "/src/assets/mountains/10-CERRO-BONETE.svg": 200,
+        "/src/assets/mountains/11-TRES-CRUCES.svg": 200,
+        "/src/assets/mountains/12-MOUNT-DENALI.svg": 200,
+        "/src/assets/mountains/13-KILIMANJARO.svg": 200,
+        "/src/assets/mountains/14-PICO-ORIZABA.svg": 200,
+        "/src/assets/mountains/15-MOUNT-ELBRUS.svg": 200,
+        "/src/assets/mountains/16-POPOCATEPETL.svg": 200,
+        "/src/assets/mountains/17-MOUNT-FRAKER.svg": 200,
+        "/src/assets/mountains/18-IZTLACCIHUATL.svg": 200,
+        "/src/assets/mountains/19-DYKH-TAU.svg": 200,
+        "/src/assets/mountains/20-NEVADO-TOLUCA.svg": 200,
+        "/src/assets/mountains/21-TEYOTL.svg": 200,
+        "/src/assets/mountains/22-VOLCAN-MALINTZIN.svg": 200,
+        "/src/assets/mountains/23-COFRE-DE-PEROTE.svg": 200,
+        "/src/assets/mountains/24-CERRO-NEGRO-OAX.svg": 200,
+        "/src/assets/mountains/25-NEVADO-DE-COLIMA.svg": 200
+      },
+      "cards": [
+        {
+          "name": "mount-everest",
+          "altitude": "8848.86",
+          "info": [
+            "Location: Nepal / China (Tibet)",
+            "Prominence: 8848.86",
+            "Mountain Ranges: Mahalangur Himal, Himalayas",
+            "First Ascent: 1953",
+            "Difficulty: unknown"
+          ],
+          "top": 2500,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/1-MOUNT-EVEREST.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/1-MOUNT-EVEREST.svg"
+        },
+        {
+          "name": "k2",
+          "altitude": "8611",
+          "info": [
+            "Location: Pakistan-administered Kashmir / China",
+            "Prominence: 4020",
+            "Mountain Ranges: Karakoram",
+            "First Ascent: 1954",
+            "Difficulty: Abruzzi Spur"
+          ],
+          "top": 4300,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/2-K2.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/2-K2.svg"
+        },
+        {
+          "name": "kangchenjunga",
+          "altitude": "8586",
+          "info": [
+            "Location: Nepal / Sikkim, India",
+            "Prominence: 3922",
+            "Mountain Ranges: Himalayas",
+            "First Ascent: 1955",
+            "Difficulty: glacier/snow/ice climb"
+          ],
+          "top": 6100,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/3-KANCHENJUNGA.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/3-KANCHENJUNGA.svg"
+        },
+        {
+          "name": "lhotse",
+          "altitude": "8516",
+          "info": [
+            "Location: Nepal / China (Tibet)",
+            "Prominence: 610",
+            "Mountain Ranges: Mahalangur Himal, Himalayas",
+            "First Ascent: 1956",
+            "Difficulty: glacier/snow/ice climb"
+          ],
+          "top": 7900,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/4-LHOTSE.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/4-LHOTSE.svg"
+        },
+        {
+          "name": "makalu",
+          "altitude": "8485",
+          "info": [
+            "Location: Nepal / China (Tibet)",
+            "Prominence: 2386",
+            "Mountain Ranges: Mahalangur Himalayas",
+            "First Ascent: 1955",
+            "Difficulty: snow/ice climb"
+          ],
+          "top": 9700,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/5-MAKALU.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/5-MAKALU.svg"
+        },
+        {
+          "name": "aconcagua",
+          "altitude": "6967.16",
+          "info": [
+            "Location: Argentina",
+            "Prominence: 6967.16",
+            "Mountain Ranges: Principal Cordillera, Andes",
+            "First Ascent: 1897",
+            "Difficulty: Scramble (Northwest)"
+          ],
+          "top": 11500,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/6-ACACONCAGUA.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/6-ACACONCAGUA.svg"
+        },
+        {
+          "name": "ojos-del-salado",
+          "altitude": "6893",
+          "info": [
+            "Location: Argentina / Chile",
+            "Prominence: 3688",
+            "Mountain Ranges: Andes",
+            "First Ascent: 1937",
+            "Difficulty: Scramble"
+          ],
+          "top": 13300,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/7-OJOS-DEL-SALADO.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/7-OJOS-DEL-SALADO.svg"
+        },
+        {
+          "name": "monte-pissis",
+          "altitude": "6792",
+          "info": [
+            "Location: La Rioja and Catamarca, Argentina",
+            "Prominence: 2145",
+            "Mountain Ranges: Andes",
+            "First Ascent: 1937",
+            "Difficulty: Hike, east side"
+          ],
+          "top": 15100,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/8-MONTE-PISSIS.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/8-MONTE-PISSIS.svg"
+        },
+        {
+          "name": "huascaran",
+          "altitude": "6768",
+          "info": [
+            "Location: Yungay, Peru",
+            "Prominence: 2776",
+            "Mountain Ranges: Cordillera Blanca, Andes",
+            "First Ascent: 1932",
+            "Difficulty: glacier/snow/ice climb"
+          ],
+          "top": 16900,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/9-HUASCARAN.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/9-HUASCARAN.svg"
+        },
+        {
+          "name": "cerro-bonete",
+          "altitude": "6759",
+          "info": [
+            "Location: La Rioja, Argentina",
+            "Prominence: 1480",
+            "Mountain Ranges: Andes",
+            "First Ascent: unknown",
+            "Difficulty: unknown"
+          ],
+          "top": 18700,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/10-CERRO-BONETE.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/10-CERRO-BONETE.svg"
+        },
+        {
+          "name": "tres-cruces",
+          "altitude": "6748",
+          "info": [
+            "Location: Argentina / Chile",
+            "Prominence: 1424",
+            "Mountain Ranges: Andes",
+            "First Ascent: unknown",
+            "Difficulty: unknown"
+          ],
+          "top": 20500,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/11-TRES-CRUCES.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/11-TRES-CRUCES.svg"
+        },
+        {
+          "name": "denali",
+          "altitude": "6190",
+          "info": [
+            "Location: Alaska, US",
+            "Prominence: 6144",
+            "Mountain Ranges: Alaska Range",
+            "First Ascent: 1913",
+            "Difficulty: West Buttress Route (glacier/snow climb)"
+          ],
+          "top": 22300,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/12-MOUNT-DENALI.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/12-MOUNT-DENALI.svg"
+        },
+        {
+          "name": "kilimanjaro",
+          "altitude": "5895",
+          "info": [
+            "Location: Kilimanjaro Region, Tanzania",
+            "Prominence: 5895",
+            "Mountain Ranges: Eastern Rift mountains",
+            "First Ascent: 1889",
+            "Difficulty: unknown"
+          ],
+          "top": 24100,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/13-KILIMANJARO.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/13-KILIMANJARO.svg"
+        },
+        {
+          "name": "pico-de-orizaba",
+          "altitude": "5636",
+          "info": [
+            "Location: Veracruz, Mexico",
+            "Prominence: 4922",
+            "Mountain Ranges: unknown",
+            "First Ascent: 1848",
+            "Difficulty: moderate snow/ice climb"
+          ],
+          "top": 25900,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/14-PICO-ORIZABA.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/14-PICO-ORIZABA.svg"
+        },
+        {
+          "name": "mount-elbrus",
+          "altitude": "5642",
+          "info": [
+            "Location: Russia",
+            "Prominence: 4741",
+            "Mountain Ranges: Lateral Range, Caucasus Mountains",
+            "First Ascent: 1874",
+            "Difficulty: Basic snow/ice climb"
+          ],
+          "top": 27700,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/15-MOUNT-ELBRUS.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/15-MOUNT-ELBRUS.svg"
+        },
+        {
+          "name": "popocatepetl",
+          "altitude": "5393",
+          "info": [
+            "Location: Mexico, Puebla and Morelos, Mexico",
+            "Prominence: 3020",
+            "Mountain Ranges: unknown",
+            "First Ascent: unknown",
+            "Difficulty: rock/snow climb"
+          ],
+          "top": 29500,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/16-POPOCATEPETL.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/16-POPOCATEPETL.svg"
+        },
+        {
+          "name": "mount-foraker",
+          "altitude": "5300",
+          "info": [
+            "Location: Alaska, US",
+            "Prominence: 2210",
+            "Mountain Ranges: Alaska Range",
+            "First Ascent: 1934",
+            "Difficulty: basic snow/ice"
+          ],
+          "top": 31300,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/17-MOUNT-FRAKER.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/17-MOUNT-FRAKER.svg"
+        },
+        {
+          "name": "iztaccihuatl",
+          "altitude": "5230",
+          "info": [
+            "Location: México and Puebla, Mexico",
+            "Prominence: 1530",
+            "Mountain Ranges: unknown",
+            "First Ascent: 1889",
+            "Difficulty: rock/snow climb"
+          ],
+          "top": 33100,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/18-IZTLACCIHUATL.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/18-IZTLACCIHUATL.svg"
+        },
+        {
+          "name": "dykh-tau",
+          "altitude": "5205",
+          "info": [
+            "Location: Kabardino-Balkaria, Russia",
+            "Prominence: 2002",
+            "Mountain Ranges: Lateral Range, Caucasus Mountains",
+            "First Ascent: unknown",
+            "Difficulty: unknown"
+          ],
+          "top": 34900,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/19-DYKH-TAU.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/19-DYKH-TAU.svg"
+        },
+        {
+          "name": "nevado-de-toluca",
+          "altitude": "4680",
+          "info": [
+            "Location: Texcaltitlán, México, Mexico",
+            "Prominence: 2210",
+            "Mountain Ranges: unknown",
+            "First Ascent: unknown",
+            "Difficulty: road, hiking trail"
+          ],
+          "top": 36700,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/20-NEVADO-TOLUCA.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/20-NEVADO-TOLUCA.svg"
+        },
+        {
+          "name": "teyotl",
+          "altitude": "4660",
+          "info": [
+            "Location: Puebla, Mexico",
+            "Prominence: unknown",
+            "Mountain Ranges: Eje Neovolcánico",
+            "First Ascent: unknown",
+            "Difficulty: unknown"
+          ],
+          "top": 38500,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/21-TEYOTL.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/21-TEYOTL.svg"
+        },
+        {
+          "name": "la-malinche",
+          "altitude": "4461",
+          "info": [
+            "Location: Tlaxcala / Puebla, Mexico",
+            "Prominence: 1920",
+            "Mountain Ranges: Cordillera Anahuac",
+            "First Ascent: unknown",
+            "Difficulty: hiking trail"
+          ],
+          "top": 40300,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/22-VOLCAN-MALINTZIN.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/22-VOLCAN-MALINTZIN.svg"
+        },
+        {
+          "name": "cofre-de-perote",
+          "altitude": "4220",
+          "info": [
+            "Location: Veracruz, Mexico",
+            "Prominence: 1340",
+            "Mountain Ranges: unknown",
+            "First Ascent: unknown",
+            "Difficulty: rock climb"
+          ],
+          "top": 42100,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/23-COFRE-DE-PEROTE.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/23-COFRE-DE-PEROTE.svg"
+        },
+        {
+          "name": "cerro-negro",
+          "altitude": "unknown",
+          "info": [
+            "Location: Tlaxiaco, Oaxaca, Mexico",
+            "Prominence: unknown",
+            "Mountain Ranges: unknown",
+            "First Ascent: unknown",
+            "Difficulty: unknown"
+          ],
+          "top": 43900,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/24-CERRO-NEGRO-OAX.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/24-CERRO-NEGRO-OAX.svg"
+        },
+        {
+          "name": "nevado-de-colima",
+          "altitude": "4260",
+          "info": [
+            "Location: Jalisco, Mexico",
+            "Prominence: unknown",
+            "Mountain Ranges: Eje Neovolcánico",
+            "First Ascent: unknown",
+            "Difficulty: unknown"
+          ],
+          "top": 45700,
+          "background": "url(\"http://127.0.0.1:15291/src/assets/mountains/25-NEVADO-DE-COLIMA.svg\")",
+          "infoOpacity": "0.05",
+          "svg": "/src/assets/mountains/25-NEVADO-DE-COLIMA.svg"
+        }
+      ]
     }
   ],
   "title": "How tall is Mount Everest",

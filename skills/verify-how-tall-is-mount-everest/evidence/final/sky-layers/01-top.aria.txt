@@ -1,0 +1,175 @@
+- text: Stars Ashes Clouds mount-everest 8848.86
+- list:
+  - listitem: "Location: Nepal / China (Tibet)"
+  - listitem: "Prominence: 8848.86"
+  - listitem: "Mountain Ranges: Mahalangur Himal, Himalayas"
+  - listitem: "First Ascent: 1953"
+  - listitem: "Difficulty: unknown"
+- text: k2 8611
+- list:
+  - listitem: "Location: Pakistan-administered Kashmir / China"
+  - listitem: "Prominence: 4020"
+  - listitem: "Mountain Ranges: Karakoram"
+  - listitem: "First Ascent: 1954"
+  - listitem: "Difficulty: Abruzzi Spur"
+- text: kangchenjunga 8586
+- list:
+  - listitem: "Location: Nepal / Sikkim, India"
+  - listitem: "Prominence: 3922"
+  - listitem: "Mountain Ranges: Himalayas"
+  - listitem: "First Ascent: 1955"
+  - listitem: "Difficulty: glacier/snow/ice climb"
+- text: lhotse 8516
+- list:
+  - listitem: "Location: Nepal / China (Tibet)"
+  - listitem: "Prominence: 610"
+  - listitem: "Mountain Ranges: Mahalangur Himal, Himalayas"
+  - listitem: "First Ascent: 1956"
+  - listitem: "Difficulty: glacier/snow/ice climb"
+- text: makalu 8485
+- list:
+  - listitem: "Location: Nepal / China (Tibet)"
+  - listitem: "Prominence: 2386"
+  - listitem: "Mountain Ranges: Mahalangur Himalayas"
+  - listitem: "First Ascent: 1955"
+  - listitem: "Difficulty: snow/ice climb"
+- text: aconcagua 6967.16
+- list:
+  - listitem: "Location: Argentina"
+  - listitem: "Prominence: 6967.16"
+  - listitem: "Mountain Ranges: Principal Cordillera, Andes"
+  - listitem: "First Ascent: 1897"
+  - listitem: "Difficulty: Scramble (Northwest)"
+- text: ojos-del-salado 6893
+- list:
+  - listitem: "Location: Argentina / Chile"
+  - listitem: "Prominence: 3688"
+  - listitem: "Mountain Ranges: Andes"
+  - listitem: "First Ascent: 1937"
+  - listitem: "Difficulty: Scramble"
+- text: monte-pissis 6792
+- list:
+  - listitem: "Location: La Rioja and Catamarca, Argentina"
+  - listitem: "Prominence: 2145"
+  - listitem: "Mountain Ranges: Andes"
+  - listitem: "First Ascent: 1937"
+  - listitem: "Difficulty: Hike, east side"
+- text: huascaran 6768
+- list:
+  - listitem: "Location: Yungay, Peru"
+  - listitem: "Prominence: 2776"
+  - listitem: "Mountain Ranges: Cordillera Blanca, Andes"
+  - listitem: "First Ascent: 1932"
+  - listitem: "Difficulty: glacier/snow/ice climb"
+- text: cerro-bonete 6759
+- list:
+  - listitem: "Location: La Rioja, Argentina"
+  - listitem: "Prominence: 1480"
+  - listitem: "Mountain Ranges: Andes"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: unknown"
+- text: tres-cruces 6748
+- list:
+  - listitem: "Location: Argentina / Chile"
+  - listitem: "Prominence: 1424"
+  - listitem: "Mountain Ranges: Andes"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: unknown"
+- text: denali 6190
+- list:
+  - listitem: "Location: Alaska, US"
+  - listitem: "Prominence: 6144"
+  - listitem: "Mountain Ranges: Alaska Range"
+  - listitem: "First Ascent: 1913"
+  - listitem: "Difficulty: West Buttress Route (glacier/snow climb)"
+- text: kilimanjaro 5895
+- list:
+  - listitem: "Location: Kilimanjaro Region, Tanzania"
+  - listitem: "Prominence: 5895"
+  - listitem: "Mountain Ranges: Eastern Rift mountains"
+  - listitem: "First Ascent: 1889"
+  - listitem: "Difficulty: unknown"
+- text: pico-de-orizaba 5636
+- list:
+  - listitem: "Location: Veracruz, Mexico"
+  - listitem: "Prominence: 4922"
+  - listitem: "Mountain Ranges: unknown"
+  - listitem: "First Ascent: 1848"
+  - listitem: "Difficulty: moderate snow/ice climb"
+- text: mount-elbrus 5642
+- list:
+  - listitem: "Location: Russia"
+  - listitem: "Prominence: 4741"
+  - listitem: "Mountain Ranges: Lateral Range, Caucasus Mountains"
+  - listitem: "First Ascent: 1874"
+  - listitem: "Difficulty: Basic snow/ice climb"
+- text: popocatepetl 5393
+- list:
+  - listitem: "Location: Mexico, Puebla and Morelos, Mexico"
+  - listitem: "Prominence: 3020"
+  - listitem: "Mountain Ranges: unknown"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: rock/snow climb"
+- text: mount-foraker 5300
+- list:
+  - listitem: "Location: Alaska, US"
+  - listitem: "Prominence: 2210"
+  - listitem: "Mountain Ranges: Alaska Range"
+  - listitem: "First Ascent: 1934"
+  - listitem: "Difficulty: basic snow/ice"
+- text: iztaccihuatl 5230
+- list:
+  - listitem: "Location: México and Puebla, Mexico"
+  - listitem: "Prominence: 1530"
+  - listitem: "Mountain Ranges: unknown"
+  - listitem: "First Ascent: 1889"
+  - listitem: "Difficulty: rock/snow climb"
+- text: dykh-tau 5205
+- list:
+  - listitem: "Location: Kabardino-Balkaria, Russia"
+  - listitem: "Prominence: 2002"
+  - listitem: "Mountain Ranges: Lateral Range, Caucasus Mountains"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: unknown"
+- text: nevado-de-toluca 4680
+- list:
+  - listitem: "Location: Texcaltitlán, México, Mexico"
+  - listitem: "Prominence: 2210"
+  - listitem: "Mountain Ranges: unknown"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: road, hiking trail"
+- text: teyotl 4660
+- list:
+  - listitem: "Location: Puebla, Mexico"
+  - listitem: "Prominence: unknown"
+  - listitem: "Mountain Ranges: Eje Neovolcánico"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: unknown"
+- text: la-malinche 4461
+- list:
+  - listitem: "Location: Tlaxcala / Puebla, Mexico"
+  - listitem: "Prominence: 1920"
+  - listitem: "Mountain Ranges: Cordillera Anahuac"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: hiking trail"
+- text: cofre-de-perote 4220
+- list:
+  - listitem: "Location: Veracruz, Mexico"
+  - listitem: "Prominence: 1340"
+  - listitem: "Mountain Ranges: unknown"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: rock climb"
+- text: cerro-negro unknown
+- list:
+  - listitem: "Location: Tlaxiaco, Oaxaca, Mexico"
+  - listitem: "Prominence: unknown"
+  - listitem: "Mountain Ranges: unknown"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: unknown"
+- text: nevado-de-colima 4260
+- list:
+  - listitem: "Location: Jalisco, Mexico"
+  - listitem: "Prominence: unknown"
+  - listitem: "Mountain Ranges: Eje Neovolcánico"
+  - listitem: "First Ascent: unknown"
+  - listitem: "Difficulty: unknown"

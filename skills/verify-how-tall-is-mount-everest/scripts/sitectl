@@ -44,7 +44,7 @@ doctor() {
 }
 
 journey() {
-  [ -n "${1:-}" ] || die "journeys: altimeter-scroll | mountain-cards"
+  [ -n "${1:-}" ] || die "journeys: altimeter-scroll | mountain-cards | sky-layers"
   mkdir -p "$EVIDENCE/$1"
   NODE_PATH="$STATE/tools/node_modules" SITE_URL="$URL" CHROME_PATH="$CHROME" EVIDENCE_DIR="$EVIDENCE/$1" \
     node "$SKILL_DIR/scripts/browser.mjs" "$1"
@@ -65,5 +65,5 @@ cleanup() {
 case "${1:-}" in
   launch) launch;; doctor) doctor;; cleanup) cleanup;;
   journey) journey "${2:-}";;
-  *) echo "usage: sitectl launch|doctor|journey <altimeter-scroll|mountain-cards>|cleanup  (env RUN_ID, SITE_PORT)"; exit 2;;
+  *) echo "usage: sitectl launch|doctor|journey <altimeter-scroll|mountain-cards|sky-layers>|cleanup  (env RUN_ID, SITE_PORT)"; exit 2;;
 esac

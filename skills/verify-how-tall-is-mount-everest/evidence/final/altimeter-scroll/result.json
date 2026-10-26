@@ -1,6 +1,6 @@
 {
   "journey": "altimeter-scroll",
-  "url": "http://127.0.0.1:15173/",
+  "url": "http://127.0.0.1:15291/",
   "steps": [
     {
       "step": "load",
@@ -32,6 +32,14 @@
         "text": "05845m",
         "active": true,
         "scrollY": 25000
+      }
+    },
+    {
+      "step": "scroll-bottom",
+      "altimeter": {
+        "text": "02500m",
+        "active": false,
+        "scrollY": 49200
       }
     }
   ],
